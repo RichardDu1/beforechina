@@ -37,70 +37,58 @@ export default function Home() {
         <div className="container">
           <h2 style={{ fontSize: '32px', marginBottom: '40px', textAlign: 'center' }}>The Pre-Flight Survival Kit</h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '24px', sm: { gridTemplateColumns: '1fr 1fr' }, lg: { gridTemplateColumns: 'repeat(3, 1fr)' } } as any}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
             
-                </a>
+            {/* Visa Checker */}
+            <Link href="/visa" className="bento-card" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: 'var(--bg-surface)' }}>
+              <div style={{ padding: '16px', backgroundColor: 'rgba(230, 57, 70, 0.1)', color: 'var(--primary-color)', width: 'fit-content', borderRadius: '12px', marginBottom: '24px' }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               </div>
-            </div>
-
-            {/* eSIM Card - Medium */}
-            <div className="bento-card" style={{ gridColumn: 'span 4' }}>
-              <div style={{ fontSize: '40px', marginBottom: '16px' }}>📱</div>
-              <h3 style={{ fontSize: '24px', marginBottom: '12px' }}>eSIM & Data</h3>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', fontSize: '15px' }}>
-                Skip the airport queues. Get data instantly when you land without registering your passport.
+              <h3 style={{ fontSize: '28px', marginBottom: '16px' }}>Do I Need a Visa?</h3>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '16px', lineHeight: '1.5' }}>
+                China just opened up 15-day visa-free entry and 144-hour transit visas to many nations. Check if your passport qualifies before paying $140.
               </p>
-              <div style={{ marginTop: 'auto' }}>
-                <a href="#" style={{ color: 'var(--primary-color)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  Compare best eSIMs <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
+            </Link>
 
-            {/* Payment Card - Large */}
-            <div className="bento-card" style={{ gridColumn: 'span 8', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '16px' }}>
-                <div style={{ fontSize: '40px' }}>💳</div>
-                <div style={{ display: 'flex', gap: '8px' }}>
-                  <span style={{ padding: '4px 12px', backgroundColor: '#1677FF', color: 'white', borderRadius: 'var(--radius-sm)', fontSize: '14px', fontWeight: 600 }}>Alipay</span>
-                  <span style={{ padding: '4px 12px', backgroundColor: '#07C160', color: 'white', borderRadius: 'var(--radius-sm)', fontSize: '14px', fontWeight: 600 }}>WeChat Pay</span>
-                </div>
+            {/* VPN */}
+            <Link href="/vpn" className="bento-card" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', backgroundColor: '#0F172A', borderColor: '#1E293B' }}>
+              <div style={{ padding: '16px', backgroundColor: 'rgba(255,255,255,0.1)', color: '#F8FAFC', width: 'fit-content', borderRadius: '12px', marginBottom: '24px' }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
               </div>
-              <h3 style={{ fontSize: '28px', marginBottom: '12px' }}>How to Pay as a Foreigner</h3>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', maxWidth: '80%' }}>
-                Cash is rarely accepted. Learn how to link your foreign Visa/Mastercard to Chinese payment apps in 3 easy steps.
+              <h3 style={{ fontSize: '28px', marginBottom: '12px', color: '#F8FAFC' }}>Best VPN for China</h3>
+              <p style={{ color: '#94A3B8', lineHeight: '1.5' }}>
+                Warning: 95% of VPNs are blocked. Here are the only 2 that actually work in 2026 to access Google and WhatsApp.
               </p>
-              <div>
-                <a href="#" style={{ color: 'var(--primary-color)', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  Read the step-by-step guide <span>&rarr;</span>
-                </a>
+            </Link>
+
+            {/* eSIM */}
+            <Link href="/esim" className="bento-card" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ padding: '16px', backgroundColor: 'rgba(7, 193, 96, 0.1)', color: '#07C160', width: 'fit-content', borderRadius: '12px', marginBottom: '24px' }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
               </div>
+              <h3 style={{ fontSize: '28px', marginBottom: '12px' }}>Best eSIM for China</h3>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                Skip the 45-minute airport registration. Get an international eSIM to land with instant data that naturally bypasses censorship.
+              </p>
+            </Link>
+
+            {/* Payment */}
+            <Link href="/payment" className="bento-card" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ padding: '16px', backgroundColor: 'rgba(244, 162, 97, 0.1)', color: '#F4A261', width: 'fit-content', borderRadius: '12px', marginBottom: '24px' }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+              </div>
+              <h3 style={{ fontSize: '28px', marginBottom: '12px' }}>How to Pay</h3>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                Cash is dead. Learn how to link your foreign Visa or Mastercard to Alipay and WeChat Pay before you arrive.
+              </p>
+            </Link>
+
+            {/* Coming Soon */}
+            <div className="bento-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', backgroundColor: 'var(--bg-surface)' }}>
+              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>More Guides Coming Soon</h3>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>High-Speed Rail, Travel Insurance, and city guides are currently being written.</p>
             </div>
 
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" style={{ padding: '80px 0', backgroundColor: 'var(--bg-surface)' }}>
-        <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '64px' }}>
-          <div style={{ flex: 1 }}>
-            <div style={{ width: '100%', height: '400px', backgroundColor: '#E2E8F0', borderRadius: 'var(--radius-lg)', position: 'relative', overflow: 'hidden' }}>
-              {/* Placeholder for real persona image */}
-              <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'var(--text-muted)' }}>
-                [Persona Image]
-              </div>
-            </div>
-          </div>
-          <div style={{ flex: 1 }}>
-            <h2 style={{ fontSize: '36px', marginBottom: '24px' }}>Hi, I&apos;m [Name].</h2>
-            <p style={{ fontSize: '18px', color: 'var(--text-secondary)', marginBottom: '16px', lineHeight: '1.6' }}>
-              I&apos;m a Chinese native living in the UK. After helping dozens of my British colleagues plan their trips to China, I realized a massive problem: <strong>the internet is full of outdated information and generic travel agency fluff.</strong>
-            </p>
-            <p style={{ fontSize: '18px', color: 'var(--text-secondary)', marginBottom: '32px', lineHeight: '1.6' }}>
-              I built BeforeChina to give you the honest, unfiltered truth about how to navigate my home country—from bypassing the firewall to paying for a bowl of noodles. No BS, just the tools you actually need.
-            </p>
-            <button className="btn btn-outline">Read my full story</button>
           </div>
         </div>
       </section>
