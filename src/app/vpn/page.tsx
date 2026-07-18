@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Best VPN for China (2026) | Bypass the Great Firewall',
-  description: 'The Great Firewall is stronger than ever. Here are the only 2 VPNs that still consistently work in China in 2026 for accessing Google, WhatsApp, and Netflix.',
+  description: 'The Great Firewall blocks 95% of VPNs. As a local, here are the only 2 VPNs (ExpressVPN and NordVPN) that still consistently work in China to access Google and WhatsApp.',
 };
 
 export default function VpnPage() {
@@ -15,10 +15,10 @@ export default function VpnPage() {
             Warning: Download BEFORE you arrive in China
           </div>
           <h1 style={{ fontSize: '48px', marginBottom: '24px', letterSpacing: '-1px', color: '#F8FAFC' }}>
-            The Only VPNs That Actually Work in China
+            How to Survive the China Great Firewall
           </h1>
           <p style={{ fontSize: '20px', color: '#94A3B8', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
-            In 2026, the Great Firewall blocks 95% of commercial VPNs. Don&apos;t waste your money on free apps that will disconnect on day one. These are the two services we personally use to bypass censorship daily.
+            Every year, I see tourists arriving at Beijing airport, trying to open Google Maps, and staring at a blank screen. The Great Firewall blocks Google, WhatsApp, Instagram, and 95% of commercial VPNs. Don&apos;t waste your money on free apps. Here are the only two VPNs my friends and I actually use to bypass censorship daily in 2026.
           </p>
         </div>
       </section>
@@ -32,18 +32,18 @@ export default function VpnPage() {
             <div className="bento-card" style={{ backgroundColor: '#1E293B', borderColor: 'rgba(255,255,255,0.1)', display: 'flex', gap: '32px', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', backgroundColor: '#EF4444' }}></div>
               <div style={{ flex: '1' }}>
-                <div style={{ fontSize: '32px', fontWeight: 800, marginBottom: '8px', color: '#F8FAFC' }}>ExpressVPN</div>
+                <div style={{ fontSize: '32px', fontWeight: 800, marginBottom: '8px', color: '#F8FAFC' }}>ExpressVPN China</div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                   <span style={{ color: '#F4A261' }}>★★★★★</span>
-                  <span style={{ color: '#94A3B8', fontSize: '14px' }}>The Gold Standard for China</span>
+                  <span style={{ color: '#94A3B8', fontSize: '14px' }}>The Gold Standard for Bypassing the Wall</span>
                 </div>
                 <p style={{ color: '#CBD5E1', marginBottom: '16px', lineHeight: '1.5' }}>
-                  ExpressVPN has been fighting the Great Firewall for over a decade. When China updates its firewall protocols, ExpressVPN is usually the first to push a fix within 24 hours. Their proprietary Lightway protocol is currently the best at obfuscating traffic.
+                  ExpressVPN has been playing cat-and-mouse with the Great Firewall for over a decade. Whenever China updates its firewall protocols (which usually happens during major political meetings), ExpressVPN is the fastest to push a fix. Their proprietary "Lightway" protocol is specifically designed to disguise your traffic so the firewall can&apos;t detect it.
                 </p>
                 <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px', color: '#CBD5E1' }}>
-                  <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#10B981' }}>✓</span> Proprietary obfuscation technology</li>
-                  <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#10B981' }}>✓</span> 24/7 Support (Crucial if a server gets blocked)</li>
-                  <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#10B981' }}>✓</span> 30-day money-back guarantee</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#10B981' }}>✓</span> Automatic obfuscation technology</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#10B981' }}>✓</span> Access WhatsApp, Instagram, and Gmail flawlessly</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#10B981' }}>✓</span> 30-day money-back guarantee (zero risk for short trips)</li>
                 </ul>
               </div>
               <div style={{ width: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(15, 23, 42, 0.5)', borderRadius: 'var(--radius-md)', padding: '24px' }}>
@@ -56,16 +56,16 @@ export default function VpnPage() {
             {/* NordVPN */}
             <div className="bento-card" style={{ backgroundColor: '#1E293B', borderColor: 'rgba(255,255,255,0.1)', display: 'flex', gap: '32px' }}>
               <div style={{ flex: '1' }}>
-                <div style={{ fontSize: '32px', fontWeight: 800, marginBottom: '8px', color: '#F8FAFC' }}>NordVPN</div>
+                <div style={{ fontSize: '32px', fontWeight: 800, marginBottom: '8px', color: '#F8FAFC' }}>NordVPN China</div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                   <span style={{ color: '#F4A261' }}>★★★★☆</span>
-                  <span style={{ color: '#94A3B8', fontSize: '14px' }}>Best Value & Speeds</span>
+                  <span style={{ color: '#94A3B8', fontSize: '14px' }}>Best Speeds for Streaming Netflix</span>
                 </div>
                 <p style={{ color: '#CBD5E1', marginBottom: '16px', lineHeight: '1.5' }}>
-                  NordVPN requires you to manually enable "Obfuscated Servers" in the settings to work in China, but once connected, it offers some of the fastest speeds for streaming Netflix or YouTube in 4K.
+                  NordVPN is highly reliable, but it requires a crucial extra step: you <strong>must manually enable "Obfuscated Servers"</strong> in the app settings before connecting in China. Once connected, I&apos;ve found it offers faster speeds than ExpressVPN for streaming 4K YouTube or Netflix.
                 </p>
                 <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px', color: '#CBD5E1' }}>
-                  <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#10B981' }}>✓</span> Very fast once connected</li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#10B981' }}>✓</span> Incredible speeds once connected</li>
                   <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#10B981' }}>✓</span> Cheaper long-term plans</li>
                   <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span style={{ color: '#EF4444' }}>✗</span> Requires manual obfuscation setup</li>
                 </ul>
@@ -85,9 +85,9 @@ export default function VpnPage() {
       <section style={{ padding: '64px 0' }}>
         <div className="container">
           <div style={{ maxWidth: '800px', margin: '0 auto', backgroundColor: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.2)', padding: '32px', borderRadius: 'var(--radius-md)' }}>
-            <h3 style={{ fontSize: '24px', marginBottom: '16px', color: '#EF4444' }}>🚨 CRITICAL: Do not wait until you arrive</h3>
+            <h3 style={{ fontSize: '24px', marginBottom: '16px', color: '#EF4444' }}>🚨 CRITICAL: The "Catch-22" of VPNs in China</h3>
             <p style={{ color: '#CBD5E1', lineHeight: '1.6' }}>
-              The websites for ExpressVPN, NordVPN, and almost all other VPN providers are entirely blocked in China. You cannot go to the App Store or Google Play store to download them once you land. <strong>You must download the apps and sign up for a subscription while you are still in your home country.</strong>
+              The websites for ExpressVPN, NordVPN, and almost all other VPN providers are entirely blocked in China. You cannot go to the App Store or Google Play store to download them once you land, because Google is blocked, and Apple&apos;s China App Store has removed all VPN apps by law. <strong>You must download the apps and sign up for a subscription while you are still in your home country.</strong> Don&apos;t be like my colleague Tom who spent his first 3 days completely disconnected!
             </p>
           </div>
         </div>

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'How to Pay in China as a Foreigner (2026 Guide) | Alipay & WeChat Pay',
-  description: 'Cash is dead in China. Learn the step-by-step process to link your foreign Visa/Mastercard to Alipay and WeChat Pay before you arrive.',
+  description: 'China currency (RMB) is rarely used in physical form. Learn the step-by-step process to link your foreign Visa/Mastercard to Alipay and WeChat Pay before you arrive.',
 };
 
 export default function PaymentPage() {
@@ -18,7 +18,7 @@ export default function PaymentPage() {
             How to Pay for Things in China
           </h1>
           <p style={{ fontSize: '20px', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
-            In China, you don&apos;t use cash or physical credit cards. You use your phone. Good news: as of late 2023, foreigners can finally link international credit cards to Chinese payment apps.
+            If you bring a fat stack of cash to China, you are going to starve. Street vendors, taxi drivers, and even high-end restaurants don&apos;t keep change anymore. Here is the exact setup you need to survive.
           </p>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function PaymentPage() {
               <li>Complete the quick Identity Verification using your passport.</li>
             </ol>
             <div style={{ backgroundColor: 'rgba(244, 162, 97, 0.1)', padding: '16px', borderRadius: 'var(--radius-sm)', borderLeft: '4px solid #F4A261' }}>
-              <strong>Fee Structure:</strong> Transactions under 200 RMB (~$28 USD) have <strong>zero fees</strong>. Transactions over 200 RMB incur a 3% fee from Alipay.
+              <strong>The Fee Structure:</strong> Transactions under 200 RMB (~$28 USD) have <strong>zero fees</strong> from Alipay. Transactions over 200 RMB incur a 3% fee. Tip: Ask the merchant to split large bills into two payments!
             </div>
           </div>
 
@@ -53,7 +53,7 @@ export default function PaymentPage() {
               <h2 style={{ fontSize: '32px', margin: 0 }}>WeChat Pay</h2>
             </div>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', lineHeight: '1.6' }}>
-              WeChat is the "everything app" of China. While Alipay is slightly easier for payments, WeChat is essential because people will use it to communicate with you. It&apos;s best to have both set up as backups to each other.
+              WeChat is the "everything app" of China. While Alipay is slightly easier for payments, WeChat is essential because everyone will use it to communicate with you. It&apos;s best to have both set up as backups to each other.
             </p>
             <h3 style={{ fontSize: '20px', marginBottom: '16px' }}>Setup Steps:</h3>
             <ol style={{ paddingLeft: '20px', color: 'var(--text-primary)', display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -65,9 +65,9 @@ export default function PaymentPage() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '64px' }}>
-            <h3 style={{ fontSize: '24px', marginBottom: '16px' }}>What about Cash?</h3>
+            <h3 style={{ fontSize: '24px', marginBottom: '16px' }}>What about China Currency (Cash)?</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-              By law, merchants must accept cash. In reality, street vendors or small shops might not have change for a 100 RMB bill. It&apos;s wise to carry ~500 RMB in cash for emergencies, but you will use mobile payments for 99% of your trip.
+              China&apos;s currency is the RMB (or CNY). By law, merchants must accept physical cash. However, in reality, if you try to buy a 15 RMB coffee with a 100 RMB bill, the barista will likely stare at you because they haven&apos;t seen physical cash in months and have zero change in the register. It&apos;s wise to carry ~500 RMB in cash for absolute emergencies, but you will use mobile apps for 99.9% of your trip.
             </p>
           </div>
 

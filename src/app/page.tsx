@@ -1,54 +1,44 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'BeforeChina | The Ultimate China Travel Guide & Toolkit (2026)',
+  description: 'A no-bs China travel guide created by a UK-based Chinese local. Learn how to survive the Great Firewall, set up Alipay, and navigate visa-free entry.',
+};
+
 export default function Home() {
   return (
-    <div style={{ paddingBottom: '64px' }}>
+    <div style={{ paddingBottom: '80px' }}>
       {/* Hero Section */}
-      <section style={{ padding: '80px 0 60px 0', textAlign: 'center', backgroundColor: 'var(--bg-surface)' }}>
-        <div className="container">
-          <div style={{ display: 'inline-block', padding: '6px 16px', backgroundColor: 'rgba(230, 57, 70, 0.1)', color: 'var(--primary-color)', borderRadius: 'var(--radius-pill)', fontWeight: 600, fontSize: '14px', marginBottom: '24px' }}>
-            Built by a Local, Designed for You
+      <section style={{ padding: '80px 0 64px', backgroundColor: 'var(--bg-surface)', borderBottom: '1px solid var(--border-color)' }}>
+        <div className="container" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+          <div style={{ display: 'inline-block', padding: '6px 16px', backgroundColor: 'var(--bg-color)', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-pill)', fontWeight: 600, fontSize: '14px', marginBottom: '24px' }}>
+            🇨🇳 Built by a Local. Designed for You.
           </div>
-          <h1 style={{ fontSize: '56px', marginBottom: '24px', letterSpacing: '-1px' }}>
-            Crack the Code to <br /> Traveling in China.
+          <h1 style={{ fontSize: '56px', marginBottom: '24px', letterSpacing: '-1.5px', lineHeight: '1.1' }}>
+            The Only China Travel Guide You Actually Need.
           </h1>
-          <p style={{ fontSize: '20px', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 40px auto', lineHeight: '1.5' }}>
-            No more outdated travel agency blogs. Get the exact tools, VPNs, and insider knowledge you need before you land.
+          <p style={{ fontSize: '22px', color: 'var(--text-secondary)', marginBottom: '32px', lineHeight: '1.5' }}>
+            Most China travel tips online are written by tour agencies trying to sell you a $3,000 package. I&apos;m Richard, a Chinese native living in the UK, and I built this toolkit to help you survive your first 48 hours without losing your mind.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
-            <button className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '18px' }}>Start Your Prep</button>
-            <button className="btn btn-outline" style={{ padding: '16px 32px', fontSize: '18px' }}>Read the Guide</button>
+            <Link href="#toolkit" className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '18px' }}>
+              Access Toolkit &darr;
+            </Link>
+            <Link href="/about" className="btn btn-outline" style={{ padding: '16px 32px', fontSize: '18px' }}>
+              Read My Story
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Bento Grid - Core Toolkit */}
-      <section id="tools" style={{ padding: '80px 0' }}>
+      {/* Toolkit Grid */}
+      <section id="toolkit" style={{ padding: '80px 0' }}>
         <div className="container">
-          <h2 style={{ fontSize: '32px', marginBottom: '40px', textAlign: 'center' }}>Your Pre-Travel Toolkit</h2>
+          <h2 style={{ fontSize: '32px', marginBottom: '40px', textAlign: 'center' }}>The Pre-Flight Survival Kit</h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '24px', gridAutoRows: 'minmax(200px, auto)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '24px', sm: { gridTemplateColumns: '1fr 1fr' }, lg: { gridTemplateColumns: 'repeat(3, 1fr)' } } as any}>
             
-            {/* Visa Checker Card - Large */}
-            <div className="bento-card" style={{ gridColumn: 'span 8', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: 'linear-gradient(135deg, var(--bg-surface) 0%, rgba(230, 57, 70, 0.05) 100%)' }}>
-              <div style={{ fontSize: '40px', marginBottom: '16px' }}>🛂</div>
-              <h3 style={{ fontSize: '28px', marginBottom: '12px' }}>Visa-Free Checker (2026)</h3>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', maxWidth: '80%' }}>
-                Don&apos;t apply for a visa yet. You might not need one. Enter your passport to see if you qualify for the 144-hour or 240-hour visa-free entry.
-              </p>
-              <div>
-                <button className="btn btn-primary">Check Visa Status &rarr;</button>
-              </div>
-            </div>
-
-            {/* VPN Card - Medium */}
-            <div className="bento-card" style={{ gridColumn: 'span 4', backgroundColor: '#1E293B', color: 'white' }}>
-              <div style={{ fontSize: '40px', marginBottom: '16px' }}>🔐</div>
-              <h3 style={{ fontSize: '24px', marginBottom: '12px', color: 'white' }}>The Great Firewall</h3>
-              <p style={{ color: '#94A3B8', marginBottom: '24px', fontSize: '15px' }}>
-                Google and WhatsApp won&apos;t work. See the only 2 VPNs that actually bypass the wall right now.
-              </p>
-              <div style={{ marginTop: 'auto' }}>
-                <a href="#" style={{ color: '#F4A261', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  Find a working VPN <span>&rarr;</span>
                 </a>
               </div>
             </div>
