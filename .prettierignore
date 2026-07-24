@@ -1,0 +1,19 @@
+# Build output
+.next/
+out/
+build/
+
+# Deps
+node_modules/
+
+# Generated
+coverage/
+playwright-report/
+test-results/
+
+# Lockfiles (keep formatting predictable, not reformatted)
+package-lock.json
+
+# Misc
+*.tsbuildinfo
+next-env.d.ts
