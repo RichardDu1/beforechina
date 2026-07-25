@@ -1,180 +1,284 @@
 import { Metadata } from 'next';
-import Kicker from '@/components/Kicker';
-import SignatureCard from '@/components/SignatureCard';
-import JsonLd from '@/components/JsonLd';
+import EnquiryForm from '@/components/EnquiryForm';
 
 export const metadata: Metadata = {
-  title: 'About Richard Du | The Story Behind BeforeChina',
+  title: 'About BeforeChina | China Travel Specialists',
   description:
-    "Hi, I'm Richard Du. I'm a Chinese native living in the UK, and I built this site because I was tired of seeing my friends get ripped off by outdated China travel advice.",
-};
-
-const personSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Richard Du',
-  description:
-    'Chinese native living in the UK. Built BeforeChina to help foreigners navigate travel to China with accurate, up-to-date tools and guides.',
-  knowsAbout: ['China Travel', 'Chinese Visa Policy', 'Great Firewall', 'Alipay', 'WeChat Pay'],
-  alumniOf: { '@type': 'EducationalOrganization', name: 'UK University' },
+    'BeforeChina is a small team of China specialists designing private tailor-made journeys. Born in China, based in the UK — we know both sides.',
+  alternates: { canonical: '/about' },
+  openGraph: {
+    type: 'website',
+    url: 'https://beforechina.com/about',
+    title: 'About BeforeChina | China Travel Specialists',
+    description:
+      'A small team of China specialists designing private journeys for travellers who want more than a tour.',
+    images: [
+      {
+        url: '/images/destinations/golden-triangle-og.webp',
+        width: 1200,
+        height: 630,
+        alt: 'BeforeChina — Tailor-Made Journeys to China',
+      },
+    ],
+  },
 };
 
 export default function AboutPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
       {/* Hero */}
-      <section className="hero-editorial">
+      <section className="hero-editorial" style={{ textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <Kicker>About</Kicker>
-          <h1>Hi, I&apos;m Richard.</h1>
+          <h1>We Are BeforeChina</h1>
           <p className="hero-subtitle" style={{ marginBottom: '0' }}>
-            I&apos;m a Chinese native living in the UK. I built BeforeChina because the travel
-            advice you see online is broken.
+            A small team of China specialists designing private journeys for travellers who want
+            more than a tour.
           </p>
         </div>
       </section>
 
-      {/* Story */}
-      <section style={{ padding: '64px 0' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <JsonLd data={personSchema} id="about-schema" />
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
-            <div>
-              <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>
-                The &ldquo;Wait, my VPN doesn&apos;t work?&rdquo; Moment
-              </h2>
-              <p
-                style={{
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.7',
-                  fontSize: '18px',
-                  marginBottom: '16px',
-                }}
-              >
-                A few years ago, my British colleague Tom went to Shanghai for a mix of business and
-                tourism. He did what most people do: he Googled &ldquo;China travel tips,&rdquo;
-                booked his flights, and downloaded a random free VPN from the App Store.
-              </p>
-              <p
-                style={{
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.7',
-                  fontSize: '18px',
-                  marginBottom: '16px',
-                }}
-              >
-                When he landed at Pudong Airport, reality hit him like a brick wall. His VPN was
-                blocked by the Great Firewall. He couldn&apos;t open Google Maps to find his hotel.
-                He couldn&apos;t use WhatsApp to tell his family he arrived safely. And when he
-                tried to buy a bottle of water, the cashier waved away his physical cash—they only
-                accepted WeChat Pay or Alipay, which he hadn&apos;t set up.
-              </p>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', fontSize: '18px' }}>
-                He spent his first 48 hours in China completely disconnected, frustrated, and
-                relying on the kindness of strangers in hotel lobbies.
-              </p>
-            </div>
+      {/* Our Story */}
+      <section style={{ padding: 'var(--section-gap-sm) 0' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto' }}
+        >
+          <h2
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(24px, 3vw, 32px)',
+              fontWeight: 500,
+              marginBottom: '24px',
+            }}
+          >
+            Our Story
+          </h2>
+          <div style={{ color: 'var(--text-secondary)', fontSize: '17px', lineHeight: 1.8 }}>
+            <p style={{ marginBottom: '20px' }}>
+              BeforeChina was born from a simple frustration: every China travel website for
+              Westerners was either a faceless OTA listing the same five hotels, or a government
+              tourism portal covered in propaganda about "5,000 years of civilisation."
+            </p>
+            <p style={{ marginBottom: '20px' }}>
+              Richard, our founder, grew up in China and has spent the last decade living in the UK.
+              He has guided friends, family, and strangers through China trips for years — and kept
+              hearing the same thing: "I wish I had known this before I went."
+            </p>
+            <p style={{ marginBottom: '20px' }}>
+              So he built BeforeChina. Not as another booking engine, but as the resource he wished
+              existed when his British friends asked, "Where should I go in China?" — with real
+              local knowledge, honest advice, and journeys designed by someone who knows both sides
+              of the cultural gap.
+            </p>
+            <p>
+              Today, BeforeChina designs private tailor-made journeys for travellers from the UK,
+              the US, Australia, and across Europe. Every itinerary is built from scratch — because
+              no two travellers are the same, and neither should their journeys be.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <div
-              style={{
-                padding: '32px',
-                backgroundColor: 'var(--callout-bg-primary)',
-                borderRadius: 'var(--radius-sm)',
-                borderLeft: '3px solid var(--primary-color)',
-              }}
-            >
-              <h2 style={{ fontSize: '24px', marginBottom: '16px', color: 'var(--primary-color)' }}>
-                The Problem with China Travel Guides
-              </h2>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', fontSize: '18px' }}>
-                When Tom came back to London and told me this, I went online to see what advice he
-                had been reading. I was shocked. Most &ldquo;China Travel Guides&rdquo; are written
-                by:
-              </p>
-              <ul
+      {/* Our Specialists */}
+      <section style={{ padding: 'var(--section-gap-sm) 0', backgroundColor: 'var(--bg-surface)' }}>
+        <div className="container" style={{ maxWidth: 'var(--content-width-wide)' }}>
+          <h2
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(24px, 3.5vw, 34px)',
+              fontWeight: 500,
+              marginBottom: '40px',
+              textAlign: 'center',
+            }}
+          >
+            Our China Specialists
+          </h2>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gap: '40px',
+            }}
+          >
+            {/* Richard */}
+            <div style={{ textAlign: 'center' }}>
+              <div
                 style={{
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.7',
-                  fontSize: '18px',
-                  paddingLeft: '24px',
-                  marginTop: '16px',
+                  width: '100px',
+                  height: '100px',
+                  borderRadius: '50%',
+                  backgroundColor: 'var(--callout-bg-primary)',
+                  margin: '0 auto 20px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '36px',
                 }}
               >
-                <li style={{ marginBottom: '8px' }}>
-                  <strong>Traditional Travel Agencies:</strong> Who just want to sell you a $3,000
-                  guided tour and gloss over the actual day-to-day survival logistics.
-                </li>
-                <li style={{ marginBottom: '8px' }}>
-                  <strong>Outdated Blogs:</strong> Writers who visited China in 2018. China moves
-                  fast. What worked in 2018 (or even 2023) is completely irrelevant in 2026.
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>Why BeforeChina Exists</h2>
-              <p
+                R
+              </div>
+              <h3
                 style={{
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.7',
-                  fontSize: '18px',
-                  marginBottom: '16px',
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '22px',
+                  fontWeight: 500,
+                  marginBottom: '6px',
                 }}
               >
-                As someone who grew up in China but lives in the West, I understand exactly what
-                foreigners need to know—and more importantly, the cultural context of <em>why</em>{' '}
-                things work the way they do in China.
-              </p>
-              <p
+                Richard Du
+              </h3>
+              <div
                 style={{
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.7',
-                  fontSize: '18px',
-                  marginBottom: '16px',
-                }}
-              >
-                I created <strong>BeforeChina.com</strong> to be the ultimate pre-travel toolkit. No
-                fluff, no history lessons you can read on Wikipedia. Just the exact, actionable
-                steps you need to take <em>before</em> you board your flight:
-              </p>
-              <ul
-                style={{
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.7',
-                  fontSize: '18px',
-                  paddingLeft: '24px',
-                  marginBottom: '24px',
-                }}
-              >
-                <li>
-                  How to legally bypass the Great Firewall (and which VPNs actually work today).
-                </li>
-                <li>
-                  How to navigate the confusing 240-Hour Visa-Free Transit rules without getting
-                  denied at check-in.
-                </li>
-                <li>
-                  How to link your foreign Visa/Mastercard to Chinese apps so you can actually buy a
-                  coffee.
-                </li>
-              </ul>
-              <p
-                style={{
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.7',
-                  fontSize: '18px',
+                  fontSize: '12px',
+                  color: 'var(--accent-color)',
                   fontWeight: 600,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '12px',
                 }}
               >
-                My goal is simple: I want your first 48 hours in China to be magical, not a
-                logistical nightmare.
+                Founder & Lead Specialist
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '15px', lineHeight: 1.6 }}>
+                Chinese native, based in the UK. 50+ trips back to China. Knows the hidden dumpling
+                shop in Beijing, the best sunrise spot on the Great Wall, and which Silk Road
+                guesthouse has the softest beds.
+              </p>
+            </div>
+
+            {/* Yunnan Specialist */}
+            <div style={{ textAlign: 'center' }}>
+              <div
+                style={{
+                  width: '100px',
+                  height: '100px',
+                  borderRadius: '50%',
+                  backgroundColor: 'var(--callout-bg-warm)',
+                  margin: '0 auto 20px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '36px',
+                }}
+              >
+                Y
+              </div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '22px',
+                  fontWeight: 500,
+                  marginBottom: '6px',
+                }}
+              >
+                Yunnan & Southwest Specialist
+              </h3>
+              <div
+                style={{
+                  fontSize: '12px',
+                  color: 'var(--accent-color)',
+                  fontWeight: 600,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '12px',
+                }}
+              >
+                Based in Dali, Yunnan
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '15px', lineHeight: 1.6 }}>
+                Has spent the last eight years exploring every corner of Yunnan, from the tea
+                mountains of Xishuangbanna to the Tibetan foothills of Shangri-La. Knows the best
+                guesthouses in Shaxi and which Tiger Leaping Gorge trail has the fewest crowds.
+              </p>
+            </div>
+
+            {/* Silk Road Specialist */}
+            <div style={{ textAlign: 'center' }}>
+              <div
+                style={{
+                  width: '100px',
+                  height: '100px',
+                  borderRadius: '50%',
+                  backgroundColor: 'var(--callout-bg-warm)',
+                  margin: '0 auto 20px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '36px',
+                }}
+              >
+                S
+              </div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '22px',
+                  fontWeight: 500,
+                  marginBottom: '6px',
+                }}
+              >
+                Silk Road & Northwest Specialist
+              </h3>
+              <div
+                style={{
+                  fontSize: '12px',
+                  color: 'var(--accent-color)',
+                  fontWeight: 600,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '12px',
+                }}
+              >
+                Based in Urumqi, Xinjiang
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '15px', lineHeight: 1.6 }}>
+                Grew up in Xinjiang and has driven the Karakoram Highway more times than he can
+                count. Speaks Uyghur and Mandarin, and knows every melon stall at the Kashgar Sunday
+                Bazaar.
               </p>
             </div>
           </div>
-
-          <SignatureCard />
         </div>
       </section>
+
+      {/* Philosophy */}
+      <section style={{ padding: 'var(--section-gap-sm) 0' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto' }}
+        >
+          <h2
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(24px, 3vw, 32px)',
+              fontWeight: 500,
+              marginBottom: '24px',
+            }}
+          >
+            How We Work
+          </h2>
+          <div style={{ color: 'var(--text-secondary)', fontSize: '17px', lineHeight: 1.8 }}>
+            <p style={{ marginBottom: '20px' }}>
+              <strong>Every journey is built from scratch.</strong> We don't have a catalogue of
+              fixed departures. When you tell us what moves you — the food, the landscapes, the
+              history, the people — we design an itinerary that's yours alone.
+            </p>
+            <p style={{ marginBottom: '20px' }}>
+              <strong>We work with locals, not chains.</strong> Our guides are from the places they
+              show you. Our guesthouses are family-run. Our drivers know the back roads. We believe
+              the best travel experiences come from real human connections, not corporate contracts.
+            </p>
+            <p>
+              <strong>You're never alone on the road.</strong> From the moment you land to the
+              moment you fly home, our team is on WhatsApp. Train cancelled? We'll rebook you. Not
+              feeling well? We'll find an English-speaking doctor. Plans change? So does your
+              itinerary.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <EnquiryForm />
     </div>
   );
 }

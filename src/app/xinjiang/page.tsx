@@ -1,9 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Kicker from '@/components/Kicker';
-import SignatureCard from '@/components/SignatureCard';
+import EnquiryForm from '@/components/EnquiryForm';
 import NextSteps from '@/components/NextSteps';
-import TourCTA from '@/components/TourCTA';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
@@ -11,6 +10,21 @@ export const metadata: Metadata = {
   description:
     'Everything you need to know about traveling Xinjiang in 2026: best routes (Kashgar, Karakoram Highway, Kanas), permit requirements, transport logistics, and local food — from someone who knows a guide there.',
   alternates: { canonical: '/xinjiang' },
+  openGraph: {
+    type: 'website',
+    url: 'https://beforechina.com/xinjiang',
+    title: 'Xinjiang Travel Guide | Silk Road, Mountains & Desert | BeforeChina',
+    description:
+      "China's largest region — 1.6 million km² of Silk Road history, alpine lakes, and desert highways.",
+    images: [
+      {
+        url: '/images/destinations/xinjiang.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Karakul Lake in Xinjiang',
+      },
+    ],
+  },
 };
 
 const faqSchema = {
@@ -68,36 +82,36 @@ const breadcrumbSchema = {
 
 const ROUTES = [
   {
-    name: 'Classic Silk Road (7-10 days)',
+    name: 'Classic Silk Road',
     slug: '/xinjiang/silk-road',
     cities: 'Urumqi → Turpan → Korla → Kuqa → Kashgar',
     highlights: 'Heavenly Lake, Jiaohe Ruins, Kizil Thousand Buddha Caves, Kashgar Sunday Bazaar',
     bestFor: 'First-time visitors, history buffs',
-    cost: '$800-1,200/person',
+    days: '7-10 days',
   },
   {
-    name: 'Karakoram Highway (5-7 days)',
+    name: 'Karakoram Highway',
     slug: '/xinjiang/karakoram-highway',
     cities: 'Kashgar → Karakul Lake → Tashkurgan → Khunjerab Pass',
     highlights: 'Pamir Mountains, Karakul Lake at 3,600m, Tajik culture, Pakistan border',
     bestFor: 'Adventure travelers, photographers',
-    cost: '$600-900/person',
+    days: '5-7 days',
   },
   {
-    name: 'Northern Xinjiang Loop (8-12 days)',
+    name: 'Northern Xinjiang Loop',
     slug: '/xinjiang/northern-loop',
     cities: 'Urumqi → Burqin → Kanas → Hemu → Karamay → Sayram Lake → Yining',
     highlights: 'Kanas Lake, Hemu Village, Sayram Lake, Ghost City, Kazakh grasslands',
     bestFor: 'Nature lovers, hikers, autumn color chasers',
-    cost: '$1,000-1,500/person',
+    days: '8-12 days',
   },
   {
-    name: 'Taklamakan Desert Crossing (5-7 days)',
+    name: 'Taklamakan Desert Crossing',
     slug: '/xinjiang/taklamakan-desert',
     cities: 'Korla → Desert Highway → Minfeng → Hotan → Kashgar',
     highlights: 'Taklamakan Desert, Hotan Sunday Market, desert highway, camel rides',
     bestFor: 'Adventure travelers, off-the-beaten-path',
-    cost: '$700-1,000/person',
+    days: '5-7 days',
   },
 ];
 
@@ -106,86 +120,156 @@ export default function XinjiangPage() {
     <div style={{ paddingBottom: '80px' }}>
       <JsonLd data={[faqSchema, breadcrumbSchema]} id="xinjiang-schema" />
 
-      {/* Hero */}
-      <section className="hero-editorial" style={{ textAlign: 'center' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+      {/* Full-bleed Hero */}
+      <section
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: '60vh',
+          minHeight: '400px',
+          overflow: 'hidden',
+        }}
+      >
+        <img
+          src="/images/destinations/xinjiang.webp"
+          alt="Karakul Lake with Muztagh Ata peak reflected in the water, Xinjiang"
+          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+        />
+      </section>
+
+      {/* Title */}
+      <section style={{ padding: 'var(--section-gap-sm) 0 0', textAlign: 'center' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto' }}
+        >
           <Kicker>Xinjiang</Kicker>
-          <h1>Xinjiang Travel Guide: Silk Road, Mountains &amp; Desert</h1>
-          <p className="hero-subtitle" style={{ marginBottom: '0' }}>
-            Xinjiang is China&apos;s largest region — 1.6 million km² of Silk Road history, alpine
-            lakes, and desert highways. I have a friend who runs a small-group guiding team based in
-            Urumqi. This guide is what he tells his guests before they arrive.
+          <h1
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(28px, 5vw, 44px)',
+              fontWeight: 500,
+              marginBottom: '16px',
+              lineHeight: 1.15,
+            }}
+          >
+            Xinjiang Travel Guide: Silk Road, Mountains &amp; Desert
+          </h1>
+          <p
+            style={{
+              fontFamily: 'var(--font-quote)',
+              fontSize: 'clamp(16px, 2vw, 20px)',
+              color: 'var(--text-secondary)',
+              lineHeight: 1.5,
+            }}
+          >
+            China&apos;s largest region — 1.6 million km&sup2; of Silk Road history, alpine lakes,
+            and desert highways.
           </p>
         </div>
       </section>
 
       {/* Why Xinjiang */}
-      <section style={{ padding: '64px 0' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div className="article-card" style={{ borderLeft: '3px solid var(--accent-color)' }}>
-            <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>Why Xinjiang?</h2>
-            <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '16px' }}>
+      <section style={{ padding: 'var(--section-gap-sm) 0' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto' }}
+        >
+          <h2
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(24px, 3vw, 30px)',
+              fontWeight: 500,
+              marginBottom: '20px',
+            }}
+          >
+            Why Xinjiang?
+          </h2>
+          <div style={{ color: 'var(--text-secondary)', fontSize: '17px', lineHeight: 1.8 }}>
+            <p style={{ marginBottom: '20px' }}>
               Most first-time visitors to China do Beijing, Shanghai, and Xi&apos;an. That&apos;s a
               great trip — but it&apos;s also the same trip everyone does. Xinjiang is where you go
               when you want something completely different: Central Asian bazaars where vendors
               speak Uyghur, not Mandarin; alpine lakes at 3,600m that look like Switzerland; and the
               Karakoram Highway — one of the world&apos;s highest paved roads.
             </p>
-            <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
+            <p>
               It&apos;s also surprisingly affordable. A bowl of laghman (hand-pulled noodles) costs
-              ¥15-25 ($2-3). A decent hotel in Kashgar runs ¥150-250/night ($20-35). Domestic
-              flights between Urumqi and Kashgar start at ¥600 ($85). You can do a solid 10-day trip
-              for under $1,200 per person including internal flights.
+              about the same as a coffee. A comfortable hotel in Kashgar is modestly priced.
+              Domestic flights between Urumqi and Kashgar are frequent and reasonably priced. You
+              can do a solid 10-day trip without breaking the bank.
             </p>
           </div>
         </div>
       </section>
 
       {/* Routes */}
-      <section style={{ padding: '0 0 64px' }}>
-        <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+      <section
+        style={{ padding: '0 0 var(--section-gap-sm)', backgroundColor: 'var(--bg-surface)' }}
+      >
+        <div className="container" style={{ maxWidth: 'var(--content-width-wide)' }}>
+          <div
+            style={{
+              textAlign: 'center',
+              marginBottom: '40px',
+              paddingTop: 'var(--section-gap-sm)',
+            }}
+          >
             <Kicker>Itineraries</Kicker>
-            <h2 style={{ fontSize: '32px' }}>Four Classic Xinjiang Routes</h2>
-            <p style={{ color: 'var(--text-secondary)' }}>
+            <h2
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(24px, 3.5vw, 34px)',
+                fontWeight: 500,
+              }}
+            >
+              Four Classic Xinjiang Routes
+            </h2>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '17px' }}>
               From a quick Silk Road highlights tour to a full northern loop
             </p>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
             {ROUTES.map((route) => (
               <Link
                 key={route.name}
                 href={route.slug}
-                className="article-card"
+                className="journey-card"
                 style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
               >
-                <h3 style={{ fontSize: '22px', marginBottom: '8px' }}>{route.name}</h3>
-                <div
-                  style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', marginBottom: '12px' }}
-                >
-                  <span style={{ fontSize: '14px', color: 'var(--text-muted)' }}>
-                    <strong style={{ color: 'var(--text-secondary)' }}>Route:</strong>{' '}
-                    {route.cities}
-                  </span>
-                </div>
-                <p
-                  style={{ color: 'var(--text-secondary)', marginBottom: '8px', lineHeight: '1.6' }}
-                >
-                  <strong>Highlights:</strong> {route.highlights}
-                </p>
                 <div
                   style={{
                     display: 'flex',
-                    gap: '24px',
-                    fontSize: '14px',
-                    color: 'var(--text-muted)',
+                    justifyContent: 'space-between',
+                    alignItems: 'baseline',
+                    marginBottom: '8px',
                   }}
                 >
-                  <span>Best for: {route.bestFor}</span>
-                  <span style={{ color: 'var(--accent-color)', fontWeight: 600 }}>
-                    ~{route.cost}
+                  <h3
+                    style={{ fontFamily: 'var(--font-heading)', fontSize: '22px', fontWeight: 500 }}
+                  >
+                    {route.name}
+                  </h3>
+                  <span
+                    style={{
+                      fontSize: '13px',
+                      color: 'var(--text-muted)',
+                      whiteSpace: 'nowrap',
+                      marginLeft: '16px',
+                    }}
+                  >
+                    {route.days}
                   </span>
+                </div>
+                <div style={{ fontSize: '14px', color: 'var(--text-muted)', marginBottom: '8px' }}>
+                  {route.cities}
+                </div>
+                <p style={{ color: 'var(--text-secondary)', marginBottom: '6px', lineHeight: 1.6 }}>
+                  <strong>Highlights:</strong> {route.highlights}
+                </p>
+                <div style={{ fontSize: '14px', color: 'var(--text-muted)' }}>
+                  Best for: {route.bestFor}
                 </div>
               </Link>
             ))}
@@ -194,17 +278,37 @@ export default function XinjiangPage() {
       </section>
 
       {/* Practical Info */}
-      <section style={{ padding: '0 0 64px', backgroundColor: 'var(--bg-surface)' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '32px', paddingTop: '64px' }}>
+      <section style={{ padding: 'var(--section-gap-sm) 0' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto' }}
+        >
+          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <Kicker>Practical Info</Kicker>
-            <h2 style={{ fontSize: '32px' }}>What to Know Before You Go</h2>
+            <h2
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(24px, 3.5vw, 34px)',
+                fontWeight: 500,
+              }}
+            >
+              What to Know Before You Go
+            </h2>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>Getting There &amp; Around</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+            <div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '20px',
+                  fontWeight: 500,
+                  marginBottom: '10px',
+                }}
+              >
+                Getting There &amp; Around
+              </h3>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, fontSize: '17px' }}>
                 Urumqi Diwopu International Airport (URC) has direct flights from Beijing (4 hrs),
                 Shanghai (5 hrs), and several Central Asian capitals. Within Xinjiang, domestic
                 flights are the most practical for long distances. High-speed rail connects Urumqi
@@ -213,9 +317,18 @@ export default function XinjiangPage() {
               </p>
             </div>
 
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>Permits &amp; Paperwork</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+            <div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '20px',
+                  fontWeight: 500,
+                  marginBottom: '10px',
+                }}
+              >
+                Permits &amp; Paperwork
+              </h3>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, fontSize: '17px' }}>
                 For most of Xinjiang (Urumqi, Turpan, Kashgar city, Korla), your standard Chinese
                 visa or visa-free entry is sufficient. For the Karakoram Highway beyond Tashkurgan
                 (toward the Pakistan border), Kanas Nature Reserve, and some Taklamakan Desert
@@ -225,9 +338,18 @@ export default function XinjiangPage() {
               </p>
             </div>
 
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>Food You Must Try</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+            <div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '20px',
+                  fontWeight: 500,
+                  marginBottom: '10px',
+                }}
+              >
+                Food You Must Try
+              </h3>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, fontSize: '17px' }}>
                 Xinjiang food is Central Asian, not Chinese. Think lamb skewers (kawap), hand-pulled
                 noodles (laghman), pilaf rice (polo), and naan bread baked in tandoor ovens. In
                 Kashgar, the Sunday Bazaar food section is legendary — grilled lamb ribs, fresh
@@ -237,20 +359,27 @@ export default function XinjiangPage() {
               </p>
             </div>
 
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>
+            <div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '20px',
+                  fontWeight: 500,
+                  marginBottom: '10px',
+                }}
+              >
                 Internet &amp; Connectivity
               </h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, fontSize: '17px' }}>
                 Xinjiang has the same Great Firewall restrictions as the rest of China, plus
                 occasionally tighter mobile network controls in border areas. An international eSIM
                 (see our{' '}
-                <Link href="/esim" style={{ color: 'var(--primary-color)' }}>
+                <Link href="/esim" className="text-link">
                   eSIM guide
                 </Link>
                 ) is the most reliable option — it routes through Singapore and bypasses local
                 restrictions. A VPN (see our{' '}
-                <Link href="/vpn" style={{ color: 'var(--primary-color)' }}>
+                <Link href="/vpn" className="text-link">
                   VPN guide
                 </Link>
                 ) is essential for hotel WiFi. Do not expect consistent 4G in remote areas like the
@@ -261,7 +390,28 @@ export default function XinjiangPage() {
         </div>
       </section>
 
-      <TourCTA />
+      {/* Tailor-made signal */}
+      <section style={{ padding: '0 0 var(--section-gap-sm)' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto', textAlign: 'center' }}
+        >
+          <p
+            style={{
+              fontFamily: 'var(--font-quote)',
+              fontSize: 'clamp(18px, 2.5vw, 22px)',
+              color: 'var(--text-secondary)',
+              lineHeight: 1.5,
+              marginBottom: '24px',
+            }}
+          >
+            Every Xinjiang itinerary we design is tailored to your pace, interests, and travel
+            style. Tell us what moves you, and we&apos;ll craft a journey that&apos;s yours alone.
+          </p>
+        </div>
+      </section>
+
+      <EnquiryForm />
 
       <NextSteps
         steps={[
@@ -283,10 +433,6 @@ export default function XinjiangPage() {
           },
         ]}
       />
-
-      <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <SignatureCard />
-      </div>
     </div>
   );
 }

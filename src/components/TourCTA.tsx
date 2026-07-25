@@ -5,50 +5,45 @@ import { trackEvent } from '@/lib/analytics';
 
 export default function TourCTA() {
   return (
-    <section style={{ padding: '48px 0' }}>
-      <div
-        className="article-card"
-        style={{
-          maxWidth: '700px',
-          margin: '0 auto',
-          textAlign: 'center',
-          borderLeft: '3px solid var(--primary-color)',
-          padding: '40px',
-        }}
-      >
-        <h2 style={{ fontSize: '28px', marginBottom: '12px' }}>Want a custom China itinerary?</h2>
+    <section style={{ padding: 'var(--section-gap-md) 0', textAlign: 'center' }}>
+      <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 24px' }}>
+        <h2
+          style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: 'clamp(24px, 3.5vw, 32px)',
+            fontWeight: 500,
+            marginBottom: '16px',
+          }}
+        >
+          Ready to plan your China journey?
+        </h2>
         <p
           style={{
             color: 'var(--text-secondary)',
-            lineHeight: '1.6',
+            lineHeight: 1.7,
             marginBottom: '24px',
-            maxWidth: '500px',
-            margin: '0 auto 24px',
+            fontSize: '16px',
           }}
         >
-          We work with a licensed Guangzhou travel agency to build personalized routes — whether
-          it&apos;s your first time in Beijing, an off-the-beaten-path Silk Road trip, or a Xinjiang
-          small-group tour with a local guide.
+          Every journey we design is built from scratch around your interests, pace, and budget.
+          Tell us what moves you — we will craft the rest.
         </p>
-        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link
-            href="/contact"
-            className="btn btn-primary"
-            style={{ padding: '14px 28px' }}
-            onClick={() => trackEvent('tour_cta_click', { location: 'inline' })}
-          >
-            Ask About a Custom Trip &rarr;
-          </Link>
-        </div>
+        <Link
+          href="/contact"
+          className="text-link"
+          style={{ fontSize: '17px' }}
+          onClick={() => trackEvent('tour_cta_click', { location: 'inline' })}
+        >
+          Plan My Journey &rarr;
+        </Link>
         <p
           style={{
-            fontSize: '13px',
+            fontSize: '14px',
             color: 'var(--text-muted)',
             marginTop: '16px',
           }}
         >
-          No obligation. Just tell us your dates and interests — we&apos;ll send you a free proposal
-          within 48 hours.
+          Or call us: +44 20 XXXX XXXX
         </p>
       </div>
     </section>

@@ -1,14 +1,36 @@
 import { Metadata } from 'next';
 import Kicker from '@/components/Kicker';
-import SignatureCard from '@/components/SignatureCard';
-import TourCTA from '@/components/TourCTA';
 import NextSteps from '@/components/NextSteps';
+import EnquiryForm from '@/components/EnquiryForm';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Beijing In Depth: Imperial Palaces, Great Wall & Hutongs | BeforeChina',
-  description: 'A deep dive into China\'s 3,000-year capital — from the Forbidden City to the Great Wall, with time for hidden temples and hutong bars.',
+  title: 'Beijing In Depth | BeforeChina',
+  description:
+    "A deep dive into China's 3,000-year capital — from the Forbidden City to the Great Wall, with time for hidden temples and hutong bars.",
   alternates: { canonical: '/golden-triangle/beijing-in-depth' },
+  openGraph: {
+    type: 'article',
+    url: 'https://beforechina.com/golden-triangle/beijing-in-depth',
+    title: 'Beijing In Depth | BeforeChina',
+    description:
+      "A deep dive into China's 3,000-year capital — from the Forbidden City to the Great Wall, with time for hidden temples and hutong bars.",
+    images: [
+      {
+        url: '/images/destinations/golden-triangle.webp',
+        width: 1200,
+        height: 630,
+        alt: 'The Forbidden City palace complex in Beijing',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Beijing In Depth | BeforeChina',
+    description:
+      "A deep dive into China's 3,000-year capital — from the Forbidden City to the Great Wall, with time for hidden temples and hutong bars.",
+    images: ['/images/destinations/golden-triangle.webp'],
+  },
 };
 
 const faqSchema = {
@@ -17,18 +39,18 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'What is the best way to do the Beijing In Depth route?',
+      name: 'What is the best way to experience Beijing In Depth?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'This route typically takes 4-5 days. Beijing deserves more than the rushed 2-day stop on most Golden Triangle tours. With 4-5 days, you can see the big hitters, explore Beijing\'s vanishing hutong alleyways, visit lesser-known temples, an',
+        text: "This journey typically takes 4–5 days. Beijing deserves more than the rushed 2-day stop on most Golden Triangle tours. With 4-5 days, you can see the big hitters, explore Beijing's vanishing hutong alleyways, visit lesser-known temples, an",
       },
     },
     {
       '@type': 'Question',
-      name: 'How much does the Beijing In Depth route cost?',
+      name: 'Is this itinerary customizable?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Budget approximately $500-800/person for this route, including accommodation, transport between cities, food, and activities. International flights are not included.',
+        text: 'Yes — every BeforeChina journey is 100% tailor-made. The itinerary above is a suggested framework. We can adjust the pace, add or remove stops, and tailor every detail to your interests.',
       },
     },
   ],
@@ -39,7 +61,12 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://beforechina.com' },
-    { '@type': 'ListItem', position: 2, name: 'Beijing In Depth', item: 'https://beforechina.com/golden-triangle/beijing-in-depth' },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Beijing In Depth',
+      item: 'https://beforechina.com/golden-triangle/beijing-in-depth',
+    },
   ],
 };
 
@@ -48,41 +75,148 @@ export default function Page() {
     <div style={{ paddingBottom: '80px' }}>
       <JsonLd data={[faqSchema, breadcrumbSchema]} id="schema" />
 
-      <section className="hero-editorial" style={{ textAlign: 'center' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <Kicker>Beijing · 4-5 Days</Kicker>
-          <h1>Beijing In Depth: Imperial Palaces, Great Wall & Hutongs</h1>
-          <p className="hero-subtitle" style={{ marginBottom: '0' }}>
-            A deep dive into China\'s 3,000-year capital — from the Forbidden City to the Great Wall, with time for hidden temples and hutong bars.
+      {/* Full-bleed Hero Image */}
+      <section
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: '60vh',
+          minHeight: '400px',
+          overflow: 'hidden',
+        }}
+      >
+        <img
+          src="/images/destinations/golden-triangle.webp"
+          alt="The Forbidden City palace complex in Beijing"
+          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+        />
+      </section>
+
+      {/* Title + Evocative Description */}
+      <section style={{ padding: 'var(--section-gap-sm) 0 0', textAlign: 'center' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto' }}
+        >
+          <Kicker>Beijing &middot; 4–5 days</Kicker>
+          <h1
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(32px, 5vw, 52px)',
+              fontWeight: 500,
+              marginBottom: '20px',
+              lineHeight: 1.1,
+            }}
+          >
+            Beijing In Depth
+          </h1>
+          <p
+            style={{
+              fontFamily: 'var(--font-quote)',
+              fontSize: 'clamp(16px, 2.5vw, 20px)',
+              color: 'var(--text-secondary)',
+              lineHeight: 1.5,
+              maxWidth: '600px',
+              margin: '0 auto',
+            }}
+          >
+            A deep dive into China\'s 3,000-year capital — from the Forbidden City to the Great
+            Wall, with time for hidden temples and hutong bars.
           </p>
         </div>
       </section>
 
-      <section style={{ padding: '64px 0' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div className="article-card" style={{ borderLeft: '3px solid var(--accent-color)', marginBottom: '48px' }}>
-            <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>Route Overview</h2>
-            <div style={{ display: 'flex', gap: '32px', flexWrap: 'wrap', marginBottom: '16px' }}>
-              <div>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '4px' }}>Duration</div>
-                <div style={{ fontWeight: 600 }}>4-5 days</div>
+      {/* Trip Highlights */}
+      <section style={{ padding: 'var(--section-gap-sm) 0' }}>
+        <div className="container" style={{ maxWidth: 'var(--content-width-wide)' }}>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '32px',
+            }}
+          >
+            {[
+              {
+                icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+                title: '4–5 Days',
+                description:
+                  "Enough time to see the icons and discover Beijing's vanishing hutong alleyways.",
+              },
+              {
+                icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+                title: 'Beijing',
+                description:
+                  "China's 3,000-year capital — imperial palaces, ancient temples, and cutting-edge art districts.",
+              },
+              {
+                icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`,
+                title: 'Forbidden City, Great Wall, Temple of Heaven',
+                description:
+                  "The three essentials, plus hidden temples and the city's best food streets.",
+              },
+            ].map((h) => (
+              <div key={h.title} style={{ textAlign: 'center' }}>
+                <div style={{ color: 'var(--primary-color)', marginBottom: '12px', opacity: 0.85 }}>
+                  <span dangerouslySetInnerHTML={{ __html: h.icon }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '18px',
+                    fontWeight: 600,
+                    marginBottom: '8px',
+                  }}
+                >
+                  {h.title}
+                </h3>
+                <p
+                  style={{
+                    color: 'var(--text-secondary)',
+                    fontSize: '15px',
+                    lineHeight: 1.5,
+                    maxWidth: '280px',
+                    margin: '0 auto',
+                  }}
+                >
+                  {h.description}
+                </p>
               </div>
-              <div>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '4px' }}>Route</div>
-                <div style={{ fontWeight: 600 }}>Beijing city + Mutianyu Great Wall</div>
-              </div>
-              <div>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '4px' }}>Budget</div>
-                <div style={{ fontWeight: 600, color: 'var(--accent-color)' }}>$500-800/person</div>
-              </div>
-            </div>
-            <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
-              Beijing deserves more than the rushed 2-day stop on most Golden Triangle tours. With 4-5 days, you can see the big hitters, explore Beijing\'s vanishing hutong alleyways, visit lesser-known temples, and still have an evening free for craft cocktails in Gulou.
-            </p>
+            ))}
           </div>
+        </div>
+      </section>
 
-          <h2 style={{ fontSize: '28px', marginBottom: '24px' }}>Day-by-Day Itinerary</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+      {/* Day-by-Day Narrative */}
+      <section style={{ padding: 'var(--section-gap-sm) 0', backgroundColor: 'var(--bg-surface)' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto' }}
+        >
+          <h2
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(26px, 3.5vw, 34px)',
+              fontWeight: 500,
+              marginBottom: '40px',
+              textAlign: 'center',
+            }}
+          >
+            The Journey
+          </h2>
+          <p
+            style={{
+              color: 'var(--text-secondary)',
+              fontSize: '17px',
+              lineHeight: 1.8,
+              marginBottom: '48px',
+            }}
+          >
+            Beijing deserves more than the rushed 2-day stop on most Golden Triangle tours. With 4-5
+            days, you can see the big hitters, explore Beijing\'s vanishing hutong alleyways, visit
+            lesser-known temples, and still have an evening free for craft cocktails in Gulou.
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
             {[
               {
                 day: 'Day 1: The Imperial Core',
@@ -104,63 +238,93 @@ export default function Page() {
                 content: `Morning: White Cloud Temple (Baiyun Guan) — Beijing\'s largest Daoist temple, peaceful and rarely touristy. Walk the old hutong alleys from Qianmen to Dashilan. Afternoon: National Museum of China (free, book ahead) or Panjiayuan flea market for antiques and souvenirs. Fly out in the evening or extend one more day.`,
                 tip: `Panjiayuan on weekends is the best. Most \'antiques\' are reproductions, but haggle hard (start at 30% of asking price) and you\'ll find great souvenirs.`,
               },
-            ].map((stop) => (
-              <div key={stop.day} className="article-card">
-                <h3 style={{ fontSize: '20px', marginBottom: '8px', color: 'var(--primary-color)' }}>
+            ].map((stop, i) => (
+              <div
+                key={stop.day}
+                style={{
+                  padding: '40px 0',
+                  borderBottom: i < 3 ? '1px solid var(--border-color)' : 'none',
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '24px',
+                    fontWeight: 500,
+                    marginBottom: '12px',
+                  }}
+                >
                   {stop.day}
                 </h3>
-                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '12px' }}>
+                <p
+                  style={{
+                    color: 'var(--text-secondary)',
+                    fontSize: '17px',
+                    lineHeight: 1.8,
+                    marginBottom: '16px',
+                  }}
+                >
                   {stop.content}
                 </p>
-                <div style={{ backgroundColor: 'var(--callout-bg-warm)', padding: '12px 16px', borderRadius: 'var(--radius-sm)', fontSize: '14px', color: 'var(--text-secondary)' }}>
-                  <strong style={{ color: 'var(--accent-warm)' }}>Local tip:</strong> {stop.tip}
-                </div>
+                <blockquote className="pull" style={{ margin: '16px 0 0', fontSize: '16px' }}>
+                  <strong>Local tip:</strong> {stop.tip}
+                </blockquote>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section style={{ padding: '0 0 64px', backgroundColor: 'var(--bg-surface)' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '32px', paddingTop: '64px' }}>
-            <Kicker>Practical Info</Kicker>
-            <h2 style={{ fontSize: '32px' }}>Planning This Route</h2>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>Getting Around</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                Beijing\'s subway covers all major sights (¥3-9 per ride). Didi (China\'s Uber) is cheap — most rides within the city are ¥20-40. Get an eSIM before you arrive (see our eSIM guide) so you can use ride-hailing apps at the airport.
-              </p>
-            </div>
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>Where to Stay</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                Wangfujing is central but touristy. The hutongs around Gulou/Dongsi are more atmospheric — try a courtyard hotel (¥400-800/night). For business comfort, the CHAO Sanlitun or East Beijing near 798.
-              </p>
-            </div>
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>Food You Must Try</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                Peking duck (Dadong or Siji Minfu, not Quanjude), zhajiangmian (fried sauce noodles) at any hutong noodle shop, jianbing (savoury crepe) from street carts for breakfast, and hot pot at Haidilao for the experience.
-              </p>
-            </div>
-          </div>
+      {/* Tailor-Made Signal */}
+      <section style={{ padding: 'var(--section-gap-sm) 0', textAlign: 'center' }}>
+        <div className="container" style={{ maxWidth: '500px', margin: '0 auto' }}>
+          <p
+            style={{
+              fontFamily: 'var(--font-quote)',
+              fontSize: '18px',
+              color: 'var(--text-secondary)',
+              lineHeight: 1.6,
+              fontStyle: 'italic',
+            }}
+          >
+            This is a suggested itinerary. Every journey we design is tailored to your interests,
+            pace, and budget.
+          </p>
         </div>
       </section>
 
-      <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <TourCTA />
-        <NextSteps
-          steps={[
-            { href: '/visa', label: 'Check visa requirements', description: 'See if you qualify for visa-free entry to China' },
-            { href: '/esim', label: 'Get an eSIM for China', description: 'Land with internet that bypasses the firewall' },
-            { href: '/payment', label: 'Set up Alipay before you land', description: 'Link your foreign card and be ready to pay' },
-          ]}
-        />
-        <SignatureCard />
-      </div>
+      {/* Enquiry Form */}
+      <EnquiryForm />
+
+      {/* Related Journeys */}
+      <NextSteps
+        steps={[
+          {
+            href: '/golden-triangle/beijing-xian-shanghai',
+            label: "Beijing, Xi'an & Shanghai",
+            description: "The full Golden Triangle — add Xi'an and Shanghai.",
+            image: '/images/destinations/golden-triangle.webp',
+            imageAlt: 'The Forbidden City in Beijing',
+            days: '8–10 days',
+          },
+          {
+            href: '/golden-triangle/beijing-xian',
+            label: "Beijing & Xi'an",
+            description: "Combine China's two great ancient capitals.",
+            image: '/images/destinations/ancient-capitals.webp',
+            imageAlt: 'Xian city wall',
+            days: '6–7 days',
+          },
+          {
+            href: '/dongbei/harbin-snow-town',
+            label: 'Harbin & Snow Town',
+            description: "Head northeast for the world's largest ice festival.",
+            image: '/images/destinations/dongbei.webp',
+            imageAlt: 'Harbin ice sculptures',
+            days: '5–7 days',
+          },
+        ]}
+      />
     </div>
   );
 }

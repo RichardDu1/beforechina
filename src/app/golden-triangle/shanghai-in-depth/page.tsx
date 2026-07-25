@@ -1,14 +1,36 @@
 import { Metadata } from 'next';
 import Kicker from '@/components/Kicker';
-import SignatureCard from '@/components/SignatureCard';
-import TourCTA from '@/components/TourCTA';
 import NextSteps from '@/components/NextSteps';
+import EnquiryForm from '@/components/EnquiryForm';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Shanghai In Depth: Art Deco, Alleyways & Skyline | BeforeChina',
-  description: 'A proper guide to China\'s most international city — not just the Bund, but the French Concession backstreets, the 1930s lilong lanes, and where to eat soup dumplings.',
+  title: 'Shanghai In Depth | BeforeChina',
+  description:
+    "A proper guide to China's most international city — not just the Bund, but the French Concession backstreets, the 1930s lilong lanes, and where to eat soup dumplings.",
   alternates: { canonical: '/golden-triangle/shanghai-in-depth' },
+  openGraph: {
+    type: 'article',
+    url: 'https://beforechina.com/golden-triangle/shanghai-in-depth',
+    title: 'Shanghai In Depth | BeforeChina',
+    description:
+      "A proper guide to China's most international city — not just the Bund, but the French Concession backstreets, the 1930s lilong lanes, and where to eat soup dumplings.",
+    images: [
+      {
+        url: '/images/destinations/yangtze-delta.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Shanghai Pudong skyline at night across the Huangpu River',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Shanghai In Depth | BeforeChina',
+    description:
+      "A proper guide to China's most international city — not just the Bund, but the French Concession backstreets, the 1930s lilong lanes, and where to eat soup dumplings.",
+    images: ['/images/destinations/yangtze-delta.webp'],
+  },
 };
 
 const faqSchema = {
@@ -17,18 +39,18 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'What is the best way to do the Shanghai In Depth route?',
+      name: 'What is the best way to experience Shanghai In Depth?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'This route typically takes 3-4 days. Shanghai is China\'s most cosmopolitan city — a 1920s \'Paris of the East\' that now hosts the world\'s second-tallest building. But the real Shanghai is in the details: art deco lobbies, lilong lane hous',
+        text: "This journey typically takes 3–4 days. Shanghai is China's most cosmopolitan city — a 1920s 'Paris of the East' that now hosts the world's second-tallest building. But the real Shanghai is in the details: art deco lobbies, lilong lane hous",
       },
     },
     {
       '@type': 'Question',
-      name: 'How much does the Shanghai In Depth route cost?',
+      name: 'Is this itinerary customizable?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Budget approximately $400-700/person for this route, including accommodation, transport between cities, food, and activities. International flights are not included.',
+        text: 'Yes — every BeforeChina journey is 100% tailor-made. The itinerary above is a suggested framework. We can adjust the pace, add or remove stops, and tailor every detail to your interests.',
       },
     },
   ],
@@ -39,7 +61,12 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://beforechina.com' },
-    { '@type': 'ListItem', position: 2, name: 'Shanghai In Depth', item: 'https://beforechina.com/golden-triangle/shanghai-in-depth' },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Shanghai In Depth',
+      item: 'https://beforechina.com/golden-triangle/shanghai-in-depth',
+    },
   ],
 };
 
@@ -48,41 +75,149 @@ export default function Page() {
     <div style={{ paddingBottom: '80px' }}>
       <JsonLd data={[faqSchema, breadcrumbSchema]} id="schema" />
 
-      <section className="hero-editorial" style={{ textAlign: 'center' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <Kicker>Shanghai · 3-4 Days</Kicker>
-          <h1>Shanghai In Depth: Art Deco, Alleyways & Skyline</h1>
-          <p className="hero-subtitle" style={{ marginBottom: '0' }}>
-            A proper guide to China\'s most international city — not just the Bund, but the French Concession backstreets, the 1930s lilong lanes, and where to eat soup dumplings.
+      {/* Full-bleed Hero Image */}
+      <section
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: '60vh',
+          minHeight: '400px',
+          overflow: 'hidden',
+        }}
+      >
+        <img
+          src="/images/destinations/yangtze-delta.webp"
+          alt="Shanghai Pudong skyline at night across the Huangpu River"
+          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+        />
+      </section>
+
+      {/* Title + Evocative Description */}
+      <section style={{ padding: 'var(--section-gap-sm) 0 0', textAlign: 'center' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto' }}
+        >
+          <Kicker>Shanghai &middot; 3–4 days</Kicker>
+          <h1
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(32px, 5vw, 52px)',
+              fontWeight: 500,
+              marginBottom: '20px',
+              lineHeight: 1.1,
+            }}
+          >
+            Shanghai In Depth
+          </h1>
+          <p
+            style={{
+              fontFamily: 'var(--font-quote)',
+              fontSize: 'clamp(16px, 2.5vw, 20px)',
+              color: 'var(--text-secondary)',
+              lineHeight: 1.5,
+              maxWidth: '600px',
+              margin: '0 auto',
+            }}
+          >
+            A proper guide to China\'s most international city — not just the Bund, but the French
+            Concession backstreets, the 1930s lilong lanes, and where to eat soup dumplings.
           </p>
         </div>
       </section>
 
-      <section style={{ padding: '64px 0' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div className="article-card" style={{ borderLeft: '3px solid var(--accent-color)', marginBottom: '48px' }}>
-            <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>Route Overview</h2>
-            <div style={{ display: 'flex', gap: '32px', flexWrap: 'wrap', marginBottom: '16px' }}>
-              <div>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '4px' }}>Duration</div>
-                <div style={{ fontWeight: 600 }}>3-4 days</div>
+      {/* Trip Highlights */}
+      <section style={{ padding: 'var(--section-gap-sm) 0' }}>
+        <div className="container" style={{ maxWidth: 'var(--content-width-wide)' }}>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '32px',
+            }}
+          >
+            {[
+              {
+                icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+                title: '3–4 Days',
+                description:
+                  'Enough time to go beyond the skyline — into the art deco lobbies and lilong lane houses.',
+              },
+              {
+                icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+                title: 'Shanghai',
+                description:
+                  "China's most cosmopolitan city — the 1920s 'Paris of the East' meets the world's second-tallest building.",
+              },
+              {
+                icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`,
+                title: 'The Bund, French Concession, Soup Dumplings',
+                description:
+                  'Colonial grandeur, tree-lined backstreets, and the best xiaolongbao of your life.',
+              },
+            ].map((h) => (
+              <div key={h.title} style={{ textAlign: 'center' }}>
+                <div style={{ color: 'var(--primary-color)', marginBottom: '12px', opacity: 0.85 }}>
+                  <span dangerouslySetInnerHTML={{ __html: h.icon }} />
+                </div>
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '18px',
+                    fontWeight: 600,
+                    marginBottom: '8px',
+                  }}
+                >
+                  {h.title}
+                </h3>
+                <p
+                  style={{
+                    color: 'var(--text-secondary)',
+                    fontSize: '15px',
+                    lineHeight: 1.5,
+                    maxWidth: '280px',
+                    margin: '0 auto',
+                  }}
+                >
+                  {h.description}
+                </p>
               </div>
-              <div>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '4px' }}>Route</div>
-                <div style={{ fontWeight: 600 }}>Shanghai city + water town day trip</div>
-              </div>
-              <div>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '4px' }}>Budget</div>
-                <div style={{ fontWeight: 600, color: 'var(--accent-color)' }}>$400-700/person</div>
-              </div>
-            </div>
-            <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
-              Shanghai is China\'s most cosmopolitan city — a 1920s \'Paris of the East\' that now hosts the world\'s second-tallest building. But the real Shanghai is in the details: art deco lobbies, lilong lane houses, and soup dumpling shops where the owner has been folding xiaolongbao for 40 years.
-            </p>
+            ))}
           </div>
+        </div>
+      </section>
 
-          <h2 style={{ fontSize: '28px', marginBottom: '24px' }}>Day-by-Day Itinerary</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+      {/* Day-by-Day Narrative */}
+      <section style={{ padding: 'var(--section-gap-sm) 0', backgroundColor: 'var(--bg-surface)' }}>
+        <div
+          className="container"
+          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto' }}
+        >
+          <h2
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(26px, 3.5vw, 34px)',
+              fontWeight: 500,
+              marginBottom: '40px',
+              textAlign: 'center',
+            }}
+          >
+            The Journey
+          </h2>
+          <p
+            style={{
+              color: 'var(--text-secondary)',
+              fontSize: '17px',
+              lineHeight: 1.8,
+              marginBottom: '48px',
+            }}
+          >
+            Shanghai is China\'s most cosmopolitan city — a 1920s \'Paris of the East\' that now
+            hosts the world\'s second-tallest building. But the real Shanghai is in the details: art
+            deco lobbies, lilong lane houses, and soup dumpling shops where the owner has been
+            folding xiaolongbao for 40 years.
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
             {[
               {
                 day: 'Day 1: The Bund & Pudong',
@@ -99,63 +234,93 @@ export default function Page() {
                 content: `Option A: Day trip to Zhujiajiao Water Town — 1 hour by metro (Line 17). Canals, stone bridges, and a quieter side of Shanghai. Option B: Stay in the city — Long Museum (West Bund) for contemporary art, then the former Expo 2010 site along the Huangpu River. Evening: Cocktails at Speak Low (hidden bookshelf entrance, ranked among Asia\'s 50 Best Bars).`,
                 tip: `Zhujiajiao is the most accessible water town from Shanghai. Go early (before 10am) to avoid the tour groups. Pay the ¥30 for a gondola ride — it\'s touristy but worth it for the photos.`,
               },
-            ].map((stop) => (
-              <div key={stop.day} className="article-card">
-                <h3 style={{ fontSize: '20px', marginBottom: '8px', color: 'var(--primary-color)' }}>
+            ].map((stop, i) => (
+              <div
+                key={stop.day}
+                style={{
+                  padding: '40px 0',
+                  borderBottom: i < 2 ? '1px solid var(--border-color)' : 'none',
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '24px',
+                    fontWeight: 500,
+                    marginBottom: '12px',
+                  }}
+                >
                   {stop.day}
                 </h3>
-                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '12px' }}>
+                <p
+                  style={{
+                    color: 'var(--text-secondary)',
+                    fontSize: '17px',
+                    lineHeight: 1.8,
+                    marginBottom: '16px',
+                  }}
+                >
                   {stop.content}
                 </p>
-                <div style={{ backgroundColor: 'var(--callout-bg-warm)', padding: '12px 16px', borderRadius: 'var(--radius-sm)', fontSize: '14px', color: 'var(--text-secondary)' }}>
-                  <strong style={{ color: 'var(--accent-warm)' }}>Local tip:</strong> {stop.tip}
-                </div>
+                <blockquote className="pull" style={{ margin: '16px 0 0', fontSize: '16px' }}>
+                  <strong>Local tip:</strong> {stop.tip}
+                </blockquote>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section style={{ padding: '0 0 64px', backgroundColor: 'var(--bg-surface)' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '32px', paddingTop: '64px' }}>
-            <Kicker>Practical Info</Kicker>
-            <h2 style={{ fontSize: '32px' }}>Planning This Route</h2>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>Getting There</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                Shanghai Pudong (PVG) for international flights, Hongqiao (SHA) for domestic. Both are connected to the city by metro (Line 2). Maglev from PVG to Longyang Road takes 8 minutes (¥50, 430 km/h) — the world\'s fastest commercial train.
-              </p>
-            </div>
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>Where to Stay</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                French Concession is the most pleasant area — try the Donghu Hotel or URBN Boutique. Jing\'an for central convenience. The Bund for splurge stays (Peninsula, Waldorf Astoria). Budget: $60-100, mid-range: $100-200, luxury: $300+.
-              </p>
-            </div>
-            <div className="article-card">
-              <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>Food</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                Soup dumplings: Jia Jia Tang Bao (黄河路店). Pan-fried dumplings: Yang\'s Fry Dumplings. Hairy crab (Sept-Oct only): Cheng Long Hang. For a splurge: Ultraviolet by Paul Pairet (¥6,000/person, book 3 months ahead) — a 22-course sensory experience.
-              </p>
-            </div>
-          </div>
+      {/* Tailor-Made Signal */}
+      <section style={{ padding: 'var(--section-gap-sm) 0', textAlign: 'center' }}>
+        <div className="container" style={{ maxWidth: '500px', margin: '0 auto' }}>
+          <p
+            style={{
+              fontFamily: 'var(--font-quote)',
+              fontSize: '18px',
+              color: 'var(--text-secondary)',
+              lineHeight: 1.6,
+              fontStyle: 'italic',
+            }}
+          >
+            This is a suggested itinerary. Every journey we design is tailored to your interests,
+            pace, and budget.
+          </p>
         </div>
       </section>
 
-      <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <TourCTA />
-        <NextSteps
-          steps={[
-            { href: '/visa', label: 'Check visa requirements', description: 'See if you qualify for visa-free entry to China' },
-            { href: '/esim', label: 'Get an eSIM for China', description: 'Land with internet that bypasses the firewall' },
-            { href: '/payment', label: 'Set up Alipay before you land', description: 'Link your foreign card and be ready to pay' },
-          ]}
-        />
-        <SignatureCard />
-      </div>
+      {/* Enquiry Form */}
+      <EnquiryForm />
+
+      {/* Related Journeys */}
+      <NextSteps
+        steps={[
+          {
+            href: '/yangtze-delta/shanghai-hangzhou-suzhou',
+            label: 'Shanghai, Hangzhou & Suzhou',
+            description: 'Add the West Lake and classical gardens.',
+            image: '/images/destinations/yangtze-delta.webp',
+            imageAlt: 'Shanghai skyline',
+            days: '6–8 days',
+          },
+          {
+            href: '/golden-triangle/beijing-xian-shanghai',
+            label: "Beijing, Xi'an & Shanghai",
+            description: 'The full Golden Triangle route.',
+            image: '/images/destinations/golden-triangle.webp',
+            imageAlt: 'The Forbidden City',
+            days: '8–10 days',
+          },
+          {
+            href: '/south-china/hong-kong-macau',
+            label: 'Hong Kong & Macau',
+            description: 'Continue south to Victoria Harbour and Portuguese egg tarts.',
+            image: '/images/destinations/south-china.webp',
+            imageAlt: 'Hong Kong skyline',
+            days: '5–7 days',
+          },
+        ]}
+      />
     </div>
   );
 }

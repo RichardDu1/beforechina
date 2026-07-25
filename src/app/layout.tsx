@@ -15,11 +15,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Before China - The Ultimate Pre-Travel Toolkit for China',
-    template: '%s | Before China',
+    default: 'BeforeChina — Tailor-Made Journeys to China',
+    template: '%s | BeforeChina',
   },
   description:
-    'Essential tools, guides, and insider knowledge for foreigners traveling to China. Visa-free checker, best eSIMs, VPNs, and payment guides — by a UK-based Chinese local.',
+    'Award-winning tailor-made journeys to China. Private itineraries crafted by China specialists — from the Great Wall to the Silk Road.',
   alternates: { canonical: '/' },
   verification: {
     google: 'TODO_google_search_console_verification',
@@ -27,24 +27,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: SITE_URL,
-    siteName: 'Before China',
-    title: 'Before China - The Ultimate Pre-Travel Toolkit for China',
+    siteName: 'BeforeChina',
+    title: 'BeforeChina — Tailor-Made Journeys to China',
     description:
-      'Visa-free checker, best eSIMs, VPNs, and payment guides for foreigners visiting China. Built by a local, designed for you.',
+      'Private itineraries crafted by China specialists. From the Great Wall to the Silk Road, every journey is built around you.',
     images: [
       {
         url: '/og-default.jpg',
         width: 1200,
         height: 630,
-        alt: 'BeforeChina - China Travel Toolkit',
+        alt: 'BeforeChina — Tailor-Made Journeys to China',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Before China - The Ultimate Pre-Travel Toolkit for China',
+    title: 'BeforeChina — Tailor-Made Journeys to China',
     description:
-      'Visa-free checker, best eSIMs, VPNs, and payment guides for foreigners visiting China.',
+      'Private itineraries crafted by China specialists. Every journey is built around you.',
     images: ['/og-default.jpg'],
   },
   robots: {
@@ -59,17 +59,55 @@ const organizationSchema = {
   '@type': 'Organization',
   name: 'BeforeChina',
   url: SITE_URL,
-  description: 'Essential tools, guides, and insider knowledge for foreigners traveling to China.',
+  description: 'Tailor-made private journeys to China, crafted by China specialists.',
   founder: {
     '@type': 'Person',
     name: 'Richard Du',
   },
   contactPoint: {
     '@type': 'ContactPoint',
+    telephone: '+44 20 XXXX XXXX',
     email: 'hello@beforechina.com',
     contactType: 'Customer Service',
   },
 };
+
+const FOOTER_DESTINATIONS = [
+  { href: '/golden-triangle/beijing-xian-shanghai', label: 'Golden Triangle' },
+  { href: '/yunnan/kunming-dali-lijiang-shangri-la', label: 'Yunnan' },
+  { href: '/sichuan/chengdu-jiuzhaigou-huanglong', label: 'Sichuan' },
+  { href: '/xinjiang', label: 'Xinjiang' },
+  { href: '/tibet/lhasa-shigatse-everest', label: 'Tibet' },
+  { href: '/silk-road/xian-lanzhou-dunhuang', label: 'Silk Road' },
+  { href: '/guangxi/guilin-yangshuo-lijiang', label: 'Guilin & Yangshuo' },
+  { href: '/destinations', label: 'All Destinations →' },
+];
+
+const FOOTER_EXPERIENCES = [
+  { href: '/experiences#culture', label: 'Culture & Heritage' },
+  { href: '/experiences#culinary', label: 'Culinary Journeys' },
+  { href: '/experiences#nature', label: 'Nature & Wildlife' },
+  { href: '/experiences#photography', label: 'Photography' },
+  { href: '/experiences#family', label: 'Family Adventures' },
+];
+
+const FOOTER_COMPANY = [
+  { href: '/about', label: 'About Us' },
+  { href: '/journal', label: 'Journal' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/privacy', label: 'Privacy Policy' },
+  { href: '/terms', label: 'Terms of Service' },
+  { href: '/cookie', label: 'Cookie Policy' },
+];
+
+const FOOTER_TOOLS = [
+  { href: '/visa', label: 'Visa-Free Checker' },
+  { href: '/vpn', label: 'Best VPN for China' },
+  { href: '/esim', label: 'Best eSIM for China' },
+  { href: '/payment', label: 'Alipay & WeChat Pay' },
+  { href: '/insurance', label: 'Travel Insurance' },
+  { href: '/budget', label: 'Trip Cost Calculator' },
+];
 
 export default function RootLayout({
   children,
@@ -82,7 +120,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
           rel="stylesheet"
         />
       </head>
@@ -110,35 +148,42 @@ export default function RootLayout({
               height: '72px',
             }}
           >
-            <div
+            <Link
+              href="/"
               style={{
-                fontFamily: 'Fraunces',
+                fontFamily: 'var(--font-logo)',
                 fontSize: '24px',
                 fontWeight: 500,
                 letterSpacing: '-0.5px',
+                textDecoration: 'none',
+                color: 'var(--text-primary)',
               }}
             >
-              Before<span style={{ color: 'var(--primary-color)' }}>China</span>.
-            </div>
-            <div style={{ display: 'flex', gap: '24px', fontWeight: 500, fontSize: '15px' }}>
-              <Link
-                href="/#toolkit"
-                style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-              >
-                Tools
-              </Link>
-              <Link
-                href="/destinations"
-                style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-              >
+              Before<span style={{ color: 'var(--primary-color)' }}>China</span>
+            </Link>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '28px' }}>
+              <Link href="/destinations" className="nav-link">
                 Destinations
               </Link>
-              <Link
-                href="/about"
-                style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-              >
+              <Link href="/experiences" className="nav-link">
+                Experiences
+              </Link>
+              <Link href="/journal" className="nav-link">
+                Journal
+              </Link>
+              <Link href="/about" className="nav-link">
                 About
               </Link>
+              <span
+                style={{
+                  fontSize: '14px',
+                  color: 'var(--text-muted)',
+                  marginLeft: '8px',
+                  fontWeight: 400,
+                }}
+              >
+                +44 20 XXXX XXXX
+              </span>
             </div>
           </div>
         </nav>
@@ -153,12 +198,14 @@ export default function RootLayout({
         >
           <div className="container">
             <div className="footer-grid">
-              <div style={{ gridColumn: 'span 1' }}>
+              {/* Column 1: Brand */}
+              <div>
                 <Link
                   href="/"
                   style={{
+                    fontFamily: 'var(--font-logo)',
                     fontSize: '24px',
-                    fontWeight: 800,
+                    fontWeight: 500,
                     textDecoration: 'none',
                     color: 'var(--text-primary)',
                     marginBottom: '16px',
@@ -167,81 +214,41 @@ export default function RootLayout({
                 >
                   Before<span style={{ color: 'var(--primary-color)' }}>China</span>
                 </Link>
-                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6', maxWidth: '300px' }}>
-                  The ultimate pre-travel toolkit for foreigners visiting China. Built by locals,
-                  designed for you.
-                </p>
-              </div>
-
-              <div>
-                <h3
-                  style={{ fontSize: '16px', marginBottom: '16px', color: 'var(--text-primary)' }}
-                >
-                  Toolkit
-                </h3>
-                <ul
+                <p
                   style={{
-                    listStyle: 'none',
-                    padding: 0,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '12px',
+                    color: 'var(--text-secondary)',
+                    lineHeight: '1.6',
+                    maxWidth: '280px',
+                    marginBottom: '16px',
                   }}
                 >
-                  <li>
-                    <Link
-                      href="/visa"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Visa-Free Checker
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/vpn"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Best VPN for China
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/esim"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Best eSIM for China
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/payment"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Alipay & WeChat Pay
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/insurance"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Travel Insurance
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/budget"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Trip Cost Calculator
-                    </Link>
-                  </li>
-                </ul>
+                  Tailor-made private journeys to China. Crafted by specialists who know every path,
+                  every story, every season.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
+                    China Experts
+                  </span>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
+                    100% Tailor-Made
+                  </span>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
+                    24/7 In-Country Support
+                  </span>
+                </div>
               </div>
 
+              {/* Column 2: Destinations */}
               <div>
                 <h3
-                  style={{ fontSize: '16px', marginBottom: '16px', color: 'var(--text-primary)' }}
+                  style={{
+                    fontSize: '14px',
+                    marginBottom: '16px',
+                    color: 'var(--text-primary)',
+                    fontWeight: 600,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                  }}
                 >
                   Destinations
                 </h3>
@@ -251,63 +258,77 @@ export default function RootLayout({
                     padding: 0,
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '12px',
+                    gap: '10px',
                   }}
                 >
-                  <li>
-                    <Link
-                      href="/xinjiang"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Xinjiang
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/yunnan/kunming-dali-lijiang-shangri-la"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Yunnan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/sichuan/chengdu-jiuzhaigou-huanglong"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Sichuan
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/guangxi/guilin-yangshuo-lijiang"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Guilin & Yangshuo
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/tibet/lhasa-shigatse-everest"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Tibet
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/silk-road/xian-lanzhou-dunhuang"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Silk Road
-                    </Link>
-                  </li>
+                  {FOOTER_DESTINATIONS.map((d) => (
+                    <li key={d.href}>
+                      <Link
+                        href={d.href}
+                        style={{
+                          color: 'var(--text-secondary)',
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                        }}
+                      >
+                        {d.label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
+              {/* Column 3: Experiences */}
               <div>
                 <h3
-                  style={{ fontSize: '16px', marginBottom: '16px', color: 'var(--text-primary)' }}
+                  style={{
+                    fontSize: '14px',
+                    marginBottom: '16px',
+                    color: 'var(--text-primary)',
+                    fontWeight: 600,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                  }}
+                >
+                  Experiences
+                </h3>
+                <ul
+                  style={{
+                    listStyle: 'none',
+                    padding: 0,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '10px',
+                  }}
+                >
+                  {FOOTER_EXPERIENCES.map((e) => (
+                    <li key={e.href}>
+                      <Link
+                        href={e.href}
+                        style={{
+                          color: 'var(--text-secondary)',
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                        }}
+                      >
+                        {e.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Column 4: Company */}
+              <div>
+                <h3
+                  style={{
+                    fontSize: '14px',
+                    marginBottom: '16px',
+                    color: 'var(--text-primary)',
+                    fontWeight: 600,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                  }}
                 >
                   BeforeChina
                 </h3>
@@ -317,66 +338,72 @@ export default function RootLayout({
                     padding: 0,
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '12px',
+                    gap: '10px',
                   }}
                 >
-                  <li>
-                    <Link
-                      href="/about"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      About Richard
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/contact"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Contact Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/privacy"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/terms"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Terms of Service
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/cookie"
-                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
-                    >
-                      Cookie Policy
-                    </Link>
-                  </li>
+                  {FOOTER_COMPANY.map((c) => (
+                    <li key={c.href}>
+                      <Link
+                        href={c.href}
+                        style={{
+                          color: 'var(--text-secondary)',
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                        }}
+                      >
+                        {c.label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
 
+            {/* Travel Toolkit row */}
+            <div
+              style={{
+                marginTop: '48px',
+                paddingTop: '24px',
+                borderTop: '1px solid var(--border-color)',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '16px',
+                justifyContent: 'center',
+              }}
+            >
+              <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 500 }}>
+                Travel Toolkit:
+              </span>
+              {FOOTER_TOOLS.map((t) => (
+                <Link
+                  key={t.href}
+                  href={t.href}
+                  style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '13px' }}
+                >
+                  {t.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Bottom bar */}
             <div
               style={{
                 textAlign: 'center',
-                marginTop: '64px',
-                paddingTop: '32px',
+                marginTop: '32px',
+                paddingTop: '24px',
                 borderTop: '1px solid var(--border-color)',
                 color: 'var(--text-muted)',
-                fontSize: '14px',
+                fontSize: '13px',
               }}
             >
-              &copy; {new Date().getFullYear()} BeforeChina.com. All rights reserved. <br />
-              Disclaimer: This site contains affiliate links. If you make a purchase, we may earn a
-              commission.
+              <p style={{ marginBottom: '8px', fontStyle: 'italic' }}>
+                As featured in — (coming soon)
+              </p>
+              <p>&copy; {new Date().getFullYear()} BeforeChina.com. All rights reserved.</p>
+              <p style={{ fontSize: '12px', marginTop: '4px' }}>
+                Disclaimer: This site contains affiliate links. If you make a purchase, we may earn
+                a commission.
+              </p>
             </div>
           </div>
         </footer>

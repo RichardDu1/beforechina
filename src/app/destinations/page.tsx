@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Kicker from '@/components/Kicker';
-import TourCTA from '@/components/TourCTA';
-import SignatureCard from '@/components/SignatureCard';
+import DestinationMap from '@/components/DestinationMap';
+import EnquiryForm from '@/components/EnquiryForm';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
@@ -405,7 +405,9 @@ export default function DestinationsPage() {
         </div>
       </section>
 
-      <section style={{ padding: '64px 0 0' }}>
+      <DestinationMap />
+
+      <section style={{ padding: '0 0 0' }}>
         <div className="container">
           <div
             style={{
@@ -415,16 +417,11 @@ export default function DestinationsPage() {
             }}
           >
             {REGIONS.map((region) => (
-              <article
-                key={region.slug}
-                className="article-card"
-                style={{ padding: 0, overflow: 'hidden' }}
-              >
+              <article key={region.slug} className="editorial-card">
                 <Link
                   href={`/${region.slug}`}
                   style={{
                     display: 'block',
-                    position: 'relative',
                     textDecoration: 'none',
                     color: 'inherit',
                   }}
@@ -437,71 +434,69 @@ export default function DestinationsPage() {
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     srcSet={`${region.image} 800w, ${region.image.replace('.webp', '-og.webp')} 1200w`}
-                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      aspectRatio: '3/2',
+                      objectFit: 'cover',
+                      display: 'block',
+                      marginBottom: '16px',
+                    }}
                   />
                 </Link>
-                <div style={{ padding: '24px' }}>
-                  <div
-                    style={{
-                      fontSize: '12px',
-                      color: 'var(--accent-color)',
-                      fontWeight: 600,
-                      marginBottom: '8px',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.5px',
-                    }}
+                <div
+                  style={{
+                    fontSize: '12px',
+                    color: 'var(--accent-color)',
+                    fontWeight: 600,
+                    marginBottom: '8px',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px',
+                  }}
+                >
+                  {region.routes.length} {region.routes.length === 1 ? 'route' : 'routes'}
+                </div>
+                <h2
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '22px',
+                    fontWeight: 500,
+                    marginBottom: '8px',
+                  }}
+                >
+                  <Link
+                    href={`/${region.slug}`}
+                    style={{ color: 'var(--text-primary)', textDecoration: 'none' }}
                   >
-                    {region.routes.length} {region.routes.length === 1 ? 'route' : 'routes'}
-                  </div>
-                  <h2 style={{ fontSize: '24px', marginBottom: '8px' }}>
+                    {region.name}
+                  </Link>
+                </h2>
+                <p
+                  style={{
+                    color: 'var(--text-secondary)',
+                    lineHeight: 1.6,
+                    marginBottom: '16px',
+                    fontSize: '15px',
+                  }}
+                >
+                  {region.description}
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  {region.routes.map((route) => (
                     <Link
-                      href={`/${region.slug}`}
-                      style={{ color: 'var(--primary-color)', textDecoration: 'none' }}
+                      key={route.href}
+                      href={route.href}
+                      className="text-link"
+                      style={{ fontSize: '14px' }}
                     >
-                      {region.name}
-                    </Link>
-                  </h2>
-                  <p
-                    style={{
-                      color: 'var(--text-secondary)',
-                      lineHeight: '1.6',
-                      marginBottom: '20px',
-                    }}
-                  >
-                    {region.description}
-                  </p>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                    {region.routes.map((route) => (
-                      <Link
-                        key={route.href}
-                        href={route.href}
-                        style={{
-                          display: 'flex',
-                          justifyContent: 'space-between',
-                          alignItems: 'center',
-                          padding: '10px 14px',
-                          borderRadius: 'var(--radius-sm)',
-                          backgroundColor: 'var(--bg-surface)',
-                          color: 'var(--text-primary)',
-                          textDecoration: 'none',
-                          fontSize: '15px',
-                          transition: 'background-color 0.15s',
-                        }}
+                      {route.label}{' '}
+                      <span
+                        style={{ color: 'var(--text-muted)', fontSize: '13px', marginLeft: '4px' }}
                       >
-                        <span style={{ fontWeight: 500 }}>{route.label}</span>
-                        <span
-                          style={{
-                            fontSize: '13px',
-                            color: 'var(--text-muted)',
-                            whiteSpace: 'nowrap',
-                            marginLeft: '12px',
-                          }}
-                        >
-                          {route.days}
-                        </span>
-                      </Link>
-                    ))}
-                  </div>
+                        ({route.days})
+                      </span>
+                    </Link>
+                  ))}
                 </div>
               </article>
             ))}
@@ -521,10 +516,7 @@ export default function DestinationsPage() {
         </div>
       </section>
 
-      <div className="container" style={{ maxWidth: '800px', margin: '64px auto 0' }}>
-        <TourCTA />
-        <SignatureCard />
-      </div>
+      <EnquiryForm />
     </div>
   );
 }
