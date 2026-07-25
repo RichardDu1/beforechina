@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import Kicker from '@/components/Kicker';
 import SignatureCard from '@/components/SignatureCard';
+import TourCTA from '@/components/TourCTA';
+import NextSteps from '@/components/NextSteps';
 import BudgetCalculator from '@/components/BudgetCalculator';
 import JsonLd from '@/components/JsonLd';
 
@@ -82,36 +83,27 @@ export default function BudgetPage() {
         </div>
       </section>
 
-      {/* Cross-link */}
-      <section style={{ padding: '48px 0', backgroundColor: 'var(--bg-surface)' }}>
-        <div className="container" style={{ textAlign: 'center' }}>
-          <Kicker>Next Steps</Kicker>
-          <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>Cut your costs before you fly</h2>
-          <p
-            style={{
-              color: 'var(--text-secondary)',
-              marginBottom: '32px',
-              maxWidth: '600px',
-              margin: '0 auto 32px',
-            }}
-          >
-            These three tools save most travellers more than $200 combined.
-          </p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/visa" className="btn btn-primary" style={{ padding: '14px 28px' }}>
-              Check if you need a visa (save $140)
-            </Link>
-            <Link href="/esim" className="btn btn-outline" style={{ padding: '14px 28px' }}>
-              Get an eSIM (skip the $50 airport SIM)
-            </Link>
-            <Link href="/payment" className="btn btn-outline" style={{ padding: '14px 28px' }}>
-              Set up Alipay before you land
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <TourCTA />
+        <NextSteps
+          steps={[
+            {
+              href: '/visa',
+              label: 'Check if you need a visa (save $140)',
+              description: 'See if you qualify for visa-free entry',
+            },
+            {
+              href: '/esim',
+              label: 'Get an eSIM (skip the $50 airport SIM)',
+              description: 'Land with internet that bypasses the firewall',
+            },
+            {
+              href: '/payment',
+              label: 'Set up Alipay before you land',
+              description: 'Link your foreign card and be ready to pay',
+            },
+          ]}
+        />
         <SignatureCard />
       </div>
     </div>

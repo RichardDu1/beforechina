@@ -69,6 +69,7 @@ const breadcrumbSchema = {
 const ROUTES = [
   {
     name: 'Classic Silk Road (7-10 days)',
+    slug: '/xinjiang/silk-road',
     cities: 'Urumqi → Turpan → Korla → Kuqa → Kashgar',
     highlights: 'Heavenly Lake, Jiaohe Ruins, Kizil Thousand Buddha Caves, Kashgar Sunday Bazaar',
     bestFor: 'First-time visitors, history buffs',
@@ -76,6 +77,7 @@ const ROUTES = [
   },
   {
     name: 'Karakoram Highway (5-7 days)',
+    slug: '/xinjiang/karakoram-highway',
     cities: 'Kashgar → Karakul Lake → Tashkurgan → Khunjerab Pass',
     highlights: 'Pamir Mountains, Karakul Lake at 3,600m, Tajik culture, Pakistan border',
     bestFor: 'Adventure travelers, photographers',
@@ -83,6 +85,7 @@ const ROUTES = [
   },
   {
     name: 'Northern Xinjiang Loop (8-12 days)',
+    slug: '/xinjiang/northern-loop',
     cities: 'Urumqi → Burqin → Kanas → Hemu → Karamay → Sayram Lake → Yining',
     highlights: 'Kanas Lake, Hemu Village, Sayram Lake, Ghost City, Kazakh grasslands',
     bestFor: 'Nature lovers, hikers, autumn color chasers',
@@ -90,6 +93,7 @@ const ROUTES = [
   },
   {
     name: 'Taklamakan Desert Crossing (5-7 days)',
+    slug: '/xinjiang/taklamakan-desert',
     cities: 'Korla → Desert Highway → Minfeng → Hotan → Kashgar',
     highlights: 'Taklamakan Desert, Hotan Sunday Market, desert highway, camel rides',
     bestFor: 'Adventure travelers, off-the-beaten-path',
@@ -150,7 +154,12 @@ export default function XinjiangPage() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             {ROUTES.map((route) => (
-              <div key={route.name} className="article-card">
+              <Link
+                key={route.name}
+                href={route.slug}
+                className="article-card"
+                style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+              >
                 <h3 style={{ fontSize: '22px', marginBottom: '8px' }}>{route.name}</h3>
                 <div
                   style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', marginBottom: '12px' }}
@@ -178,7 +187,7 @@ export default function XinjiangPage() {
                     ~{route.cost}
                   </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

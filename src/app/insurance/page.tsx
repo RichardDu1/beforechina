@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Kicker from '@/components/Kicker';
 import SignatureCard from '@/components/SignatureCard';
+import TourCTA from '@/components/TourCTA';
+import NextSteps from '@/components/NextSteps';
 import JsonLd from '@/components/JsonLd';
 import { affiliateProps } from '@/lib/affiliates';
 
@@ -215,6 +217,26 @@ export default function InsurancePage() {
       </section>
 
       <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <TourCTA />
+        <NextSteps
+          steps={[
+            {
+              href: '/visa',
+              label: 'Check visa requirements',
+              description: 'See if you qualify for visa-free entry',
+            },
+            {
+              href: '/esim',
+              label: 'Get an eSIM',
+              description: 'Land with internet that just works',
+            },
+            {
+              href: '/budget',
+              label: 'Plan your budget',
+              description: 'Interactive trip cost calculator',
+            },
+          ]}
+        />
         <SignatureCard />
       </div>
     </div>

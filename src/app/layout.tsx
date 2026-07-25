@@ -78,6 +78,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <nav
           className="glass"
@@ -113,15 +121,15 @@ export default function RootLayout({
               Before<span style={{ color: 'var(--primary-color)' }}>China</span>.
             </div>
             <div style={{ display: 'flex', gap: '24px', fontWeight: 500, fontSize: '15px' }}>
-              <a href="#tools" style={{ color: 'var(--text-secondary)' }}>
+              <Link href="/#toolkit" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
                 Tools
-              </a>
-              <a href="#guides" style={{ color: 'var(--text-secondary)' }}>
-                Guides
-              </a>
-              <a href="#about" style={{ color: 'var(--text-secondary)' }}>
+              </Link>
+              <Link href="/#destinations" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+                Destinations
+              </Link>
+              <Link href="/about" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
                 About
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
@@ -217,6 +225,72 @@ export default function RootLayout({
                       style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
                     >
                       Trip Cost Calculator
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3
+                  style={{ fontSize: '16px', marginBottom: '16px', color: 'var(--text-primary)' }}
+                >
+                  Destinations
+                </h3>
+                <ul
+                  style={{
+                    listStyle: 'none',
+                    padding: 0,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '12px',
+                  }}
+                >
+                  <li>
+                    <Link
+                      href="/xinjiang"
+                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
+                    >
+                      Xinjiang
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/yunnan/kunming-dali-lijiang-shangri-la"
+                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
+                    >
+                      Yunnan
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/sichuan/chengdu-jiuzhaigou-huanglong"
+                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
+                    >
+                      Sichuan
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/guangxi/guilin-yangshuo-lijiang"
+                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
+                    >
+                      Guilin & Yangshuo
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/tibet/lhasa-shigatse-everest"
+                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
+                    >
+                      Tibet
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/silk-road/xian-lanzhou-dunhuang"
+                      style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
+                    >
+                      Silk Road
                     </Link>
                   </li>
                 </ul>
