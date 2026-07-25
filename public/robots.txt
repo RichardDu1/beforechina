@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beforechina.com/sitemap.xml
+Host: https://beforechina.com
