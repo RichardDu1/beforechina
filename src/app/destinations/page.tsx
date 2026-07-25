@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import Kicker from '@/components/Kicker';
 import TourCTA from '@/components/TourCTA';
@@ -430,14 +429,15 @@ export default function DestinationsPage() {
                     color: 'inherit',
                   }}
                 >
-                  <Image
+                  <img
                     src={region.image}
                     alt={region.imageAlt}
                     width={800}
                     height={533}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{ width: '100%', height: 'auto', display: 'block' }}
                     loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    srcSet={`${region.image} 800w, ${region.image.replace('.webp', '-og.webp')} 1200w`}
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
                   />
                 </Link>
                 <div style={{ padding: '24px' }}>
