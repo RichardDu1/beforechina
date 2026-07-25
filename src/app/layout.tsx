@@ -121,13 +121,22 @@ export default function RootLayout({
               Before<span style={{ color: 'var(--primary-color)' }}>China</span>.
             </div>
             <div style={{ display: 'flex', gap: '24px', fontWeight: 500, fontSize: '15px' }}>
-              <Link href="/#toolkit" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+              <Link
+                href="/#toolkit"
+                style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
+              >
                 Tools
               </Link>
-              <Link href="/#destinations" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+              <Link
+                href="/destinations"
+                style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
+              >
                 Destinations
               </Link>
-              <Link href="/about" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+              <Link
+                href="/about"
+                style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
+              >
                 About
               </Link>
             </div>
