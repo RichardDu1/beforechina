@@ -229,12 +229,12 @@ export default function Page() {
               {
                 day: 'Day 2: Shaxi → Tengchong',
                 content: `Morning in Shaxi — hike to the Shibaoshan Grottoes (16 Buddhist cave temples from the Nanzhao Kingdom, 1,200 years old, 30 min drive). Then drive 5 hours to Tengchong. Arrive by evening, check into a hot spring hotel, and soak. Tengchong has 99 volcanoes and 88 hot springs — the town is geothermally active and the hot spring water is genuinely therapeutic.`,
-                tip: `Tengchong\'s Rehai (Hot Sea) Scenic Area has the best public hot springs — ¥288 for the full complex including the \'Big Boiling Pot\' (大滚锅) where water emerges at 97°C. Bring your own swimsuit; rentals are overpriced.`,
+                tip: `Tengchong\'s Rehai (Hot Sea) Scenic Area has the best public hot springs — the full complex includes the \'Big Boiling Pot\' (大滚锅) where water emerges at 97°C. Bring your own swimsuit; rentals are overpriced.`,
               },
               {
                 day: 'Day 3: Tengchong Volcano Park',
-                content: `Morning: Tengchong Volcano National Park — hike up Daying Mountain (the largest dormant volcano, 30-minute climb) for the crater view. The park has 97 volcanic cones, and you can take a hot air balloon ride (¥280, 15 min) over the craters. Afternoon: Heshun Old Town (和顺古镇) — a 600-year-old village of grey-brick courtyard houses built by Tengchong jade merchants who traded across Southeast Asia. The library here is the oldest rural library in China (built 1924).`,
-                tip: `Heshun Old Town\'s entrance fee is ¥55 — but if you stay at a guesthouse inside the old town, the owner can often get you in for free. The morning market in Heshun\'s main square is excellent for breakfast.`,
+                content: `Morning: Tengchong Volcano National Park — hike up Daying Mountain (the largest dormant volcano, 30-minute climb) for the crater view. The park has 97 volcanic cones, and you can take a hot air balloon ride over the craters (about 15 minutes). Afternoon: Heshun Old Town (和顺古镇) — a 600-year-old village of grey-brick courtyard houses built by Tengchong jade merchants who traded across Southeast Asia. The library here is the oldest rural library in China (built 1924).`,
+                tip: `Heshun Old Town has an entrance fee — but if you stay at a guesthouse inside the old town, the owner can often get you in for free. The morning market in Heshun\'s main square is excellent for breakfast.`,
               },
               {
                 day: 'Day 4: WWII History & Fly Out',

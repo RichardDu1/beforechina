@@ -226,7 +226,7 @@ export default function Page() {
               {
                 day: 'Day 2: Great Wall',
                 content: `Mutianyu Great Wall — leave at 7am, arrive by 8:30am. Take the cable car up, walk east toward Watchtower 20 for the steepest section, then toboggan down. Back in Beijing by 2pm. Afternoon: Summer Palace — the marble boat and Long Corridor are iconic. Evening: Peking duck at Dadong.`,
-                tip: `The toboggan slide (¥100) is genuinely thrilling — a 1.5 km metal slide down the mountain. Worth going to Mutianyu just for this.`,
+                tip: `The toboggan slide is genuinely thrilling — a 1.5 km metal slide down the mountain. Worth going to Mutianyu just for this.`,
               },
               {
                 day: 'Day 3: Temples & Art',

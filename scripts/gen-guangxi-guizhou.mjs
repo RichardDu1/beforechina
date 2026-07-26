@@ -282,26 +282,26 @@ const routes = [
       {
         day: 'Day 1: Guilin',
         content:
-          "Fly into Guilin Liangjiang Airport (KWL). Guilin city itself is a pleasant small city with two lakes (Shanhu and Ronghu) connected by the Li River. Visit Elephant Trunk Hill (the city symbol, ¥55), walk around the Sun and Moon Pagodas on Shanhu Lake, and explore the night market on Zhengyang Pedestrian Street. Guilin rice noodles (桂林米粉) for breakfast tomorrow — this is the city's signature dish.",
-        tip: 'Elephant Trunk Hill is ¥55 and takes 30 minutes. It is fine but not worth the price. Instead, walk the Binjiang Road promenade for a free view of the river and the karst peaks. The real Guilin experience starts tomorrow on the Li River.',
+          "Fly into Guilin Liangjiang Airport (KWL). Guilin city itself is a pleasant small city with two lakes (Shanhu and Ronghu) connected by the Li River. Visit Elephant Trunk Hill (the city symbol), walk around the Sun and Moon Pagodas on Shanhu Lake, and explore the night market on Zhengyang Pedestrian Street. Guilin rice noodles (桂林米粉) for breakfast tomorrow — this is the city's signature dish.",
+        tip: 'Elephant Trunk Hill charges a modest entrance fee and takes 30 minutes. It is fine but there are better ways to spend your time. Instead, walk the Binjiang Road promenade for a free view of the river and the karst peaks. The real Guilin experience starts tomorrow on the Li River.',
       },
       {
         day: 'Day 2: Li River → Yangshuo',
         content:
-          "Option A: Take the 4-hour Li River cruise from Guilin to Yangshuo (departs 9am, arrives 1pm). The boat passes through the heart of the karst — peaks named 'Nine Horses Fresco Hill', 'Yellow Cloth Shoal' (this is the 20 RMB note view), and 'Mural Hill'. Option B: Drive to Yangdi (1 hr from Guilin) and take a bamboo raft from Yangdi to Xingping (90 min, ¥120/person) — this covers the most scenic section and avoids the large tour groups. From Xingping, take the 40-min bus to Yangshuo. Evening: West Street (Xi Jie) for dinner and bars.",
-        tip: 'The bamboo raft from Yangdi to Xingping is the better experience — you are closer to the water, the rafts are smaller, and the scenery is the best section of the river. Each raft takes 4 people. If you are alone or a couple, you may need to wait for others to fill the raft or pay for the empty seats (¥50/seat).',
+          "Option A: Take the 4-hour Li River cruise from Guilin to Yangshuo (departs 9am, arrives 1pm). The boat passes through the heart of the karst — peaks named 'Nine Horses Fresco Hill', 'Yellow Cloth Shoal' (this is the 20 RMB note view), and 'Mural Hill'. Option B: Drive to Yangdi (1 hr from Guilin) and take a bamboo raft from Yangdi to Xingping (90 min, tickets arranged at the dock) — this covers the most scenic section and avoids the large tour groups. From Xingping, take the 40-min bus to Yangshuo. Evening: West Street (Xi Jie) for dinner and bars.",
+        tip: 'The bamboo raft from Yangdi to Xingping is the better experience — you are closer to the water, the rafts are smaller, and the scenery is the best section of the river. Each raft takes 4 people. If you are alone or a couple, you may need to wait for others to fill the raft or pay for the empty seats.',
       },
       {
         day: 'Day 3: Yangshuo Countryside',
         content:
-          'Rent a bicycle (¥30/day) or e-bike (¥60/day) and cycle into the Yangshuo countryside. The classic loop: Yangshuo → Aishanmen → Gongnong Bridge → Moon Hill → Baisha → Yulong River → Yangshuo (25 km, 3-4 hours). You cycle through rice paddies with karst peaks in every direction. Stop at Moon Hill (¥15, 800 steps up a natural limestone arch) for the panoramic view. Afternoon: Yulong River bamboo raft (¥200/raft, 90 min) — this is the quieter, more intimate river compared to the Li. The rafts here are actual bamboo (not motorised PVC) and poled by a boatman.',
+          'Rent a bicycle or e-bike from one of the many rental shops in town and cycle into the Yangshuo countryside. The classic loop: Yangshuo → Aishanmen → Gongnong Bridge → Moon Hill → Baisha → Yulong River → Yangshuo (25 km, 3-4 hours). You cycle through rice paddies with karst peaks in every direction. Stop at Moon Hill (800 steps up a natural limestone arch) for the panoramic view. Afternoon: Yulong River bamboo raft (90 min) — this is the quieter, more intimate river compared to the Li. The rafts here are actual bamboo (not motorised PVC) and poled by a boatman.',
         tip: 'The Yulong River bamboo raft is better than the Li River raft — no motors, just a boatman with a bamboo pole. The stretch from Jinlong Bridge to Jiuxian is the best section. Go before 10am or after 3pm to avoid the midday crowds. Wear shoes you can get wet — there are small weirs the raft slides down.',
       },
       {
         day: 'Day 4 (optional): Longji Rice Terraces',
         content:
-          "Day trip from Guilin or Yangshuo to the Longji Rice Terraces (2.5-hour drive). The terraces were built by the Zhuang and Yao minorities over 600 years and look like dragon scales wrapping around the mountains. Two main viewpoints: Ping'an (the classic view, easier walk) and Jinkeng (larger, more dramatic, accessible by cable car ¥100 round trip). Visit one — both is too much for a day trip. Return to Guilin for your flight out.",
-        tip: 'Longji is best May-June (flooded terraces reflect the sky) and September-October (golden rice ready for harvest). The Yao women at the entrance will offer to carry your bag up (¥50) — they are genuinely helpful and the income supports their village. You can hire one even if your bag is light.',
+          "Day trip from Guilin or Yangshuo to the Longji Rice Terraces (2.5-hour drive). The terraces were built by the Zhuang and Yao minorities over 600 years and look like dragon scales wrapping around the mountains. Two main viewpoints: Ping'an (the classic view, easier walk) and Jinkeng (larger, more dramatic, accessible by cable car). Visit one — both is too much for a day trip. Return to Guilin for your flight out.",
+        tip: 'Longji is best May-June (flooded terraces reflect the sky) and September-October (golden rice ready for harvest). The Yao women at the entrance will offer to carry your bag up — they are genuinely helpful and the income supports their village. You can hire one even if your bag is light.',
       },
     ],
     related: [
@@ -375,25 +375,25 @@ const routes = [
         day: 'Day 1: Guilin → Longji',
         content:
           "Arrive Guilin (KWL). Drive 2.5 hours directly to Longji Rice Terraces. Check into a guesthouse in Ping'an Village (the most accessible terrace area). Afternoon: walk the paths between Ping'an and the 'Seven Stars Accompanying the Moon' viewpoint — the classic Longji photo. The terraces are flooded April-June and golden September-October. Evening: Zhuang minority dinner at your guesthouse — bamboo rice (竹筒饭) cooked inside a bamboo tube over a fire, and smoked pork with wild vegetables.",
-        tip: "Stay inside the terrace area, not at the entrance gate. Ping'an Village has guesthouses with terrace-view rooms (¥200-400/night). You will need to walk 20-30 minutes uphill from the parking lot — pack light or hire a Yao porter (¥50).",
+        tip: "Stay inside the terrace area, not at the entrance gate. Ping'an Village has guesthouses with terrace-view rooms — wake up to mist-filled valleys from your window. You will need to walk 20-30 minutes uphill from the parking lot — pack light or hire a Yao porter to help with your bags.",
       },
       {
         day: 'Day 2: Longji → Guilin → Yangshuo',
         content:
-          "Sunrise at Longji — the 'Nine Dragons and Five Tigers' viewpoint has the best morning light. After breakfast, walk to the Jinkeng Terraces (cable car ¥100 or 2-hour hike). Jinkeng is larger and more dramatic than Ping'an, with Yao minority villages scattered through the terraces. Descend by cable car, then drive back to Guilin (2.5 hrs). Take the afternoon bus to Yangshuo (1.5 hrs, ¥25). Evening: settle into Yangshuo and walk West Street.",
-        tip: 'The Longji entrance is ¥80. Your ticket is checked at each village entrance — keep it accessible. The Yao women at Jinkeng wear traditional red clothing and floor-length hair wrapped in elaborate headdresses. They charge ¥20 for a photo — it is how they make a living in this remote area.',
+          "Sunrise at Longji — the 'Nine Dragons and Five Tigers' viewpoint has the best morning light. After breakfast, walk to the Jinkeng Terraces (cable car or 2-hour hike). Jinkeng is larger and more dramatic than Ping'an, with Yao minority villages scattered through the terraces. Descend by cable car, then drive back to Guilin (2.5 hrs). Take the afternoon bus to Yangshuo (1.5 hrs). Evening: settle into Yangshuo and walk West Street.",
+        tip: 'The Longji entrance requires a ticket that is checked at each village entrance — keep it accessible. The Yao women at Jinkeng wear traditional red clothing and floor-length hair wrapped in elaborate headdresses. They may ask for a small tip for a photo — it is how they make a living in this remote area.',
       },
       {
         day: 'Day 3: Xingping & Li River',
         content:
-          'Take the 40-minute bus from Yangshuo to Xingping (¥10). Xingping is a small riverside town that was the original county seat before Yangshuo. Walk the ancient street (1 km of Ming-Qing shopfronts), then climb Laozhai Mountain (40 min, steep) for the aerial view of the Li River bending through the karst — this is the 20 RMB note view from above. Afternoon: bamboo raft from Xingping to Nine Horses Fresco Hill and back (¥120, 1.5 hrs). Evening: stay overnight in Xingping — the town is quiet after the day-trippers leave at 5pm.',
+          'Take the 40-minute bus from Yangshuo to Xingping (easily arranged at the bus station). Xingping is a small riverside town that was the original county seat before Yangshuo. Walk the ancient street (1 km of Ming-Qing shopfronts), then climb Laozhai Mountain (40 min, steep) for the aerial view of the Li River bending through the karst — this is the 20 RMB note view from above. Afternoon: bamboo raft from Xingping to Nine Horses Fresco Hill and back (1.5 hrs). Evening: stay overnight in Xingping — the town is quiet after the day-trippers leave at 5pm.',
         tip: 'Laozhai Mountain is free and the best view in Guilin. But the climb is genuinely steep — sections require using both hands on chains. Start 1 hour before sunset. Bring a headlamp for the descent. The trailhead is behind the Xingping Wharf.',
       },
       {
         day: 'Day 4: Xingping Sunrise → Yangshuo',
         content:
-          'Sunrise at Xianggong Mountain (相公山, ¥60, 30-min drive from Xingping). The viewing platform overlooks the Li River in a perfect S-curve through a forest of karst peaks — this is THE Guilin sunrise photo. After sunrise, return to Yangshuo via the back roads through Baisha and Fuli villages. Afternoon: Yulong River bamboo raft and countryside cycling.',
-        tip: 'Xianggong Mountain opens at 5am for sunrise. The platform has two levels — the upper level fills with tripods by 5:30am. Go early. The drive up is on a narrow paved road — a Didi from Yangshuo costs ¥80 each way.',
+          'Sunrise at Xianggong Mountain (相公山, 30-min drive from Xingping). The viewing platform overlooks the Li River in a perfect S-curve through a forest of karst peaks — this is THE Guilin sunrise photo. After sunrise, return to Yangshuo via the back roads through Baisha and Fuli villages. Afternoon: Yulong River bamboo raft and countryside cycling.',
+        tip: 'Xianggong Mountain opens at 5am for sunrise. The platform has two levels — the upper level fills with tripods by 5:30am. Go early. The drive up is on a narrow paved road — a Didi from Yangshuo can take you there and back.',
       },
       {
         day: 'Day 5: Yangshuo → Fly Out',
@@ -472,14 +472,14 @@ const routes = [
       {
         day: 'Day 1: Guiyang → Huangguoshu',
         content:
-          "Fly into Guiyang Longdongbao Airport (KWE). Take the 30-minute high-speed train from Guiyang North to Anshun West (¥47), then a 40-minute bus to Huangguoshu Waterfall. The waterfall is 77.8m high and 101m wide — Asia's largest. Walk the path behind the waterfall through the 'Water Curtain Cave' (prepare to get wet — the spray is intense). The scenic area also includes Doupotang Waterfall (wider but shorter) and Tianxingqiao (a karst stone forest with bonsai trees and natural bridges). Spend 4-5 hours. Return to Anshun or Guiyang for the night.",
-        tip: 'Huangguoshu entrance: ¥180 (summer) / ¥160 (winter). The Water Curtain Cave is the highlight — you walk behind a 77m curtain of water. A raincoat is essential (vendors sell them at the entrance for ¥5). Wear shoes with grip — the path is wet and slippery.',
+          "Fly into Guiyang Longdongbao Airport (KWE). Take the 30-minute high-speed train from Guiyang North to Anshun West, then a 40-minute bus to Huangguoshu Waterfall. The waterfall is 77.8m high and 101m wide — Asia's largest. Walk the path behind the waterfall through the 'Water Curtain Cave' (prepare to get wet — the spray is intense). The scenic area also includes Doupotang Waterfall (wider but shorter) and Tianxingqiao (a karst stone forest with bonsai trees and natural bridges). Spend 4-5 hours. Return to Anshun or Guiyang for the night.",
+        tip: 'Huangguoshu charges an entrance fee (lower in winter). The Water Curtain Cave is the highlight — you walk behind a 77m curtain of water. A raincoat is essential (vendors sell them at the entrance). Wear shoes with grip — the path is wet and slippery.',
       },
       {
         day: 'Day 2: Guiyang → Libo',
         content:
-          'Take the high-speed train from Guiyang North to Libo (1.5 hrs, ¥120 — opened 2023, this line transformed Libo accessibility). Libo is a UNESCO World Heritage site of karst cone peaks, emerald rivers, and primeval forest. Check into your hotel, then visit the Small Seven Arches (Xiaoqikong) scenic area: a 1.5 km walking path along an emerald river past seven small stone bridges, waterfalls, and forest. The water colour is unreal — a milky turquoise from dissolved limestone.',
-        tip: "Libo's water really is that colour — no filters needed. The Small Seven Arches ticket is ¥130 (summer) / ¥100 (winter) and includes the shuttle bus. Go after 3pm when the morning tour groups have left — the light is better and the path is quieter.",
+          'Take the high-speed train from Guiyang North to Libo (1.5 hrs — opened 2023, this line transformed Libo accessibility). Libo is a UNESCO World Heritage site of karst cone peaks, emerald rivers, and primeval forest. Check into your hotel, then visit the Small Seven Arches (Xiaoqikong) scenic area: a 1.5 km walking path along an emerald river past seven small stone bridges, waterfalls, and forest. The water colour is unreal — a milky turquoise from dissolved limestone.',
+        tip: "Libo's water really is that colour — no filters needed. The Small Seven Arches ticket includes the shuttle bus (slightly cheaper in winter). Go after 3pm when the morning tour groups have left — the light is better and the path is quieter.",
       },
       {
         day: 'Day 3: Libo Full Day',
@@ -490,20 +490,20 @@ const routes = [
       {
         day: 'Day 4: Libo → Kaili',
         content:
-          "Take the train from Libo to Guiyang (1.5 hrs), then transfer to a high-speed train to Kaili (40 min, ¥60). Kaili is the capital of the Qiandongnan Miao and Dong Autonomous Prefecture — the heart of Miao country. Afternoon: visit the Kaili Ethnic Minorities Museum (free, excellent context on Miao, Dong, and other Guizhou minorities) and the old street market. Evening: sour soup fish (酸汤鱼) — Guizhou's signature dish.",
+          "Take the train from Libo to Guiyang (1.5 hrs), then transfer to a high-speed train to Kaili (40 min). Kaili is the capital of the Qiandongnan Miao and Dong Autonomous Prefecture — the heart of Miao country. Afternoon: visit the Kaili Ethnic Minorities Museum (free, excellent context on Miao, Dong, and other Guizhou minorities) and the old street market. Evening: sour soup fish (酸汤鱼) — Guizhou's signature dish.",
         tip: "Sour soup fish (酸汤鱼) is a Guizhou invention — river fish poached in a broth of fermented tomatoes, pickled chillies, and wild herbs. It is sour, spicy, and unlike anything in Sichuan or Yunnan. The best is at Kaili's Laoteng Sour Soup Fish (老腾酸汤鱼).",
       },
       {
         day: 'Day 5: Xijiang Miao Village',
         content:
           "Take a 1-hour bus from Kaili to Xijiang Qianhu Miao Village (西江千户苗寨) — the world's largest Miao village, with 1,400 households built into a hillside amphitheatre. The wooden stilt houses (diaojiaolou) stack up the mountain in layers, and at night the lights make the whole hillside look like a galaxy. Walk through the village, visit the Miao embroidery workshop, and watch the daily dance performance at the central square. Stay overnight in the village — the night view from the observation platform is the reason to come.",
-        tip: 'Xijiang entrance: ¥100. The village is touristy (Chinese tourists, not Western) but still genuinely inhabited by Miao people. The best experience is walking the back lanes away from the main street, where grandmothers sit in doorways doing embroidery and children play in the alleys. The night view from the observation platform is best around 8pm when all the houses are lit.',
+        tip: 'Xijiang charges an entrance fee. The village is touristy (Chinese tourists, not Western) but still genuinely inhabited by Miao people. The best experience is walking the back lanes away from the main street, where grandmothers sit in doorways doing embroidery and children play in the alleys. The night view from the observation platform is best around 8pm when all the houses are lit.',
       },
       {
         day: 'Day 6: Kaili → Fly Out',
         content:
           'Return to Kaili (1 hr). If your flight is in the evening, visit Langde Miao Village — a smaller, less touristy alternative to Xijiang (40 min from Kaili). Langde has a traditional welcome ceremony with rice wine at the village gate. Alternatively, visit a Dong village — Zhaoxing (3 hrs from Kaili) is the most famous Dong village with a drum tower and wind-rain bridge. Fly out from Guiyang in the evening.',
-        tip: "Langde Miao Village charges ¥50 but the welcome ceremony (12-gun salute and rice wine) is included. The rice wine is strong — take a symbolic sip, don't drink the whole bowl unless you want to be carried back to the bus.",
+        tip: "Langde Miao Village has a modest entrance fee but the welcome ceremony (12-gun salute and rice wine) is included. The rice wine is strong — take a symbolic sip, don't drink the whole bowl unless you want to be carried back to the bus.",
       },
     ],
     related: [
@@ -576,8 +576,8 @@ const routes = [
       {
         day: 'Day 1: Guiyang → Tongren',
         content:
-          "Fly into Guiyang. Take the 1.5-hour high-speed train to Tongren (¥120). Tongren is the gateway city for Fanjingshan. Spend the afternoon exploring Tongren's old town along the Jin River and visiting the Dongshan Temple. Stay overnight near the Fanjingshan entrance or in Tongren.",
-        tip: 'Fanjingshan limits visitors to 8,000/day and tickets sell out. Book on WeChat (search 梵净山) 7 days ahead — especially in summer and on weekends. The ticket (¥100 + ¥140 cable car) is for a specific entry time slot. Morning slots (7-9am) sell out first.',
+          "Fly into Guiyang. Take the 1.5-hour high-speed train to Tongren. Tongren is the gateway city for Fanjingshan. Spend the afternoon exploring Tongren's old town along the Jin River and visiting the Dongshan Temple. Stay overnight near the Fanjingshan entrance or in Tongren.",
+        tip: 'Fanjingshan limits visitors to 8,000/day and tickets sell out. Book on WeChat (search 梵净山) 7 days ahead — especially in summer and on weekends. The combined entrance and cable car ticket is for a specific entry time slot. Morning slots (7-9am) sell out first.',
       },
       {
         day: 'Day 2: Fanjingshan',
@@ -588,13 +588,13 @@ const routes = [
       {
         day: 'Day 3: Tongren → Zhenyuan',
         content:
-          'Take the 1-hour high-speed train from Tongren South to Sansui (¥45), then a 40-minute bus to Zhenyuan. Zhenyuan Ancient Town is built along the Wuyang River in a narrow gorge — stone houses, temple-studded cliffs, and a series of ancient bridges. Walk the old town, cross the Zhusheng Bridge (built 1372, rebuilt in Qing dynasty), and climb the cliffside path to the Qinglong Cave complex — a series of temples and pavilions built into a cliff face overlooking the river.',
-        tip: 'Zhenyuan is free to enter. The Qinglong Cave complex (¥60) is a remarkable feat of construction — three religions (Buddhism, Daoism, Confucianism) sharing the same cliff face. The views from the highest pavilion are worth the climb.',
+          'Take the 1-hour high-speed train from Tongren South to Sansui, then a 40-minute bus to Zhenyuan. Zhenyuan Ancient Town is built along the Wuyang River in a narrow gorge — stone houses, temple-studded cliffs, and a series of ancient bridges. Walk the old town, cross the Zhusheng Bridge (built 1372, rebuilt in Qing dynasty), and climb the cliffside path to the Qinglong Cave complex — a series of temples and pavilions built into a cliff face overlooking the river.',
+        tip: 'Zhenyuan is free to enter. The Qinglong Cave complex charges a modest entrance fee and is a remarkable feat of construction — three religions (Buddhism, Daoism, Confucianism) sharing the same cliff face. The views from the highest pavilion are worth the climb.',
       },
       {
         day: 'Day 4: Zhenyuan → Guiyang',
         content:
-          "Morning: Wuyang River boat ride through the gorge (¥120, 1 hr) — the cliffs rise vertically from the water and the perspective from the river is completely different from the town. Afternoon: walk the Black Dragon Cave path on the opposite cliff for the classic Zhenyuan photo — the town's curved river and temple-dotted cliffs in one frame. Take the train back to Guiyang (1.5 hrs, ¥120). Fly out in the evening.",
+          "Morning: Wuyang River boat ride through the gorge (1 hr) — the cliffs rise vertically from the water and the perspective from the river is completely different from the town. Afternoon: walk the Black Dragon Cave path on the opposite cliff for the classic Zhenyuan photo — the town's curved river and temple-dotted cliffs in one frame. Take the train back to Guiyang (1.5 hrs). Fly out in the evening.",
         tip: "The Zhenyuan night view is famous among Chinese tourists — the old town's lanterns and the illuminated temple cliffs reflecting in the Wuyang River. The best night photo is from the Zhusheng Bridge. Stay one night in Zhenyuan for this — it transforms after dark.",
       },
     ],

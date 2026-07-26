@@ -213,10 +213,10 @@ export default function GreatWallSecretsPage() {
               Practical Notes
             </h2>
             <p style={{ marginBottom: '24px' }}>
-              Hire a private driver for the day (¥600-800 round trip from Beijing). For Jiankou,
-              hire a local guide (¥300-500) — the path isn't marked and some sections require
-              scrambling. Bring water, sunscreen, and decent shoes. The toboggan slide at Mutianyu
-              is ¥100 and absolutely worth it.
+              Hire a private driver for the day — your hotel can arrange this easily. For Jiankou,
+              hire a local guide — the path isn't marked and some sections require scrambling. Bring
+              water, sunscreen, and decent shoes. The toboggan slide at Mutianyu is an exhilarating
+              1.5 km metal slide down the mountain and absolutely worth it.
             </p>
             <p>
               One last thing: go on a weekday. Not Saturday. Not Sunday. Not during Golden Week. The

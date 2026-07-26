@@ -222,17 +222,17 @@ export default function Page() {
               {
                 day: 'Days 1–3: Beijing',
                 content: `Fly into Beijing Capital (PEK) or Daxing (PKX). Day 1: Tiananmen Square and the Forbidden City (book tickets 7 days ahead on WeChat). Day 2: Mutianyu Great Wall — less crowded than Badaling, with a toboggan ride down. Day 3: Temple of Heaven at sunrise for the pensioners\' tai chi, then the hutongs near Gulou for lunch. Evening: Peking duck at Dadong or Siji Minfu.`,
-                tip: `Skip Badaling. Mutianyu has better views, fewer crowds, and the toboggan slide down is genuinely fun. Book a private driver through your hotel (~¥600 round trip).`,
+                tip: `Skip Badaling. Mutianyu has better views, fewer crowds, and the toboggan slide down is genuinely fun. Book a private driver through your hotel — your concierge can arrange this easily.`,
               },
               {
                 day: "Days 4–5: Xi'an",
-                content: `Take the 4.5-hour high-speed train from Beijing West to Xi\'an North (¥550). Day 4: Terracotta Warriors — go early (8:30am) to beat the crowds. The museum is 40 km east of the city. Day 5: Xi\'an City Wall — rent a bike and cycle the full 14 km loop. Evening: Muslim Quarter for lamb skewers, biangbiang noodles, and persimmon cakes.`,
-                tip: `Hire a guide at the Terracotta Warriors (official guides at the entrance, ~¥200). The context they provide transforms the experience from \'piles of clay statues\' to \'holy crap, this is 2,200 years old.\'`,
+                content: `Take the 4.5-hour high-speed train from Beijing West to Xi\'an North. Day 4: Terracotta Warriors — go early (8:30am) to beat the crowds. The museum is 40 km east of the city. Day 5: Xi\'an City Wall — rent a bike and cycle the full 14 km loop. Evening: Muslim Quarter for lamb skewers, biangbiang noodles, and persimmon cakes.`,
+                tip: `Hire a guide at the Terracotta Warriors (official guides at the entrance). The context they provide transforms the experience from \'piles of clay statues\' to \'holy crap, this is 2,200 years old.\'`,
               },
               {
                 day: 'Days 6–8: Shanghai',
-                content: `Take the 6-hour high-speed train from Xi\'an to Shanghai (¥670). Day 6: The Bund at dusk for the Pudong skyline. Walk Nanjing Road to People\'s Square. Day 7: Former French Concession — Fuxing Road, Tianzifang, and a coffee at Manner. Day 8: Shanghai Museum or a day trip to Zhujiajiao Water Town (1 hr by metro). Fly out from Pudong (PVG).`,
-                tip: `The Bund is best at golden hour (5–6pm) when the colonial buildings glow. Skip the Bund sightseeing tunnel — it is a tourist trap. Take the ¥2 ferry across the Huangpu instead.`,
+                content: `Take the 6-hour high-speed train from Xi\'an to Shanghai. Day 6: The Bund at dusk for the Pudong skyline. Walk Nanjing Road to People\'s Square. Day 7: Former French Concession — Fuxing Road, Tianzifang, and a coffee at Manner. Day 8: Shanghai Museum or a day trip to Zhujiajiao Water Town (1 hr by metro). Fly out from Pudong (PVG).`,
+                tip: `The Bund is best at golden hour (5–6pm) when the colonial buildings glow. Skip the Bund sightseeing tunnel — it is a tourist trap. Take the public ferry across the Huangpu instead for a fraction of the price and a much better view.`,
               },
             ].map((stop, i) => (
               <div

@@ -223,18 +223,18 @@ export default function Page() {
             {[
               {
                 day: 'Day 1: Chengdu → Leshan → Emeishan',
-                content: `Morning: Chengdu Panda Base (7:30am). Then take the 50-minute high-speed train from Chengdu South to Leshan (¥54). Visit the Leshan Giant Buddha — walk down the cliffside staircase to see the Buddha from the base (the feet alone are 8.5m wide, each toenail fits a seated person). Take the ferry (¥70) for the frontal river-level view. Afternoon: train from Leshan to Emeishan (15 min, ¥11). Stay at the base town (Baoguo Temple area).`,
+                content: `Morning: Chengdu Panda Base (7:30am). Then take the 50-minute high-speed train from Chengdu South to Leshan. Visit the Leshan Giant Buddha — walk down the cliffside staircase to see the Buddha from the base (the feet alone are 8.5m wide, each toenail fits a seated person). Take the ferry for the frontal river-level view. Afternoon: a short train ride from Leshan to Emeishan. Stay at the base town (Baoguo Temple area).`,
                 tip: `The Leshan Buddha staircase has 250 steps and queues can be 2+ hours on weekends. Go on a weekday, or take the ferry instead — it\'s faster and gives a better frontal view for photos.`,
               },
               {
                 day: 'Day 2: Emeishan Summit',
-                content: `Take the 6am shuttle bus from the base to Leidongping (2 hrs, ¥90 round trip). From Leidongping, walk 20 minutes to the cable car station, then take the cable car (¥65 up) to the Golden Summit (金顶) at 3,099m. The 48m golden statue of Samantabhadra (Puxian) on the summit is stunning against the clouds. On clear days, you can see the Gongga Mountains 100 km away. Walk down via the Wannian Temple path (or take the cable car back if short on time). Evening: return to Chengdu by train.`,
-                tip: `Emeishan entrance: ¥160 (2-day validity). The summit is 15°C colder than the base — bring layers even in summer. The monkeys on the trail are aggressive and will grab food/water bottles. Don\'t carry visible food and don\'t make eye contact.`,
+                content: `Take the 6am shuttle bus from the base to Leidongping (2 hrs, round trip available). From Leidongping, walk 20 minutes to the cable car station, then take the cable car up to the Golden Summit (金顶) at 3,099m. The 48m golden statue of Samantabhadra (Puxian) on the summit is stunning against the clouds. On clear days, you can see the Gongga Mountains 100 km away. Walk down via the Wannian Temple path (or take the cable car back if short on time). Evening: return to Chengdu by train.`,
+                tip: `Emeishan has an entrance ticket valid for 2 days. The summit is 15°C colder than the base — bring layers even in summer. The monkeys on the trail are aggressive and will grab food/water bottles. Don\'t carry visible food and don\'t make eye contact.`,
               },
               {
                 day: 'Day 3: Chengdu Food & Culture',
-                content: `Morning: Jinli Ancient Street and Wuhou Temple (Three Kingdoms history). Afternoon: Sichuan cooking class — learn to make kung pao chicken, mapo tofu, and dan dan noodles (half-day classes from ¥200). Evening: Sichuan opera at Shufeng Yayun Teahouse — face-changing, fire-spitting, and hand-shadow performances.`,
-                tip: `The Sichuan opera face-changing (变脸) is genuinely impressive — performers change masks in a split second with a flick of the head. Shufeng Yayun (¥150-280) is the best show in Chengdu. Book evening tickets the day before.`,
+                content: `Morning: Jinli Ancient Street and Wuhou Temple (Three Kingdoms history). Afternoon: Sichuan cooking class — learn to make kung pao chicken, mapo tofu, and dan dan noodles in a hands-on half-day session. Evening: Sichuan opera at Shufeng Yayun Teahouse — face-changing, fire-spitting, and hand-shadow performances.`,
+                tip: `The Sichuan opera face-changing (变脸) is genuinely impressive — performers change masks in a split second with a flick of the head. Shufeng Yayun is the best show in Chengdu. Book evening tickets the day before.`,
               },
             ].map((stop, i) => (
               <div

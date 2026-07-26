@@ -268,13 +268,13 @@ const routes = [
     overview:
       "Sichuan is China's outdoor playground, and this route hits the province's three biggest draws. Chengdu is the panda capital of the world and the spiritual home of Sichuan cuisine. Jiuzhaigou (九寨沟) is a UNESCO-listed valley of 114 turquoise lakes, waterfalls, and snow-capped peaks — arguably China's most beautiful national park. Huanglong (黄龙) is a 3.6 km travertine terrace system of golden calcified pools, nicknamed the 'Yellow Dragon' for the way the pools cascade down the valley.",
     faqQ: 'How do I get to Jiuzhaigou from Chengdu?',
-    faqA: 'Fly from Chengdu to Jiuzhaigou Huanglong Airport (JZH) — 1 hour, ¥500-900. Alternatively, take a 7-9 hour bus from Chengdu Chadianzi Station (¥150). Flying is strongly recommended. The airport is at 3,400m and you descend to Jiuzhaigou at 2,000-3,000m.',
+    faqA: 'Fly from Chengdu to Jiuzhaigou Huanglong Airport (JZH) — a quick 1-hour flight, easily booked online or through your hotel. Alternatively, take a 7-9 hour bus from Chengdu Chadianzi Station. Flying is strongly recommended. The airport is at 3,400m and you descend to Jiuzhaigou at 2,000-3,000m.',
     stops: [
       {
         day: 'Day 1: Chengdu Pandas & Hot Pot',
         content:
           "Morning: Chengdu Research Base of Giant Panda Breeding — arrive at 7:30am (opening time) to see the pandas at their most active during breakfast feeding. The babies are in the nursery in August-September. Afternoon: People's Park for tea in a bamboo grove at the Heming Teahouse (built 1923). Evening: Sichuan hot pot — the numbing-spicy (麻辣) broth is a Chengdu rite of passage.",
-        tip: "Panda base opens at 7:30am. The pandas are fed at 8-9am and sleep most of the afternoon. Go early or you'll be photographing sleeping pandas. Entrance ¥55.",
+        tip: "Panda base opens at 7:30am. The pandas are fed at 8-9am and sleep most of the afternoon. Go early or you'll be photographing sleeping pandas. A modest entrance fee applies.",
       },
       {
         day: 'Day 2: Chengdu → Jiuzhaigou',
@@ -286,13 +286,13 @@ const routes = [
         day: 'Day 3: Jiuzhaigou Full Day',
         content:
           'Enter the park at 8am. Jiuzhaigou is a Y-shaped valley with three main branches. Take the shuttle bus to the top of Rize Valley (Primeval Forest, 3,060m), then walk down past Swan Lake, Arrow Bamboo Lake, Panda Lake, Five Flower Lake (the most photogenic — turquoise, emerald, and sapphire in a single lake), Pearl Shoal Waterfall, and Mirror Lake. After lunch at Nuorilang, do Zechawa Valley: Long Lake (the largest at 3,100m) and Five-Color Pond (tiny but intensely blue). End at Shuzheng Valley for the Tibetan villages and Shuzheng Waterfall.',
-        tip: 'Jiuzhaigou ticket: ¥169 + ¥90 shuttle bus. Book on WeChat (search 九寨沟) up to 7 days ahead. The park limits visitors to 41,000/day and sells out in autumn. The shuttle bus is hop-on-hop-off — use it to skip the long walks between valleys.',
+        tip: 'Jiuzhaigou requires an entrance ticket plus a shuttle bus pass. Book on WeChat (search 九寨沟) up to 7 days ahead. The park limits visitors to 41,000/day and sells out in autumn. The shuttle bus is hop-on-hop-off — use it to skip the long walks between valleys.',
       },
       {
         day: 'Day 4: Huanglong',
         content:
-          'Drive 2.5 hours from Jiuzhaigou to Huanglong. Take the cable car up (¥80) and walk 2 km to the Five-Color Pool at 3,570m — the highest and most spectacular of the travertine terraces, with pools ranging from yellow to green to blue depending on mineral content and algae. Then walk down 4 km through the valley past hundreds of terraced pools. The whole descent takes 3-4 hours. Drive back to Chuanzhusi Town or Jiuzhaigou for the night.',
-        tip: "Huanglong is at 3,200-3,570m — higher than Jiuzhaigou. Altitude sickness is common here. Buy an oxygen canister (¥30) at the entrance if you're prone to altitude issues. The walk is downhill from the top — much easier than going up.",
+          'Drive 2.5 hours from Jiuzhaigou to Huanglong. Take the cable car up and walk 2 km to the Five-Color Pool at 3,570m — the highest and most spectacular of the travertine terraces, with pools ranging from yellow to green to blue depending on mineral content and algae. Then walk down 4 km through the valley past hundreds of terraced pools. The whole descent takes 3-4 hours. Drive back to Chuanzhusi Town or Jiuzhaigou for the night.',
+        tip: "Huanglong is at 3,200-3,570m — higher than Jiuzhaigou. Altitude sickness is common here. Oxygen canisters are available at the entrance if you're prone to altitude issues. The walk is downhill from the top — much easier than going up.",
       },
       {
         day: 'Day 5: Return to Chengdu',
@@ -308,7 +308,7 @@ const routes = [
       },
       {
         title: 'Where to Stay',
-        body: 'Chengdu: near Chunxi Road or Jinli Ancient Street ($40-100/night). Jiuzhaigou: near the park entrance at Zhangzha Town ($30-80/night, book ahead in autumn). The Hilton Jiuzhaigou (¥800-1,200) is the best international option.',
+        body: 'Chengdu: near Chunxi Road or Jinli Ancient Street ($40-100/night). Jiuzhaigou: near the park entrance at Zhangzha Town ($30-80/night, book ahead in autumn). The Hilton Jiuzhaigou is the best international option with comfortable high-altitude accommodations.',
       },
       {
         title: 'When to Go',
@@ -384,20 +384,20 @@ const routes = [
       {
         day: 'Day 1: Chengdu → Leshan → Emeishan',
         content:
-          'Morning: Chengdu Panda Base (7:30am). Then take the 50-minute high-speed train from Chengdu South to Leshan (¥54). Visit the Leshan Giant Buddha — walk down the cliffside staircase to see the Buddha from the base (the feet alone are 8.5m wide, each toenail fits a seated person). Take the ferry (¥70) for the frontal river-level view. Afternoon: train from Leshan to Emeishan (15 min, ¥11). Stay at the base town (Baoguo Temple area).',
+          'Morning: Chengdu Panda Base (7:30am). Then take the 50-minute high-speed train from Chengdu South to Leshan. Visit the Leshan Giant Buddha — walk down the cliffside staircase to see the Buddha from the base (the feet alone are 8.5m wide, each toenail fits a seated person). Take the ferry for the frontal river-level view. Afternoon: a short train ride from Leshan to Emeishan. Stay at the base town (Baoguo Temple area).',
         tip: "The Leshan Buddha staircase has 250 steps and queues can be 2+ hours on weekends. Go on a weekday, or take the ferry instead — it's faster and gives a better frontal view for photos.",
       },
       {
         day: 'Day 2: Emeishan Summit',
         content:
-          'Take the 6am shuttle bus from the base to Leidongping (2 hrs, ¥90 round trip). From Leidongping, walk 20 minutes to the cable car station, then take the cable car (¥65 up) to the Golden Summit (金顶) at 3,099m. The 48m golden statue of Samantabhadra (Puxian) on the summit is stunning against the clouds. On clear days, you can see the Gongga Mountains 100 km away. Walk down via the Wannian Temple path (or take the cable car back if short on time). Evening: return to Chengdu by train.',
-        tip: "Emeishan entrance: ¥160 (2-day validity). The summit is 15°C colder than the base — bring layers even in summer. The monkeys on the trail are aggressive and will grab food/water bottles. Don't carry visible food and don't make eye contact.",
+          'Take the 6am shuttle bus from the base to Leidongping (2 hrs, round trip available). From Leidongping, walk 20 minutes to the cable car station, then take the cable car up to the Golden Summit (金顶) at 3,099m. The 48m golden statue of Samantabhadra (Puxian) on the summit is stunning against the clouds. On clear days, you can see the Gongga Mountains 100 km away. Walk down via the Wannian Temple path (or take the cable car back if short on time). Evening: return to Chengdu by train.',
+        tip: "Emeishan has an entrance ticket valid for 2 days. The summit is 15°C colder than the base — bring layers even in summer. The monkeys on the trail are aggressive and will grab food/water bottles. Don't carry visible food and don't make eye contact.",
       },
       {
         day: 'Day 3: Chengdu Food & Culture',
         content:
-          'Morning: Jinli Ancient Street and Wuhou Temple (Three Kingdoms history). Afternoon: Sichuan cooking class — learn to make kung pao chicken, mapo tofu, and dan dan noodles (half-day classes from ¥200). Evening: Sichuan opera at Shufeng Yayun Teahouse — face-changing, fire-spitting, and hand-shadow performances.',
-        tip: 'The Sichuan opera face-changing (变脸) is genuinely impressive — performers change masks in a split second with a flick of the head. Shufeng Yayun (¥150-280) is the best show in Chengdu. Book evening tickets the day before.',
+          'Morning: Jinli Ancient Street and Wuhou Temple (Three Kingdoms history). Afternoon: Sichuan cooking class — learn to make kung pao chicken, mapo tofu, and dan dan noodles in a hands-on half-day session. Evening: Sichuan opera at Shufeng Yayun Teahouse — face-changing, fire-spitting, and hand-shadow performances.',
+        tip: 'The Sichuan opera face-changing (变脸) is genuinely impressive — performers change masks in a split second with a flick of the head. Shufeng Yayun is the best show in Chengdu. Book evening tickets the day before.',
       },
     ],
     practical: [
@@ -407,7 +407,7 @@ const routes = [
       },
       {
         title: 'Where to Stay',
-        body: 'Emeishan base: near Baoguo Temple ($25-60/night). For sunrise, stay at the Golden Summit (Jinding Hotel, ¥400-800/night) or Leidongping (¥200-400/night). Leshan: day trip from Chengdu or Emei — no need to stay overnight.',
+        body: 'Emeishan base: near Baoguo Temple ($25-60/night). For sunrise, stay at the Golden Summit (Jinding Hotel, basic but atmospheric) or Leidongping (simple guesthouses with mountain views). Leshan: day trip from Chengdu or Emei — no need to stay overnight.',
       },
       {
         title: 'Best Season',
@@ -484,36 +484,36 @@ const routes = [
       {
         day: 'Day 1: Pandas & Parks',
         content:
-          "Panda Base (7:30am-11am), then People's Park — drink jasmine tea at Heming Teahouse, watch the matchmaking corner (parents post their children's resumes on umbrellas looking for marriage partners), and get your ears cleaned by a professional ear-picker (¥30, a Chengdu tradition). Evening: Sichuan hot pot at Shujiuxiang or Dalongyi.",
+          "Panda Base (7:30am-11am), then People's Park — drink jasmine tea at Heming Teahouse, watch the matchmaking corner (parents post their children's resumes on umbrellas looking for marriage partners), and get your ears cleaned by a professional ear-picker (a Chengdu tradition). Evening: Sichuan hot pot at Shujiuxiang or Dalongyi.",
         tip: "The matchmaking corner at People's Park is surreal — hundreds of parents with printed sheets listing their child's age, height, salary, and housing status. It's a uniquely Chengdu experience. Weekends are busiest.",
       },
       {
         day: 'Day 2: Leshan Giant Buddha Day Trip',
         content:
-          "Take the 50-minute high-speed train to Leshan (¥54). Visit the 71m Buddha — walk the cliffside stairs or take the river ferry. Lunch: Leshan's famous qiaojiao beef (跷脚牛肉) — a medicinal beef soup. Return to Chengdu by late afternoon. Evening: Jinli Ancient Street for lantern-lit shopping and street snacks.",
-        tip: "Leshan's qiaojiao beef is legendary. The best is at Feng Siniang (冯四孃跷脚牛肉) near the Buddha scenic area. Order the mixed beef soup (¥38) and the blood curd (¥15).",
+          "Take the 50-minute high-speed train to Leshan. Visit the 71m Buddha — walk the cliffside stairs or take the river ferry. Lunch: Leshan's famous qiaojiao beef (跷脚牛肉) — a medicinal beef soup. Return to Chengdu by late afternoon. Evening: Jinli Ancient Street for lantern-lit shopping and street snacks.",
+        tip: "Leshan's qiaojiao beef is legendary. The best is at Feng Siniang (冯四孃跷脚牛肉) near the Buddha scenic area. Order the mixed beef soup — a rich, aromatic broth simmered with herbs — and the blood curd.",
       },
       {
         day: 'Day 3: Culture & Cooking',
         content:
-          'Morning: Wuhou Temple (Three Kingdoms history, ¥60) and Jinli Street (adjacent). Afternoon: Sichuan cooking class — learn dan dan noodles, kung pao chicken, and mapo tofu. Evening: Kuanzhai Alley (宽窄巷子) — Qing dynasty courtyard houses converted into bars, tea houses, and restaurants. Then Sichuan opera at Shufeng Yayun.',
-        tip: 'Cooking classes in Chengdu run ¥200-350 for a half-day. The best include a market tour to buy ingredients first. The Cooking Club Chengdu and Chilli Cool China both have excellent English-speaking instructors.',
+          'Morning: Wuhou Temple (Three Kingdoms history) and Jinli Street (adjacent). Afternoon: Sichuan cooking class — learn dan dan noodles, kung pao chicken, and mapo tofu. Evening: Kuanzhai Alley (宽窄巷子) — Qing dynasty courtyard houses converted into bars, tea houses, and restaurants. Then Sichuan opera at Shufeng Yayun.',
+        tip: 'Cooking classes in Chengdu run for a half-day. The best include a market tour to buy ingredients first. The Cooking Club Chengdu and Chilli Cool China both have excellent English-speaking instructors.',
       },
       {
         day: 'Day 4 (optional): Dujiangyan & Qingcheng',
         content:
           "Day trip to Dujiangyan — a 2,300-year-old irrigation system that still works today, diverting the Min River without a single dam. It's a UNESCO site and an engineering marvel. Afternoon: Qingcheng Mountain, one of Daoism's birthplaces. The front mountain has temples and pavilions; the back mountain is wilder with waterfalls and fewer tourists.",
-        tip: 'Dujiangyan is 1 hour from Chengdu by high-speed train from Xipu Station (¥10!). The panda base at Dujiangyan (Panda Valley) is less crowded than the Chengdu one and you can volunteer as a panda keeper (¥700, book 1 month ahead).',
+        tip: 'Dujiangyan is 1 hour from Chengdu by high-speed train from Xipu Station — remarkably easy to reach. The panda base at Dujiangyan (Panda Valley) is less crowded than the Chengdu one and you can volunteer as a panda keeper (book 1 month ahead).',
       },
     ],
     practical: [
       {
         title: 'Getting There',
-        body: 'Chengdu Tianfu International (TFU) has direct flights from London, Amsterdam, Seoul, Tokyo, and major Asian hubs. Shuangliu (CTU) handles domestic flights. Metro Line 18 connects Tianfu to downtown (50 min, ¥10).',
+        body: 'Chengdu Tianfu International (TFU) has direct flights from London, Amsterdam, Seoul, Tokyo, and major Asian hubs. Shuangliu (CTU) handles domestic flights. Metro Line 18 connects Tianfu to downtown (50 minutes).',
       },
       {
         title: 'Where to Stay',
-        body: 'Chunxi Road area for shopping and convenience ($50-120/night). Jinli/Wuhouci area for atmosphere ($40-100/night). For a splurge: The Temple House (¥1,500-2,500/night) — a boutique hotel built into a restored Qing dynasty courtyard.',
+        body: 'Chunxi Road area for shopping and convenience ($50-120/night). Jinli/Wuhouci area for atmosphere ($40-100/night). For a splurge: The Temple House — a boutique hotel built into a restored Qing dynasty courtyard, with serene courtyard views and exceptional design.',
       },
       {
         title: 'What to Eat',
@@ -584,13 +584,13 @@ const routes = [
     overview:
       "Daocheng Yading (稻城亚丁) is what happens when you cross the Tibetan Plateau with Yosemite. Three sacred peaks — Chenrezig (6,032m), Jampelyang (5,958m), and Chanadorje (5,958m) — ring a valley of glacier-fed lakes so blue they look Photoshopped. The route from Chengdu climbs from 500m to 4,700m over the Tibetan Plateau, passing through Kangding (the gateway to Tibetan Sichuan), Xinduqiao (the 'photographer's paradise'), and Litang (a 4,000m grassland town that's the birthplace of the 7th Dalai Lama).",
     faqQ: 'How difficult is the Yading hike?',
-    faqA: "The main hike to Milk Lake (4,600m) and Five-Color Lake (4,700m) is a 10 km round trip from Luorong Pasture (4,180m). It gains 500m elevation and takes 6-8 hours. The altitude makes it challenging — the air has 60% of sea-level oxygen. You don't need technical skills, but you need to be fit and acclimatised. Horses are available for the first 3 km (¥300 one-way).",
+    faqA: "The main hike to Milk Lake (4,600m) and Five-Color Lake (4,700m) is a 10 km round trip from Luorong Pasture (4,180m). It gains 500m elevation and takes 6-8 hours. The altitude makes it challenging — the air has 60% of sea-level oxygen. You don't need technical skills, but you need to be fit and acclimatised. Horses are available for the first 3 km one-way.",
     stops: [
       {
         day: 'Day 1: Chengdu → Kangding (2,560m)',
         content:
           "Drive 4.5 hours west from Chengdu on the G318 highway. The road climbs through the Erlangshan Tunnel (8.6 km, China's longest high-altitude tunnel) and emerges into a completely different world — Tibetan prayer flags, stone houses, and yak herds. Kangding is the historic border town between Han China and Tibet. Walk the old town and visit the Paoma Mountain.",
-        tip: "The G318 is the 'National Highway 318' — China's Route 66 from Shanghai to Tibet. The Chengdu-Kangding section is paved and well-maintained. A private car with driver costs ¥1,200-1,500/day.",
+        tip: "The G318 is the 'National Highway 318' — China's Route 66 from Shanghai to Tibet. The Chengdu-Kangding section is paved and well-maintained. A private car with driver can be arranged through your hotel or travel agent.",
       },
       {
         day: 'Day 2: Kangding → Xinduqiao → Litang (4,014m)',
@@ -602,30 +602,30 @@ const routes = [
         day: 'Day 3: Litang → Daocheng (3,750m)',
         content:
           'Drive 3 hours south to Daocheng. The road passes through the Haizi Mountain scenic area — a landscape of glacial boulders and 1,145 alpine lakes at 4,500m, looking like a giant scattered marbles across a moonscape. Daocheng town is a pleasant Tibetan county seat with white-walled houses and poplar-lined streets. Visit the White Pagoda Park and the Daocheng Monastery. Spend the night to acclimatise.',
-        tip: "Daocheng has a small airport (DCY) — the world's highest civilian airport at 4,411m. Flights from Chengdu (1 hr, ¥1,200-1,800) land here. If you fly in, spend 2 nights in Daocheng before attempting the Yading hike to acclimatise.",
+        tip: "Daocheng has a small airport (DCY) — the world's highest civilian airport at 4,411m. Flights from Chengdu (1 hour) land here. If you fly in, spend 2 nights in Daocheng before attempting the Yading hike to acclimatise.",
       },
       {
         day: 'Day 4: Daocheng → Yading Nature Reserve',
         content:
           'Drive 1.5 hours to Yading (the reserve entrance is at Riwacun, 2,900m). Take the park shuttle bus 34 km into the reserve to Yading Village (3,900m) or Longlongba. Spend the afternoon on the short hike to Chonggu Monastery (3,900m) and the Pearl Lake viewpoint — your first close view of Chenrezig (6,032m) reflected in a glacial lake. This is a gentle 3 km walk to acclimatise.',
-        tip: "Yading entrance: ¥150 + ¥120 shuttle bus (2-day validity). The last shuttle into the reserve departs at 5pm — don't arrive late or you'll be stuck outside. Yading Village has basic guesthouses (¥100-200/night) — electricity is from generators and hot water is limited.",
+        tip: "Yading has an entrance ticket and shuttle bus pass (valid for 2 days). The last shuttle into the reserve departs at 5pm — don't arrive late or you'll be stuck outside. Yading Village has basic guesthouses — electricity is from generators and hot water is limited.",
       },
       {
         day: 'Day 5: Yading — The Big Hike',
         content:
-          'Take the 7am shuttle from Yading Village to Luorong Pasture (4,180m). The hike begins here. Walk 3 km to the Horse Stop (optional horse ¥300), then climb 5 km on a steep rocky path to Milk Lake (4,600m) — a startling turquoise lake at the foot of Jampelyang, fed by a hanging glacier. Continue 500m uphill to Five-Color Lake (4,700m) — smaller but with a colour gradient from deep blue to emerald green. The view of all three peaks from here is the money shot. Descend the same way. Total: 10 km, 6-8 hours.',
+          'Take the 7am shuttle from Yading Village to Luorong Pasture (4,180m). The hike begins here. Walk 3 km to the Horse Stop (horses available for hire), then climb 5 km on a steep rocky path to Milk Lake (4,600m) — a startling turquoise lake at the foot of Jampelyang, fed by a hanging glacier. Continue 500m uphill to Five-Color Lake (4,700m) — smaller but with a colour gradient from deep blue to emerald green. The view of all three peaks from here is the money shot. Descend the same way. Total: 10 km, 6-8 hours.',
         tip: "Start by 7:30am. The weather turns by 2pm — clouds roll in and the peaks disappear. Bring 2L water, high-energy snacks, and rain gear even on sunny days. The last section to Five-Color Lake is a 100m climb on loose rock — poles help. If you're struggling with altitude, skip Five-Color Lake — Milk Lake is the better view.",
       },
       {
         day: 'Day 6: Yading → Daocheng',
         content:
-          'Morning: short walk to Xiannairi Snow Mountain viewpoint or the lower section of the valley. Take the shuttle bus out of the reserve by noon. Drive back to Daocheng. Afternoon: hot springs in Daocheng County — the Rupuchaka Hot Springs are natural sulphur pools (¥30) and the perfect post-hike reward.',
+          'Morning: short walk to Xiannairi Snow Mountain viewpoint or the lower section of the valley. Take the shuttle bus out of the reserve by noon. Drive back to Daocheng. Afternoon: hot springs in Daocheng County — the Rupuchaka Hot Springs are natural sulphur pools and the perfect post-hike reward.',
         tip: 'The Daocheng hot springs are in Rumuchu Village, 5 km from town. The outdoor pools have mountain views. Bring your own towel and swimsuit — rental ones are questionable.',
       },
       {
         day: 'Day 7: Daocheng → Chengdu',
         content:
-          'Fly from Daocheng Yading Airport (DCY) to Chengdu (1 hr, ¥1,200-1,800) — the takeoff at 4,411m is an experience in itself. Or drive back via the southern route through Xiangcheng and Shangri-La (2 days). Evening in Chengdu: celebratory hot pot.',
+          'Fly from Daocheng Yading Airport (DCY) to Chengdu (1 hour) — the takeoff at 4,411m is an experience in itself. Or drive back via the southern route through Xiangcheng and Shangri-La (2 days). Evening in Chengdu: celebratory hot pot.',
         tip: 'Daocheng Airport flights are frequently delayed or cancelled due to high winds and low visibility. Book a morning flight (best conditions) and have a buffer day. The drive back to Chengdu takes 2 days via the southern route.',
       },
     ],
@@ -636,7 +636,7 @@ const routes = [
       },
       {
         title: 'Where to Stay',
-        body: 'Kangding: Zhilam Hostel (¥150-300, great for acclimatisation info). Litang: basic Tibetan guesthouses (¥100-200). Daocheng: Tibetan-style hotels (¥200-400). Yading Village: very basic guesthouses (¥100-200, limited electricity).',
+        body: 'Kangding: Zhilam Hostel (great for acclimatisation info). Litang: basic Tibetan guesthouses. Daocheng: Tibetan-style hotels. Yading Village: very basic guesthouses (limited electricity).',
       },
       {
         title: 'When to Go',
@@ -719,30 +719,30 @@ const routes = [
       {
         day: 'Day 2: Wulong Karst',
         content:
-          "Take the 2-hour high-speed train from Chongqing North to Wulong (¥65). Wulong's Three Natural Bridges are three massive limestone arches — Tianlong (Sky Dragon, 235m high), Qinglong (Azure Dragon), and Heilong (Black Dragon) — spanning a 1.2 km gorge. You walk through the gorge floor looking up at arches big enough to fit a 30-storey building. The site also includes the Houping Giant Sinkhole, a 300m-deep limestone crater. Return to Chongqing by evening.",
-        tip: "Wulong entrance: ¥135 including shuttle bus. The site was used as a filming location for Transformers: Age of Extinction (the scene where Optimus Prime fights the Dinobots). There's a (tacky) statue of a Transformer at the entrance.",
+          "Take the 2-hour high-speed train from Chongqing North to Wulong. Wulong's Three Natural Bridges are three massive limestone arches — Tianlong (Sky Dragon, 235m high), Qinglong (Azure Dragon), and Heilong (Black Dragon) — spanning a 1.2 km gorge. You walk through the gorge floor looking up at arches big enough to fit a 30-storey building. The site also includes the Houping Giant Sinkhole, a 300m-deep limestone crater. Return to Chongqing by evening.",
+        tip: "Wulong requires an entrance ticket (including shuttle bus). The site was used as a filming location for Transformers: Age of Extinction (the scene where Optimus Prime fights the Dinobots). There's a (tacky) statue of a Transformer at the entrance.",
       },
       {
         day: 'Day 3: Dazu Rock Carvings',
         content:
-          "Take the 1-hour high-speed train from Chongqing West to Dazu (¥45), then a 30-minute bus to the carvings. The Beishan (North Hill) site has 10,000 statues from the late Tang dynasty (9th century) — intricate, graceful, and well-preserved. The Baodingshan (Treasure Top Mountain) site is the masterpiece: a 500m cliff face with 10,000 figures carved into a continuous narrative of Buddhist hell and paradise, created between 1174-1252 under the monk Zhao Zhifeng. The 'Hell Scenes' panel is gruesome and unforgettable.",
-        tip: 'Dazu is ¥135 for Beishan + Baodingshan. Baodingshan alone is ¥115 and is the better site if you only have time for one. The carvings are exposed (no caves like Dunhuang) so visit on a clear day. The museum at Baodingshan is excellent for context.',
+          "Take the 1-hour high-speed train from Chongqing West to Dazu, then a 30-minute bus to the carvings. The Beishan (North Hill) site has 10,000 statues from the late Tang dynasty (9th century) — intricate, graceful, and well-preserved. The Baodingshan (Treasure Top Mountain) site is the masterpiece: a 500m cliff face with 10,000 figures carved into a continuous narrative of Buddhist hell and paradise, created between 1174-1252 under the monk Zhao Zhifeng. The 'Hell Scenes' panel is gruesome and unforgettable.",
+        tip: 'Dazu has a combined ticket for Beishan and Baodingshan, or Baodingshan alone — Baodingshan is the better site if you only have time for one. The carvings are exposed (no caves like Dunhuang) so visit on a clear day. The museum at Baodingshan is excellent for context.',
       },
       {
         day: 'Day 4 (optional): Chongqing Deep Dive',
         content:
-          "Morning: take the Yangtze River Cableway (¥20) — a gondola across the river with skyline views. Visit the Three Gorges Museum (free, excellent overview of the Yangtze and the dam project). Afternoon: Eling Park for the best panoramic view of Chongqing's skyline. Evening: the 'ghost town' of Fengdu or prepare for your Yangtze cruise departure.",
+          "Morning: take the Yangtze River Cableway — a gondola across the river with skyline views. Visit the Three Gorges Museum (free, excellent overview of the Yangtze and the dam project). Afternoon: Eling Park for the best panoramic view of Chongqing's skyline. Evening: the 'ghost town' of Fengdu or prepare for your Yangtze cruise departure.",
         tip: 'The Yangtze Cableway queue is 30-60 min on weekends. Go before 9am or take it from the south bank (less busy direction). The Three Gorges Museum is genuinely world-class — budget 2 hours.',
       },
     ],
     practical: [
       {
         title: 'Getting There',
-        body: "Chongqing Jiangbei Airport (CKG) has international flights from Seoul, Bangkok, Singapore, and domestic from everywhere. The metro connects the airport to downtown (Line 3, ¥7). Chongqing is also a major high-speed rail hub — Chengdu (1 hr, ¥150), Xi'an (5 hrs, ¥280).",
+        body: "Chongqing Jiangbei Airport (CKG) has international flights from Seoul, Bangkok, Singapore, and domestic from everywhere. The metro connects the airport to downtown (Line 3). Chongqing is also a major high-speed rail hub — Chengdu (1 hr), Xi'an (5 hrs).",
       },
       {
         title: 'Where to Stay',
-        body: 'Jiefangbei area for the skyline views ($50-120/night). Nanbin Road (south bank) for river views of the Hongyadong skyline ($40-100/night). The Regent Chongqing has the best river-view rooms (¥1,200-2,000).',
+        body: 'Jiefangbei area for the skyline views ($50-120/night). Nanbin Road (south bank) for river views of the Hongyadong skyline ($40-100/night). The Regent Chongqing has the best river-view rooms — floor-to-ceiling windows overlooking the confluence of the Yangtze and Jialing.',
       },
       {
         title: 'Chongqing Hot Pot Guide',

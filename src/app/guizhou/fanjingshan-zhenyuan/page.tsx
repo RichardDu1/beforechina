@@ -223,8 +223,8 @@ export default function Page() {
             {[
               {
                 day: 'Day 1: Guiyang → Tongren',
-                content: `Fly into Guiyang. Take the 1.5-hour high-speed train to Tongren (¥120). Tongren is the gateway city for Fanjingshan. Spend the afternoon exploring Tongren\'s old town along the Jin River and visiting the Dongshan Temple. Stay overnight near the Fanjingshan entrance or in Tongren.`,
-                tip: `Fanjingshan limits visitors to 8,000/day and tickets sell out. Book on WeChat (search 梵净山) 7 days ahead — especially in summer and on weekends. The ticket (¥100 + ¥140 cable car) is for a specific entry time slot. Morning slots (7-9am) sell out first.`,
+                content: `Fly into Guiyang. Take the 1.5-hour high-speed train to Tongren. Tongren is the gateway city for Fanjingshan. Spend the afternoon exploring Tongren\'s old town along the Jin River and visiting the Dongshan Temple. Stay overnight near the Fanjingshan entrance or in Tongren.`,
+                tip: `Fanjingshan limits visitors to 8,000/day and tickets sell out. Book on WeChat (search 梵净山) 7 days ahead — especially in summer and on weekends. The combined entrance and cable car ticket is for a specific entry time slot. Morning slots (7-9am) sell out first.`,
               },
               {
                 day: 'Day 2: Fanjingshan',
@@ -233,12 +233,12 @@ export default function Page() {
               },
               {
                 day: 'Day 3: Tongren → Zhenyuan',
-                content: `Take the 1-hour high-speed train from Tongren South to Sansui (¥45), then a 40-minute bus to Zhenyuan. Zhenyuan Ancient Town is built along the Wuyang River in a narrow gorge — stone houses, temple-studded cliffs, and a series of ancient bridges. Walk the old town, cross the Zhusheng Bridge (built 1372, rebuilt in Qing dynasty), and climb the cliffside path to the Qinglong Cave complex — a series of temples and pavilions built into a cliff face overlooking the river.`,
-                tip: `Zhenyuan is free to enter. The Qinglong Cave complex (¥60) is a remarkable feat of construction — three religions (Buddhism, Daoism, Confucianism) sharing the same cliff face. The views from the highest pavilion are worth the climb.`,
+                content: `Take the 1-hour high-speed train from Tongren South to Sansui, then a 40-minute bus to Zhenyuan. Zhenyuan Ancient Town is built along the Wuyang River in a narrow gorge — stone houses, temple-studded cliffs, and a series of ancient bridges. Walk the old town, cross the Zhusheng Bridge (built 1372, rebuilt in Qing dynasty), and climb the cliffside path to the Qinglong Cave complex — a series of temples and pavilions built into a cliff face overlooking the river.`,
+                tip: `Zhenyuan is free to enter. The Qinglong Cave complex charges a modest entrance fee and is a remarkable feat of construction — three religions (Buddhism, Daoism, Confucianism) sharing the same cliff face. The views from the highest pavilion are worth the climb.`,
               },
               {
                 day: 'Day 4: Zhenyuan → Guiyang',
-                content: `Morning: Wuyang River boat ride through the gorge (¥120, 1 hr) — the cliffs rise vertically from the water and the perspective from the river is completely different from the town. Afternoon: walk the Black Dragon Cave path on the opposite cliff for the classic Zhenyuan photo — the town\'s curved river and temple-dotted cliffs in one frame. Take the train back to Guiyang (1.5 hrs, ¥120). Fly out in the evening.`,
+                content: `Morning: Wuyang River boat ride through the gorge (1 hr) — the cliffs rise vertically from the water and the perspective from the river is completely different from the town. Afternoon: walk the Black Dragon Cave path on the opposite cliff for the classic Zhenyuan photo — the town\'s curved river and temple-dotted cliffs in one frame. Take the train back to Guiyang (1.5 hrs). Fly out in the evening.`,
                 tip: `The Zhenyuan night view is famous among Chinese tourists — the old town\'s lanterns and the illuminated temple cliffs reflecting in the Wuyang River. The best night photo is from the Zhusheng Bridge. Stay one night in Zhenyuan for this — it transforms after dark.`,
               },
             ].map((stop, i) => (

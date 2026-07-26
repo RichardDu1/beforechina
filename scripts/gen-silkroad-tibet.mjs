@@ -285,53 +285,53 @@ const routes = [
         day: 'Day 2: Xian',
         content:
           "Full day: Terracotta Warriors and Huaqing Hot Springs. The warriors are the most tangible connection to the Qin dynasty (221-206 BC) — an army of 8,000 life-sized soldiers buried to guard China's first emperor.",
-        tip: 'Book the 8:30am slot at the Terracotta Warriors. The site is 40 km east of Xian — the public bus (¥8) takes 1 hour from Xian Railway Station. Go to Pit 1 first, then Pit 2, then Pit 3. The bronze chariot exhibition hall is the final stop and is often less crowded in the afternoon.',
+        tip: 'Book the 8:30am slot at the Terracotta Warriors. The site is 40 km east of Xian — the public bus takes 1 hour from Xian Railway Station. Go to Pit 1 first, then Pit 2, then Pit 3. The bronze chariot exhibition hall is the final stop and is often less crowded in the afternoon.',
       },
       {
         day: 'Day 3: Xian → Lanzhou',
         content:
-          "Take the 3-hour high-speed train from Xian North to Lanzhou West (¥175). Lanzhou is a long, narrow city squeezed between mountains along the Yellow River. Afternoon: Zhongshan Bridge (中山桥) — a steel bridge built by a German company in 1909, the first permanent bridge across the Yellow River. Walk the riverfront promenade. Visit the White Pagoda Mountain (白塔山) for a panoramic view of the city. Evening: Lanzhou beef noodles (兰州牛肉面) — the city's claim to culinary fame.",
-        tip: "Lanzhou beef noodles (兰州牛肉面) is one of China's most famous dishes. The best bowls are served for breakfast — locals queue at 6am. The noodles are hand-pulled to order in 7 different thicknesses. Must-try shops: Mazilu (马子禄, the most famous) or Wumule (吾穆勒, locals' favourite). A bowl costs ¥8-15.",
+          "Take the 3-hour high-speed train from Xian North to Lanzhou West. Lanzhou is a long, narrow city squeezed between mountains along the Yellow River. Afternoon: Zhongshan Bridge (中山桥) — a steel bridge built by a German company in 1909, the first permanent bridge across the Yellow River. Walk the riverfront promenade. Visit the White Pagoda Mountain (白塔山) for a panoramic view of the city. Evening: Lanzhou beef noodles (兰州牛肉面) — the city's claim to culinary fame.",
+        tip: "Lanzhou beef noodles (兰州牛肉面) is one of China's most famous dishes. The best bowls are served for breakfast — locals queue at 6am. The noodles are hand-pulled to order in 7 different thicknesses, the beef broth simmered for hours with aromatics, and the finished bowl crowned with tender sliced beef, fresh coriander, and a splash of chilli oil. Must-try shops: Mazilu (马子禄, the most famous) or Wumule (吾穆勒, locals' favourite).",
       },
       {
         day: 'Day 4: Lanzhou → Zhangye',
         content:
-          "Take the 3-hour high-speed train from Lanzhou West to Zhangye West (¥150). Zhangye's Danxia Landform (张掖丹霞, ¥75) is a range of rainbow-coloured sandstone mountains — layers of red, orange, yellow, and green mineral deposits that look like a painter's palette. The best light is late afternoon (4-6pm) when the colours are most vivid. The scenic area has shuttle buses between 4 viewing platforms. Stay overnight in Zhangye.",
+          "Take the 3-hour high-speed train from Lanzhou West to Zhangye West. Zhangye's Danxia Landform (张掖丹霞) is a range of rainbow-coloured sandstone mountains — layers of red, orange, yellow, and green mineral deposits that look like a painter's palette. The best light is late afternoon (4-6pm) when the colours are most vivid. The scenic area has shuttle buses between 4 viewing platforms. Stay overnight in Zhangye.",
         tip: 'Zhangye Danxia looks Photoshopped in photos but is genuinely that colourful in person — the colours come from iron oxide (red), limonite (yellow), and chlorite (green) mineral deposits laid down over 24 million years. The best viewing platform is #4 (the highest). Go on a sunny day — the colours are muted in cloud or rain.',
       },
       {
         day: 'Day 5: Zhangye → Jiayuguan',
         content:
-          "Take the 1.5-hour high-speed train from Zhangye West to Jiayuguan South (¥80). Jiayuguan (嘉峪关) is the western end of the Ming dynasty Great Wall — a massive fortress built in 1372 at a strategic choke point between the Qilian Mountains and the Gobi Desert. The fortress is remarkably well-preserved: walls 11m high, gates inscribed with 'Jiayuguan' in imperial calligraphy, and watchtowers with views across the desert. Afternoon: Overhanging Great Wall (悬壁长城, ¥20) — a section of wall climbing a 150m ridge north of the fortress. Evening: Jiayuguan barbecue (lamb skewers are the local speciality).",
-        tip: 'Jiayuguan fortress is at its most atmospheric in late afternoon when the setting sun turns the walls golden and the desert stretches endlessly beyond. The ticket (¥120) includes the fortress, the Overhanging Wall, and the First Strategic Post (the westernmost point of the Ming Great Wall). The three sites are spread out — you will need a taxi or Didi to reach them all.',
+          "Take the 1.5-hour high-speed train from Zhangye West to Jiayuguan South. Jiayuguan (嘉峪关) is the western end of the Ming dynasty Great Wall — a massive fortress built in 1372 at a strategic choke point between the Qilian Mountains and the Gobi Desert. The fortress is remarkably well-preserved: walls 11m high, gates inscribed with 'Jiayuguan' in imperial calligraphy, and watchtowers with views across the desert. Afternoon: Overhanging Great Wall (悬壁长城) — a section of wall climbing a 150m ridge north of the fortress. Evening: Jiayuguan barbecue (lamb skewers are the local speciality).",
+        tip: 'Jiayuguan fortress is at its most atmospheric in late afternoon when the setting sun turns the walls golden and the desert stretches endlessly beyond. A combined ticket covers the fortress, the Overhanging Wall, and the First Strategic Post (the westernmost point of the Ming Great Wall). The three sites are spread out — you will need a taxi or Didi to reach them all.',
       },
       {
         day: 'Day 6: Jiayuguan → Dunhuang',
         content:
-          "Drive 4.5 hours from Jiayuguan to Dunhuang (¥150 by bus, ¥800 by private car). The road crosses the Gobi Desert — one of the most dramatic drives in China. Dunhuang was the Silk Road's western gateway: beyond here, the route split into the northern and southern routes around the Taklamakan Desert. Afternoon: Mingsha Sand Dunes (鸣沙山, ¥120) — massive singing sand dunes right on the edge of the city. Climb the dunes (30-40 minutes up, 5 minutes down running) for sunset over the desert. Crescent Moon Spring (月牙泉), a natural spring in the shape of a crescent moon, sits improbably between the dunes.",
-        tip: 'Mingsha Sand Dunes are best at sunrise or sunset — the sand turns gold and the temperature is bearable. The climb is hard work (sand gives way with every step) but the view is worth it. Rent orange shoe covers (¥15) at the entrance — the sand will get everywhere otherwise. Camel rides are ¥100 for 40 minutes.',
+          "Drive 4.5 hours from Jiayuguan to Dunhuang (bus available, or arrange a private car through your hotel). The road crosses the Gobi Desert — one of the most dramatic drives in China. Dunhuang was the Silk Road's western gateway: beyond here, the route split into the northern and southern routes around the Taklamakan Desert. Afternoon: Mingsha Sand Dunes (鸣沙山) — massive singing sand dunes right on the edge of the city. Climb the dunes (30-40 minutes up, 5 minutes down running) for sunset over the desert. Crescent Moon Spring (月牙泉), a natural spring in the shape of a crescent moon, sits improbably between the dunes.",
+        tip: 'Mingsha Sand Dunes are best at sunrise or sunset — the sand turns gold and the temperature is bearable. The climb is hard work (sand gives way with every step) but the view is worth it. Rent orange shoe covers at the entrance — the sand will get everywhere otherwise. Camel rides through the dunes offer a classic Silk Road experience lasting around 40 minutes.',
       },
       {
         day: 'Day 7: Dunhuang',
         content:
-          'Morning: Mogao Caves (莫高窟, ¥238, must book 2-4 weeks ahead) — 492 caves containing 2,000+ painted sculptures and 45,000 m² of murals spanning 1,000 years of Buddhist art (4th-14th centuries). Visits are by guided tour only; you will see 8 caves (the specific caves depend on the day). The highlight is Cave 45 — a Tang dynasty cave with perfectly preserved painted sculptures of the Buddha and bodhisattvas. Afternoon: Dunhuang Museum (free). Evening: Shazhou Night Market for camel kebabs and Dunhuang yellow noodles (黄面).',
-        tip: 'Mogao Caves tickets (¥238, A-category) sell out 2-4 weeks in advance in summer. Book on the official WeChat mini-program (莫高窟参观预约网). The A ticket includes a 40-minute IMAX film, 8 caves with a guide, and transport from the Digital Centre. B-category tickets (¥100, 4 caves) are available 1-2 days ahead but sell out too. Plan ahead.',
+          'Morning: Mogao Caves (莫高窟, must book 2-4 weeks ahead) — 492 caves containing 2,000+ painted sculptures and 45,000 m² of murals spanning 1,000 years of Buddhist art (4th-14th centuries). Visits are by guided tour only; you will see 8 caves (the specific caves depend on the day). The highlight is Cave 45 — a Tang dynasty cave with perfectly preserved painted sculptures of the Buddha and bodhisattvas. Afternoon: Dunhuang Museum (free). Evening: Shazhou Night Market for camel kebabs and Dunhuang yellow noodles (黄面).',
+        tip: 'Mogao Caves A-category tickets sell out 2-4 weeks in advance in summer. Book on the official WeChat mini-program (莫高窟参观预约网). The A ticket includes a 40-minute IMAX film, 8 caves with a guide, and transport from the Digital Centre. B-category tickets (4 caves) are available 1-2 days ahead but sell out too. Plan ahead.',
       },
       {
         day: 'Day 8: Dunhuang → Fly Out',
         content:
-          'Fly out from Dunhuang Mogao Airport (DNH). Direct flights to Xian (2.5 hrs), Lanzhou (1.5 hrs), and Beijing (4 hrs). If your flight is in the evening, visit the Western Thousand Buddha Caves (西千佛洞, ¥30) — a smaller, less-visited cave complex 35 km west of Dunhuang with 16 surviving caves.',
-        tip: 'Dunhuang airport is small and 13 km east of the city. The airport bus (¥10) takes 20 minutes from the city centre. There is also a high-speed train station (Dunhuang) with trains to Lanzhou (8 hrs, overnight option).',
+          'Fly out from Dunhuang Mogao Airport (DNH). Direct flights to Xian (2.5 hrs), Lanzhou (1.5 hrs), and Beijing (4 hrs). If your flight is in the evening, visit the Western Thousand Buddha Caves (西千佛洞) — a smaller, less-visited cave complex 35 km west of Dunhuang with 16 surviving caves.',
+        tip: 'Dunhuang airport is small and 13 km east of the city. The airport bus takes 20 minutes from the city centre. There is also a high-speed train station (Dunhuang) with trains to Lanzhou (8 hrs, overnight option).',
       },
     ],
     practical: [
       {
         title: 'Getting There',
-        body: 'Xian-Lanzhou: train (3 hrs, ¥175). Lanzhou-Zhangye: train (3 hrs, ¥150). Zhangye-Jiayuguan: train (1.5 hrs, ¥80). Jiayuguan-Dunhuang: drive (4.5 hrs, bus ¥150 or private car ¥800). Fly out from Dunhuang (DNH).',
+        body: 'Xian-Lanzhou: train (3 hrs). Lanzhou-Zhangye: train (3 hrs). Zhangye-Jiayuguan: train (1.5 hrs). Jiayuguan-Dunhuang: drive (4.5 hrs, bus or private car). Fly out from Dunhuang (DNH).',
       },
       {
         title: 'Where to Stay',
-        body: 'Xian: inside the city wall ($40-100/night). Lanzhou: near Zhongshan Bridge ($30-70/night). Zhangye: near the train station or city centre ($25-60/night). Jiayuguan: near the fortress ($30-70/night). Dunhuang: Shazhou Night Market area ($30-80/night).',
+        body: 'Xian: inside the city wall — boutique hotels in restored courtyard mansions to international brands. Lanzhou: near Zhongshan Bridge — comfortable city hotels with river views. Zhangye: near the train station or city centre — simple, well-run hotels. Jiayuguan: near the fortress — modest hotels with desert character. Dunhuang: Shazhou Night Market area — characterful guesthouses and mid-range hotels.',
       },
       {
         title: 'When to Go',
@@ -430,50 +430,50 @@ const routes = [
       {
         day: 'Day 2: Lanzhou → Bingling Temple → Lanzhou',
         content:
-          'Day trip to Bingling Temple (炳灵寺, ¥50 + ¥120 boat) — a Buddhist cave complex 80 km from Lanzhou, accessible only by a 1-hour boat ride through the Liujiaxia Reservoir. The caves contain 183 niches with 694 stone statues and 900 m² of murals, carved from the 4th to 15th centuries. The highlight is a 27m seated Maitreya Buddha carved into the cliff face. Return to Lanzhou in the evening.',
-        tip: "Bingling Temple is one of China's most underrated Buddhist sites. The boat ride through the reservoir (flooded in 1967 to build a dam) takes you through a landscape of eroded sandstone cliffs. The temple's remote location means far fewer visitors than Mogao or Longmen. The boat departs from Liujiaxia Dam — 1.5 hours from Lanzhou by bus (¥30).",
+          'Day trip to Bingling Temple (炳灵寺) — a Buddhist cave complex 80 km from Lanzhou, accessible only by a 1-hour boat ride through the Liujiaxia Reservoir. The caves contain 183 niches with 694 stone statues and 900 m² of murals, carved from the 4th to 15th centuries. The highlight is a 27m seated Maitreya Buddha carved into the cliff face. Return to Lanzhou in the evening.',
+        tip: "Bingling Temple is one of China's most underrated Buddhist sites. The boat ride through the reservoir (flooded in 1967 to build a dam) takes you through a landscape of eroded sandstone cliffs. The temple's remote location means far fewer visitors than Mogao or Longmen. The boat departs from Liujiaxia Dam — 1.5 hours from Lanzhou by bus.",
       },
       {
         day: 'Day 3: Lanzhou → Wuwei',
         content:
-          "Take the 1.5-hour high-speed train from Lanzhou West to Wuwei East (¥90). Wuwei (武威) was the first city the Silk Road reached after leaving the Chinese heartland. Visit the Leitai Han Tomb (雷台汉墓, ¥45) where the Flying Horse of Gansu was discovered in 1969. The tomb is a brick-vaulted Han dynasty general's burial with 99 bronze chariots and horses. Afternoon: Confucius Temple (文庙, ¥30), the largest in northwest China, and the Wuwei Museum for Silk Road artefacts. Evening: Wuwei 'three sets' noodles (三套车) — noodles, braised pork, and tea.",
+          "Take the 1.5-hour high-speed train from Lanzhou West to Wuwei East. Wuwei (武威) was the first city the Silk Road reached after leaving the Chinese heartland. Visit the Leitai Han Tomb (雷台汉墓) where the Flying Horse of Gansu was discovered in 1969. The tomb is a brick-vaulted Han dynasty general's burial with 99 bronze chariots and horses. Afternoon: Confucius Temple (文庙), the largest in northwest China, and the Wuwei Museum for Silk Road artefacts. Evening: Wuwei 'three sets' noodles (三套车) — noodles, braised pork, and tea.",
         tip: 'Wuwei is often skipped on Silk Road itineraries, but it was the most important city on the Hexi Corridor during the Han dynasty. The Leitai Han Tomb is the original find site of the Flying Horse — the original is in the Gansu Museum in Lanzhou, but the tomb itself is evocative.',
       },
       {
         day: 'Day 4: Wuwei → Zhangye',
         content:
-          'Take the 1-hour high-speed train from Wuwei East to Zhangye West (¥75). Afternoon: Zhangye Danxia Landform — the rainbow mountains at their best in late afternoon light. Stay overnight in Zhangye.',
-        tip: 'If you have a flexible schedule, consider spending a second day in Zhangye to visit the Mati Temple (马蹄寺, ¥75), a complex of Buddhist caves carved into a cliff 65 km south of the city. The caves include a 7-storey pagoda carved inside the mountain, with interior passages connecting the levels.',
+          'Take the 1-hour high-speed train from Wuwei East to Zhangye West. Afternoon: Zhangye Danxia Landform — the rainbow mountains at their best in late afternoon light. Stay overnight in Zhangye.',
+        tip: 'If you have a flexible schedule, consider spending a second day in Zhangye to visit the Mati Temple (马蹄寺), a complex of Buddhist caves carved into a cliff 65 km south of the city. The caves include a 7-storey pagoda carved inside the mountain, with interior passages connecting the levels.',
       },
       {
         day: 'Day 5: Zhangye → Jiayuguan',
         content:
-          'Take the 1.5-hour high-speed train from Zhangye West to Jiayuguan South (¥80). Full afternoon at Jiayuguan Fortress, the Overhanging Great Wall, and the First Strategic Post — the western end of the Ming dynasty Great Wall. Evening: Jiayuguan lamb skewers.',
+          'Take the 1.5-hour high-speed train from Zhangye West to Jiayuguan South. Full afternoon at Jiayuguan Fortress, the Overhanging Great Wall, and the First Strategic Post — the western end of the Ming dynasty Great Wall. Evening: Jiayuguan lamb skewers.',
         tip: "The 'First Strategic Post' (第一墩) is a weathered earthen mound 7.5 km southwest of the fortress — it was the actual westernmost point of the Ming Great Wall, standing on a 56m cliff above the Taolai River. The view from the glass observation deck is vertiginous.",
       },
       {
         day: 'Day 6: Jiayuguan → Dunhuang',
         content:
           'Drive 4.5 hours through the Gobi Desert to Dunhuang. Afternoon: Mingsha Sand Dunes and Crescent Moon Spring at sunset. Evening: Shazhou Night Market.',
-        tip: 'The Jiayuguan-Dunhuang drive is on a good highway through a landscape of absolute emptiness — black gravel desert, distant snow-capped mountains, and the occasional camel herd. There is a rest stop at Guazhou (瓜州), famous for melons. Buy a honeydew melon (¥5-10) — they are the sweetest in China.',
+        tip: 'The Jiayuguan-Dunhuang drive is on a good highway through a landscape of absolute emptiness — black gravel desert, distant snow-capped mountains, and the occasional camel herd. There is a rest stop at Guazhou (瓜州), famous for melons. Buy a honeydew melon from a roadside stall — they are the sweetest in China.',
       },
       {
         day: 'Day 7: Dunhuang — Mogao Caves',
         content:
-          'Full morning at the Mogao Caves (book 2-4 weeks ahead). The guided tour (A-category, ¥238) covers 8 caves including the Tang dynasty masterpieces. Afternoon: Dunhuang Museum and a rest. Evening: optional second visit to Mingsha Sand Dunes (the ticket is valid for 3 days).',
+          'Full morning at the Mogao Caves (book 2-4 weeks ahead). The guided tour (A-category) covers 8 caves including the Tang dynasty masterpieces. Afternoon: Dunhuang Museum and a rest. Evening: optional second visit to Mingsha Sand Dunes (the ticket is valid for 3 days).',
         tip: "Mogao Caves Cave 45 is the highlight — a Tang dynasty cave with a perfectly preserved group of 7 painted sculptures: Buddha flanked by two disciples, two bodhisattvas, and two guardian kings. The colour on the bodhisattvas' robes is still vivid after 1,300 years. Cave 158 has a 16m reclining Buddha in nirvana.",
       },
       {
         day: 'Day 8: Dunhuang — Yulin Caves + Yadan',
         content:
-          'Day trip: Yulin Caves (榆林窟, ¥40, 2.5 hrs east of Dunhuang) — a sister site to Mogao with 42 caves, less visited but with some of the finest Tang dynasty murals (including a famous mural of the Tang monk Xuanzang with a monkey — a precursor to Journey to the West). Afternoon: Yadan Ghost City (雅丹魔鬼城, ¥50 + ¥70 shuttle), a landscape of wind-eroded rock formations 180 km northwest of Dunhuang. Return to Dunhuang late evening.',
+          'Day trip: Yulin Caves (榆林窟, 2.5 hrs east of Dunhuang) — a sister site to Mogao with 42 caves, less visited but with some of the finest Tang dynasty murals (including a famous mural of the Tang monk Xuanzang with a monkey — a precursor to Journey to the West). Afternoon: Yadan Ghost City (雅丹魔鬼城), a landscape of wind-eroded rock formations 180 km northwest of Dunhuang. Return to Dunhuang late evening.',
         tip: 'The Yulin Caves are smaller and less visited than Mogao but the quality of the murals in the Tang caves is equal or better. Cave 25 has a famous mural of the Amitabha Sutra that is considered one of the finest Tang dynasty paintings in existence. Yadan Ghost City is best at sunset — the rock formations glow orange against the darkening sky.',
       },
       {
         day: 'Day 9: Dunhuang → Fly Out',
         content:
           'Fly out from Dunhuang. If you have a late flight, visit the Western Thousand Buddha Caves (西千佛洞) or the Dunhuang night market for last-minute Silk Road souvenirs (camel-wool scarves, replica Mogao murals, Dunhuang yellow noodles to take home).',
-        tip: 'Dunhuang souvenirs: replica Mogao mural paintings on silk (¥50-200), camel-wool scarves (¥30-80), and dried fruits from Xinjiang (dates, raisins, apricots). The night market is the best place to buy — bargain hard (start at 50% of asking price).',
+        tip: 'Dunhuang souvenirs: replica Mogao mural paintings on silk, camel-wool scarves, and dried fruits from Xinjiang (dates, raisins, apricots). The night market is the best place to browse — bargain enthusiastically (start at half the asking price) and enjoy the lively atmosphere.',
       },
     ],
     practical: [
@@ -483,7 +483,7 @@ const routes = [
       },
       {
         title: 'Where to Stay',
-        body: 'Lanzhou (2 nights), Wuwei (1 night), Zhangye (1-2 nights), Jiayuguan (1 night), Dunhuang (3 nights). Budget $30-80/night throughout.',
+        body: 'Lanzhou (2 nights), Wuwei (1 night), Zhangye (1-2 nights), Jiayuguan (1 night), Dunhuang (3 nights). Comfortable mid-range accommodation throughout.',
       },
       {
         title: 'When to Go',
@@ -491,7 +491,7 @@ const routes = [
       },
       {
         title: 'Mogao Tickets',
-        body: 'Mogao Caves A-category tickets (¥238, 8 caves) must be booked 2-4 weeks ahead on WeChat. B-category tickets (¥100, 4 caves) are available 1-2 days ahead. The A ticket includes an IMAX film and guided tour. No photography inside the caves.',
+        body: 'Mogao Caves A-category tickets (8 caves) must be booked 2-4 weeks ahead on WeChat. B-category tickets (4 caves) are available 1-2 days ahead. The A ticket includes an IMAX film and guided tour. No photography inside the caves.',
       },
     ],
     nextSteps: [
@@ -584,25 +584,25 @@ const routes = [
       {
         day: 'Day 2: Lhasa Acclimatisation',
         content:
-          "Gentle day exploring Lhasa. Morning: Barkhor Street (八廓街) — the 1 km pilgrim circuit around the Jokhang Temple, lined with shops selling prayer wheels, thangka paintings, and yak butter. Watch pilgrims prostrating their way around the circuit. Visit Jokhang Temple (大昭寺, ¥85) — Tibet's holiest temple, housing a life-sized gilded statue of the 12-year-old Buddha (Jowo Rinpoche) brought to Tibet in 641 AD. Afternoon: Sera Monastery (色拉寺, ¥50) for the famous monk debate (3-4pm daily except Sundays) — monks debate Buddhist philosophy in a courtyard with dramatic clapping gestures.",
+          "Gentle day exploring Lhasa. Morning: Barkhor Street (八廓街) — the 1 km pilgrim circuit around the Jokhang Temple, lined with shops selling prayer wheels, thangka paintings, and yak butter. Watch pilgrims prostrating their way around the circuit. Visit Jokhang Temple (大昭寺) — Tibet's holiest temple, housing a life-sized gilded statue of the 12-year-old Buddha (Jowo Rinpoche) brought to Tibet in 641 AD. Afternoon: Sera Monastery (色拉寺) for the famous monk debate (3-4pm daily except Sundays) — monks debate Buddhist philosophy in a courtyard with dramatic clapping gestures.",
         tip: 'The Jokhang Temple is the spiritual heart of Tibet. The Jowo Rinpoche statue is the most revered image in Tibetan Buddhism — pilgrims travel months on foot to see it. The temple is dark, smoky with yak-butter lamps, and intensely atmospheric. The monk debates at Sera Monastery are a 600-year-old tradition — philosophical argument as performance art.',
       },
       {
         day: 'Day 3: Lhasa — Potala Palace',
         content:
-          "Morning: Potala Palace (布达拉宫, ¥200, book 1-7 days ahead) — the 13-storey, 1,000-room palace that was the winter residence of the Dalai Lamas from the 7th century. The visit (1 hour, strictly timed) climbs through the White Palace (administrative) and Red Palace (religious), past chapels, tombs of 8 Dalai Lamas, and the throne room. The view from the roof across Lhasa is extraordinary. Afternoon: Norbulingka (罗布林卡, ¥60), the Dalai Lama's summer palace — a peaceful park of pavilions, gardens, and ponds. Evening: traditional Tibetan dinner with yak-butter tea.",
-        tip: 'Potala Palace tickets: ¥200, must be reserved 1-7 days in advance (your agency handles this). The visit is strictly timed to 1 hour and you must follow a set route. No photography inside. The climb is 365 steps at 3,650m altitude — take it slow. The palace is closed for maintenance November-March on rotating schedules.',
+          "Morning: Potala Palace (布达拉宫, book 1-7 days ahead) — the 13-storey, 1,000-room palace that was the winter residence of the Dalai Lamas from the 7th century. The visit (1 hour, strictly timed) climbs through the White Palace (administrative) and Red Palace (religious), past chapels, tombs of 8 Dalai Lamas, and the throne room. The view from the roof across Lhasa is extraordinary. Afternoon: Norbulingka (罗布林卡), the Dalai Lama's summer palace — a peaceful park of pavilions, gardens, and ponds. Evening: traditional Tibetan dinner with yak-butter tea.",
+        tip: 'Potala Palace tickets must be reserved 1-7 days in advance (your agency handles this). The visit is strictly timed to 1 hour and you must follow a set route. No photography inside. The climb is 365 steps at 3,650m altitude — take it slow. The palace is closed for maintenance November-March on rotating schedules.',
       },
       {
         day: 'Day 4: Lhasa → Yamdrok Lake → Gyantse (3,950m)',
         content:
-          "Drive 2.5 hours from Lhasa to Yamdrok Lake (羊卓雍措, ¥60), one of Tibet's three sacred lakes. The first view from the Kamba La pass (4,794m) is unforgettable: a turquoise lake stretching 72 km, surrounded by snow peaks. Descend to the lake shore, then continue 3 hours to Gyantse (江孜). Visit the Pelkor Chode Monastery (白居寺, ¥60) and its Kumbum Stupa — a 32m, 9-storey chorten with 108 chapels and 100,000 Buddhist images. Gyantse was the site of a famous 1904 battle where Tibetan forces held off the British Younghusband Expedition.",
+          "Drive 2.5 hours from Lhasa to Yamdrok Lake (羊卓雍措), one of Tibet's three sacred lakes. The first view from the Kamba La pass (4,794m) is unforgettable: a turquoise lake stretching 72 km, surrounded by snow peaks. Descend to the lake shore, then continue 3 hours to Gyantse (江孜). Visit the Pelkor Chode Monastery (白居寺) and its Kumbum Stupa — a 32m, 9-storey chorten with 108 chapels and 100,000 Buddhist images. Gyantse was the site of a famous 1904 battle where Tibetan forces held off the British Younghusband Expedition.",
         tip: "Yamdrok Lake's colour changes with the light — turquoise in full sun, deep blue under clouds. The Kamba La pass viewpoint is cold and windy (4,794m). The road descends to the lake in a series of switchbacks. The lake is sacred — Tibetans circumambulate it on foot (7-10 days).",
       },
       {
         day: 'Day 5: Gyantse → Shigatse (3,800m)',
         content:
-          "Drive 1.5 hours from Gyantse to Shigatse (日喀则), Tibet's second city. Visit Tashilhunpo Monastery (扎什伦布寺, ¥80) — the seat of the Panchen Lama (the second-highest lama in Tibetan Buddhism after the Dalai Lama). The monastery's highlight is the 26m gilded copper statue of the Future Buddha (Maitreya) — the largest gilded statue in the world, containing 279 kg of gold and 150,000 kg of copper. Walk the monastery's cobbled lanes among monks' quarters, chapels, and assembly halls. Afternoon: Shigatse market and old town.",
+          "Drive 1.5 hours from Gyantse to Shigatse (日喀则), Tibet's second city. Visit Tashilhunpo Monastery (扎什伦布寺) — the seat of the Panchen Lama (the second-highest lama in Tibetan Buddhism after the Dalai Lama). The monastery's highlight is the 26m gilded copper statue of the Future Buddha (Maitreya) — the largest gilded statue in the world, containing 279 kg of gold and 150,000 kg of copper. Walk the monastery's cobbled lanes among monks' quarters, chapels, and assembly halls. Afternoon: Shigatse market and old town.",
         tip: "Tashilhunpo Monastery was founded in 1447 and is one of Tibet's six great Gelug monasteries. The Maitreya statue is overwhelming — 26m of gilded copper in a chapel built around it. The monastery is less visited than Potala or Jokhang, so you can explore at a more relaxed pace.",
       },
       {
@@ -614,20 +614,20 @@ const routes = [
       {
         day: 'Day 7: Everest Base Camp → Shigatse',
         content:
-          'Sunrise at Everest Base Camp — the north face glows gold at dawn. Walk to the Base Camp marker (5,200m) for photos, then drive 7-8 hours back to Shigatse. The return drive retraces the route over the high passes. Stop at Sakya Monastery (萨迦寺, ¥45) en route — a 13th-century monastery of the Sakya school, with massive grey walls and a library of 84,000 manuscripts. Arrive Shigatse in the evening.',
+          'Sunrise at Everest Base Camp — the north face glows gold at dawn. Walk to the Base Camp marker (5,200m) for photos, then drive 7-8 hours back to Shigatse. The return drive retraces the route over the high passes. Stop at Sakya Monastery (萨迦寺) en route — a 13th-century monastery of the Sakya school, with massive grey walls and a library of 84,000 manuscripts. Arrive Shigatse in the evening.',
         tip: "The sunrise on Everest's north face is one of the world's great sights — the mountain turns from grey to pink to gold in the space of 10 minutes. The Base Camp marker is a 20-minute walk from the tent area. The return drive is long but the Himalayan views from Gawu La are worth a second look.",
       },
       {
         day: 'Day 8: Shigatse → Lhasa',
         content:
           'Drive 5 hours back to Lhasa along the Yarlung Tsangpo River (the Brahmaputra). The road follows the river valley with views of barley fields, yak herds, and distant snow peaks. Optional stop at the Yarlung Valley — the cradle of Tibetan civilisation, with the first cultivated fields, first palace (Yumbulagang), and first monastery (Samye). Arrive Lhasa in the afternoon. Farewell dinner.',
-        tip: "The Yarlung Valley, 1 hour south of Lhasa, is where Tibetan civilisation began. Yumbulagang (雍布拉康), perched on a hilltop, was Tibet's first building (2nd century BC). Samye Monastery (桑耶寺, ¥45), founded in 775 AD, was Tibet's first Buddhist monastery. Both can be visited as a day trip from Lhasa if you have an extra day.",
+        tip: "The Yarlung Valley, 1 hour south of Lhasa, is where Tibetan civilisation began. Yumbulagang (雍布拉康), perched on a hilltop, was Tibet's first building (2nd century BC). Samye Monastery (桑耶寺), founded in 775 AD, was Tibet's first Buddhist monastery. Both can be visited as a day trip from Lhasa if you have an extra day.",
       },
       {
         day: 'Day 9: Depart Lhasa',
         content:
           'Fly out from Lhasa Gonggar Airport. If you have a morning flight, your guide transfers you to the airport (1 hour from Lhasa). If your flight is in the afternoon, visit the Tibetan Traditional Medicine Museum or the Tibet Museum for a final dose of Tibetan culture.',
-        tip: 'Lhasa airport is 62 km from the city (1 hour by car). The airport bus (¥25) departs from the Civil Aviation Bureau near the Potala Palace. Security at Lhasa airport is strict — arrive 2 hours before your flight.',
+        tip: 'Lhasa airport is 62 km from the city (1 hour by car). The airport bus departs from the Civil Aviation Bureau near the Potala Palace. Security at Lhasa airport is strict — arrive 2 hours before your flight.',
       },
     ],
     practical: [
@@ -637,7 +637,7 @@ const routes = [
       },
       {
         title: 'Where to Stay',
-        body: 'Lhasa: near the Barkhor or Potala Palace ($50-150/night). Shigatse: near Tashilhunpo Monastery ($40-80/night). Everest Base Camp: tent guesthouses (¥80-150/person/night) or Rongbuk Monastery guesthouse (¥200-400/room). Your agency arranges all accommodation.',
+        body: 'Lhasa: near the Barkhor or Potala Palace — boutique Tibetan-style hotels to international chains. Shigatse: near Tashilhunpo Monastery — comfortable hotels with mountain views. Everest Base Camp: tent guesthouses (rustic dorm accommodation with yak-dung stoves) or Rongbuk Monastery guesthouse (simple private rooms). Your agency arranges all accommodation.',
       },
       {
         title: 'When to Go',
@@ -761,7 +761,7 @@ const routes = [
         day: 'Day 6: Depart Lhasa',
         content:
           'Transfer to Lhasa airport. If your flight is late, visit the Tibetan Traditional Medicine Museum or buy thangka paintings and yak-wool products on Barkhor Street.',
-        tip: 'Thangka paintings (Tibetan Buddhist scroll paintings on cotton or silk) make the best Tibet souvenir. A hand-painted thangka by a trained artist costs ¥500-5,000 depending on size and detail. Bargain at Barkhor Street but be respectful — these are religious objects.',
+        tip: 'Thangka paintings (Tibetan Buddhist scroll paintings on cotton or silk) make the best Tibet souvenir. A hand-painted thangka by a trained artist is a serious investment — the finest pieces take months to complete and reflect generations of artistic tradition. Browse the galleries on Barkhor Street but be respectful — these are religious objects.',
       },
     ],
     practical: [
@@ -771,7 +771,7 @@ const routes = [
       },
       {
         title: 'Where to Stay',
-        body: 'Lhasa: near Barkhor or Potala ($50-150/night). Namtso: basic guesthouse near the lake (¥100-200/person/night). The Namtso accommodation is very basic — dorm beds, shared squat toilets, no showers. Bring wet wipes and warm clothes.',
+        body: 'Lhasa: near Barkhor or Potala — boutique Tibetan-style hotels to international chains. Namtso: basic guesthouse near the lake (rustic dorm beds, shared squat toilets, no showers). The Namtso accommodation is very basic — bring wet wipes and warm clothes.',
       },
       {
         title: 'When to Go',

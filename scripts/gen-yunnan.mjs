@@ -270,7 +270,7 @@ const routes = [
       },
     ],
     experienceTypes: ['culture', 'nature', 'photography'],
-    budget: '$600-900/person',
+    budget: 'Moderate — mid-range',
     overview:
       "This is the classic Yunnan circuit — the route every backpacker does and for good reason. Yunnan is China's most ethnically diverse province, home to 25 of China's 55 recognised ethnic minorities. The route climbs from subtropical Kunming (1,890m) to high-altitude Shangri-La (3,200m), passing through Bai, Naxi, and Tibetan cultures along the way. The infrastructure is excellent — high-speed trains connect Kunming, Dali, and Lijiang — and the food shifts from Yunnan rice noodles to Tibetan butter tea as you climb.",
     faqQ: 'How many days do I need for the Kunming-Dali-Lijiang-Shangri-La route?',
@@ -280,47 +280,47 @@ const routes = [
         day: 'Day 1: Kunming',
         content:
           "Fly into Kunming Changshui (KMG). Spend the day at the Stone Forest (石林) — 90 km southeast of the city, a UNESCO site of limestone pinnacles that look like petrified trees. Afternoon: Green Lake Park (翠湖) for people-watching and the surrounding Yunnan University area. Evening: across-the-bridge noodles (过桥米线) at a local restaurant — this is Yunnan's signature dish.",
-        tip: "Kunming is called the 'City of Eternal Spring' for a reason — temperatures are 15-25°C year-round. The Stone Forest entrance is ¥175. Go early (before 9am) to beat the tour groups from Kunming.",
+        tip: "Kunming is called the 'City of Eternal Spring' for a reason — temperatures are 15-25°C year-round. The Stone Forest has a modest entrance fee. Go early (before 9am) to beat the tour groups from Kunming.",
       },
       {
         day: 'Days 2-3: Dali',
         content:
-          "Take the 2-hour high-speed train from Kunming to Dali (¥145). Dali is a lakeside town backed by the 4,000m Cangshan Mountains, and the old town is a grid of stone-paved streets lined with Bai minority architecture. Day 2: rent an e-bike (¥50/day) and cycle around Erhai Lake — stop at Xizhou Village for traditional Bai architecture and the famous Xizhou baba flatbread. Day 3: morning hike on Cangshan (take the cable car to 2,600m, then walk the Cloud Traveller's Path), afternoon exploring Dali Old Town and the Three Pagodas.",
-        tip: "Skip the overpriced lakeside cafes aimed at tourists. Eat at the evening market near the South Gate — grilled Erhai lake fish (¥30), cross-bridge noodles (¥15), and the best grilled eggplant you'll ever eat.",
+          "Take the 2-hour high-speed train from Kunming to Dali. Dali is a lakeside town backed by the 4,000m Cangshan Mountains, and the old town is a grid of stone-paved streets lined with Bai minority architecture. Day 2: rent an e-bike and cycle around Erhai Lake — stop at Xizhou Village for traditional Bai architecture and the famous Xizhou baba flatbread. Day 3: morning hike on Cangshan (take the cable car to 2,600m, then walk the Cloud Traveller's Path), afternoon exploring Dali Old Town and the Three Pagodas.",
+        tip: "Skip the overpriced lakeside cafes aimed at tourists. Eat at the evening market near the South Gate — grilled Erhai lake fish, cross-bridge noodles, and the best grilled eggplant you'll ever eat.",
       },
       {
         day: 'Days 4-5: Lijiang',
         content:
-          "Take the train from Dali to Lijiang (1.5 hrs, ¥80). Lijiang's old town (Dayan) is a UNESCO World Heritage site — a maze of cobblestone alleys, wooden bridges, and canals built by the Naxi people 800 years ago. Day 4: walk the old town, climb to Wangu Tower for the panoramic view, visit the Black Dragon Pool for the classic photo of Jade Dragon Snow Mountain reflected in the water. Day 5: Shuhe Ancient Town (4 km north, less touristy) and Baisha Village for the 500-year-old Ming dynasty murals.",
-        tip: "Lijiang Old Town charges an ¥80 'maintenance fee' — but enforcement is lax and most travellers skip it. If asked at the gate, say you're staying at a hotel inside and they'll wave you through.",
+          "Take the train from Dali to Lijiang (1.5 hrs). Lijiang's old town (Dayan) is a UNESCO World Heritage site — a maze of cobblestone alleys, wooden bridges, and canals built by the Naxi people 800 years ago. Day 4: walk the old town, climb to Wangu Tower for the panoramic view, visit the Black Dragon Pool for the classic photo of Jade Dragon Snow Mountain reflected in the water. Day 5: Shuhe Ancient Town (4 km north, less touristy) and Baisha Village for the 500-year-old Ming dynasty murals.",
+        tip: "Lijiang Old Town charges a maintenance fee — but enforcement is lax and most travellers skip it. If asked at the gate, say you're staying at a hotel inside and they'll wave you through.",
       },
       {
         day: 'Day 6: Tiger Leaping Gorge',
         content:
-          "Take a 2-hour minibus from Lijiang to Qiaotou (¥40). Tiger Leaping Gorge is one of the world's deepest river canyons — the Jinsha River cuts between Jade Dragon Snow Mountain (5,596m) and Haba Snow Mountain (5,396m), a vertical drop of 3,900m. The classic high trail is 22 km and takes 6-8 hours. Start at Jane's Guesthouse, hike to the Tea Horse Guesthouse for lunch (km 12, the best view), then continue to Tina's Guesthouse for the night. If you're short on time, do the first 12 km to Tea Horse and back — it has the best views.",
+          "Take a 2-hour minibus from Lijiang to Qiaotou. Tiger Leaping Gorge is one of the world's deepest river canyons — the Jinsha River cuts between Jade Dragon Snow Mountain (5,596m) and Haba Snow Mountain (5,396m), a vertical drop of 3,900m. The classic high trail is 22 km and takes 6-8 hours. Start at Jane's Guesthouse, hike to the Tea Horse Guesthouse for lunch (km 12, the best view), then continue to Tina's Guesthouse for the night. If you're short on time, do the first 12 km to Tea Horse and back — it has the best views.",
         tip: 'The high trail is well-marked but has exposed cliff sections. Wear hiking shoes — the path is dusty and rocky. The Naxi Guesthouse at km 5 sells water and snacks. In rainy season (July-August), check if the trail is open before you go.',
       },
       {
         day: 'Day 7: Shangri-La',
         content:
           "From Tina's Guesthouse, take a 3-hour bus to Shangri-La (Zhongdian, 3,200m). Shangri-La is a Tibetan-majority town renamed in 2001 to cash in on the Lost Horizon mystique — but it genuinely feels different from anywhere else in Yunnan. Visit Songzanlin Monastery (the 'Little Potala Palace', built 1679, housing 700 monks), then walk the old town around Dukezong — the world's largest prayer wheel is here (21m tall, takes several people to turn). Evening: try yak hot pot and butter tea.",
-        tip: 'Shangri-La is at 3,200m — you will feel the altitude. Walk slowly, drink water, skip alcohol on your first night. Songzanlin Monastery is ¥115 — go in the morning when the monks are chanting.',
+        tip: 'Shangri-La is at 3,200m — you will feel the altitude. Walk slowly, drink water, skip alcohol on your first night. Songzanlin Monastery has an entrance fee — go in the morning when the monks are chanting.',
       },
       {
         day: 'Day 8 (optional): Shangri-La → Fly Out',
         content:
-          'If you have an 8th day, visit Pudacuo National Park — alpine lakes, meadows, and forests 22 km east of town (¥100, half-day trip). Fly out from Diqing Shangri-La Airport (DIG) to Kunming or direct to Chengdu/Chongqing for onward travel.',
-        tip: 'Diqing Airport has flights to Kunming (1 hr, ¥400-600), Chengdu (1.5 hrs), and Chongqing. Book a few days ahead — flights are less frequent than from Kunming.',
+          'If you have an 8th day, visit Pudacuo National Park — alpine lakes, meadows, and forests 22 km east of town (a rewarding half-day trip). Fly out from Diqing Shangri-La Airport (DIG) to Kunming or direct to Chengdu/Chongqing for onward travel.',
+        tip: 'Diqing Airport has flights to Kunming (1 hr), Chengdu (1.5 hrs), and Chongqing. Book a few days ahead — flights are less frequent than from Kunming.',
       },
     ],
     practical: [
       {
         title: 'Getting Between Cities',
-        body: 'High-speed trains connect Kunming → Dali (2 hrs, ¥145) and Dali → Lijiang (1.5 hrs, ¥80). Lijiang → Tiger Leaping Gorge is by minibus (2 hrs, ¥40). Tiger Leaping Gorge → Shangri-La is by bus (3 hrs, ¥60). All routes are well-served and bookable day-of except during Chinese holidays.',
+        body: 'High-speed trains connect Kunming to Dali (2 hrs) and Dali to Lijiang (1.5 hrs). Lijiang to Tiger Leaping Gorge is by minibus (2 hrs). Tiger Leaping Gorge to Shangri-La is by bus (3 hrs). All routes are well-served and bookable day-of except during Chinese holidays.',
       },
       {
         title: 'Where to Stay',
-        body: 'Kunming: near Green Lake Park ($30-60/night). Dali: inside the old town or by Erhai Lake ($25-80/night). Lijiang: in the old town, but avoid the noisy Sifang Street area — the southern end is quieter ($30-80/night). Shangri-La: near Dukezong old town ($30-60/night).',
+        body: 'Kunming: near Green Lake Park — boutique hotels in a leafy neighbourhood. Dali: inside the old town for atmosphere or by Erhai Lake for views — charming Bai-style courtyard guesthouses abound. Lijiang: in the old town, but avoid the noisy Sifang Street area — the southern end is quieter with intimate Naxi courtyard inns. Shangri-La: near Dukezong old town — Tibetan-style lodges with mountain views.',
       },
       {
         title: 'When to Go',
@@ -388,29 +388,29 @@ const routes = [
       },
     ],
     experienceTypes: ['culture', 'nature'],
-    budget: '$400-600/person',
+    budget: 'Moderate — mid-range',
     overview:
       "This shorter Yunnan route skips Kunming and Dali, flying directly into Lijiang and focusing on three highlights within a 4-5 day window. Lugu Lake straddles the Yunnan-Sichuan border and is home to the Mosuo people, one of the world's last matriarchal societies. Tiger Leaping Gorge is one of the deepest river canyons on Earth. Lijiang ties it together as the base.",
     faqQ: 'How do I get to Lugu Lake from Lijiang?',
-    faqA: 'The drive from Lijiang to Lugu Lake takes 4-5 hours by car or minibus (¥80-120). The road is winding but fully paved. There is no train. Most guesthouses in Lijiang can arrange a shared minibus — book the night before. Departures are typically 7-8am.',
+    faqA: 'The drive from Lijiang to Lugu Lake takes 4-5 hours by car or shared minibus. The road is winding but fully paved. There is no train. Most guesthouses in Lijiang can arrange a shared minibus — book the night before. Departures are typically 7-8am.',
     stops: [
       {
         day: 'Day 1: Lijiang Old Town',
         content:
           'Fly into Lijiang Sanyi Airport (LJG) — direct flights from Chengdu, Chongqing, Kunming, and major Chinese cities. Spend the day exploring Dayan Old Town: the cobblestone alleys, wooden Naxi houses, and the canals that crisscross the town. Climb to Wangu Tower for the sunset view. Evening: Naxi grilled fish and yak yoghurt in a courtyard restaurant.',
-        tip: 'Lijiang Airport is 28 km south of town. The airport shuttle bus (¥20) runs every 30 minutes. A Didi costs ¥80-100.',
+        tip: 'Lijiang Airport is 28 km south of town. The airport shuttle bus runs every 30 minutes. A ride-hailing car is also an option.',
       },
       {
         day: 'Days 2-3: Lugu Lake',
         content:
           "Take a 4-5 hour minibus from Lijiang to Lugu Lake (depart 7am, arrive by noon). Lugu Lake is at 2,685m, spanning the Yunnan-Sichuan border with crystal-clear emerald water. Spend the afternoon walking the lakeshore. Day 3: take a boat to Liwubi Island (the Mosuo people use traditional dugout canoes), visit a Mosuo family home to learn about the 'walking marriage' tradition, and cycle the 50 km loop around the lake. Stay overnight in Luoshui Village on the Yunnan side.",
-        tip: "The 50 km lake loop takes 4-5 hours by e-bike (¥80 rental). The Sichuan side of the lake is less developed and more authentic. The 'Walking Marriage Bridge' (走婚桥) on the Sichuan side is a wooden bridge through marshland — beautiful at sunset.",
+        tip: "The 50 km lake loop takes 4-5 hours by e-bike (easily rented in Luoshui Village). The Sichuan side of the lake is less developed and more authentic. The 'Walking Marriage Bridge' (走婚桥) on the Sichuan side is a wooden bridge through marshland — beautiful at sunset.",
       },
       {
         day: 'Day 4: Tiger Leaping Gorge',
         content:
           'Return to Lijiang by minibus (4-5 hrs, leave Lugu Lake at 7am). Transfer directly to Qiaotou for Tiger Leaping Gorge. If you arrive by 2pm, hike the first section of the high trail to Naxi Guesthouse (2 hours, the gentlest section) for sunset views. Stay overnight at a guesthouse on the trail.',
-        tip: "If you're short on time, skip the hike and visit the lower Tiger Leaping Gorge scenic area (¥45) — a 1,000-step staircase down to the river. The rapids here are ferocious, and there is a viewing platform at the bottom.",
+        tip: "If you're short on time, skip the hike and visit the lower Tiger Leaping Gorge scenic area — a 1,000-step staircase down to the river. The rapids here are ferocious, and there is a viewing platform at the bottom.",
       },
       {
         day: 'Day 5 (optional): Return to Lijiang',
@@ -493,11 +493,11 @@ const routes = [
       },
     ],
     experienceTypes: ['culture', 'nature'],
-    budget: '$400-600/person',
+    budget: 'Moderate — mid-range',
     overview:
       "This route goes west from Dali into Yunnan's less-visited corners. Shaxi is a preserved market town on the ancient Tea Horse Road — what Lijiang was 30 years ago. Tengchong is a volcanic border town near Myanmar, famous for hot springs, a well-preserved old town, and the tragic WWII battlefield at the Huitong Bridge. This route has fewer tourists and a slower pace.",
     faqQ: 'How do I get from Dali to Tengchong?',
-    faqA: 'Drive Dali → Shaxi (2.5 hrs), Shaxi → Tengchong (5 hrs via the Baoshan-Tengchong Expressway). There is no direct train — private car or long-distance bus are the options. A private car for the full route costs ¥1,500-2,000 including Shaxi and Tengchong stops.',
+    faqA: 'Drive Dali to Shaxi (2.5 hrs), Shaxi to Tengchong (5 hrs via the Baoshan-Tengchong Expressway). There is no direct train — private car or long-distance bus are the options. A private car for the full route can be arranged through your hotel or a local driver.',
     stops: [
       {
         day: 'Day 1: Dali → Shaxi',
@@ -509,13 +509,13 @@ const routes = [
         day: 'Day 2: Shaxi → Tengchong',
         content:
           'Morning in Shaxi — hike to the Shibaoshan Grottoes (16 Buddhist cave temples from the Nanzhao Kingdom, 1,200 years old, 30 min drive). Then drive 5 hours to Tengchong. Arrive by evening, check into a hot spring hotel, and soak. Tengchong has 99 volcanoes and 88 hot springs — the town is geothermally active and the hot spring water is genuinely therapeutic.',
-        tip: "Tengchong's Rehai (Hot Sea) Scenic Area has the best public hot springs — ¥288 for the full complex including the 'Big Boiling Pot' (大滚锅) where water emerges at 97°C. Bring your own swimsuit; rentals are overpriced.",
+        tip: "Tengchong's Rehai (Hot Sea) Scenic Area has the best public hot springs — the full complex includes the 'Big Boiling Pot' (大滚锅) where water emerges at 97°C. Bring your own swimsuit; rentals are overpriced.",
       },
       {
         day: 'Day 3: Tengchong Volcano Park',
         content:
-          'Morning: Tengchong Volcano National Park — hike up Daying Mountain (the largest dormant volcano, 30-minute climb) for the crater view. The park has 97 volcanic cones, and you can take a hot air balloon ride (¥280, 15 min) over the craters. Afternoon: Heshun Old Town (和顺古镇) — a 600-year-old village of grey-brick courtyard houses built by Tengchong jade merchants who traded across Southeast Asia. The library here is the oldest rural library in China (built 1924).',
-        tip: "Heshun Old Town's entrance fee is ¥55 — but if you stay at a guesthouse inside the old town, the owner can often get you in for free. The morning market in Heshun's main square is excellent for breakfast.",
+          'Morning: Tengchong Volcano National Park — hike up Daying Mountain (the largest dormant volcano, 30-minute climb) for the crater view. The park has 97 volcanic cones, and you can take a hot air balloon ride over the craters (about 15 minutes). Afternoon: Heshun Old Town (和顺古镇) — a 600-year-old village of grey-brick courtyard houses built by Tengchong jade merchants who traded across Southeast Asia. The library here is the oldest rural library in China (built 1924).',
+        tip: "Heshun Old Town has an entrance fee — but if you stay at a guesthouse inside the old town, the owner can often get you in for free. The morning market in Heshun's main square is excellent for breakfast.",
       },
       {
         day: 'Day 4: WWII History & Fly Out',
@@ -531,7 +531,7 @@ const routes = [
       },
       {
         title: 'Where to Stay',
-        body: 'Shaxi: Horse Pen 46 or Shaxi Laomadian Lodge (¥200-400/night). Tengchong: Heshun Old Town guesthouses (¥200-500/night) or the Angsana Hot Spring Resort for a splurge (¥800-1,200/night).',
+        body: 'Shaxi: Horse Pen 46 or Shaxi Laomadian Lodge — beautifully restored courtyard inns on the old square. Tengchong: Heshun Old Town guesthouses in converted merchant homes, or the Angsana Hot Spring Resort for a splurge — a luxury spa resort with private hot spring pools.',
       },
       {
         title: 'Best Season',
@@ -597,7 +597,7 @@ const routes = [
       },
     ],
     experienceTypes: ['nature', 'culture'],
-    budget: '$300-500/person',
+    budget: 'Budget-friendly — great value',
     overview:
       "Xishuangbanna (西双版纳) sits at 21°N — the same latitude as Hawaii and at China's southern tip bordering Laos and Myanmar. The Dai people have lived here for 2,000 years, and their culture — Theravada Buddhism, stilt houses, spicy-sour food — has more in common with Thailand and Laos than Han China. This is where Chinese tourists go for a 'tropical paradise' experience, but Western tourists have barely discovered it.",
     faqQ: 'When is the best time to visit Xishuangbanna?',
@@ -607,7 +607,7 @@ const routes = [
         day: 'Day 1: Jinghong',
         content:
           'Fly into Xishuangbanna Gasa Airport (JHG) — direct flights from Kunming (1 hr), Chengdu, Chongqing, and major cities. Jinghong is the capital and feels more like a Southeast Asian town than a Chinese city: palm-lined streets, golden-roofed Dai temples, and the Mekong (called Lancang here) flowing through. Visit Manting Park — a former Dai royal garden with a temple and daily elephant show — and Gaozhuang Night Market in the evening for Dai barbecue and papaya salad.',
-        tip: "Gaozhuang Night Market is massive — one of Yunnan's best night markets. Try the grilled Mekong fish (¥30), Dai-style papaya salad (som tam, ¥15), and sticky rice in bamboo tubes (¥10). The market runs from 6pm to midnight.",
+        tip: "Gaozhuang Night Market is massive — one of Yunnan's best night markets. Try the grilled Mekong fish, Dai-style papaya salad (som tam), and sticky rice in bamboo tubes. The market runs from 6pm to midnight.",
       },
       {
         day: 'Day 2: Wild Elephant Valley & Dai Villages',
@@ -619,7 +619,7 @@ const routes = [
         day: 'Day 3: Menglun Tropical Botanical Garden',
         content:
           "Drive 1.5 hours east to the Menglun Tropical Botanical Garden — China's largest botanical garden, covering 900 hectares on a Mekong island. It has 13,000 plant species including a palm garden, orchid house, and a 'vine garden' where 100m-long rattan vines hang from 40m trees. It's genuinely world-class. Spend 3-4 hours walking. Afternoon: return to Jinghong via Mengyang for a tea tasting at a Puer tea plantation.",
-        tip: "The botanical garden is ¥80 — worth every yuan. The best sections are the Palm Garden and the Tropical Rainforest section. A golf cart tour (¥50) covers the highlights in 2 hours if you're short on time.",
+        tip: "The botanical garden has an entrance fee — worth every minute. The best sections are the Palm Garden and the Tropical Rainforest section. A golf cart tour covers the highlights in 2 hours if you're short on time.",
       },
       {
         day: 'Day 4 (optional): Mengla & Border',
@@ -631,11 +631,11 @@ const routes = [
     practical: [
       {
         title: 'Getting There',
-        body: 'Fly into Xishuangbanna Gasa Airport (JHG). Direct flights from Kunming (1 hr, ¥400-600), Chengdu (2 hrs), Chongqing (2 hrs), and major cities. No train yet (the China-Laos railway passes through but has limited tourist stops).',
+        body: 'Fly into Xishuangbanna Gasa Airport (JHG). Direct flights from Kunming (1 hr), Chengdu (2 hrs), Chongqing (2 hrs), and major cities. No train yet (the China-Laos railway passes through but has limited tourist stops).',
       },
       {
         title: 'Where to Stay',
-        body: 'Jinghong: near Gaozhuang or along the Lancang River ($30-80/night). For a splurge: Anantara Xishuangbanna (¥1,200-2,000/night) — a luxury resort built in Dai architectural style by the river.',
+        body: 'Jinghong: near Gaozhuang or along the Lancang River — boutique hotels and guesthouses with river views. For a splurge: Anantara Xishuangbanna — a luxury resort built in Dai architectural style by the river.',
       },
       {
         title: 'What to Eat',
@@ -702,7 +702,7 @@ const routes = [
       },
     ],
     experienceTypes: ['photography', 'nature'],
-    budget: '$400-600/person',
+    budget: 'Moderate — mid-range',
     overview:
       "This route is built for photographers. Dongchuan's Red Land, 250 km northeast of Kunming, has iron-rich soil that glows crimson at sunrise. Yuanyang's rice terraces, 330 km south, have been carved into the Ailao Mountains by the Hani people over 1,300 years — 3,000 steps from river to summit, each one flooded and reflecting the sky like a giant's staircase of mirrors.",
     faqQ: 'When are the Yuanyang rice terraces flooded?',
@@ -718,13 +718,13 @@ const routes = [
         day: 'Day 2: Dongchuan → Kunming',
         content:
           "Sunrise at Damakan (the most famous viewpoint — a lone tree silhouetted against the red hills). Morning: photograph the red land from Jinxiuyuan and Qicaipo viewpoints. The light is best from 7-10am. Drive back to Kunming by afternoon. Evening: overnight train or rest before tomorrow's journey to Yuanyang.",
-        tip: "Dongchuan's guesthouses are basic (¥100-150/night) — bring toilet paper and hand sanitiser. The farmhouse food is excellent: free-range chicken, wild mushrooms, and homegrown vegetables.",
+        tip: "Dongchuan's guesthouses are simple farmhouse stays — bring toilet paper and hand sanitiser. The farmhouse food is excellent: free-range chicken, wild mushrooms, and homegrown vegetables.",
       },
       {
         day: 'Day 3: Kunming → Yuanyang',
         content:
           'Drive 5-6 hours from Kunming to Yuanyang Rice Terraces. The road is winding — the terraces are carved into mountains at 1,200-2,000m. Arrive by late afternoon and photograph sunset at Bada scenic area — this is the classic wide-angle view of thousands of terraces cascading down the mountainside. Stay in Xinjie Town or at a guesthouse in Duoyishu village.',
-        tip: 'The Yuanyang entrance ticket is ¥100 (valid for 3 days, covers all viewpoints). Buy it at the entrance gate 30 km before Xinjie — you cannot buy tickets at the viewpoints themselves.',
+        tip: 'The Yuanyang entrance ticket is valid for 3 days and covers all viewpoints. Buy it at the entrance gate 30 km before Xinjie — you cannot buy tickets at the viewpoints themselves.',
       },
       {
         day: 'Day 4: Yuanyang Terraces',
@@ -736,7 +736,7 @@ const routes = [
         day: 'Day 5: Yuanyang → Kunming',
         content:
           'Final sunrise at a quiet viewpoint (Shengcun or Mengnong). Visit a morning market in Xinjie or Laomeng — Hani, Yi, and Miao villagers in traditional clothing trading produce, textiles, and handicrafts. Drive back to Kunming (5-6 hrs). Fly out in the evening or stay overnight in Kunming.',
-        tip: 'The Hani market in Laomeng (Thursday) is the most authentic. Villagers walk 2-3 hours from mountain villages to trade. The textiles — indigo-dyed hemp — make excellent souvenirs (¥50-150 for a scarf).',
+        tip: 'The Hani market in Laomeng (Thursday) is the most authentic. Villagers walk 2-3 hours from mountain villages to trade. The textiles — indigo-dyed hemp — make excellent souvenirs.',
       },
     ],
     practical: [
@@ -746,11 +746,11 @@ const routes = [
       },
       {
         title: 'Where to Stay',
-        body: 'Yuanyang: Duoyishu village has the best sunrise access ($20-50/night, basic). Xinjie Town has more comfort ($30-80/night). Dongchuan: farmhouse guesthouses near the viewpoints ($15-30/night, very basic).',
+        body: 'Yuanyang: Duoyishu village has the best sunrise access (simple guesthouses, unbeatable location). Xinjie Town has more comfort with proper hotels. Dongchuan: farmhouse guesthouses near the viewpoints (very basic but the views from your doorstep are spectacular).',
       },
       {
         title: 'Getting Around',
-        body: "Both Dongchuan and Yuanyang require a private car. In Kunming, hire a driver for the full route (¥2,500-3,500 for 5-6 days including fuel). Public buses exist but are slow and don't reach the viewpoints.",
+        body: "Both Dongchuan and Yuanyang require a private car. In Kunming, hire a driver for the full route — this is the standard way to do it and your hotel can help arrange one. Public buses exist but are slow and don't reach the viewpoints.",
       },
     ],
     related: [

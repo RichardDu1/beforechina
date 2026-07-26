@@ -60,7 +60,7 @@ const faqSchema = {
       name: 'How do I get to Kashgar from Urumqi?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The fastest way is a 2-hour flight from Urumqi (¥600-1000, multiple daily). The train takes 20-24 hours (hard sleeper ~¥350, soft sleeper ~¥550) and crosses the Taklamakan Desert. There is also a new high-speed rail connection via Korla, cutting travel time to about 12 hours. Driving the full distance takes 2-3 days.',
+        text: 'The fastest way is a 2-hour flight from Urumqi (multiple daily flights). The train takes 20-24 hours and crosses the Taklamakan Desert. There is also a high-speed rail connection via Korla, cutting travel time to about 12 hours. Driving the full distance takes 2-3 days.',
       },
     },
   ],
@@ -194,10 +194,11 @@ export default function XinjiangPage() {
               Karakoram Highway — one of the world&apos;s highest paved roads.
             </p>
             <p>
-              It&apos;s also surprisingly affordable. A bowl of laghman (hand-pulled noodles) costs
-              about the same as a coffee. A comfortable hotel in Kashgar is modestly priced.
-              Domestic flights between Urumqi and Kashgar are frequent and reasonably priced. You
-              can do a solid 10-day trip without breaking the bank.
+              And yet Xinjiang feels undiscovered. The food is Central Asian — lamb skewers over
+              charcoal, hand-pulled laghman noodles, and naan baked in tandoor ovens. The old town
+              of Kashgar still feels like a Silk Road trading post. Domestic flights connect Urumqi
+              to Kashgar in two hours, making a 10-day journey through the region surprisingly
+              manageable.
             </p>
           </div>
         </div>
@@ -333,8 +334,7 @@ export default function XinjiangPage() {
                 visa or visa-free entry is sufficient. For the Karakoram Highway beyond Tashkurgan
                 (toward the Pakistan border), Kanas Nature Reserve, and some Taklamakan Desert
                 crossings, your hotel or tour operator handles the paperwork — they&apos;ll take a
-                copy of your passport and visa and register you. This usually takes 1-2 hours and
-                costs ¥50-100.
+                copy of your passport and visa and register you. This usually takes 1-2 hours.
               </p>
             </div>
 

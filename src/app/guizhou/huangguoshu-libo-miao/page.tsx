@@ -225,13 +225,13 @@ export default function Page() {
             {[
               {
                 day: 'Day 1: Guiyang → Huangguoshu',
-                content: `Fly into Guiyang Longdongbao Airport (KWE). Take the 30-minute high-speed train from Guiyang North to Anshun West (¥47), then a 40-minute bus to Huangguoshu Waterfall. The waterfall is 77.8m high and 101m wide — Asia\'s largest. Walk the path behind the waterfall through the \'Water Curtain Cave\' (prepare to get wet — the spray is intense). The scenic area also includes Doupotang Waterfall (wider but shorter) and Tianxingqiao (a karst stone forest with bonsai trees and natural bridges). Spend 4-5 hours. Return to Anshun or Guiyang for the night.`,
-                tip: `Huangguoshu entrance: ¥180 (summer) / ¥160 (winter). The Water Curtain Cave is the highlight — you walk behind a 77m curtain of water. A raincoat is essential (vendors sell them at the entrance for ¥5). Wear shoes with grip — the path is wet and slippery.`,
+                content: `Fly into Guiyang Longdongbao Airport (KWE). Take the 30-minute high-speed train from Guiyang North to Anshun West, then a 40-minute bus to Huangguoshu Waterfall. The waterfall is 77.8m high and 101m wide — Asia\'s largest. Walk the path behind the waterfall through the \'Water Curtain Cave\' (prepare to get wet — the spray is intense). The scenic area also includes Doupotang Waterfall (wider but shorter) and Tianxingqiao (a karst stone forest with bonsai trees and natural bridges). Spend 4-5 hours. Return to Anshun or Guiyang for the night.`,
+                tip: `Huangguoshu charges an entrance fee (lower in winter). The Water Curtain Cave is the highlight — you walk behind a 77m curtain of water. A raincoat is essential (vendors sell them at the entrance). Wear shoes with grip — the path is wet and slippery.`,
               },
               {
                 day: 'Day 2: Guiyang → Libo',
-                content: `Take the high-speed train from Guiyang North to Libo (1.5 hrs, ¥120 — opened 2023, this line transformed Libo accessibility). Libo is a UNESCO World Heritage site of karst cone peaks, emerald rivers, and primeval forest. Check into your hotel, then visit the Small Seven Arches (Xiaoqikong) scenic area: a 1.5 km walking path along an emerald river past seven small stone bridges, waterfalls, and forest. The water colour is unreal — a milky turquoise from dissolved limestone.`,
-                tip: `Libo\'s water really is that colour — no filters needed. The Small Seven Arches ticket is ¥130 (summer) / ¥100 (winter) and includes the shuttle bus. Go after 3pm when the morning tour groups have left — the light is better and the path is quieter.`,
+                content: `Take the high-speed train from Guiyang North to Libo (1.5 hrs — opened 2023, this line transformed Libo accessibility). Libo is a UNESCO World Heritage site of karst cone peaks, emerald rivers, and primeval forest. Check into your hotel, then visit the Small Seven Arches (Xiaoqikong) scenic area: a 1.5 km walking path along an emerald river past seven small stone bridges, waterfalls, and forest. The water colour is unreal — a milky turquoise from dissolved limestone.`,
+                tip: `Libo\'s water really is that colour — no filters needed. The Small Seven Arches ticket includes the shuttle bus (slightly cheaper in winter). Go after 3pm when the morning tour groups have left — the light is better and the path is quieter.`,
               },
               {
                 day: 'Day 3: Libo Full Day',
@@ -240,18 +240,18 @@ export default function Page() {
               },
               {
                 day: 'Day 4: Libo → Kaili',
-                content: `Take the train from Libo to Guiyang (1.5 hrs), then transfer to a high-speed train to Kaili (40 min, ¥60). Kaili is the capital of the Qiandongnan Miao and Dong Autonomous Prefecture — the heart of Miao country. Afternoon: visit the Kaili Ethnic Minorities Museum (free, excellent context on Miao, Dong, and other Guizhou minorities) and the old street market. Evening: sour soup fish (酸汤鱼) — Guizhou\'s signature dish.`,
+                content: `Take the train from Libo to Guiyang (1.5 hrs), then transfer to a high-speed train to Kaili (40 min). Kaili is the capital of the Qiandongnan Miao and Dong Autonomous Prefecture — the heart of Miao country. Afternoon: visit the Kaili Ethnic Minorities Museum (free, excellent context on Miao, Dong, and other Guizhou minorities) and the old street market. Evening: sour soup fish (酸汤鱼) — Guizhou\'s signature dish.`,
                 tip: `Sour soup fish (酸汤鱼) is a Guizhou invention — river fish poached in a broth of fermented tomatoes, pickled chillies, and wild herbs. It is sour, spicy, and unlike anything in Sichuan or Yunnan. The best is at Kaili\'s Laoteng Sour Soup Fish (老腾酸汤鱼).`,
               },
               {
                 day: 'Day 5: Xijiang Miao Village',
                 content: `Take a 1-hour bus from Kaili to Xijiang Qianhu Miao Village (西江千户苗寨) — the world\'s largest Miao village, with 1,400 households built into a hillside amphitheatre. The wooden stilt houses (diaojiaolou) stack up the mountain in layers, and at night the lights make the whole hillside look like a galaxy. Walk through the village, visit the Miao embroidery workshop, and watch the daily dance performance at the central square. Stay overnight in the village — the night view from the observation platform is the reason to come.`,
-                tip: `Xijiang entrance: ¥100. The village is touristy (Chinese tourists, not Western) but still genuinely inhabited by Miao people. The best experience is walking the back lanes away from the main street, where grandmothers sit in doorways doing embroidery and children play in the alleys. The night view from the observation platform is best around 8pm when all the houses are lit.`,
+                tip: `Xijiang charges an entrance fee. The village is touristy (Chinese tourists, not Western) but still genuinely inhabited by Miao people. The best experience is walking the back lanes away from the main street, where grandmothers sit in doorways doing embroidery and children play in the alleys. The night view from the observation platform is best around 8pm when all the houses are lit.`,
               },
               {
                 day: 'Day 6: Kaili → Fly Out',
                 content: `Return to Kaili (1 hr). If your flight is in the evening, visit Langde Miao Village — a smaller, less touristy alternative to Xijiang (40 min from Kaili). Langde has a traditional welcome ceremony with rice wine at the village gate. Alternatively, visit a Dong village — Zhaoxing (3 hrs from Kaili) is the most famous Dong village with a drum tower and wind-rain bridge. Fly out from Guiyang in the evening.`,
-                tip: `Langde Miao Village charges ¥50 but the welcome ceremony (12-gun salute and rice wine) is included. The rice wine is strong — take a symbolic sip, don\'t drink the whole bowl unless you want to be carried back to the bus.`,
+                tip: `Langde Miao Village has a modest entrance fee but the welcome ceremony (12-gun salute and rice wine) is included. The rice wine is strong — take a symbolic sip, don\'t drink the whole bowl unless you want to be carried back to the bus.`,
               },
             ].map((stop, i) => (
               <div

@@ -227,12 +227,12 @@ export default function Page() {
               {
                 day: 'Day 2: Dongchuan → Kunming',
                 content: `Sunrise at Damakan (the most famous viewpoint — a lone tree silhouetted against the red hills). Morning: photograph the red land from Jinxiuyuan and Qicaipo viewpoints. The light is best from 7-10am. Drive back to Kunming by afternoon. Evening: overnight train or rest before tomorrow\'s journey to Yuanyang.`,
-                tip: `Dongchuan\'s guesthouses are basic (¥100-150/night) — bring toilet paper and hand sanitiser. The farmhouse food is excellent: free-range chicken, wild mushrooms, and homegrown vegetables.`,
+                tip: `Dongchuan\'s guesthouses are simple farmhouse stays — bring toilet paper and hand sanitiser. The farmhouse food is excellent: free-range chicken, wild mushrooms, and homegrown vegetables.`,
               },
               {
                 day: 'Day 3: Kunming → Yuanyang',
                 content: `Drive 5-6 hours from Kunming to Yuanyang Rice Terraces. The road is winding — the terraces are carved into mountains at 1,200-2,000m. Arrive by late afternoon and photograph sunset at Bada scenic area — this is the classic wide-angle view of thousands of terraces cascading down the mountainside. Stay in Xinjie Town or at a guesthouse in Duoyishu village.`,
-                tip: `The Yuanyang entrance ticket is ¥100 (valid for 3 days, covers all viewpoints). Buy it at the entrance gate 30 km before Xinjie — you cannot buy tickets at the viewpoints themselves.`,
+                tip: `The Yuanyang entrance ticket is valid for 3 days and covers all viewpoints. Buy it at the entrance gate 30 km before Xinjie — you cannot buy tickets at the viewpoints themselves.`,
               },
               {
                 day: 'Day 4: Yuanyang Terraces',
@@ -242,7 +242,7 @@ export default function Page() {
               {
                 day: 'Day 5: Yuanyang → Kunming',
                 content: `Final sunrise at a quiet viewpoint (Shengcun or Mengnong). Visit a morning market in Xinjie or Laomeng — Hani, Yi, and Miao villagers in traditional clothing trading produce, textiles, and handicrafts. Drive back to Kunming (5-6 hrs). Fly out in the evening or stay overnight in Kunming.`,
-                tip: `The Hani market in Laomeng (Thursday) is the most authentic. Villagers walk 2-3 hours from mountain villages to trade. The textiles — indigo-dyed hemp — make excellent souvenirs (¥50-150 for a scarf).`,
+                tip: `The Hani market in Laomeng (Thursday) is the most authentic. Villagers walk 2-3 hours from mountain villages to trade. The textiles — indigo-dyed hemp — make excellent souvenirs.`,
               },
             ].map((stop, i) => (
               <div

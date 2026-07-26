@@ -52,17 +52,17 @@ const REGIONS = [
           {
             day: 'Days 1–3: Beijing',
             content: `Fly into Beijing Capital (PEK) or Daxing (PKX). Day 1: Tiananmen Square and the Forbidden City (book tickets 7 days ahead on WeChat). Day 2: Mutianyu Great Wall — less crowded than Badaling, with a toboggan ride down. Day 3: Temple of Heaven at sunrise for the pensioners' tai chi, then the hutongs near Gulou for lunch. Evening: Peking duck at Dadong or Siji Minfu.`,
-            tip: 'Skip Badaling. Mutianyu has better views, fewer crowds, and the toboggan slide down is genuinely fun. Book a private driver through your hotel (~¥600 round trip).',
+            tip: 'Skip Badaling. Mutianyu has better views, fewer crowds, and the toboggan slide down is genuinely fun. Book a private driver through your hotel — your concierge can arrange this easily.',
           },
           {
             day: "Days 4–5: Xi'an",
-            content: `Take the 4.5-hour high-speed train from Beijing West to Xi'an North (¥550). Day 4: Terracotta Warriors — go early (8:30am) to beat the crowds. The museum is 40 km east of the city. Day 5: Xi'an City Wall — rent a bike and cycle the full 14 km loop. Evening: Muslim Quarter for lamb skewers, biangbiang noodles, and persimmon cakes.`,
-            tip: "Hire a guide at the Terracotta Warriors (official guides at the entrance, ~¥200). The context they provide transforms the experience from 'piles of clay statues' to 'holy crap, this is 2,200 years old.'",
+            content: `Take the 4.5-hour high-speed train from Beijing West to Xi'an North. Day 4: Terracotta Warriors — go early (8:30am) to beat the crowds. The museum is 40 km east of the city. Day 5: Xi'an City Wall — rent a bike and cycle the full 14 km loop. Evening: Muslim Quarter for lamb skewers, biangbiang noodles, and persimmon cakes.`,
+            tip: "Hire a guide at the Terracotta Warriors (official guides at the entrance). The context they provide transforms the experience from 'piles of clay statues' to 'holy crap, this is 2,200 years old.'",
           },
           {
             day: 'Days 6–8: Shanghai',
-            content: `Take the 6-hour high-speed train from Xi'an to Shanghai (¥670). Day 6: The Bund at dusk for the Pudong skyline. Walk Nanjing Road to People's Square. Day 7: Former French Concession — Fuxing Road, Tianzifang, and a coffee at Manner. Day 8: Shanghai Museum or a day trip to Zhujiajiao Water Town (1 hr by metro). Fly out from Pudong (PVG).`,
-            tip: 'The Bund is best at golden hour (5–6pm) when the colonial buildings glow. Skip the Bund sightseeing tunnel — it is a tourist trap. Take the ¥2 ferry across the Huangpu instead.',
+            content: `Take the 6-hour high-speed train from Xi'an to Shanghai. Day 6: The Bund at dusk for the Pudong skyline. Walk Nanjing Road to People's Square. Day 7: Former French Concession — Fuxing Road, Tianzifang, and a coffee at Manner. Day 8: Shanghai Museum or a day trip to Zhujiajiao Water Town (1 hr by metro). Fly out from Pudong (PVG).`,
+            tip: 'The Bund is best at golden hour (5–6pm) when the colonial buildings glow. Skip the Bund sightseeing tunnel — it is a tourist trap. Take the public ferry across the Huangpu instead for a fraction of the price and a much better view.',
           },
         ],
         related: [
@@ -134,7 +134,7 @@ const REGIONS = [
           {
             day: 'Day 2: Great Wall',
             content: `Mutianyu Great Wall — leave at 7am, arrive by 8:30am. Take the cable car up, walk east toward Watchtower 20 for the steepest section, then toboggan down. Back in Beijing by 2pm. Afternoon: Summer Palace — the marble boat and Long Corridor are iconic. Evening: Peking duck at Dadong.`,
-            tip: 'The toboggan slide (¥100) is genuinely thrilling — a 1.5 km metal slide down the mountain. Worth going to Mutianyu just for this.',
+            tip: 'The toboggan slide is genuinely thrilling — a 1.5 km metal slide down the mountain. Worth going to Mutianyu just for this.',
           },
           {
             day: 'Day 3: Temples & Art',
@@ -210,12 +210,12 @@ const REGIONS = [
         stops: [
           {
             day: 'Day 1: The Warriors',
-            content: `Terracotta Warriors Museum — hire a guide at the entrance (~¥200). Visit the pits in order: Pit 1 (the famous one, 6,000 warriors), Pit 2 (cavalry and archers), Pit 3 (command centre). The bronze chariot exhibition hall is excellent. Afternoon: Huaqing Hot Springs at the foot of Mount Li.`,
+            content: `Terracotta Warriors Museum — hire a guide at the entrance. Visit the pits in order: Pit 1 (the famous one, 6,000 warriors), Pit 2 (cavalry and archers), Pit 3 (command centre). The bronze chariot exhibition hall is excellent. Afternoon: Huaqing Hot Springs at the foot of Mount Li.`,
             tip: 'Go to Pit 1 last, not first. The crowd rushes to Pit 1 immediately. Do Pits 2 and 3 first for a much calmer experience, then Pit 1 when the morning rush thins around 11am.',
           },
           {
             day: 'Day 2: City Wall & Muslim Quarter',
-            content: `Rent a bike on the city wall (¥45, deposit ¥100) and cycle the full 14 km loop. Takes 90 minutes at a relaxed pace. After lunch, the Great Mosque — a 1,300-year-old mosque built in Chinese temple style. Evening: Muslim Quarter food crawl — lamb skewers (¥3 each), biangbiang noodles, yangrou paomo (lamb soup with crumbled flatbread).`,
+            content: `Rent a bike on the city wall and cycle the full 14 km loop. Takes 90 minutes at a relaxed pace. After lunch, the Great Mosque — a 1,300-year-old mosque built in Chinese temple style. Evening: Muslim Quarter food crawl — lamb skewers, biangbiang noodles, yangrou paomo (lamb soup with crumbled flatbread).`,
             tip: 'The Muslim Quarter is touristy at the entrance (Beiyuanmen Street), but gets more authentic as you walk deeper. Head to Sajinqiao for the real local food stalls.',
           },
           {
@@ -288,17 +288,17 @@ const REGIONS = [
           {
             day: 'Day 1: The Bund & Pudong',
             content: `Start at the Bund at golden hour — the colonial buildings on one side, Pudong's skyline on the other. Walk south to the Old City (Yu Garden, City God Temple). Evening: Dinner at Jia Jia Tang Bao for the best soup dumplings in Shanghai, then a drink at a rooftop bar on the Bund (Flair at Ritz-Carlton or Vue Bar at Hyatt on the Bund).`,
-            tip: "Skip the Bund Sightseeing Tunnel — it's ¥55 for a 3-minute ride in a slow cart through a tunnel with coloured lights. Take the ¥2 ferry from Jinling East Road to Dongchang Road instead.",
+            tip: "Skip the Bund Sightseeing Tunnel — it's an overpriced 3-minute ride in a slow cart through a tunnel with coloured lights. Take the public ferry from Jinling East Road to Dongchang Road instead for the same river crossing with an open-air view.",
           },
           {
             day: 'Day 2: French Concession',
-            content: `Spend the morning walking Fuxing Road and Wukang Road — the French Concession at its best. Stop at Manner Coffee (China's answer to Blue Bottle), browse the boutiques on Anfu Road, and have lunch at Din Tai Fung or a local noodle shop. Afternoon: Shanghai Propaganda Poster Art Centre (¥25, incredible collection of Mao-era posters) or the Power Station of Art in a converted power plant.`,
+            content: `Spend the morning walking Fuxing Road and Wukang Road — the French Concession at its best. Stop at Manner Coffee (China's answer to Blue Bottle), browse the boutiques on Anfu Road, and have lunch at Din Tai Fung or a local noodle shop. Afternoon: Shanghai Propaganda Poster Art Centre (incredible collection of Mao-era posters) or the Power Station of Art in a converted power plant.`,
             tip: 'Wukang Road and Anfu Road are influencer central on weekends — go on a weekday morning for a much calmer experience. The best buildings are Wukang Mansion (Normandie Apartments, 1924) and the Moller Villa.',
           },
           {
             day: 'Day 3: Water Town or Art',
             content: `Option A: Day trip to Zhujiajiao Water Town — 1 hour by metro (Line 17). Canals, stone bridges, and a quieter side of Shanghai. Option B: Stay in the city — Long Museum (West Bund) for contemporary art, then the former Expo 2010 site along the Huangpu River. Evening: Cocktails at Speak Low (hidden bookshelf entrance, ranked among Asia's 50 Best Bars).`,
-            tip: "Zhujiajiao is the most accessible water town from Shanghai. Go early (before 10am) to avoid the tour groups. Pay the ¥30 for a gondola ride — it's touristy but worth it for the photos.",
+            tip: 'Zhujiajiao is the most accessible water town from Shanghai. Go early (before 10am) to avoid the tour groups. A gondola ride through the canals is touristy but worth it for the photos.',
           },
         ],
         related: [

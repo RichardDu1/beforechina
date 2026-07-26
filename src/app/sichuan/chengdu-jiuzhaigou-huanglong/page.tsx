@@ -224,7 +224,7 @@ export default function Page() {
               {
                 day: 'Day 1: Chengdu Pandas & Hot Pot',
                 content: `Morning: Chengdu Research Base of Giant Panda Breeding — arrive at 7:30am (opening time) to see the pandas at their most active during breakfast feeding. The babies are in the nursery in August-September. Afternoon: People\'s Park for tea in a bamboo grove at the Heming Teahouse (built 1923). Evening: Sichuan hot pot — the numbing-spicy (麻辣) broth is a Chengdu rite of passage.`,
-                tip: `Panda base opens at 7:30am. The pandas are fed at 8-9am and sleep most of the afternoon. Go early or you\'ll be photographing sleeping pandas. Entrance ¥55.`,
+                tip: `Panda base opens at 7:30am. The pandas are fed at 8-9am and sleep most of the afternoon. Go early or you\'ll be photographing sleeping pandas. A modest entrance fee applies.`,
               },
               {
                 day: 'Day 2: Chengdu → Jiuzhaigou',
@@ -234,12 +234,12 @@ export default function Page() {
               {
                 day: 'Day 3: Jiuzhaigou Full Day',
                 content: `Enter the park at 8am. Jiuzhaigou is a Y-shaped valley with three main branches. Take the shuttle bus to the top of Rize Valley (Primeval Forest, 3,060m), then walk down past Swan Lake, Arrow Bamboo Lake, Panda Lake, Five Flower Lake (the most photogenic — turquoise, emerald, and sapphire in a single lake), Pearl Shoal Waterfall, and Mirror Lake. After lunch at Nuorilang, do Zechawa Valley: Long Lake (the largest at 3,100m) and Five-Color Pond (tiny but intensely blue). End at Shuzheng Valley for the Tibetan villages and Shuzheng Waterfall.`,
-                tip: `Jiuzhaigou ticket: ¥169 + ¥90 shuttle bus. Book on WeChat (search 九寨沟) up to 7 days ahead. The park limits visitors to 41,000/day and sells out in autumn. The shuttle bus is hop-on-hop-off — use it to skip the long walks between valleys.`,
+                tip: `Jiuzhaigou requires an entrance ticket plus a shuttle bus pass. Book on WeChat (search 九寨沟) up to 7 days ahead. The park limits visitors to 41,000/day and sells out in autumn. The shuttle bus is hop-on-hop-off — use it to skip the long walks between valleys.`,
               },
               {
                 day: 'Day 4: Huanglong',
-                content: `Drive 2.5 hours from Jiuzhaigou to Huanglong. Take the cable car up (¥80) and walk 2 km to the Five-Color Pool at 3,570m — the highest and most spectacular of the travertine terraces, with pools ranging from yellow to green to blue depending on mineral content and algae. Then walk down 4 km through the valley past hundreds of terraced pools. The whole descent takes 3-4 hours. Drive back to Chuanzhusi Town or Jiuzhaigou for the night.`,
-                tip: `Huanglong is at 3,200-3,570m — higher than Jiuzhaigou. Altitude sickness is common here. Buy an oxygen canister (¥30) at the entrance if you\'re prone to altitude issues. The walk is downhill from the top — much easier than going up.`,
+                content: `Drive 2.5 hours from Jiuzhaigou to Huanglong. Take the cable car up and walk 2 km to the Five-Color Pool at 3,570m — the highest and most spectacular of the travertine terraces, with pools ranging from yellow to green to blue depending on mineral content and algae. Then walk down 4 km through the valley past hundreds of terraced pools. The whole descent takes 3-4 hours. Drive back to Chuanzhusi Town or Jiuzhaigou for the night.`,
+                tip: `Huanglong is at 3,200-3,570m — higher than Jiuzhaigou. Altitude sickness is common here. Oxygen canisters are available at the entrance if you\'re prone to altitude issues. The walk is downhill from the top — much easier than going up.`,
               },
               {
                 day: 'Day 5: Return to Chengdu',

@@ -226,32 +226,32 @@ export default function Page() {
               {
                 day: 'Day 1: Kunming',
                 content: `Fly into Kunming Changshui (KMG). Spend the day at the Stone Forest (石林) — 90 km southeast of the city, a UNESCO site of limestone pinnacles that look like petrified trees. Afternoon: Green Lake Park (翠湖) for people-watching and the surrounding Yunnan University area. Evening: across-the-bridge noodles (过桥米线) at a local restaurant — this is Yunnan\'s signature dish.`,
-                tip: `Kunming is called the \'City of Eternal Spring\' for a reason — temperatures are 15-25°C year-round. The Stone Forest entrance is ¥175. Go early (before 9am) to beat the tour groups from Kunming.`,
+                tip: `Kunming is called the \'City of Eternal Spring\' for a reason — temperatures are 15-25°C year-round. The Stone Forest has a modest entrance fee. Go early (before 9am) to beat the tour groups from Kunming.`,
               },
               {
                 day: 'Days 2-3: Dali',
-                content: `Take the 2-hour high-speed train from Kunming to Dali (¥145). Dali is a lakeside town backed by the 4,000m Cangshan Mountains, and the old town is a grid of stone-paved streets lined with Bai minority architecture. Day 2: rent an e-bike (¥50/day) and cycle around Erhai Lake — stop at Xizhou Village for traditional Bai architecture and the famous Xizhou baba flatbread. Day 3: morning hike on Cangshan (take the cable car to 2,600m, then walk the Cloud Traveller\'s Path), afternoon exploring Dali Old Town and the Three Pagodas.`,
-                tip: `Skip the overpriced lakeside cafes aimed at tourists. Eat at the evening market near the South Gate — grilled Erhai lake fish (¥30), cross-bridge noodles (¥15), and the best grilled eggplant you\'ll ever eat.`,
+                content: `Take the 2-hour high-speed train from Kunming to Dali. Dali is a lakeside town backed by the 4,000m Cangshan Mountains, and the old town is a grid of stone-paved streets lined with Bai minority architecture. Day 2: rent an e-bike and cycle around Erhai Lake — stop at Xizhou Village for traditional Bai architecture and the famous Xizhou baba flatbread. Day 3: morning hike on Cangshan (take the cable car to 2,600m, then walk the Cloud Traveller\'s Path), afternoon exploring Dali Old Town and the Three Pagodas.`,
+                tip: `Skip the overpriced lakeside cafes aimed at tourists. Eat at the evening market near the South Gate — grilled Erhai lake fish, cross-bridge noodles, and the best grilled eggplant you\'ll ever eat.`,
               },
               {
                 day: 'Days 4-5: Lijiang',
-                content: `Take the train from Dali to Lijiang (1.5 hrs, ¥80). Lijiang\'s old town (Dayan) is a UNESCO World Heritage site — a maze of cobblestone alleys, wooden bridges, and canals built by the Naxi people 800 years ago. Day 4: walk the old town, climb to Wangu Tower for the panoramic view, visit the Black Dragon Pool for the classic photo of Jade Dragon Snow Mountain reflected in the water. Day 5: Shuhe Ancient Town (4 km north, less touristy) and Baisha Village for the 500-year-old Ming dynasty murals.`,
-                tip: `Lijiang Old Town charges an ¥80 \'maintenance fee\' — but enforcement is lax and most travellers skip it. If asked at the gate, say you\'re staying at a hotel inside and they\'ll wave you through.`,
+                content: `Take the train from Dali to Lijiang (1.5 hrs). Lijiang\'s old town (Dayan) is a UNESCO World Heritage site — a maze of cobblestone alleys, wooden bridges, and canals built by the Naxi people 800 years ago. Day 4: walk the old town, climb to Wangu Tower for the panoramic view, visit the Black Dragon Pool for the classic photo of Jade Dragon Snow Mountain reflected in the water. Day 5: Shuhe Ancient Town (4 km north, less touristy) and Baisha Village for the 500-year-old Ming dynasty murals.`,
+                tip: `Lijiang Old Town charges a maintenance fee — but enforcement is lax and most travellers skip it. If asked at the gate, say you\'re staying at a hotel inside and they\'ll wave you through.`,
               },
               {
                 day: 'Day 6: Tiger Leaping Gorge',
-                content: `Take a 2-hour minibus from Lijiang to Qiaotou (¥40). Tiger Leaping Gorge is one of the world\'s deepest river canyons — the Jinsha River cuts between Jade Dragon Snow Mountain (5,596m) and Haba Snow Mountain (5,396m), a vertical drop of 3,900m. The classic high trail is 22 km and takes 6-8 hours. Start at Jane\'s Guesthouse, hike to the Tea Horse Guesthouse for lunch (km 12, the best view), then continue to Tina\'s Guesthouse for the night. If you\'re short on time, do the first 12 km to Tea Horse and back — it has the best views.`,
+                content: `Take a 2-hour minibus from Lijiang to Qiaotou. Tiger Leaping Gorge is one of the world\'s deepest river canyons — the Jinsha River cuts between Jade Dragon Snow Mountain (5,596m) and Haba Snow Mountain (5,396m), a vertical drop of 3,900m. The classic high trail is 22 km and takes 6-8 hours. Start at Jane\'s Guesthouse, hike to the Tea Horse Guesthouse for lunch (km 12, the best view), then continue to Tina\'s Guesthouse for the night. If you\'re short on time, do the first 12 km to Tea Horse and back — it has the best views.`,
                 tip: `The high trail is well-marked but has exposed cliff sections. Wear hiking shoes — the path is dusty and rocky. The Naxi Guesthouse at km 5 sells water and snacks. In rainy season (July-August), check if the trail is open before you go.`,
               },
               {
                 day: 'Day 7: Shangri-La',
                 content: `From Tina\'s Guesthouse, take a 3-hour bus to Shangri-La (Zhongdian, 3,200m). Shangri-La is a Tibetan-majority town renamed in 2001 to cash in on the Lost Horizon mystique — but it genuinely feels different from anywhere else in Yunnan. Visit Songzanlin Monastery (the \'Little Potala Palace\', built 1679, housing 700 monks), then walk the old town around Dukezong — the world\'s largest prayer wheel is here (21m tall, takes several people to turn). Evening: try yak hot pot and butter tea.`,
-                tip: `Shangri-La is at 3,200m — you will feel the altitude. Walk slowly, drink water, skip alcohol on your first night. Songzanlin Monastery is ¥115 — go in the morning when the monks are chanting.`,
+                tip: `Shangri-La is at 3,200m — you will feel the altitude. Walk slowly, drink water, skip alcohol on your first night. Songzanlin Monastery has an entrance fee — go in the morning when the monks are chanting.`,
               },
               {
                 day: 'Day 8 (optional): Shangri-La → Fly Out',
-                content: `If you have an 8th day, visit Pudacuo National Park — alpine lakes, meadows, and forests 22 km east of town (¥100, half-day trip). Fly out from Diqing Shangri-La Airport (DIG) to Kunming or direct to Chengdu/Chongqing for onward travel.`,
-                tip: `Diqing Airport has flights to Kunming (1 hr, ¥400-600), Chengdu (1.5 hrs), and Chongqing. Book a few days ahead — flights are less frequent than from Kunming.`,
+                content: `If you have an 8th day, visit Pudacuo National Park — alpine lakes, meadows, and forests 22 km east of town (a rewarding half-day trip). Fly out from Diqing Shangri-La Airport (DIG) to Kunming or direct to Chengdu/Chongqing for onward travel.`,
+                tip: `Diqing Airport has flights to Kunming (1 hr), Chengdu (1.5 hrs), and Chongqing. Book a few days ahead — flights are less frequent than from Kunming.`,
               },
             ].map((stop, i) => (
               <div

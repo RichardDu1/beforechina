@@ -224,7 +224,7 @@ export default function Page() {
               {
                 day: 'Day 1: Chengdu → Kangding (2,560m)',
                 content: `Drive 4.5 hours west from Chengdu on the G318 highway. The road climbs through the Erlangshan Tunnel (8.6 km, China\'s longest high-altitude tunnel) and emerges into a completely different world — Tibetan prayer flags, stone houses, and yak herds. Kangding is the historic border town between Han China and Tibet. Walk the old town and visit the Paoma Mountain.`,
-                tip: `The G318 is the \'National Highway 318\' — China\'s Route 66 from Shanghai to Tibet. The Chengdu-Kangding section is paved and well-maintained. A private car with driver costs ¥1,200-1,500/day.`,
+                tip: `The G318 is the \'National Highway 318\' — China\'s Route 66 from Shanghai to Tibet. The Chengdu-Kangding section is paved and well-maintained. A private car with driver can be arranged through your hotel or travel agent.`,
               },
               {
                 day: 'Day 2: Kangding → Xinduqiao → Litang (4,014m)',
@@ -234,26 +234,26 @@ export default function Page() {
               {
                 day: 'Day 3: Litang → Daocheng (3,750m)',
                 content: `Drive 3 hours south to Daocheng. The road passes through the Haizi Mountain scenic area — a landscape of glacial boulders and 1,145 alpine lakes at 4,500m, looking like a giant scattered marbles across a moonscape. Daocheng town is a pleasant Tibetan county seat with white-walled houses and poplar-lined streets. Visit the White Pagoda Park and the Daocheng Monastery. Spend the night to acclimatise.`,
-                tip: `Daocheng has a small airport (DCY) — the world\'s highest civilian airport at 4,411m. Flights from Chengdu (1 hr, ¥1,200-1,800) land here. If you fly in, spend 2 nights in Daocheng before attempting the Yading hike to acclimatise.`,
+                tip: `Daocheng has a small airport (DCY) — the world\'s highest civilian airport at 4,411m. Flights from Chengdu (1 hour) land here. If you fly in, spend 2 nights in Daocheng before attempting the Yading hike to acclimatise.`,
               },
               {
                 day: 'Day 4: Daocheng → Yading Nature Reserve',
                 content: `Drive 1.5 hours to Yading (the reserve entrance is at Riwacun, 2,900m). Take the park shuttle bus 34 km into the reserve to Yading Village (3,900m) or Longlongba. Spend the afternoon on the short hike to Chonggu Monastery (3,900m) and the Pearl Lake viewpoint — your first close view of Chenrezig (6,032m) reflected in a glacial lake. This is a gentle 3 km walk to acclimatise.`,
-                tip: `Yading entrance: ¥150 + ¥120 shuttle bus (2-day validity). The last shuttle into the reserve departs at 5pm — don\'t arrive late or you\'ll be stuck outside. Yading Village has basic guesthouses (¥100-200/night) — electricity is from generators and hot water is limited.`,
+                tip: `Yading has an entrance ticket and shuttle bus pass (valid for 2 days). The last shuttle into the reserve departs at 5pm — don\'t arrive late or you\'ll be stuck outside. Yading Village has basic guesthouses — electricity is from generators and hot water is limited.`,
               },
               {
                 day: 'Day 5: Yading — The Big Hike',
-                content: `Take the 7am shuttle from Yading Village to Luorong Pasture (4,180m). The hike begins here. Walk 3 km to the Horse Stop (optional horse ¥300), then climb 5 km on a steep rocky path to Milk Lake (4,600m) — a startling turquoise lake at the foot of Jampelyang, fed by a hanging glacier. Continue 500m uphill to Five-Color Lake (4,700m) — smaller but with a colour gradient from deep blue to emerald green. The view of all three peaks from here is the money shot. Descend the same way. Total: 10 km, 6-8 hours.`,
+                content: `Take the 7am shuttle from Yading Village to Luorong Pasture (4,180m). The hike begins here. Walk 3 km to the Horse Stop (horses available for hire), then climb 5 km on a steep rocky path to Milk Lake (4,600m) — a startling turquoise lake at the foot of Jampelyang, fed by a hanging glacier. Continue 500m uphill to Five-Color Lake (4,700m) — smaller but with a colour gradient from deep blue to emerald green. The view of all three peaks from here is the money shot. Descend the same way. Total: 10 km, 6-8 hours.`,
                 tip: `Start by 7:30am. The weather turns by 2pm — clouds roll in and the peaks disappear. Bring 2L water, high-energy snacks, and rain gear even on sunny days. The last section to Five-Color Lake is a 100m climb on loose rock — poles help. If you\'re struggling with altitude, skip Five-Color Lake — Milk Lake is the better view.`,
               },
               {
                 day: 'Day 6: Yading → Daocheng',
-                content: `Morning: short walk to Xiannairi Snow Mountain viewpoint or the lower section of the valley. Take the shuttle bus out of the reserve by noon. Drive back to Daocheng. Afternoon: hot springs in Daocheng County — the Rupuchaka Hot Springs are natural sulphur pools (¥30) and the perfect post-hike reward.`,
+                content: `Morning: short walk to Xiannairi Snow Mountain viewpoint or the lower section of the valley. Take the shuttle bus out of the reserve by noon. Drive back to Daocheng. Afternoon: hot springs in Daocheng County — the Rupuchaka Hot Springs are natural sulphur pools and the perfect post-hike reward.`,
                 tip: `The Daocheng hot springs are in Rumuchu Village, 5 km from town. The outdoor pools have mountain views. Bring your own towel and swimsuit — rental ones are questionable.`,
               },
               {
                 day: 'Day 7: Daocheng → Chengdu',
-                content: `Fly from Daocheng Yading Airport (DCY) to Chengdu (1 hr, ¥1,200-1,800) — the takeoff at 4,411m is an experience in itself. Or drive back via the southern route through Xiangcheng and Shangri-La (2 days). Evening in Chengdu: celebratory hot pot.`,
+                content: `Fly from Daocheng Yading Airport (DCY) to Chengdu (1 hour) — the takeoff at 4,411m is an experience in itself. Or drive back via the southern route through Xiangcheng and Shangri-La (2 days). Evening in Chengdu: celebratory hot pot.`,
                 tip: `Daocheng Airport flights are frequently delayed or cancelled due to high winds and low visibility. Book a morning flight (best conditions) and have a buffer day. The drive back to Chengdu takes 2 days via the southern route.`,
               },
             ].map((stop, i) => (

@@ -228,17 +228,17 @@ export default function Page() {
               },
               {
                 day: 'Day 2: Wulong Karst',
-                content: `Take the 2-hour high-speed train from Chongqing North to Wulong (¥65). Wulong\'s Three Natural Bridges are three massive limestone arches — Tianlong (Sky Dragon, 235m high), Qinglong (Azure Dragon), and Heilong (Black Dragon) — spanning a 1.2 km gorge. You walk through the gorge floor looking up at arches big enough to fit a 30-storey building. The site also includes the Houping Giant Sinkhole, a 300m-deep limestone crater. Return to Chongqing by evening.`,
-                tip: `Wulong entrance: ¥135 including shuttle bus. The site was used as a filming location for Transformers: Age of Extinction (the scene where Optimus Prime fights the Dinobots). There\'s a (tacky) statue of a Transformer at the entrance.`,
+                content: `Take the 2-hour high-speed train from Chongqing North to Wulong. Wulong\'s Three Natural Bridges are three massive limestone arches — Tianlong (Sky Dragon, 235m high), Qinglong (Azure Dragon), and Heilong (Black Dragon) — spanning a 1.2 km gorge. You walk through the gorge floor looking up at arches big enough to fit a 30-storey building. The site also includes the Houping Giant Sinkhole, a 300m-deep limestone crater. Return to Chongqing by evening.`,
+                tip: `Wulong requires an entrance ticket (including shuttle bus). The site was used as a filming location for Transformers: Age of Extinction (the scene where Optimus Prime fights the Dinobots). There\'s a (tacky) statue of a Transformer at the entrance.`,
               },
               {
                 day: 'Day 3: Dazu Rock Carvings',
-                content: `Take the 1-hour high-speed train from Chongqing West to Dazu (¥45), then a 30-minute bus to the carvings. The Beishan (North Hill) site has 10,000 statues from the late Tang dynasty (9th century) — intricate, graceful, and well-preserved. The Baodingshan (Treasure Top Mountain) site is the masterpiece: a 500m cliff face with 10,000 figures carved into a continuous narrative of Buddhist hell and paradise, created between 1174-1252 under the monk Zhao Zhifeng. The \'Hell Scenes\' panel is gruesome and unforgettable.`,
-                tip: `Dazu is ¥135 for Beishan + Baodingshan. Baodingshan alone is ¥115 and is the better site if you only have time for one. The carvings are exposed (no caves like Dunhuang) so visit on a clear day. The museum at Baodingshan is excellent for context.`,
+                content: `Take the 1-hour high-speed train from Chongqing West to Dazu, then a 30-minute bus to the carvings. The Beishan (North Hill) site has 10,000 statues from the late Tang dynasty (9th century) — intricate, graceful, and well-preserved. The Baodingshan (Treasure Top Mountain) site is the masterpiece: a 500m cliff face with 10,000 figures carved into a continuous narrative of Buddhist hell and paradise, created between 1174-1252 under the monk Zhao Zhifeng. The \'Hell Scenes\' panel is gruesome and unforgettable.`,
+                tip: `Dazu has a combined ticket for Beishan and Baodingshan, or Baodingshan alone — Baodingshan is the better site if you only have time for one. The carvings are exposed (no caves like Dunhuang) so visit on a clear day. The museum at Baodingshan is excellent for context.`,
               },
               {
                 day: 'Day 4 (optional): Chongqing Deep Dive',
-                content: `Morning: take the Yangtze River Cableway (¥20) — a gondola across the river with skyline views. Visit the Three Gorges Museum (free, excellent overview of the Yangtze and the dam project). Afternoon: Eling Park for the best panoramic view of Chongqing\'s skyline. Evening: the \'ghost town\' of Fengdu or prepare for your Yangtze cruise departure.`,
+                content: `Morning: take the Yangtze River Cableway — a gondola across the river with skyline views. Visit the Three Gorges Museum (free, excellent overview of the Yangtze and the dam project). Afternoon: Eling Park for the best panoramic view of Chongqing\'s skyline. Evening: the \'ghost town\' of Fengdu or prepare for your Yangtze cruise departure.`,
                 tip: `The Yangtze Cableway queue is 30-60 min on weekends. Go before 9am or take it from the south bank (less busy direction). The Three Gorges Museum is genuinely world-class — budget 2 hours.`,
               },
             ].map((stop, i) => (

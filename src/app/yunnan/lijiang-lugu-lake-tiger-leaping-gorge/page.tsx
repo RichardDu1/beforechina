@@ -223,17 +223,17 @@ export default function Page() {
               {
                 day: 'Day 1: Lijiang Old Town',
                 content: `Fly into Lijiang Sanyi Airport (LJG) — direct flights from Chengdu, Chongqing, Kunming, and major Chinese cities. Spend the day exploring Dayan Old Town: the cobblestone alleys, wooden Naxi houses, and the canals that crisscross the town. Climb to Wangu Tower for the sunset view. Evening: Naxi grilled fish and yak yoghurt in a courtyard restaurant.`,
-                tip: `Lijiang Airport is 28 km south of town. The airport shuttle bus (¥20) runs every 30 minutes. A Didi costs ¥80-100.`,
+                tip: `Lijiang Airport is 28 km south of town. The airport shuttle bus runs every 30 minutes. A ride-hailing car is also an option.`,
               },
               {
                 day: 'Days 2-3: Lugu Lake',
                 content: `Take a 4-5 hour minibus from Lijiang to Lugu Lake (depart 7am, arrive by noon). Lugu Lake is at 2,685m, spanning the Yunnan-Sichuan border with crystal-clear emerald water. Spend the afternoon walking the lakeshore. Day 3: take a boat to Liwubi Island (the Mosuo people use traditional dugout canoes), visit a Mosuo family home to learn about the \'walking marriage\' tradition, and cycle the 50 km loop around the lake. Stay overnight in Luoshui Village on the Yunnan side.`,
-                tip: `The 50 km lake loop takes 4-5 hours by e-bike (¥80 rental). The Sichuan side of the lake is less developed and more authentic. The \'Walking Marriage Bridge\' (走婚桥) on the Sichuan side is a wooden bridge through marshland — beautiful at sunset.`,
+                tip: `The 50 km lake loop takes 4-5 hours by e-bike (easily rented in Luoshui Village). The Sichuan side of the lake is less developed and more authentic. The \'Walking Marriage Bridge\' (走婚桥) on the Sichuan side is a wooden bridge through marshland — beautiful at sunset.`,
               },
               {
                 day: 'Day 4: Tiger Leaping Gorge',
                 content: `Return to Lijiang by minibus (4-5 hrs, leave Lugu Lake at 7am). Transfer directly to Qiaotou for Tiger Leaping Gorge. If you arrive by 2pm, hike the first section of the high trail to Naxi Guesthouse (2 hours, the gentlest section) for sunset views. Stay overnight at a guesthouse on the trail.`,
-                tip: `If you\'re short on time, skip the hike and visit the lower Tiger Leaping Gorge scenic area (¥45) — a 1,000-step staircase down to the river. The rapids here are ferocious, and there is a viewing platform at the bottom.`,
+                tip: `If you\'re short on time, skip the hike and visit the lower Tiger Leaping Gorge scenic area — a 1,000-step staircase down to the river. The rapids here are ferocious, and there is a viewing platform at the bottom.`,
               },
               {
                 day: 'Day 5 (optional): Return to Lijiang',

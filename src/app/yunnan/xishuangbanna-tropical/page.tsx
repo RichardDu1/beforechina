@@ -222,7 +222,7 @@ export default function Page() {
               {
                 day: 'Day 1: Jinghong',
                 content: `Fly into Xishuangbanna Gasa Airport (JHG) — direct flights from Kunming (1 hr), Chengdu, Chongqing, and major cities. Jinghong is the capital and feels more like a Southeast Asian town than a Chinese city: palm-lined streets, golden-roofed Dai temples, and the Mekong (called Lancang here) flowing through. Visit Manting Park — a former Dai royal garden with a temple and daily elephant show — and Gaozhuang Night Market in the evening for Dai barbecue and papaya salad.`,
-                tip: `Gaozhuang Night Market is massive — one of Yunnan\'s best night markets. Try the grilled Mekong fish (¥30), Dai-style papaya salad (som tam, ¥15), and sticky rice in bamboo tubes (¥10). The market runs from 6pm to midnight.`,
+                tip: `Gaozhuang Night Market is massive — one of Yunnan\'s best night markets. Try the grilled Mekong fish, Dai-style papaya salad (som tam), and sticky rice in bamboo tubes. The market runs from 6pm to midnight.`,
               },
               {
                 day: 'Day 2: Wild Elephant Valley & Dai Villages',
@@ -232,7 +232,7 @@ export default function Page() {
               {
                 day: 'Day 3: Menglun Tropical Botanical Garden',
                 content: `Drive 1.5 hours east to the Menglun Tropical Botanical Garden — China\'s largest botanical garden, covering 900 hectares on a Mekong island. It has 13,000 plant species including a palm garden, orchid house, and a \'vine garden\' where 100m-long rattan vines hang from 40m trees. It\'s genuinely world-class. Spend 3-4 hours walking. Afternoon: return to Jinghong via Mengyang for a tea tasting at a Puer tea plantation.`,
-                tip: `The botanical garden is ¥80 — worth every yuan. The best sections are the Palm Garden and the Tropical Rainforest section. A golf cart tour (¥50) covers the highlights in 2 hours if you\'re short on time.`,
+                tip: `The botanical garden has an entrance fee — worth every minute. The best sections are the Palm Garden and the Tropical Rainforest section. A golf cart tour covers the highlights in 2 hours if you\'re short on time.`,
               },
               {
                 day: 'Day 4 (optional): Mengla & Border',

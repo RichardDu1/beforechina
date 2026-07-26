@@ -221,23 +221,23 @@ export default function Page() {
             {[
               {
                 day: 'Day 1: Pandas & Parks',
-                content: `Panda Base (7:30am-11am), then People\'s Park — drink jasmine tea at Heming Teahouse, watch the matchmaking corner (parents post their children\'s resumes on umbrellas looking for marriage partners), and get your ears cleaned by a professional ear-picker (¥30, a Chengdu tradition). Evening: Sichuan hot pot at Shujiuxiang or Dalongyi.`,
+                content: `Panda Base (7:30am-11am), then People\'s Park — drink jasmine tea at Heming Teahouse, watch the matchmaking corner (parents post their children\'s resumes on umbrellas looking for marriage partners), and get your ears cleaned by a professional ear-picker (a Chengdu tradition). Evening: Sichuan hot pot at Shujiuxiang or Dalongyi.`,
                 tip: `The matchmaking corner at People\'s Park is surreal — hundreds of parents with printed sheets listing their child\'s age, height, salary, and housing status. It\'s a uniquely Chengdu experience. Weekends are busiest.`,
               },
               {
                 day: 'Day 2: Leshan Giant Buddha Day Trip',
-                content: `Take the 50-minute high-speed train to Leshan (¥54). Visit the 71m Buddha — walk the cliffside stairs or take the river ferry. Lunch: Leshan\'s famous qiaojiao beef (跷脚牛肉) — a medicinal beef soup. Return to Chengdu by late afternoon. Evening: Jinli Ancient Street for lantern-lit shopping and street snacks.`,
-                tip: `Leshan\'s qiaojiao beef is legendary. The best is at Feng Siniang (冯四孃跷脚牛肉) near the Buddha scenic area. Order the mixed beef soup (¥38) and the blood curd (¥15).`,
+                content: `Take the 50-minute high-speed train to Leshan. Visit the 71m Buddha — walk the cliffside stairs or take the river ferry. Lunch: Leshan\'s famous qiaojiao beef (跷脚牛肉) — a medicinal beef soup. Return to Chengdu by late afternoon. Evening: Jinli Ancient Street for lantern-lit shopping and street snacks.`,
+                tip: `Leshan\'s qiaojiao beef is legendary. The best is at Feng Siniang (冯四孃跷脚牛肉) near the Buddha scenic area. Order the mixed beef soup — a rich, aromatic broth simmered with herbs — and the blood curd.`,
               },
               {
                 day: 'Day 3: Culture & Cooking',
-                content: `Morning: Wuhou Temple (Three Kingdoms history, ¥60) and Jinli Street (adjacent). Afternoon: Sichuan cooking class — learn dan dan noodles, kung pao chicken, and mapo tofu. Evening: Kuanzhai Alley (宽窄巷子) — Qing dynasty courtyard houses converted into bars, tea houses, and restaurants. Then Sichuan opera at Shufeng Yayun.`,
-                tip: `Cooking classes in Chengdu run ¥200-350 for a half-day. The best include a market tour to buy ingredients first. The Cooking Club Chengdu and Chilli Cool China both have excellent English-speaking instructors.`,
+                content: `Morning: Wuhou Temple (Three Kingdoms history) and Jinli Street (adjacent). Afternoon: Sichuan cooking class — learn dan dan noodles, kung pao chicken, and mapo tofu. Evening: Kuanzhai Alley (宽窄巷子) — Qing dynasty courtyard houses converted into bars, tea houses, and restaurants. Then Sichuan opera at Shufeng Yayun.`,
+                tip: `Cooking classes in Chengdu run for a half-day. The best include a market tour to buy ingredients first. The Cooking Club Chengdu and Chilli Cool China both have excellent English-speaking instructors.`,
               },
               {
                 day: 'Day 4 (optional): Dujiangyan & Qingcheng',
                 content: `Day trip to Dujiangyan — a 2,300-year-old irrigation system that still works today, diverting the Min River without a single dam. It\'s a UNESCO site and an engineering marvel. Afternoon: Qingcheng Mountain, one of Daoism\'s birthplaces. The front mountain has temples and pavilions; the back mountain is wilder with waterfalls and fewer tourists.`,
-                tip: `Dujiangyan is 1 hour from Chengdu by high-speed train from Xipu Station (¥10!). The panda base at Dujiangyan (Panda Valley) is less crowded than the Chengdu one and you can volunteer as a panda keeper (¥700, book 1 month ahead).`,
+                tip: `Dujiangyan is 1 hour from Chengdu by high-speed train from Xipu Station — remarkably easy to reach. The panda base at Dujiangyan (Panda Valley) is less crowded than the Chengdu one and you can volunteer as a panda keeper (book 1 month ahead).`,
               },
             ].map((stop, i) => (
               <div

@@ -232,7 +232,7 @@ export default function Page() {
               {
                 day: 'Day 2: Fengdu Ghost City / Shibaozhai',
                 content: `Morning shore excursion to Fengdu Ghost City (丰都鬼城, included in cruise fare) — a Ming dynasty temple complex on Ming Mountain dedicated to the afterlife, with statues of demons, judges of the dead, and the \'Bridge of Helplessness\' you must cross to reach the afterlife. Alternatively, some cruises visit Shibaozhai (石宝寨) — a 12-storey wooden pagoda built against a 200m rock pillar, now an island after the dam raised the water. Afternoon: cruising through the countryside. Evening: captain\'s welcome dinner.`,
-                tip: `Fengdu Ghost City is a 2-hour uphill walk (or cable car, ¥20). The temple complex is a folk-religion representation of the Chinese afterlife — 3 tests to determine if you go to heaven or hell. It is kitschy but culturally interesting. Shibaozhai is architecturally more impressive — the pagoda was built in 1819 without nails.`,
+                tip: `Fengdu Ghost City is a 2-hour uphill walk (or take the cable car). The temple complex is a folk-religion representation of the Chinese afterlife — 3 tests to determine if you go to heaven or hell. It is kitschy but culturally interesting. Shibaozhai is architecturally more impressive — the pagoda was built in 1819 without nails.`,
               },
               {
                 day: 'Day 3: Three Gorges',
@@ -241,7 +241,7 @@ export default function Page() {
               },
               {
                 day: 'Day 4: Three Gorges Dam → Yichang',
-                content: `Morning: visit the Three Gorges Dam (三峡大坝, included in cruise fare) — the world\'s largest hydroelectric dam: 2.3 km wide, 185m high, generating 22,500 MW. The visitor centre has an observation deck, a model of the dam, and exhibits on the project (including the relocation of 1.3 million people). Afternoon: disembark at Yichang (宜昌). Transfer to Yichang East Railway Station for high-speed trains to Wuhan (2 hrs, ¥120), Chongqing (4 hrs), or Shanghai (7 hrs). Fly out from Yichang Sanxia Airport (YIH).`,
+                content: `Morning: visit the Three Gorges Dam (三峡大坝, included in cruise fare) — the world\'s largest hydroelectric dam: 2.3 km wide, 185m high, generating 22,500 MW. The visitor centre has an observation deck, a model of the dam, and exhibits on the project (including the relocation of 1.3 million people). Afternoon: disembark at Yichang (宜昌). Transfer to Yichang East Railway Station for high-speed trains to Wuhan (2 hrs), Chongqing (4 hrs), or Shanghai (7 hrs). Fly out from Yichang Sanxia Airport (YIH).`,
                 tip: `The Three Gorges Dam visitor centre is state propaganda — it presents the dam as an unqualified triumph. The reality is more complex: 1.3 million people were relocated, 13 cities and 1,352 villages were submerged, and the environmental impact on the Yangtze ecosystem is significant. The engineering is genuinely extraordinary. Go for the engineering, but hold the official narrative lightly.`,
               },
             ].map((stop, i) => (

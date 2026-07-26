@@ -249,7 +249,7 @@ export default function Page() {
               {
                 day: 'Day 6: Depart Lhasa',
                 content: `Transfer to Lhasa airport. If your flight is late, visit the Tibetan Traditional Medicine Museum or buy thangka paintings and yak-wool products on Barkhor Street.`,
-                tip: `Thangka paintings (Tibetan Buddhist scroll paintings on cotton or silk) make the best Tibet souvenir. A hand-painted thangka by a trained artist costs ¥500-5,000 depending on size and detail. Bargain at Barkhor Street but be respectful — these are religious objects.`,
+                tip: `Thangka paintings (Tibetan Buddhist scroll paintings on cotton or silk) make the best Tibet souvenir. A hand-painted thangka by a trained artist is a serious investment — the finest pieces take months to complete and reflect generations of artistic tradition. Browse the galleries on Barkhor Street but be respectful — these are religious objects.`,
               },
             ].map((stop, i) => (
               <div

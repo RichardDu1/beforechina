@@ -222,17 +222,17 @@ export default function Page() {
               {
                 day: 'Day 1: The Bund & Pudong',
                 content: `Start at the Bund at golden hour — the colonial buildings on one side, Pudong\'s skyline on the other. Walk south to the Old City (Yu Garden, City God Temple). Evening: Dinner at Jia Jia Tang Bao for the best soup dumplings in Shanghai, then a drink at a rooftop bar on the Bund (Flair at Ritz-Carlton or Vue Bar at Hyatt on the Bund).`,
-                tip: `Skip the Bund Sightseeing Tunnel — it\'s ¥55 for a 3-minute ride in a slow cart through a tunnel with coloured lights. Take the ¥2 ferry from Jinling East Road to Dongchang Road instead.`,
+                tip: `Skip the Bund Sightseeing Tunnel — it\'s an overpriced 3-minute ride in a slow cart through a tunnel with coloured lights. Take the public ferry from Jinling East Road to Dongchang Road instead for the same river crossing with an open-air view.`,
               },
               {
                 day: 'Day 2: French Concession',
-                content: `Spend the morning walking Fuxing Road and Wukang Road — the French Concession at its best. Stop at Manner Coffee (China\'s answer to Blue Bottle), browse the boutiques on Anfu Road, and have lunch at Din Tai Fung or a local noodle shop. Afternoon: Shanghai Propaganda Poster Art Centre (¥25, incredible collection of Mao-era posters) or the Power Station of Art in a converted power plant.`,
+                content: `Spend the morning walking Fuxing Road and Wukang Road — the French Concession at its best. Stop at Manner Coffee (China\'s answer to Blue Bottle), browse the boutiques on Anfu Road, and have lunch at Din Tai Fung or a local noodle shop. Afternoon: Shanghai Propaganda Poster Art Centre (incredible collection of Mao-era posters) or the Power Station of Art in a converted power plant.`,
                 tip: `Wukang Road and Anfu Road are influencer central on weekends — go on a weekday morning for a much calmer experience. The best buildings are Wukang Mansion (Normandie Apartments, 1924) and the Moller Villa.`,
               },
               {
                 day: 'Day 3: Water Town or Art',
                 content: `Option A: Day trip to Zhujiajiao Water Town — 1 hour by metro (Line 17). Canals, stone bridges, and a quieter side of Shanghai. Option B: Stay in the city — Long Museum (West Bund) for contemporary art, then the former Expo 2010 site along the Huangpu River. Evening: Cocktails at Speak Low (hidden bookshelf entrance, ranked among Asia\'s 50 Best Bars).`,
-                tip: `Zhujiajiao is the most accessible water town from Shanghai. Go early (before 10am) to avoid the tour groups. Pay the ¥30 for a gondola ride — it\'s touristy but worth it for the photos.`,
+                tip: `Zhujiajiao is the most accessible water town from Shanghai. Go early (before 10am) to avoid the tour groups. A gondola ride through the canals is touristy but worth it for the photos.`,
               },
             ].map((stop, i) => (
               <div

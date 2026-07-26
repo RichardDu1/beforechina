@@ -164,8 +164,8 @@ export default function PhotographingLiRiverPage() {
             <p style={{ marginBottom: '16px' }}>
               <strong>Xianggong Hill (相公山).</strong> A 15-minute climb up stone steps leads to a
               viewing platform with a panoramic view of the river bending through a forest of karst
-              peaks. This is the money shot for sunrise. Entry is ¥60. Get there by 5:15am to claim
-              a spot on the railing — it gets crowded by 5:45am.
+              peaks. This is the money shot for sunrise. There is a small entry fee. Get there by
+              5:15am to claim a spot on the railing — it gets crowded by 5:45am.
             </p>
             <p style={{ marginBottom: '24px' }}>
               <strong>Yangdi to Xingping hike.</strong> The 16 km riverside trail is the best way to
@@ -193,9 +193,9 @@ export default function PhotographingLiRiverPage() {
             <p style={{ marginBottom: '24px' }}>
               The cormorant fishermen on the Li River are mostly for show now — real cormorant
               fishing died out decades ago — but they make for extraordinary photographs. The
-              fishermen and their birds are available for hire (¥200-400 for a morning session). The
-              best setup is at Xingping at dawn, with the fisherman on his bamboo raft, the birds
-              poised on the bow, and a single lantern casting golden light on the scene.
+              fishermen and their birds are available for hire for a morning session. The best setup
+              is at Xingping at dawn, with the fisherman on his bamboo raft, the birds poised on the
+              bow, and a single lantern casting golden light on the scene.
             </p>
 
             <h2

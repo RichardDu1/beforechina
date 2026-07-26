@@ -218,29 +218,29 @@ export default function Page() {
             sandstone cliffs, clear rivers, deep gorges, and ancient forests. The Nine-Bend River
             (九曲溪) meanders through the canyon in 9 distinct bends, each prettier than the last.
             And the tea: Wuyishan is the birthplace of Dahongpao (大红袍, Big Red Robe), a rock
-            oolong tea that is among the most expensive in the world. The original mother bushes on
-            a cliff face are 360 years old and insured for ¥100 million.
+            oolong tea that is among the most prized in the world. The original mother bushes on a
+            cliff face are 360 years old and considered a national treasure.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             {[
               {
                 day: 'Day 1: Xiamen → Wuyishan',
-                content: `Take the 3.5-hour high-speed train from Xiamen North to Wuyishan North (¥230). Check into your accommodation near the scenic area entrance. Afternoon: Wuyishan Tea Museum (free) for an introduction to Dahongpao and the region\'s tea culture. Walk the old town of Wuyishan City and try the local speciality — smoked goose (武夷熏鹅).`,
-                tip: `Wuyishan scenic area entrance: ¥140 (1-day), ¥150 (2-day), ¥160 (3-day) plus ¥85 for the shuttle bus. The 3-day pass is the best value. The bamboo raft (¥130) must be booked separately and sells out — arrange through your hotel or the official website.`,
+                content: `Take the 3.5-hour high-speed train from Xiamen North to Wuyishan North. Check into your accommodation near the scenic area entrance. Afternoon: Wuyishan Tea Museum (free) for an introduction to Dahongpao and the region\'s tea culture. Walk the old town of Wuyishan City and try the local speciality — smoked goose (武夷熏鹅).`,
+                tip: `Wuyishan scenic area entrance: multi-day passes are available (1-day, 2-day, or 3-day options) plus a shuttle bus supplement. The 3-day pass is the best value for exploring fully. The bamboo raft experience must be booked separately and sells out — arrange through your hotel or the official website.`,
               },
               {
                 day: 'Day 2: Nine-Bend River & Tianyou Peak',
-                content: `Morning: Nine-Bend River bamboo raft (九曲溪竹筏, ¥130, 1.5 hrs) — the essential Wuyishan experience. The raft (6 people + a boatman who narrates the scenery in Chinese) floats through the canyon from Bend 9 to Bend 1. You pass under red sandstone cliffs, past hanging coffins wedged into rock crevices 3,000 years ago (nobody knows how they got there), and through rapids that splash the raft. Afternoon: climb Tianyou Peak (天游峰) — the highest point in the scenic area (408m, 848 steps). The panoramic view of the Nine-Bend River snaking through the canyon is the iconic Wuyishan photo.`,
+                content: `Morning: Nine-Bend River bamboo raft (九曲溪竹筏, 1.5 hrs) — the essential Wuyishan experience. The raft (6 people + a boatman who narrates the scenery in Chinese) floats through the canyon from Bend 9 to Bend 1. You pass under red sandstone cliffs, past hanging coffins wedged into rock crevices 3,000 years ago (nobody knows how they got there), and through rapids that splash the raft. Afternoon: climb Tianyou Peak (天游峰) — the highest point in the scenic area (408m, 848 steps). The panoramic view of the Nine-Bend River snaking through the canyon is the iconic Wuyishan photo.`,
                 tip: `The bamboo raft boatmen tell jokes and point out rock formations named after animals and legends — all in Chinese. Even if you don\'t understand, the scenery is the point. The hanging coffins (船棺) in the cliffs have been carbon-dated to 3,600 years old. Tianyou Peak is steep (848 steps) — go in the morning when it is cooler. The view from the top is worth every step.`,
               },
               {
                 day: 'Day 3: Dahongpao Tea Trail',
                 content: `Morning: walk the Dahongpao Tea Trail — a stone path through the canyon past tea plantations clinging to rock faces. The trail leads to the original Dahongpao mother bushes (大红袍母树) — 6 tea bushes growing from a crack in a cliff face, 360 years old. From here, hike the Rock Tea Trail (岩骨花香漫游道) through the tea-growing valley to the Water Curtain Cave (水帘洞) — a waterfall that cascades over a 100m cliff into a pool. Afternoon: tea tasting at a local tea farmer\'s house. Evening: soak in a Wuyishan hot spring.`,
-                tip: `The original Dahongpao mother bushes are tiny — don\'t expect a grand sight. Their significance is cultural: all Dahongpao tea in the world is descended from these 6 bushes. The tea is no longer harvested from the mother bushes (the last harvest was in 2005 and sold for ¥200,000). What you buy as \'Dahongpao\' is from their cuttings, grown elsewhere in Wuyishan.`,
+                tip: `The original Dahongpao mother bushes are tiny — don\'t expect a grand sight. Their significance is cultural: all Dahongpao tea in the world is descended from these 6 bushes. The tea is no longer harvested from the mother bushes (the last harvest was in 2005 and fetched a record price at auction). What you buy as \'Dahongpao\' is from their cuttings, grown elsewhere in Wuyishan.`,
               },
               {
                 day: 'Day 4: Wuyishan → Depart',
-                content: `Morning: visit Tiger Roaring Rock (虎啸岩) — a trail through a narrow rock fissure and up to a viewpoint over the tea valley. Alternative: hike to the Wuyi Palace (武夷宫), a Song dynasty Daoist temple at the mouth of the Nine-Bend River. Afternoon: train back to Xiamen (3.5 hrs, ¥230) or fly out from Wuyishan Airport (WUS) with connecting flights via Xiamen or Shanghai.`,
+                content: `Morning: visit Tiger Roaring Rock (虎啸岩) — a trail through a narrow rock fissure and up to a viewpoint over the tea valley. Alternative: hike to the Wuyi Palace (武夷宫), a Song dynasty Daoist temple at the mouth of the Nine-Bend River. Afternoon: train back to Xiamen (3.5 hrs) or fly out from Wuyishan Airport (WUS) with connecting flights via Xiamen or Shanghai.`,
                 tip: `Wuyishan Airport (WUS) has limited flights — mostly to Xiamen, Shanghai, and Beijing. If your schedule doesn\'t match, take the train back to Xiamen and fly from XMN. The train station is 30 minutes from the scenic area by bus.`,
               },
             ].map((stop, i) => (

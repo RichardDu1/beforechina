@@ -221,12 +221,12 @@ export default function Page() {
             {[
               {
                 day: 'Day 1: The Warriors',
-                content: `Terracotta Warriors Museum — hire a guide at the entrance (~¥200). Visit the pits in order: Pit 1 (the famous one, 6,000 warriors), Pit 2 (cavalry and archers), Pit 3 (command centre). The bronze chariot exhibition hall is excellent. Afternoon: Huaqing Hot Springs at the foot of Mount Li.`,
+                content: `Terracotta Warriors Museum — hire a guide at the entrance. Visit the pits in order: Pit 1 (the famous one, 6,000 warriors), Pit 2 (cavalry and archers), Pit 3 (command centre). The bronze chariot exhibition hall is excellent. Afternoon: Huaqing Hot Springs at the foot of Mount Li.`,
                 tip: `Go to Pit 1 last, not first. The crowd rushes to Pit 1 immediately. Do Pits 2 and 3 first for a much calmer experience, then Pit 1 when the morning rush thins around 11am.`,
               },
               {
                 day: 'Day 2: City Wall & Muslim Quarter',
-                content: `Rent a bike on the city wall (¥45, deposit ¥100) and cycle the full 14 km loop. Takes 90 minutes at a relaxed pace. After lunch, the Great Mosque — a 1,300-year-old mosque built in Chinese temple style. Evening: Muslim Quarter food crawl — lamb skewers (¥3 each), biangbiang noodles, yangrou paomo (lamb soup with crumbled flatbread).`,
+                content: `Rent a bike on the city wall and cycle the full 14 km loop. Takes 90 minutes at a relaxed pace. After lunch, the Great Mosque — a 1,300-year-old mosque built in Chinese temple style. Evening: Muslim Quarter food crawl — lamb skewers, biangbiang noodles, yangrou paomo (lamb soup with crumbled flatbread).`,
                 tip: `The Muslim Quarter is touristy at the entrance (Beiyuanmen Street), but gets more authentic as you walk deeper. Head to Sajinqiao for the real local food stalls.`,
               },
               {
