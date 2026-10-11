@@ -4,6 +4,7 @@ import SignatureCard from '@/components/SignatureCard';
 import NextSteps from '@/components/NextSteps';
 import TourCTA from '@/components/TourCTA';
 import JsonLd from '@/components/JsonLd';
+import FactSheet from '@/components/FactSheet';
 
 export const metadata: Metadata = {
   title: 'How to Pay in China as a Foreigner (2026 Guide) | Alipay & WeChat Pay',
@@ -102,8 +103,36 @@ export default function PaymentPage() {
         </div>
       </section>
 
+      {/* Payment Fact Sheet (GEO / BLUF) */}
+      <section style={{ padding: '32px 0 0' }}>
+        <div className="container" style={{ maxWidth: '840px', margin: '0 auto' }}>
+          <FactSheet
+            title="China Cashless Payment Fact Sheet (2026)"
+            badge="Practical Money Rules"
+            lastUpdated="October 2026"
+            facts={[
+              {
+                label: 'Payment Method',
+                value: 'QR code via Alipay / WeChat Pay (98%+ penetration)',
+                highlight: true,
+              },
+              { label: 'Foreign Card Linking', value: 'Supported (Visa, Mastercard, Discover)' },
+              { label: 'Transaction Fees', value: '0% under ¥200 (~$28); 3% above ¥200' },
+              { label: 'Verification Required', value: 'Passport real-name photo verification' },
+              {
+                label: 'Cash Acceptance',
+                value: 'Legally required but change is rarely available',
+              },
+              { label: 'Emergency Cash', value: 'Keep ¥300–500 in paper notes for rural taxis' },
+            ]}
+            bottomLine="Set up Alipay on your phone and link your foreign Visa or Mastercard before departing. Transactions of 200 RMB or less carry ZERO fees from Alipay."
+            warning="Physical credit cards are almost nowhere accepted except 5-star international hotel chains. Always ask to split bills larger than 200 RMB into multiple scans to avoid the 3% surcharge."
+          />
+        </div>
+      </section>
+
       {/* Main Guide */}
-      <section style={{ padding: '64px 0' }}>
+      <section style={{ padding: '32px 0 64px' }}>
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
           {/* Alipay */}
           <div className="article-card" style={{ marginBottom: '32px' }}>

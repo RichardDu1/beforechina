@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import JournalCard from '@/components/JournalCard';
+import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'What Nobody Tells You About the Great Wall | BeforeChina Journal',
@@ -22,6 +23,42 @@ export const metadata: Metadata = {
       },
     ],
   },
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'What Nobody Tells You About the Great Wall',
+  description:
+    'Skip Badaling. Here is where to find the wild, unrestored sections of the Great Wall — and why sunrise is the only time to go.',
+  image: 'https://beforechina.com/images/destinations/golden-triangle-og.webp',
+  author: {
+    '@type': 'Person',
+    name: 'Richard Du',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'BeforeChina',
+    url: 'https://beforechina.com',
+  },
+  datePublished: '2026-07-01',
+  dateModified: '2026-10-11',
+  mainEntityOfPage: 'https://beforechina.com/journal/great-wall-secrets',
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://beforechina.com' },
+    { '@type': 'ListItem', position: 2, name: 'Journal', item: 'https://beforechina.com/journal' },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Great Wall Secrets',
+      item: 'https://beforechina.com/journal/great-wall-secrets',
+    },
+  ],
 };
 
 const RELATED = [
@@ -48,6 +85,7 @@ const RELATED = [
 export default function GreatWallSecretsPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
+      <JsonLd data={[articleSchema, breadcrumbSchema]} id="great-wall-schema" />
       {/* Full-bleed Hero */}
       <section
         style={{

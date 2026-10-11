@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import JournalCard from '@/components/JournalCard';
+import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Eating Your Way Through Chengdu: A Street Food Diary | BeforeChina Journal',
@@ -20,6 +21,42 @@ export const metadata: Metadata = {
       },
     ],
   },
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Eating Your Way Through Chengdu: A Street Food Diary',
+  description:
+    "From dan dan noodles at dawn to ma la hotpot at midnight — three days of pure Sichuan flavour in China's food capital.",
+  image: 'https://beforechina.com/images/destinations/sichuan-og.webp',
+  author: {
+    '@type': 'Person',
+    name: 'Richard Du',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'BeforeChina',
+    url: 'https://beforechina.com',
+  },
+  datePublished: '2026-06-15',
+  dateModified: '2026-10-11',
+  mainEntityOfPage: 'https://beforechina.com/journal/chengdu-street-food',
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://beforechina.com' },
+    { '@type': 'ListItem', position: 2, name: 'Journal', item: 'https://beforechina.com/journal' },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Chengdu Street Food',
+      item: 'https://beforechina.com/journal/chengdu-street-food',
+    },
+  ],
 };
 
 const RELATED = [
@@ -46,6 +83,7 @@ const RELATED = [
 export default function ChengduStreetFoodPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
+      <JsonLd data={[articleSchema, breadcrumbSchema]} id="chengdu-schema" />
       <section
         style={{
           position: 'relative',

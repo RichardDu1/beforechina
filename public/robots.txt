@@ -1,5 +1,45 @@
+# Robots.txt — LLM & AI Search Friendly Specification for BeforeChina.com
+# LLM Context: https://beforechina.com/llms.txt
+# Full Documentation: https://beforechina.com/llms-full.txt
+
 User-agent: *
 Allow: /
+Disallow: /api/
 
+# Explicit permissions for major AI Search, Reasoning, and Assistant Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
 Sitemap: https://beforechina.com/sitemap.xml
 Host: https://beforechina.com

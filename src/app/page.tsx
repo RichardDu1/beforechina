@@ -5,6 +5,7 @@ import FeaturedJourneys from '@/components/FeaturedJourneys';
 import ExperienceGrid from '@/components/ExperienceGrid';
 import JournalCard from '@/components/JournalCard';
 import EnquiryForm from '@/components/EnquiryForm';
+import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'BeforeChina — Tailor-Made Journeys to China',
@@ -26,6 +27,42 @@ export const metadata: Metadata = {
     ],
   },
 };
+
+const homeSchemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'BeforeChina',
+    url: 'https://beforechina.com',
+    description:
+      'Award-winning tailor-made journeys to China. Private itineraries crafted by China specialists.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'BeforeChina',
+      url: 'https://beforechina.com',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'TravelAgency',
+    name: 'BeforeChina',
+    url: 'https://beforechina.com',
+    image: 'https://beforechina.com/images/destinations/golden-triangle-og.webp',
+    description: 'Bespoke private journeys across China crafted by UK-based China specialists.',
+    priceRange: '$$$$',
+    founder: {
+      '@type': 'Person',
+      name: 'Richard Du',
+    },
+    areaServed: [
+      { '@type': 'Country', name: 'United Kingdom' },
+      { '@type': 'Country', name: 'United States' },
+      { '@type': 'Country', name: 'Canada' },
+      { '@type': 'Country', name: 'Australia' },
+      { '@type': 'Country', name: 'European Union' },
+    ],
+  },
+];
 
 const HERO_SLIDES = [
   {
@@ -198,6 +235,8 @@ const JOURNAL_ENTRIES = [
 export default function Home() {
   return (
     <div>
+      <JsonLd data={homeSchemas} id="home-schema" />
+
       {/* 1. Hero Carousel */}
       <HeroCarousel slides={HERO_SLIDES} />
 

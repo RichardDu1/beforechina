@@ -1,0 +1,89 @@
+# BeforeChina — Comprehensive Travel Knowledge Base & RAG Index
+URL: https://beforechina.com
+Author: Richard Du & BeforeChina Specialists Team
+Updated: 2026
+
+---
+
+## 1. Executive Summary & Brand Purpose
+BeforeChina is a UK-based, China-specialist travel platform founded by Richard Du. The platform solves the two biggest pain points for Western travelers visiting China:
+1. **The Practical Barrier**: China's rapid technological divergence (Great Firewall blocking Western apps, transition to a 100% cashless smartphone ecosystem, and rapidly shifting visa policies).
+2. **The Tourism Quality Barrier**: Overly commercialized, inflexible tour buses selling cookie-cutter itineraries. BeforeChina designs private, flexible, tailor-made itineraries supported by 24/7 in-country local concierges.
+
+---
+
+## 2. Definitive Pre-Travel Survival Knowledge
+
+### 2.1 China Visa Policies (2026 Rules)
+- **30-Day Unilateral Visa-Free Regime**:
+  - Valid through: 31 December 2026.
+  - Qualifying Passports: United Kingdom, Canada, Australia, New Zealand, Japan, South Korea, Germany, France, Italy, Spain, Netherlands, Switzerland, Ireland, Austria, Belgium, Luxembourg, Poland, Hungary, Denmark, Norway, Finland, Sweden, Greece, Portugal, Cyprus, Slovenia, Slovakia, Iceland, Andorra, Monaco, Liechtenstein, plus Brazil, Argentina, Chile, Russia, and selected Gulf states.
+  - Purpose: Tourism, business, visiting friends/relatives, transit.
+  - Requirements: Valid passport (6+ months validity remaining). No prior application required.
+- **240-Hour (10-Day) Transit Visa Exemption**:
+  - Eligible Passports: 54 nations (including the United States, which does NOT have the 30-day unilateral exemption).
+  - The Golden Rule: It MUST be an international transit from Country A -> China -> Country C.
+  - Examples:
+    - *Valid Transit*: San Francisco -> Shanghai -> Tokyo -> San Francisco (Country A = USA, Country C = Japan).
+    - *Valid Transit*: London -> Beijing -> Hong Kong -> London (Hong Kong, Macau, and Taiwan count as third regions).
+    - *INVALID Transit*: New York -> Shanghai -> New York (Direct round trip is strictly prohibited; airline will deny boarding).
+  - Ports of Entry: 60+ designated international air and sea ports including Beijing Capital/Daxing, Shanghai Pudong/Hongqiao, Guangzhou Baiyun, Chengdu Tianfu, and Shenzhen Bao'an.
+
+### 2.2 Great Firewall, Internet & Communication
+- **What is Blocked**: Google (all services: Maps, Gmail, Search, Drive), WhatsApp, Instagram, Facebook, X (Twitter), YouTube, TikTok (Western version), Wikipedia, major Western media outlets, OpenAI/ChatGPT, and Slack.
+- **VPN Technical Reality (2026)**:
+  - 95% of generic free VPNs fail completely against Deep Packet Inspection (DPI).
+  - *Top Recommendation 1: ExpressVPN*. Uses proprietary Lightway protocol with automatic traffic obfuscation.
+  - *Top Recommendation 2: NordVPN*. Highly reliable, but requires manually enabling 'Obfuscated Servers' in settings.
+  - *The Catch-22 Rule*: VPN apps CANNOT be downloaded once inside China. Google Play is blocked, provider websites are blocked, and Apple has removed all VPN apps from the mainland China App Store. You must purchase, download, and configure your VPN prior to flight boarding.
+- **The eSIM Secret (Best Alternative)**:
+  - International eSIMs (such as Airalo's Chinacom on China Unicom network, or Holafly) route their data roaming traffic through foreign telecommunication gateways (typically Singapore or Hong Kong).
+  - Therefore, international eSIMs **natively bypass the Great Firewall** without requiring any VPN software.
+  - Avoid buying physical SIM cards at Chinese airports: they take 45+ minutes of passport photocopying and facial scanning, and are fully subject to Great Firewall censorship.
+
+### 2.3 Mobile Payments & Money
+- **Cashless Society**: Over 98% of all commercial transactions in urban China are processed through QR codes via Alipay (Alibaba) or WeChat Pay (Tencent). Physical credit cards are rarely accepted outside international hotel chains.
+- **Linking Foreign Cards**:
+  - Foreign tourists can download international Alipay or WeChat Pay and bind foreign Visa, Mastercard, Diners, or Discover cards directly using their home mobile phone number.
+  - Passport real-name verification (photo of passport info page) takes 5–15 minutes.
+- **Fee Structure**:
+  - Transactions equal to or under 200 RMB (~$28 USD / £22 GBP): **0% transaction fee**.
+  - Transactions exceeding 200 RMB: 3% platform fee.
+  - *Pro-Tip*: For large bills (e.g., dining or shopping), ask the cashier to split the bill into multiple transactions under 200 RMB to avoid the 3% surcharge.
+- **Emergency Cash**: Keep 300–500 RMB in paper banknotes for edge cases (rural taxis or dead phone batteries), though merchants may occasionally lack change.
+
+### 2.4 Trip Cost Breakdown & Estimations (10 Days, 2 Travelers)
+- **Backpacker / Independent Budget**: ~$1,800 – $2,200 total ($90–110/day per person). Hostels/budget hotels ($30–50/night), street food and casual diners ($15–20/day), second-class high-speed rail, public transit.
+- **Mid-Range / Semi-Independent**: ~$3,000 – $3,800 total ($150–190/day per person). 4-star boutique hotels ($80–120/night), sit-down regional dining, first-class bullet trains, occasional local private guides for major monuments.
+- **Luxury / Tailor-Made Private Journey**: ~$5,500 – $8,500+ total ($275–425+/day per person). 5-star & heritage courtyard hotels (Aman, Banyan Tree, Songtsam), dedicated English-speaking specialist private guide and chauffeur throughout, VIP entrance access, domestic business class flights or business class high-speed rail.
+
+---
+
+## 3. Destination Matrix & Curated Private Itineraries
+
+### 3.1 The Golden Triangle: Imperial China & Modern Horizons
+- **Beijing, Xi'an & Shanghai (8–10 Days)**:
+  - Beijing: Private dawn access to Mutianyu or Jinshanling Great Wall; early access to the Forbidden City with an architectural historian; hutong tricycle tour and courtyard family lunch.
+  - Xi'an: Terracotta Warriors Pit 1, 2, and 3 with specialized archaeologist commentary; cycling atop the 14km Ancient City Wall; evening street food feast in the Muslim Quarter.
+  - Shanghai: Private architecture walk through the French Concession; rooftop cocktails overlooking the Bund; Yu Garden and contemporary art in West Bund.
+
+### 3.2 Southwest China: Yunnan & Sichuan
+- **Yunnan Multi-Ethnic Circuit (10–12 Days)**: Kunming Stone Forest -> Dali Bai architecture & Erhai Lake -> Shaxi Ancient Tea Horse Caravan Town -> Lijiang Naxi ancient town -> Tiger Leaping Gorge high-trail hike -> Shangri-La Tibetan monasteries.
+- **Sichuan Gastronomy & Nature (7–9 Days)**: Chengdu Giant Panda Breeding Base (VIP volunteer options) -> UNESCO Leshan Giant Buddha & Mount Emei sacred monasteries -> Jiuzhaigou National Park's multi-tiered waterfalls and sapphire alpine lakes.
+
+### 3.3 The Frontiers: Xinjiang & Tibet
+- **Tibet Cultural Journey (8–10 Days)**: Lhasa (Potala Palace, Jokhang Temple, Sera Monastery monks debating) -> Yamdrok Lake turquoise sacred waters -> Gyantse Kumbum -> Shigatse Tashilhunpo -> Everest Base Camp (Rongbuk Monastery sunset views).
+- **Xinjiang Silk Road & Karakoram (10–14 Days)**: Urumqi -> Turpan Flaming Mountains & ancient Karez irrigation -> Kashgar Sunday livestock market & Id Kah Mosque -> Karakoram Highway expedition past Karakul Lake and White Sand Lake to Tashkurgan.
+
+### 3.4 Landscapes That Inspired Legends
+- **Guilin, Yangshuo & Longji (5–7 Days)**: Bamboo rafting on the Yulong River away from tourist crowds; morning mist over the Longji Dragon's Backbone Rice Terraces; scenic Li River cruise.
+- **Zhangjiajie National Forest Park (4–5 Days)**: The floating Avatar quartzite sandstone peaks, Tianmen Mountain winding road and glass skywalk.
+- **Huangshan / Yellow Mountain (3–4 Days)**: UNESCO granite peaks, ancient gnarled pines, cloud-sea sunrises, followed by preservation visits to Huizhou villages (Hongcun & Xidi).
+
+---
+
+## 4. Contact & Booking Information
+- Website: https://beforechina.com
+- Direct Specialist Inquiry: hello@beforechina.com
+- Telephone: +44 20 XXXX XXXX
+- Philosophy: 100% tailor-made itineraries, transparent expert pricing, zero forced shopping stops, 24/7 dedicated in-country concierge.

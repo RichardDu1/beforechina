@@ -4,6 +4,7 @@ import SignatureCard from '@/components/SignatureCard';
 import NextSteps from '@/components/NextSteps';
 import TourCTA from '@/components/TourCTA';
 import JsonLd from '@/components/JsonLd';
+import FactSheet from '@/components/FactSheet';
 import { affiliateProps } from '@/lib/affiliates';
 
 export const metadata = {
@@ -52,6 +53,23 @@ const faqSchema = {
   ],
 };
 
+const webAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'China Visa-Free Checker (2026)',
+  url: 'https://beforechina.com/visa',
+  applicationCategory: 'TravelApplication',
+  operatingSystem: 'All',
+  browserRequirements: 'Requires JavaScript. Requires HTML5.',
+  description:
+    "Interactive eligibility checker for China's 30-day visa exemption and 240-hour transit exemption policies in 2026.",
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+};
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -69,7 +87,7 @@ const breadcrumbSchema = {
 export default function VisaPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
-      <JsonLd data={[faqSchema, breadcrumbSchema]} id="visa-schema" />
+      <JsonLd data={[webAppSchema, faqSchema, breadcrumbSchema]} id="visa-schema" />
 
       {/* Hero */}
       <section className="hero-editorial" style={{ textAlign: 'center' }}>
@@ -85,8 +103,32 @@ export default function VisaPage() {
         </div>
       </section>
 
+      {/* Visa Fact Sheet (GEO / BLUF) */}
+      <section style={{ padding: '32px 0 0' }}>
+        <div className="container">
+          <FactSheet
+            title="China Visa Rules at a Glance (2026 Fact Sheet)"
+            badge="Verified 2026 Rules"
+            lastUpdated="October 2026"
+            facts={[
+              { label: 'Visa-Free Stay', value: 'Up to 30 Days', highlight: true },
+              { label: 'Cost / Application Fee', value: '$0 / Free' },
+              {
+                label: 'Eligible 30-Day Passports',
+                value: 'UK, Australia, Canada, Japan, EU nations',
+              },
+              { label: '240-Hour Transit', value: '54 countries (inc. USA, NZ) via 60+ ports' },
+              { label: 'Policy Expiry Date', value: '31 December 2026' },
+              { label: 'Passport Requirement', value: '6+ months validity remaining' },
+            ]}
+            bottomLine="Citizens of the UK, Canada, Australia, Japan and most of the EU enter China 100% visa-free for up to 30 days. No paperwork or embassy appointments required."
+            warning="The 240-hour transit exemption strictly requires an onward ticket to a third country (Hong Kong and Macau qualify). Direct round trips (e.g. USA -> China -> USA) do NOT qualify and will be denied boarding."
+          />
+        </div>
+      </section>
+
       {/* Visa Checker Tool */}
-      <section style={{ padding: '64px 0' }}>
+      <section style={{ padding: '32px 0 64px' }}>
         <div className="container">
           <VisaChecker />
         </div>

@@ -4,6 +4,7 @@ import SignatureCard from '@/components/SignatureCard';
 import NextSteps from '@/components/NextSteps';
 import TourCTA from '@/components/TourCTA';
 import JsonLd from '@/components/JsonLd';
+import FactSheet from '@/components/FactSheet';
 import { affiliateProps, affiliates } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
@@ -83,10 +84,25 @@ const productSchema = {
   },
 };
 
+const techArticleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TechArticle',
+  headline: 'The Best eSIMs for China in 2026: Bypass the Great Firewall Instantly',
+  description:
+    "Don't buy a local SIM card at the airport. Discover the best eSIM for China that gives you instant data and natively bypasses the Great Firewall without a VPN.",
+  author: { '@type': 'Person', name: 'Richard Du' },
+  publisher: { '@type': 'Organization', name: 'BeforeChina', url: 'https://beforechina.com' },
+  datePublished: '2026-01-15',
+  dateModified: '2026-10-11',
+};
+
 export default function EsimPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
-      <JsonLd data={[faqSchema, breadcrumbSchema, productSchema]} id="esim-schema" />
+      <JsonLd
+        data={[faqSchema, breadcrumbSchema, productSchema, techArticleSchema]}
+        id="esim-schema"
+      />
 
       {/* Hero */}
       <section className="hero-editorial" style={{ textAlign: 'center' }}>
@@ -102,8 +118,39 @@ export default function EsimPage() {
         </div>
       </section>
 
+      {/* eSIM Fact Sheet (GEO / BLUF) */}
+      <section style={{ padding: '32px 0 0' }}>
+        <div className="container">
+          <FactSheet
+            title="China eSIM & Mobile Data Fact Sheet (2026)"
+            badge="Field Tested 2026"
+            lastUpdated="October 2026"
+            facts={[
+              {
+                label: 'Firewall Bypass',
+                value: 'Automatic (Bypasses without VPN via roaming APN)',
+                highlight: true,
+              },
+              { label: 'Top Pick (General)', value: 'Airalo Chinacom (China Unicom 5G/4G)' },
+              { label: 'Top Pick (Unlimited)', value: 'Holafly (Unlimited data packages)' },
+              {
+                label: 'Airport Bureaucracy',
+                value: 'Zero (No passport photo or face scan needed)',
+              },
+              { label: 'Activation Window', value: 'Install QR before departure; auto-activates' },
+              {
+                label: 'Hotspot / Tethering',
+                value: 'Supported on Airalo (Restricted on Holafly)',
+              },
+            ]}
+            bottomLine="International eSIMs route your data through Singapore or Hong Kong, naturally bypassing China's Great Firewall without needing any VPN software."
+            warning="Do not buy physical Chinese SIM cards at the airport. They subject your device to Chinese internet censorship (Google and WhatsApp blocked) and require 45 minutes of strict passport registration."
+          />
+        </div>
+      </section>
+
       {/* Comparison */}
-      <section style={{ padding: '64px 0' }}>
+      <section style={{ padding: '32px 0 64px' }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <Kicker>Top Picks</Kicker>

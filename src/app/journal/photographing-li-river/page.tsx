@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import JournalCard from '@/components/JournalCard';
+import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: "Chasing Light: A Photographer's Guide to the Li River | BeforeChina Journal",
@@ -20,6 +21,42 @@ export const metadata: Metadata = {
       },
     ],
   },
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: "Chasing Light: A Photographer's Guide to the Li River",
+  description:
+    'The exact spots, times, and seasons to capture the Li River at its most magical — from dawn mist to cormorant fishermen at sunset.',
+  image: 'https://beforechina.com/images/destinations/guangxi-og.webp',
+  author: {
+    '@type': 'Person',
+    name: 'Richard Du',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'BeforeChina',
+    url: 'https://beforechina.com',
+  },
+  datePublished: '2026-05-20',
+  dateModified: '2026-10-11',
+  mainEntityOfPage: 'https://beforechina.com/journal/photographing-li-river',
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://beforechina.com' },
+    { '@type': 'ListItem', position: 2, name: 'Journal', item: 'https://beforechina.com/journal' },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Photographers Guide to Li River',
+      item: 'https://beforechina.com/journal/photographing-li-river',
+    },
+  ],
 };
 
 const RELATED = [
@@ -46,6 +83,7 @@ const RELATED = [
 export default function PhotographingLiRiverPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
+      <JsonLd data={[articleSchema, breadcrumbSchema]} id="li-river-schema" />
       <section
         style={{
           position: 'relative',

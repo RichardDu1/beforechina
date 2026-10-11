@@ -117,6 +117,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="help" type="text/plain" href="/llms.txt" title="LLMs.txt Context" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

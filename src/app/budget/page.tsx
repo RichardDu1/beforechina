@@ -44,6 +44,23 @@ const faqSchema = {
   ],
 };
 
+const webAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'China Trip Cost Calculator (2026)',
+  url: 'https://beforechina.com/budget',
+  applicationCategory: 'TravelApplication',
+  operatingSystem: 'All',
+  browserRequirements: 'Requires JavaScript. Requires HTML5.',
+  description:
+    'Interactive China trip budget calculator. Set your travel style, trip length and group size to see a full real-time cost breakdown.',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+};
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -61,7 +78,7 @@ const breadcrumbSchema = {
 export default function BudgetPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
-      <JsonLd data={[faqSchema, breadcrumbSchema]} id="budget-schema" />
+      <JsonLd data={[webAppSchema, faqSchema, breadcrumbSchema]} id="budget-schema" />
 
       {/* Hero */}
       <section className="hero-editorial" style={{ textAlign: 'center' }}>

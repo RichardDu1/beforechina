@@ -4,6 +4,7 @@ import SignatureCard from '@/components/SignatureCard';
 import NextSteps from '@/components/NextSteps';
 import TourCTA from '@/components/TourCTA';
 import JsonLd from '@/components/JsonLd';
+import FactSheet from '@/components/FactSheet';
 import { affiliateProps } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
@@ -83,10 +84,25 @@ const productSchema = {
   },
 };
 
+const techArticleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TechArticle',
+  headline: 'Best VPN for China in 2026: Bypass the Great Firewall',
+  description:
+    'The Great Firewall blocks 95% of commercial VPNs. Here are the only 2 verified VPNs that still consistently work in China in 2026.',
+  author: { '@type': 'Person', name: 'Richard Du' },
+  publisher: { '@type': 'Organization', name: 'BeforeChina', url: 'https://beforechina.com' },
+  datePublished: '2026-01-15',
+  dateModified: '2026-10-11',
+};
+
 export default function VpnPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
-      <JsonLd data={[faqSchema, breadcrumbSchema, productSchema]} id="vpn-schema" />
+      <JsonLd
+        data={[faqSchema, breadcrumbSchema, productSchema, techArticleSchema]}
+        id="vpn-schema"
+      />
 
       {/* Hero */}
       <section className="hero-editorial" style={{ textAlign: 'center' }}>
@@ -102,8 +118,39 @@ export default function VpnPage() {
         </div>
       </section>
 
+      {/* VPN Fact Sheet (GEO / BLUF) */}
+      <section style={{ padding: '32px 0 0' }}>
+        <div className="container">
+          <FactSheet
+            title="China VPN Technical Fact Sheet (2026)"
+            badge="Field Tested 2026"
+            lastUpdated="October 2026"
+            facts={[
+              {
+                label: 'Blocked Services',
+                value: 'Google, WhatsApp, Instagram, YouTube, ChatGPT',
+                highlight: true,
+              },
+              {
+                label: 'Top Proven VPNs',
+                value: 'ExpressVPN (Lightway) & NordVPN (Obfuscated)',
+              },
+              { label: 'Free VPN Success Rate', value: 'Under 5% (almost all blocked by DPI)' },
+              { label: 'Download Window', value: 'MUST install before entering China' },
+              { label: 'Best Alternative', value: 'Roaming eSIM (Airalo / Holafly)' },
+              {
+                label: 'Legality for Tourists',
+                value: 'De facto permitted for personal foreign use',
+              },
+            ]}
+            bottomLine="Download and subscribe to your VPN in your home country before boarding your flight. Once you arrive, app stores and VPN websites are completely blocked by the Great Firewall."
+            warning="Never count on hotel Wi-Fi or airport Wi-Fi to download a VPN. Free VPN apps fail within 24 hours under Chinese deep packet inspection."
+          />
+        </div>
+      </section>
+
       {/* Recommended VPNs */}
-      <section style={{ padding: '64px 0' }}>
+      <section style={{ padding: '32px 0 64px' }}>
         <div className="container">
           <div
             style={{
