@@ -15,19 +15,19 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'BeforeChina — Tailor-Made Journeys to China',
+    default: 'BeforeChina — Tailor-Made Journeys & China Intelligence',
     template: '%s | BeforeChina',
   },
   description:
-    'Independent travel toolkit, healthcare price benchmarks, and tailor-made route guides for visiting China.',
+    'Independent travel toolkit, hospital price benchmarks, and tailor-made route guides for visiting China.',
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     url: SITE_URL,
     siteName: 'BeforeChina',
-    title: 'BeforeChina — Tailor-Made Journeys to China',
+    title: 'BeforeChina — Tailor-Made Journeys & China Intelligence',
     description:
-      'Private itineraries crafted by China specialists. From the Great Wall to the Silk Road, every journey is built around you.',
+      'Private itineraries and independent field benchmarks crafted by UK & China specialists.',
     images: [
       {
         url: '/og-default.jpg',
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BeforeChina — Tailor-Made Journeys to China',
+    title: 'BeforeChina — Tailor-Made Journeys & China Intelligence',
     description:
-      'Private itineraries crafted by China specialists. Every journey is built around you.',
+      'Private itineraries and independent field benchmarks crafted by UK & China specialists.',
     images: ['/og-default.jpg'],
   },
   robots: {
@@ -73,7 +73,7 @@ const FOOTER_DESTINATIONS = [
   { href: '/tibet/lhasa-shigatse-everest', label: 'Tibet' },
   { href: '/silk-road/xian-lanzhou-dunhuang', label: 'Silk Road' },
   { href: '/guangxi/guilin-yangshuo-lijiang', label: 'Guilin & Yangshuo' },
-  { href: '/destinations', label: 'All Destinations →' },
+  { href: '/destinations', label: 'All 14 Regions →' },
 ];
 
 const FOOTER_EXPERIENCES = [
@@ -85,23 +85,23 @@ const FOOTER_EXPERIENCES = [
 ];
 
 const FOOTER_COMPANY = [
-  { href: '/about', label: 'About Us' },
-  { href: '/journal', label: 'Journal' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/about', label: 'Editorial Masthead' },
+  { href: '/journal', label: 'Field Dispatches' },
+  { href: '/contact', label: 'Enquire & Contact' },
   { href: '/privacy', label: 'Privacy Policy' },
   { href: '/terms', label: 'Terms of Service' },
   { href: '/cookie', label: 'Cookie Policy' },
 ];
 
 const FOOTER_TOOLS = [
-  { href: '/visa', label: 'Visa-Free Checker' },
-  { href: '/health', label: 'Healthcare & Dental Guide' },
-  { href: '/health/dental-china-vs-turkey-uk', label: 'Dental Cost: China vs Turkey/UK' },
-  { href: '/vpn', label: 'Best VPN for China' },
-  { href: '/esim', label: 'Best eSIM for China' },
-  { href: '/payment', label: 'Alipay & WeChat Pay' },
-  { href: '/insurance', label: 'Travel Insurance' },
-  { href: '/budget', label: 'Trip Cost Calculator' },
+  { href: '/visa', label: '01 / Visa-Free Checker' },
+  { href: '/health', label: '02 / Hospital & Dental Guide' },
+  { href: '/health/dental-china-vs-turkey-uk', label: '03 / Dental: China vs Turkey/UK' },
+  { href: '/payment', label: '04 / Alipay & WeChat Pay' },
+  { href: '/vpn', label: '05 / Firewall & VPN Guide' },
+  { href: '/esim', label: '06 / China eSIM Benchmarks' },
+  { href: '/insurance', label: '07 / Travel & Medical Insurance' },
+  { href: '/budget', label: '08 / Trip Cost Calculator' },
 ];
 
 export default function RootLayout({
@@ -116,7 +116,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
           rel="stylesheet"
         />
       </head>
@@ -129,27 +129,30 @@ export default function RootLayout({
             width: '100%',
             zIndex: 100,
             borderBottom: '1px solid var(--border-color)',
-            borderTop: 'none',
+            borderTop: '2px solid var(--text-primary)',
             borderLeft: 'none',
             borderRight: 'none',
             borderRadius: 0,
           }}
         >
           <div className="container nav-inner">
-            <Link
-              href="/"
-              style={{
-                fontFamily: 'var(--font-logo)',
-                fontSize: '24px',
-                fontWeight: 500,
-                letterSpacing: '-0.5px',
-                textDecoration: 'none',
-                color: 'var(--text-primary)',
-                flexShrink: 0,
-              }}
-            >
-              Before<span style={{ color: 'var(--primary-color)' }}>China</span>
-            </Link>
+            <div className="nav-brand-group">
+              <Link
+                href="/"
+                style={{
+                  fontFamily: 'var(--font-logo)',
+                  fontSize: '23px',
+                  fontWeight: 500,
+                  letterSpacing: '-0.03em',
+                  textDecoration: 'none',
+                  color: 'var(--text-primary)',
+                }}
+              >
+                Before<span style={{ color: 'var(--primary-color)' }}>China</span>
+              </Link>
+              <span className="nav-edition-tag">London &amp; Shanghai Desk · 2026</span>
+            </div>
+
             <div className="nav-links">
               <Link href="/destinations" className="nav-link">
                 Destinations
@@ -157,8 +160,15 @@ export default function RootLayout({
               <Link href="/experiences" className="nav-link">
                 Experiences
               </Link>
-              <Link href="/health" className="nav-link" style={{ fontWeight: 600 }}>
+              <Link
+                href="/health"
+                className="nav-link"
+                style={{ color: 'var(--primary-color)', fontWeight: 600 }}
+              >
                 Health &amp; Dental
+              </Link>
+              <Link href="/visa" className="nav-link">
+                Visa &amp; Tools
               </Link>
               <Link href="/journal" className="nav-link">
                 Journal
@@ -170,12 +180,15 @@ export default function RootLayout({
                 href="mailto:hello@beforechina.com"
                 className="nav-email-pill"
                 style={{
-                  fontSize: '13px',
-                  color: 'var(--text-secondary)',
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  color: 'var(--text-primary)',
                   marginLeft: '4px',
                   fontWeight: 500,
-                  padding: '6px 12px',
-                  border: '1px solid var(--border-color)',
+                  padding: '7px 12px',
+                  border: '1px solid var(--text-primary)',
                   borderRadius: 'var(--radius-sm)',
                   textDecoration: 'none',
                 }}
@@ -185,54 +198,77 @@ export default function RootLayout({
             </div>
           </div>
         </nav>
-        <main style={{ paddingTop: '72px', minHeight: 'calc(100vh - 100px)' }}>{children}</main>
+
+        <main style={{ paddingTop: '74px', minHeight: 'calc(100vh - 100px)' }}>{children}</main>
+
         <footer
           style={{
-            backgroundColor: 'var(--bg-surface)',
-            padding: '64px 0 32px',
-            borderTop: '1px solid var(--border-color)',
+            backgroundColor: 'var(--bg-ink)',
+            color: 'var(--text-on-ink)',
+            padding: '72px 0 36px',
+            borderTop: '3px solid var(--primary-color)',
             marginTop: 'auto',
           }}
         >
           <div className="container">
             <div className="footer-grid">
-              {/* Column 1: Brand */}
+              {/* Column 1: Editorial Masthead */}
               <div>
+                <div
+                  style={{
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '10px',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.14em',
+                    color: 'var(--text-on-ink-muted)',
+                    marginBottom: '10px',
+                  }}
+                >
+                  Independent China Briefing &amp; Route Atelier
+                </div>
                 <Link
                   href="/"
                   style={{
                     fontFamily: 'var(--font-logo)',
-                    fontSize: '24px',
+                    fontSize: '26px',
                     fontWeight: 500,
                     textDecoration: 'none',
-                    color: 'var(--text-primary)',
+                    color: 'var(--text-on-ink)',
                     marginBottom: '16px',
                     display: 'inline-block',
                   }}
                 >
-                  Before<span style={{ color: 'var(--primary-color)' }}>China</span>
+                  Before<span style={{ color: '#d45d5e' }}>China</span>
                 </Link>
                 <p
                   style={{
-                    color: 'var(--text-secondary)',
-                    lineHeight: '1.6',
-                    maxWidth: '280px',
-                    marginBottom: '16px',
+                    color: 'var(--text-on-ink-muted)',
+                    fontSize: '14px',
+                    lineHeight: '1.65',
+                    maxWidth: '300px',
+                    marginBottom: '20px',
                   }}
                 >
-                  Tailor-made private journeys to China. Crafted by specialists who know every path,
-                  every story, every season.
+                  Bespoke private journeys, hospital tariff audits, and practical pre-trip tools
+                  compiled by our bilingual research desk in London and Shanghai.
                 </p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-                    UK &amp; China Bilingual Research Team
-                  </span>
-                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-                    Independent Tools &amp; Price Benchmarks
-                  </span>
-                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-                    Direct Email: hello@beforechina.com
-                  </span>
+                <div
+                  style={{
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '12px',
+                    color: 'var(--text-on-ink)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '6px',
+                  }}
+                >
+                  <span>DESK: LONDON &amp; SHANGHAI</span>
+                  <a
+                    href="mailto:hello@beforechina.com"
+                    style={{ color: '#e6c27a', textDecoration: 'underline' }}
+                  >
+                    hello@beforechina.com
+                  </a>
                 </div>
               </div>
 
@@ -240,15 +276,16 @@ export default function RootLayout({
               <div>
                 <h3
                   style={{
-                    fontSize: '14px',
-                    marginBottom: '16px',
-                    color: 'var(--text-primary)',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '11px',
+                    marginBottom: '18px',
+                    color: 'var(--text-on-ink)',
                     fontWeight: 600,
                     textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
+                    letterSpacing: '0.12em',
                   }}
                 >
-                  Destinations
+                  01 / Regional Atlas
                 </h3>
                 <ul
                   style={{
@@ -264,7 +301,7 @@ export default function RootLayout({
                       <Link
                         href={d.href}
                         style={{
-                          color: 'var(--text-secondary)',
+                          color: 'var(--text-on-ink-muted)',
                           textDecoration: 'none',
                           fontSize: '14px',
                         }}
@@ -280,15 +317,16 @@ export default function RootLayout({
               <div>
                 <h3
                   style={{
-                    fontSize: '14px',
-                    marginBottom: '16px',
-                    color: 'var(--text-primary)',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '11px',
+                    marginBottom: '18px',
+                    color: 'var(--text-on-ink)',
                     fontWeight: 600,
                     textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
+                    letterSpacing: '0.12em',
                   }}
                 >
-                  Experiences
+                  02 / Curated Themes
                 </h3>
                 <ul
                   style={{
@@ -304,7 +342,7 @@ export default function RootLayout({
                       <Link
                         href={e.href}
                         style={{
-                          color: 'var(--text-secondary)',
+                          color: 'var(--text-on-ink-muted)',
                           textDecoration: 'none',
                           fontSize: '14px',
                         }}
@@ -320,15 +358,16 @@ export default function RootLayout({
               <div>
                 <h3
                   style={{
-                    fontSize: '14px',
-                    marginBottom: '16px',
-                    color: 'var(--text-primary)',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '11px',
+                    marginBottom: '18px',
+                    color: 'var(--text-on-ink)',
                     fontWeight: 600,
                     textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
+                    letterSpacing: '0.12em',
                   }}
                 >
-                  BeforeChina
+                  03 / Editorial &amp; Legal
                 </h3>
                 <ul
                   style={{
@@ -344,7 +383,7 @@ export default function RootLayout({
                       <Link
                         href={c.href}
                         style={{
-                          color: 'var(--text-secondary)',
+                          color: 'var(--text-on-ink-muted)',
                           textDecoration: 'none',
                           fontSize: '14px',
                         }}
@@ -357,47 +396,68 @@ export default function RootLayout({
               </div>
             </div>
 
-            {/* Travel Toolkit row */}
+            {/* Travel & Healthcare Toolkit Dossier Bar */}
             <div
               style={{
                 marginTop: '48px',
                 paddingTop: '24px',
-                borderTop: '1px solid var(--border-color)',
+                borderTop: '1px solid rgba(246, 244, 239, 0.14)',
                 display: 'flex',
                 flexWrap: 'wrap',
-                gap: '16px',
-                justifyContent: 'center',
+                gap: '18px',
+                alignItems: 'center',
               }}
             >
-              <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 500 }}>
-                Travel Toolkit:
+              <span
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                  color: '#e6c27a',
+                  fontWeight: 600,
+                }}
+              >
+                Field Dossiers:
               </span>
               {FOOTER_TOOLS.map((t) => (
                 <Link
                   key={t.href}
                   href={t.href}
-                  style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '13px' }}
+                  style={{
+                    fontFamily: 'var(--font-mono)',
+                    color: 'var(--text-on-ink-muted)',
+                    textDecoration: 'none',
+                    fontSize: '12px',
+                  }}
                 >
                   {t.label}
                 </Link>
               ))}
             </div>
 
-            {/* Bottom bar */}
+            {/* Bottom Colophon Bar */}
             <div
               style={{
-                textAlign: 'center',
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                gap: '12px',
                 marginTop: '32px',
                 paddingTop: '24px',
-                borderTop: '1px solid var(--border-color)',
-                color: 'var(--text-muted)',
-                fontSize: '13px',
+                borderTop: '1px solid rgba(246, 244, 239, 0.14)',
+                color: 'var(--text-on-ink-muted)',
+                fontSize: '12px',
               }}
             >
-              <p>&copy; {new Date().getFullYear()} BeforeChina.com. All rights reserved.</p>
-              <p style={{ fontSize: '12px', marginTop: '4px' }}>
-                Disclosure: Some outbound links are affiliate links. If you make a purchase, we may
-                earn a commission at no extra cost to you.
+              <p style={{ fontFamily: 'var(--font-mono)' }}>
+                &copy; {new Date().getFullYear()} BEFORECHINA.COM · INDEPENDENT EDITORIAL &amp;
+                RESEARCH DESK
+              </p>
+              <p style={{ fontSize: '12px' }}>
+                Disclosure: Outbound links to third-party tools may earn an affiliate commission at
+                no extra cost to you. Public hospital tariffs carry zero referral fees.
               </p>
             </div>
           </div>

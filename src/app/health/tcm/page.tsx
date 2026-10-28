@@ -204,7 +204,7 @@ export default function TcmChinaPage() {
         {/* Customs & Herbal Medicine Warning */}
         <div
           className="article-card"
-          style={{ borderLeft: '4px solid var(--primary-color)', marginBottom: '32px' }}
+          style={{ borderTop: '2px solid var(--primary-color)', marginBottom: '32px' }}
         >
           <h2 style={{ fontSize: '22px', marginBottom: '10px' }}>
             Crucial Customs Rule Before Buying Chinese Herbs

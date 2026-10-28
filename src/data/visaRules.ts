@@ -183,7 +183,7 @@ export const visaResults: Record<VisaStatus, VisaResult> = {
     description:
       "Your passport qualifies for China's 30-day visa-free entry. You can fly directly in and out for tourism or business — no transit, no visa application, no $140 fee.",
     actionText: 'Get your eSIM ready for arrival',
-    color: '#07C160',
+    color: '#1e4d3b',
     caveats: [
       'Stay up to 30 days per entry (cumulative within a 180-day window for most unilateral waivers).',
       'Carry proof of onward/return travel and accommodation — airlines may ask at check-in.',
@@ -196,7 +196,7 @@ export const visaResults: Record<VisaStatus, VisaResult> = {
     description:
       "Your passport qualifies for China's 15-day visa-free entry. Fly directly in and out for tourism or short business — no transit required.",
     actionText: 'Get your VPN & eSIM ready',
-    color: '#07C160',
+    color: '#1e4d3b',
     caveats: [
       'Up to 15 days per entry.',
       'If you need a longer stay, apply for an L-visa instead — you cannot extend visa-free entry from within China.',

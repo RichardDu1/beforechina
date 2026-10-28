@@ -158,7 +158,7 @@ export default function DentalChinaPage() {
                 borderRadius: 'var(--radius-md)',
               }}
             >
-              <h3 style={{ fontSize: '17px', color: '#07C160', marginBottom: '10px' }}>
+              <h3 style={{ fontSize: '17px', color: 'var(--accent-color)', marginBottom: '10px' }}>
                 ✓ Safe for a Single Trip (3–10 Days)
               </h3>
               <ul
@@ -249,7 +249,7 @@ export default function DentalChinaPage() {
         {/* 4 Non-Negotiable Safety Checks */}
         <div
           className="article-card"
-          style={{ borderLeft: '4px solid var(--primary-color)', marginBottom: '32px' }}
+          style={{ borderTop: '2px solid var(--primary-color)', marginBottom: '32px' }}
         >
           <h2 style={{ fontSize: '22px', marginBottom: '12px' }}>
             4 Non-Negotiable Checklist Items Before Sitting in the Chair

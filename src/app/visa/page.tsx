@@ -95,10 +95,11 @@ export default function VisaPage() {
           <Kicker>Entry Requirements</Kicker>
           <h1>Do I Need a Visa for China?</h1>
           <p className="hero-subtitle" style={{ marginBottom: '0' }}>
-            &ldquo;Richard, how do I apply for a tourist visa?&rdquo; — My British friends ask me
-            this every week. My answer? <strong>You probably don&apos;t need one anymore.</strong>{' '}
-            China has expanded visa-free entry to 30 days for the UK, Canada, Australia, Japan and
-            most of Europe. Use my tool below to check.
+            &ldquo;Do I still need to visit the embassy for a China visa?&rdquo; — Travellers ask
+            our London desk this every week. Our answer:{' '}
+            <strong>You probably don&apos;t need one anymore.</strong> China has expanded visa-free
+            entry to 30 days for the UK, Canada, Australia, Japan and most of Europe. Use our
+            interactive checker below.
           </p>
         </div>
       </section>
@@ -177,7 +178,7 @@ export default function VisaPage() {
                 style={{
                   padding: '16px',
                   backgroundColor: 'var(--callout-bg-primary)',
-                  borderLeft: '3px solid var(--primary-color)',
+                  borderTop: '2px solid var(--text-primary)',
                   borderRadius: 'var(--radius-sm)',
                 }}
               >

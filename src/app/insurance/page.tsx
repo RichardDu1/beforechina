@@ -78,7 +78,7 @@ export default function InsurancePage() {
 
           <div
             className="article-card"
-            style={{ marginBottom: '48px', borderLeft: '3px solid var(--accent-warm)' }}
+            style={{ marginBottom: '48px', borderTop: '2px solid var(--accent-warm)' }}
           >
             <h3 style={{ fontSize: '24px', marginBottom: '16px' }}>
               VIP Clinics vs Public Hospitals
@@ -197,7 +197,7 @@ export default function InsurancePage() {
           className="article-card"
           style={{
             marginBottom: '48px',
-            borderLeft: '4px solid var(--primary-color)',
+            borderTop: '2px solid var(--primary-color)',
           }}
         >
           <div

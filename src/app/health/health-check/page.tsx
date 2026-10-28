@@ -159,7 +159,14 @@ export default function HealthCheckPage() {
               <tr style={{ borderBottom: '1px solid var(--border-color)' }}>
                 <td style={{ padding: '12px 8px', fontWeight: 600 }}>Typical Package Cost</td>
                 <td style={{ padding: '12px 8px' }}>$100 – $200</td>
-                <td style={{ padding: '12px 8px', fontWeight: 700, color: '#07C160' }}>
+                <td
+                  style={{
+                    padding: '12px 8px',
+                    fontWeight: 700,
+                    color: 'var(--accent-color)',
+                    fontFamily: 'var(--font-mono)',
+                  }}
+                >
                   $280 – $680
                 </td>
                 <td style={{ padding: '12px 8px' }}>$850 – $2,400+</td>

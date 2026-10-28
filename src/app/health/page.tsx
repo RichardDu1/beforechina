@@ -211,7 +211,7 @@ export default function HealthHubPage() {
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            {HEALTH_GUIDES.map((g) => (
+            {HEALTH_GUIDES.map((g, idx) => (
               <Link
                 key={g.href}
                 href={g.href}
@@ -220,7 +220,7 @@ export default function HealthHubPage() {
                   textDecoration: 'none',
                   color: 'inherit',
                   display: 'block',
-                  borderLeft: '3px solid var(--primary-color)',
+                  borderTop: '2px solid var(--text-primary)',
                   transition: 'transform 0.15s ease',
                 }}
               >
@@ -231,28 +231,33 @@ export default function HealthHubPage() {
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     gap: '8px',
-                    marginBottom: '8px',
+                    marginBottom: '10px',
+                    paddingBottom: '10px',
+                    borderBottom: '1px solid var(--border-color)',
                   }}
                 >
                   <span
                     style={{
-                      fontSize: '12px',
-                      fontWeight: 700,
+                      fontFamily: 'var(--font-mono)',
+                      fontSize: '11px',
+                      fontWeight: 600,
                       textTransform: 'uppercase',
-                      letterSpacing: '0.05em',
+                      letterSpacing: '0.08em',
                       color: 'var(--primary-color)',
                     }}
                   >
-                    {g.badge}
+                    DOSSIER 0{idx + 1} &middot; {g.badge}
                   </span>
                   <span
                     style={{
-                      fontSize: '13px',
-                      fontWeight: 700,
-                      color: '#07C160',
-                      backgroundColor: 'rgba(7, 193, 96, 0.1)',
+                      fontFamily: 'var(--font-mono)',
+                      fontSize: '12px',
+                      fontWeight: 600,
+                      color: 'var(--accent-color)',
+                      backgroundColor: 'var(--accent-bg)',
+                      border: '1px solid var(--accent-border)',
                       padding: '3px 10px',
-                      borderRadius: 'var(--radius-pill)',
+                      borderRadius: 'var(--radius-sm)',
                     }}
                   >
                     {g.priceTag}
@@ -325,7 +330,7 @@ export default function HealthHubPage() {
           <div
             className="article-card"
             style={{
-              borderLeft: '4px solid var(--primary-color)',
+              borderTop: '2px solid var(--primary-color)',
               marginBottom: '32px',
             }}
           >

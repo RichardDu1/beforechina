@@ -1,134 +1,96 @@
 export default function WhyUs() {
   const PILLARS = [
     {
-      icon: (
-        <svg
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        >
-          <circle cx="12" cy="12" r="10" />
-          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-        </svg>
-      ),
-      title: 'China Specialists',
+      index: '01 / BILATERAL DESK',
+      title: 'London & Shanghai Field Specialists',
       description:
-        'Born and raised in China, based in the UK. We know the language, the hidden spots, and how to navigate both worlds.',
+        'Born and raised in China, operating between the UK and Shanghai. We bridge the language barrier, digital ecosystem, and cultural nuances before you board.',
     },
     {
-      icon: (
-        <svg
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        >
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-        </svg>
-      ),
-      title: '100% Tailor-Made',
+      index: '02 / PRIVATE LOGISTICS',
+      title: '100% Tailor-Made, Zero Group Tours',
       description:
-        'No fixed departures, no groups. Every journey is designed from scratch around your interests, pace, and budget.',
+        'No fixed departures or commission shopping stops. Every route is built from scratch around your pace — from high-speed rail transfers to private mountain guides.',
     },
     {
-      icon: (
-        <svg
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        >
-          <rect x="3" y="4" width="18" height="16" rx="2" />
-          <path d="M16 2v4M8 2v4M3 10h18" />
-        </svg>
-      ),
-      title: '24/7 In-Country Support',
+      index: '03 / VERIFIED BENCHMARKS',
+      title: 'Independent Hospital & Toolkit Audits',
       description:
-        'WhatsApp access to our team while you travel. If a train gets cancelled or a plan changes, we fix it in real time.',
+        'We publish real Tier-3 hospital International Department tariffs, post-VBP dental implant prices, and live Alipay/VPN tests with zero public hospital kickbacks.',
     },
     {
-      icon: (
-        <svg
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        >
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-          <circle cx="9" cy="7" r="4" />
-          <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-        </svg>
-      ),
-      title: 'Local Communities, Real Impact',
+      index: '04 / REAL-TIME SUPPORT',
+      title: 'Direct Bilingual Concierge on the Ground',
       description:
-        'We work directly with family-run guesthouses, local guides, and community projects — not big hotel chains.',
+        'Instant WhatsApp & WeChat access to our bilingual desk while you travel. If a high-speed train shifts or a hospital appointment needs translation, we handle it live.',
     },
   ];
 
   return (
-    <section style={{ padding: 'var(--section-gap-lg) 0' }}>
+    <section style={{ padding: 'var(--section-gap-md) 0' }}>
       <div className="container" style={{ maxWidth: 'var(--content-width-wide)' }}>
-        <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-          <h2
-            style={{
-              fontFamily: 'var(--font-heading)',
-              fontSize: 'clamp(28px, 4vw, 40px)',
-              fontWeight: 500,
-              marginBottom: '16px',
-            }}
-          >
-            Why Travel With Us
-          </h2>
-          <p
-            style={{
-              color: 'var(--text-secondary)',
-              fontSize: '17px',
-              maxWidth: '560px',
-              margin: '0 auto',
-              lineHeight: 1.6,
-            }}
-          >
-            We are not a faceless agency. We are a small team of China specialists who design
-            journeys we would take ourselves.
-          </p>
-        </div>
+        {/* Editorial Split Header */}
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '40px',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '32px',
+            alignItems: 'end',
+            marginBottom: '48px',
           }}
         >
+          <div>
+            <div className="kicker">The BeforeChina Briefing</div>
+            <h2
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(28px, 3.8vw, 42px)',
+                fontWeight: 400,
+                lineHeight: 1.12,
+                margin: 0,
+              }}
+            >
+              Not a Faceless Agency. An Independent Desk for Modern China.
+            </h2>
+          </div>
+          <p
+            style={{
+              fontFamily: 'var(--font-quote)',
+              color: 'var(--text-secondary)',
+              fontSize: '19px',
+              lineHeight: 1.55,
+              margin: 0,
+            }}
+          >
+            Travelling to China in 2026 rewards preparation. Whether you are mapping a three-week
+            Silk Road expedition or booking a half-day executive MRI checkup in Shanghai, we pair
+            unvarnished field data with seamless private execution.
+          </p>
+        </div>
+
+        {/* 4-Column Hairline Grid */}
+        <div className="hairline-grid-4">
           {PILLARS.map((p) => (
-            <div key={p.title} style={{ textAlign: 'center' }}>
+            <div key={p.index}>
               <div
                 style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  fontWeight: 600,
                   color: 'var(--primary-color)',
-                  marginBottom: '16px',
-                  display: 'inline-block',
+                  letterSpacing: '0.08em',
+                  marginBottom: '14px',
                 }}
               >
-                {p.icon}
+                {p.index}
               </div>
               <h3
                 style={{
                   fontFamily: 'var(--font-heading)',
-                  fontSize: '18px',
-                  fontWeight: 600,
+                  fontSize: '20px',
+                  fontWeight: 500,
                   marginBottom: '10px',
+                  lineHeight: 1.25,
                 }}
               >
                 {p.title}
@@ -136,10 +98,9 @@ export default function WhyUs() {
               <p
                 style={{
                   color: 'var(--text-secondary)',
-                  fontSize: '15px',
-                  lineHeight: 1.6,
-                  maxWidth: '260px',
-                  margin: '0 auto',
+                  fontSize: '14px',
+                  lineHeight: 1.65,
+                  margin: 0,
                 }}
               >
                 {p.description}

@@ -79,7 +79,7 @@ export default function BudgetCalculator() {
         style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '32px' }}
       >
         {/* Inputs */}
-        <div className="article-card" style={{ borderLeft: '3px solid var(--primary-color)' }}>
+        <div className="article-card" style={{ borderTop: '2px solid var(--text-primary)' }}>
           <h2 style={{ fontSize: '24px', marginBottom: '24px' }}>Your Trip</h2>
 
           {/* Style selector */}
@@ -176,7 +176,7 @@ export default function BudgetCalculator() {
         <div
           className="article-card"
           style={{
-            borderLeft: '3px solid var(--accent-color)',
+            borderTop: '2px solid var(--accent-color)',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',

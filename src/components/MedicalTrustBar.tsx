@@ -13,45 +13,46 @@ export default function MedicalTrustBar({
   return (
     <div
       style={{
-        maxWidth: '840px',
-        margin: '16px auto 32px',
+        maxWidth: '860px',
+        margin: '20px auto 32px',
         padding: '14px 20px',
         backgroundColor: 'var(--bg-surface)',
         border: '1px solid var(--border-color)',
-        borderRadius: 'var(--radius-md)',
+        borderRadius: 'var(--radius-sm)',
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-between',
         alignItems: 'center',
         gap: '12px',
-        fontSize: '13px',
+        fontFamily: 'var(--font-mono)',
+        fontSize: '11px',
+        letterSpacing: '0.03em',
         color: 'var(--text-secondary)',
       }}
     >
-      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '16px' }}>
-        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-          <strong style={{ color: '#07C160' }}>✓ Independent Research:</strong> Zero Public Hospital
-          Kickbacks
+      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '14px' }}>
+        <span style={{ color: 'var(--accent-color)', fontWeight: 600 }}>
+          [ ✓ INDEPENDENT RESEARCH: ZERO HOSPITAL KICKBACKS ]
         </span>
-        <span>·</span>
+        <span style={{ opacity: 0.4 }}>|</span>
         <span>
-          <strong>On-Site Pricing Audits:</strong> {fieldLocation}
+          <strong>SCOPE:</strong> {fieldLocation}
         </span>
-        <span>·</span>
+        <span style={{ opacity: 0.4 }}>|</span>
         <span>
-          <strong>Last Verified:</strong> {lastVerified}
+          <strong>VERIFIED:</strong> {lastVerified}
         </span>
       </div>
       <Link
         href="#medical-disclaimer"
         style={{
-          fontSize: '12px',
+          fontSize: '11px',
           color: 'var(--primary-color)',
           textDecoration: 'underline',
           fontWeight: 600,
         }}
       >
-        Editorial & Clinical Disclaimer ↓
+        CLINICAL DISCLAIMER &darr;
       </Link>
     </div>
   );
@@ -63,27 +64,29 @@ export function MedicalDisclaimerFooter() {
       id="medical-disclaimer"
       className="article-card"
       style={{
-        maxWidth: '840px',
+        maxWidth: '860px',
         margin: '48px auto 0',
-        padding: '24px',
+        padding: '24px 28px',
         backgroundColor: 'var(--bg-surface)',
-        borderLeft: '4px solid var(--text-muted)',
+        borderTop: '2px solid var(--text-primary)',
         fontSize: '13px',
         color: 'var(--text-secondary)',
         lineHeight: 1.6,
       }}
     >
-      <h3
+      <div
         style={{
-          fontSize: '15px',
-          fontWeight: 700,
-          color: 'var(--text-primary)',
+          fontFamily: 'var(--font-mono)',
+          fontSize: '11px',
+          fontWeight: 600,
+          textTransform: 'uppercase',
+          letterSpacing: '0.08em',
+          color: 'var(--text-muted)',
           marginBottom: '8px',
         }}
       >
-        Important Clinical, Legal & Regulatory Disclosure (UK ASA / CAP & Google Healthcare
-        Compliance)
-      </h3>
+        [ STATUTORY DISCLOSURE &middot; UK ASA / CAP &amp; GOOGLE HEALTHCARE COMPLIANCE ]
+      </div>
       <p style={{ marginBottom: '8px' }}>
         <strong>1. Informational Purposes Only (Not Medical Advice):</strong> All content, fee
         schedules, and calculators published under <code>beforechina.com/health</code> are compiled
@@ -99,11 +102,11 @@ export function MedicalDisclaimerFooter() {
         cited directly from published municipal tariff schedules and on-site receipt audits.
       </p>
       <p style={{ marginBottom: '0' }}>
-        <strong>3. Clinical Risk & Continuity of Care:</strong> All surgical and dental procedures
-        carry inherent medical risks. Multi-stage restorative treatments (such as dental implants)
-        require strict follow-up timelines and osseointegration recovery windows. Standard travel
-        insurance policies exclude elective medical treatments abroad; always secure specialist
-        medical complication coverage prior to travel.
+        <strong>3. Clinical Risk &amp; Continuity of Care:</strong> All surgical and dental
+        procedures carry inherent medical risks. Multi-stage restorative treatments (such as dental
+        implants) require strict follow-up timelines and osseointegration recovery windows. Standard
+        travel insurance policies exclude elective medical treatments abroad; always secure
+        specialist medical complication coverage prior to travel.
       </p>
     </div>
   );

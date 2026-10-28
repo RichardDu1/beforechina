@@ -146,7 +146,7 @@ export default function EsimPage() {
                 gap: '32px',
                 position: 'relative',
                 overflow: 'hidden',
-                borderLeft: '3px solid var(--primary-color)',
+                borderTop: '2px solid var(--text-primary)',
               }}
             >
               <div

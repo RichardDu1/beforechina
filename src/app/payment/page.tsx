@@ -192,7 +192,7 @@ export default function PaymentPage() {
                 backgroundColor: 'var(--callout-bg-warm)',
                 padding: '16px',
                 borderRadius: 'var(--radius-sm)',
-                borderLeft: '3px solid var(--accent-warm)',
+                borderTop: '2px solid var(--accent-warm)',
               }}
             >
               <strong>The Fee Structure:</strong> Transactions under 200 RMB (~$28 USD) have{' '}
@@ -258,7 +258,7 @@ export default function PaymentPage() {
                 backgroundColor: 'var(--callout-bg-primary)',
                 padding: '16px',
                 borderRadius: 'var(--radius-sm)',
-                borderLeft: '3px solid var(--primary-color)',
+                borderTop: '2px solid var(--text-primary)',
               }}
             >
               <strong>WeChat Friend Verification Workaround:</strong> If you don&apos;t know anyone

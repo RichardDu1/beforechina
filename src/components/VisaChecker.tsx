@@ -44,7 +44,7 @@ export default function VisaChecker() {
       style={{
         maxWidth: '640px',
         margin: '0 auto',
-        borderLeft: '3px solid var(--primary-color)',
+        borderTop: '2px solid var(--text-primary)',
       }}
     >
       <h2 style={{ fontSize: '28px', marginBottom: '8px' }}>Check Your Visa Status</h2>

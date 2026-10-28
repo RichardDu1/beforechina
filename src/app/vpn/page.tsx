@@ -444,7 +444,7 @@ export default function VpnPage() {
                 padding: '16px',
                 backgroundColor: 'var(--callout-bg-primary)',
                 borderRadius: 'var(--radius-sm)',
-                borderLeft: '3px solid var(--primary-color)',
+                borderTop: '2px solid var(--text-primary)',
               }}
             >
               <strong>What if it stops working mid-trip?</strong> Try switching to a different

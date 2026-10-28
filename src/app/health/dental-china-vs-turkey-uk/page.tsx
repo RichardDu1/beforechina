@@ -151,7 +151,14 @@ export default function DentalComparisonPage() {
                 <td style={{ padding: '12px 8px' }}>£2,600 / $4,200</td>
                 <td style={{ padding: '12px 8px' }}>£750 / $950</td>
                 <td style={{ padding: '12px 8px' }}>£1,050 / $1,350</td>
-                <td style={{ padding: '12px 8px', fontWeight: 700, color: '#07C160' }}>
+                <td
+                  style={{
+                    padding: '12px 8px',
+                    fontWeight: 700,
+                    color: 'var(--accent-color)',
+                    fontFamily: 'var(--font-mono)',
+                  }}
+                >
                   £720 / $920 (¥6,600)
                 </td>
               </tr>
@@ -162,7 +169,14 @@ export default function DentalComparisonPage() {
                 <td style={{ padding: '12px 8px' }}>£850 / $1,500</td>
                 <td style={{ padding: '12px 8px' }}>£220 / $280</td>
                 <td style={{ padding: '12px 8px' }}>£350 / $450</td>
-                <td style={{ padding: '12px 8px', fontWeight: 700, color: '#07C160' }}>
+                <td
+                  style={{
+                    padding: '12px 8px',
+                    fontWeight: 700,
+                    color: 'var(--accent-color)',
+                    fontFamily: 'var(--font-mono)',
+                  }}
+                >
                   £215 / $280 (¥2,000)
                 </td>
               </tr>
@@ -249,7 +263,7 @@ export default function DentalComparisonPage() {
         {/* Insurance CTA */}
         <div
           className="article-card"
-          style={{ borderLeft: '4px solid var(--primary-color)', marginBottom: '32px' }}
+          style={{ borderTop: '2px solid var(--primary-color)', marginBottom: '32px' }}
         >
           <h3 style={{ fontSize: '20px', marginBottom: '8px' }}>
             Protect Yourself: Complication Insurance &amp; The &ldquo;Implant Passport&rdquo; Rule

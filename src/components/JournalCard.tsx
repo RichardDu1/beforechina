@@ -28,50 +28,65 @@ export default function JournalCard({ entry, variant = 'standard' }: JournalCard
           position: 'relative',
         }}
       >
-        <img
-          src={entry.image}
-          alt={entry.imageAlt}
-          width={1200}
-          height={600}
-          loading="lazy"
-          style={{
-            width: '100%',
-            height: 'auto',
-            aspectRatio: '2/1',
-            objectFit: 'cover',
-            display: 'block',
-            marginBottom: '20px',
-          }}
-        />
         <div
-          style={{ maxWidth: 'var(--content-width-narrow)', margin: '0 auto', textAlign: 'center' }}
+          style={{
+            border: '1px solid var(--border-color)',
+            overflow: 'hidden',
+            marginBottom: '20px',
+            backgroundColor: 'var(--bg-surface-muted)',
+          }}
         >
+          <img
+            src={entry.image}
+            alt={entry.imageAlt}
+            width={1200}
+            height={675}
+            style={{
+              width: '100%',
+              height: 'auto',
+              aspectRatio: '16/9',
+              objectFit: 'cover',
+              display: 'block',
+            }}
+          />
+        </div>
+        <div>
           <div
             style={{
-              fontSize: '12px',
-              color: 'var(--accent-color)',
+              fontFamily: 'var(--font-mono)',
+              fontSize: '11px',
+              color: 'var(--primary-color)',
               fontWeight: 600,
               textTransform: 'uppercase',
-              letterSpacing: '0.08em',
-              marginBottom: '8px',
+              letterSpacing: '0.1em',
+              marginBottom: '10px',
             }}
           >
-            {entry.category} &middot; {entry.date}
+            LEAD ESSAY &middot; {entry.category} &middot;{' '}
+            <span style={{ color: 'var(--text-muted)' }}>{entry.date}</span>
           </div>
-          <h2
+          <h3
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 'clamp(24px, 3.5vw, 36px)',
+              fontSize: 'clamp(24px, 3vw, 34px)',
               fontWeight: 500,
               marginBottom: '12px',
-              lineHeight: 1.2,
+              lineHeight: 1.18,
             }}
           >
             {entry.title}
-          </h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '16px', lineHeight: 1.6 }}>
+          </h3>
+          <p
+            style={{
+              color: 'var(--text-secondary)',
+              fontSize: '16px',
+              lineHeight: 1.65,
+              marginBottom: '16px',
+            }}
+          >
             {entry.excerpt}
           </p>
+          <span className="text-link">Read Full Dispatch &rarr;</span>
         </div>
       </Link>
     );
@@ -87,38 +102,49 @@ export default function JournalCard({ entry, variant = 'standard' }: JournalCard
         display: 'flex',
         gap: '20px',
         alignItems: 'flex-start',
+        paddingBottom: '24px',
+        borderBottom: '1px solid var(--border-color)',
       }}
     >
-      <img
-        src={entry.image}
-        alt={entry.imageAlt}
-        width={400}
-        height={267}
-        loading="lazy"
+      <div
         style={{
-          width: '160px',
-          height: '107px',
-          objectFit: 'cover',
+          border: '1px solid var(--border-color)',
           flexShrink: 0,
+          overflow: 'hidden',
+          backgroundColor: 'var(--bg-surface-muted)',
         }}
-      />
+      >
+        <img
+          src={entry.image}
+          alt={entry.imageAlt}
+          width={400}
+          height={267}
+          style={{
+            width: '148px',
+            height: '104px',
+            objectFit: 'cover',
+            display: 'block',
+          }}
+        />
+      </div>
       <div>
         <div
           style={{
+            fontFamily: 'var(--font-mono)',
             fontSize: '11px',
             color: 'var(--accent-color)',
             fontWeight: 600,
             textTransform: 'uppercase',
             letterSpacing: '0.08em',
-            marginBottom: '4px',
+            marginBottom: '6px',
           }}
         >
-          {entry.category}
+          {entry.category} &middot; <span style={{ color: 'var(--text-muted)' }}>{entry.date}</span>
         </div>
         <h3
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: '18px',
+            fontSize: '19px',
             fontWeight: 500,
             marginBottom: '6px',
             lineHeight: 1.25,
@@ -126,7 +152,9 @@ export default function JournalCard({ entry, variant = 'standard' }: JournalCard
         >
           {entry.title}
         </h3>
-        <p style={{ color: 'var(--text-muted)', fontSize: '13px' }}>{entry.date}</p>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.5, margin: 0 }}>
+          {entry.excerpt}
+        </p>
       </div>
     </Link>
   );

@@ -9,15 +9,15 @@ import EnquiryForm from '@/components/EnquiryForm';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'BeforeChina — Tailor-Made Journeys to China',
+  title: 'BeforeChina — Tailor-Made Journeys & China Field Intelligence',
   description:
-    'Private tailor-made journeys to China crafted by China specialists. From the Great Wall to the Silk Road, every itinerary is built around you.',
+    'Private tailor-made journeys, 2026 hospital & dental tariff benchmarks, and independent pre-trip tools crafted by UK & China specialists.',
   openGraph: {
     type: 'website',
     url: 'https://beforechina.com',
-    title: 'BeforeChina — Tailor-Made Journeys to China',
+    title: 'BeforeChina — Tailor-Made Journeys & China Field Intelligence',
     description:
-      'Private tailor-made journeys to China crafted by China specialists who know every path, every story, every season.',
+      'Private tailor-made journeys and independent field benchmarks crafted by specialists who know every path, every story, every season.',
     images: [
       {
         url: '/images/destinations/golden-triangle-og.webp',
@@ -64,46 +64,52 @@ const homeSchemas = [
 
 const HERO_SLIDES = [
   {
-    image: '/images/destinations/golden-triangle.webp',
-    imageAlt: 'The Forbidden City in Beijing at golden hour',
+    image: '/images/destinations/huangshan.webp',
+    imageAlt: 'Granite peaks and ancient pines of Huangshan emerging from morning mist',
+    kicker: 'PRIVATE ROUTE ATELIER & FIELD INTELLIGENCE',
     title: 'China, Beyond the Postcard',
     subtitle:
-      'Private journeys crafted by specialists who know every path, every story, every season.',
-    ctaText: 'Explore Our Journeys',
+      'Tailor-made private itineraries, verified hospital & dental benchmarks, and unvarnished pre-trip briefings from our London and Shanghai desk.',
+    ctaText: 'Explore the Route Atlas',
     ctaHref: '/destinations',
   },
   {
     image: '/images/destinations/guangxi.webp',
     imageAlt: 'Karst peaks along the Li River near Yangshuo',
+    kicker: 'SOUTHERN KARSTS · GUILIN & YANGSHUO',
     title: 'Where the Landscape Becomes Legend',
-    subtitle: 'Drift through the karst peaks of Guilin at dawn, when the river mirrors the sky.',
-    ctaText: 'Discover Guilin',
+    subtitle: 'Drift through the limestone peaks of the Li River at dawn, far from the tour boats.',
+    ctaText: 'Inspect Guilin Route',
     ctaHref: '/guangxi/guilin-yangshuo-lijiang',
   },
   {
     image: '/images/destinations/tibet.webp',
     imageAlt: 'Potala Palace in Lhasa, Tibet',
+    kicker: 'HIGH PLATEAU · LHASA TO EVEREST',
     title: 'The Roof of the World Awaits',
-    subtitle: 'Stand before the Potala Palace and feel the silence of the Tibetan plateau.',
-    ctaText: 'Explore Tibet',
+    subtitle:
+      'Full Tibet Entry Permit handling, private 4x4 acclimatisation pacing, and monastery access.',
+    ctaText: 'Explore Tibet Dossier',
     ctaHref: '/tibet/lhasa-shigatse-everest',
   },
   {
     image: '/images/destinations/xinjiang.webp',
     imageAlt: 'Karakul Lake with Muztagh Ata peak, Xinjiang',
+    kicker: 'FRONTIER EXPEDITIONS · KASHGAR TO DUNHUANG',
     title: 'The Silk Road, Reimagined',
     subtitle:
-      'From the Sunday bazaar in Kashgar to the rainbow mountains of Zhangye — the ancient trade route, your way.',
+      'From the Sunday livestock bazaar in Kashgar to the Buddhist grottoes of Dunhuang — overland by private vehicle and high-speed rail.',
     ctaText: 'Journey the Silk Road',
     ctaHref: '/xinjiang/silk-road',
   },
   {
     image: '/images/destinations/zhangjiajie.webp',
     imageAlt: 'Sandstone pillars of Zhangjiajie rising through mist',
+    kicker: 'HUNAN HIGHLANDS · WULINGYUAN',
     title: 'Walk Among the Clouds',
     subtitle:
-      'Three thousand sandstone pillars rise through the mist — a landscape that inspired another world.',
-    ctaText: 'See Zhangjiajie',
+      'Three thousand quartz-sandstone pillars rising through the morning inversion — timed to avoid domestic crowd peaks.',
+    ctaText: 'See Zhangjiajie Route',
     ctaHref: '/zhangjiajie/avatar-mountains',
   },
 ];
@@ -115,24 +121,26 @@ const FIRST_TIME_JOURNEYS = [
     imageAlt: 'The Forbidden City in Beijing',
     title: 'Beijing, Xian & Shanghai',
     subtitle:
-      "The essential first-timer's route — three iconic cities connected by high-speed rail.",
-    days: '8–10 days',
+      "The essential first-timer's blueprint — three defining capitals linked by 350 km/h Fuxing high-speed rail.",
+    days: '08–10 DAYS · RAIL',
   },
   {
     href: '/yangtze-delta/shanghai-hangzhou-suzhou',
     image: '/images/destinations/yangtze-delta.webp',
     imageAlt: 'Shanghai Pudong skyline',
     title: 'Shanghai, Hangzhou & Suzhou',
-    subtitle: 'Water towns, classical gardens, and the West Lake — the elegant side of China.',
-    days: '6–8 days',
+    subtitle:
+      'Scholar gardens, Longjing tea terraces, and canal towns — plus optional half-day Shanghai executive health screening.',
+    days: '06–08 DAYS · JIANGNAN',
   },
   {
     href: '/ancient-capitals/xian-luoyang-kaifeng',
     image: '/images/destinations/ancient-capitals.webp',
     imageAlt: 'Xian city wall at sunset',
     title: 'Three Ancient Capitals',
-    subtitle: 'Walk through 3,000 years of imperial history — Xian, Luoyang, and Kaifeng.',
-    days: '6–8 days',
+    subtitle:
+      'Trace 3,000 years of dynastic history across Xian, the Longmen Grottoes of Luoyang, and Song-era Kaifeng.',
+    days: '06–08 DAYS · HERITAGE',
   },
 ];
 
@@ -142,32 +150,36 @@ const NATURE_JOURNEYS = [
     image: '/images/destinations/guangxi.webp',
     imageAlt: 'Karst peaks along the Li River',
     title: 'Guilin & Yangshuo: The Li River',
-    subtitle: 'The 20 RMB note landscape — drift between karst peaks at dawn.',
-    days: '4–6 days',
+    subtitle:
+      'Limestone karst valleys, bamboo rafting on the Yulong tributary, and quiet countryside guesthouses.',
+    days: '04–06 DAYS · KARST',
   },
   {
     href: '/zhangjiajie/avatar-mountains',
     image: '/images/destinations/zhangjiajie.webp',
     imageAlt: 'Zhangjiajie sandstone pillars',
     title: 'Zhangjiajie: The Avatar Mountains',
-    subtitle: 'Three thousand sandstone pillars rising through the morning mist.',
-    days: '3–5 days',
+    subtitle:
+      'Private back-trail ascents into Wulingyuan and Tianmen Mountain away from megaphone tour groups.',
+    days: '03–05 DAYS · PEAKS',
   },
   {
     href: '/sichuan/chengdu-jiuzhaigou-huanglong',
     image: '/images/destinations/sichuan.webp',
     imageAlt: 'Turquoise lake in Jiuzhaigou valley',
-    title: 'Chengdu & Jiuzhaigou',
-    subtitle: 'Pandas, hotpot, and the turquoise alpine lakes of Jiuzhaigou.',
-    days: '6–8 days',
+    title: 'Chengdu & Jiuzhaigou Valley',
+    subtitle:
+      'Morning panda conservation access, back-alley Sichuan gastronomy, and turquoise travertine lakes.',
+    days: '06–08 DAYS · ALPINE',
   },
   {
     href: '/yunnan/lijiang-lugu-lake-tiger-leaping-gorge',
     image: '/images/destinations/yunnan.webp',
     imageAlt: 'Lijiang old town rooftops',
     title: 'Tiger Leaping Gorge & Lugu Lake',
-    subtitle: "One of the world's deepest gorges and a pristine alpine lake.",
-    days: '7–9 days',
+    subtitle:
+      'High-ridge trekking above the Jinsha River paired with tranquil Mosuo lakeside villages.',
+    days: '07–09 DAYS · TREK',
   },
 ];
 
@@ -177,56 +189,60 @@ const ADVENTURE_JOURNEYS = [
     image: '/images/destinations/silk-road.webp',
     imageAlt: 'Camel caravan in Dunhuang dunes',
     title: 'Silk Road: Urumqi to Kashgar',
-    subtitle: 'Rainbow mountains, desert fortresses, and the legendary Sunday bazaar.',
-    days: '7–10 days',
+    subtitle:
+      'Desert fortresses, Karakul Lake along the Karakoram Highway, and the old mud-brick quarter of Kashgar.',
+    days: '07–10 DAYS · FRONTIER',
   },
   {
     href: '/tibet/lhasa-shigatse-everest',
     image: '/images/destinations/tibet.webp',
     imageAlt: 'Potala Palace in Lhasa',
     title: 'Lhasa to Everest Base Camp',
-    subtitle: 'Potala Palace, turquoise lakes, and Base Camp at 5,150 metres.',
-    days: '8–10 days',
+    subtitle:
+      'Potala Palace, Yamdrok turquoise lake, Tashilhunpo Monastery, and Rongbuk at 5,150 metres.',
+    days: '08–10 DAYS · PLATEAU',
   },
   {
     href: '/yunnan/kunming-dali-lijiang-shangri-la',
-    image: '/images/destinations/yunnan.webp',
-    imageAlt: 'Shangri-La old town',
-    title: 'Yunnan: The Shangri-La Trail',
-    subtitle: 'Ancient towns, Tibetan foothills, and the road to Shangri-La.',
-    days: '8–10 days',
+    image: '/images/destinations/guizhou.webp',
+    imageAlt: 'Mountain terraces and wooden villages of Southwest China',
+    title: 'Yunnan: The Tea-Horse Trail to Shangri-La',
+    subtitle:
+      'Bai courtyard architecture in Dali, Shaxi market square, and Tibetan monasteries in Zhongdian.',
+    days: '08–10 DAYS · OVERLAND',
   },
 ];
 
 const JOURNAL_ENTRIES = [
   {
     href: '/journal/great-wall-secrets',
-    image: '/images/destinations/golden-triangle.webp',
-    imageAlt: 'The Great Wall winding through mountains',
+    image: '/images/destinations/jiangxi.webp',
+    imageAlt: 'Misty mountain ridges at dawn',
     title: 'What Nobody Tells You About the Great Wall',
     excerpt:
-      'Skip Badaling. Here is where to find the wild, unrestored sections — and why sunrise is the only time to go.',
-    date: 'July 2026',
-    category: 'Culture',
+      'Skip Badaling. Here is where our field researchers find wild, unrestored Ming-dynasty stonework — and why 5:30 AM is the only hour to go.',
+    date: 'JULY 2026',
+    category: 'FIELD DISPATCH',
   },
   {
     href: '/journal/chengdu-street-food',
     image: '/images/destinations/sichuan.webp',
-    imageAlt: 'Street food stall in Chengdu',
+    imageAlt: 'Sichuan landscape and culinary heritage',
     title: 'Eating Your Way Through Chengdu: A Street Food Diary',
     excerpt:
-      'From dan dan noodles at dawn to ma la hotpot at midnight — three days of pure Sichuan flavour.',
-    date: 'June 2026',
-    category: 'Food',
+      'From sweet-water noodles at dawn to牛油 (tallow) ma-la hotpot at midnight — 72 hours of unvarnished Sichuan flavour.',
+    date: 'JUNE 2026',
+    category: 'GASTRONOMY',
   },
   {
     href: '/journal/photographing-li-river',
     image: '/images/destinations/guangxi.webp',
     imageAlt: 'Li River at dawn with a cormorant fisherman',
     title: "Chasing Light: A Photographer's Guide to the Li River",
-    excerpt: 'The exact spots, times, and seasons to capture the Li River at its most magical.',
-    date: 'May 2026',
-    category: 'Photography',
+    excerpt:
+      'Exact GPS viewpoints, seasonal mist tables, and lens recommendations for Yangshuo and Xingping.',
+    date: 'MAY 2026',
+    category: 'PHOTOGRAPHY',
   },
 ];
 
@@ -235,17 +251,19 @@ export default function Home() {
     <div>
       <JsonLd data={homeSchemas} id="home-schema" />
 
-      {/* 1. Hero Carousel */}
+      {/* 1. Editorial Cover Carousel + Quick Dispatch Bar */}
       <HeroCarousel slides={HERO_SLIDES} />
 
-      {/* 2. Why Us */}
+      {/* 2. The BeforeChina Briefing — 4-Column Numbered Hairline Grid */}
       <WhyUs />
 
-      {/* 2.5 Independent Healthcare, Dental & Optical Benchmarks */}
+      {/* 3. High-Contrast Carbon-Ink Feature: 2026 Healthcare, Dental & Optical Benchmarks */}
       <section
         style={{
-          padding: '56px 0',
-          borderTop: '1px solid var(--border-color)',
+          padding: '76px 0',
+          backgroundColor: 'var(--bg-ink)',
+          color: 'var(--text-on-ink)',
+          borderTop: '2px solid var(--primary-color)',
           borderBottom: '1px solid var(--border-color)',
         }}
       >
@@ -256,207 +274,450 @@ export default function Home() {
               flexWrap: 'wrap',
               justifyContent: 'space-between',
               alignItems: 'flex-end',
-              gap: '16px',
-              marginBottom: '32px',
+              gap: '20px',
+              paddingBottom: '28px',
+              marginBottom: '36px',
+              borderBottom: '1px solid rgba(246, 244, 239, 0.15)',
             }}
           >
-            <div>
+            <div style={{ maxWidth: '720px' }}>
               <div
                 style={{
-                  fontSize: '12px',
-                  fontWeight: 700,
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  fontWeight: 600,
                   textTransform: 'uppercase',
-                  letterSpacing: '0.08em',
-                  color: 'var(--primary-color)',
-                  marginBottom: '6px',
+                  letterSpacing: '0.14em',
+                  color: '#e6c27a',
+                  marginBottom: '10px',
                 }}
               >
-                New · 2026 Independent Price Audits
+                SPECIAL DOSSIER · 2026 INDEPENDENT HOSPITAL &amp; CLINIC AUDITS
               </div>
               <h2
                 style={{
                   fontFamily: 'var(--font-heading)',
-                  fontSize: 'clamp(26px, 3.5vw, 36px)',
-                  fontWeight: 500,
-                  margin: 0,
+                  fontSize: 'clamp(26px, 3.6vw, 40px)',
+                  fontWeight: 400,
+                  color: 'var(--text-on-ink)',
+                  margin: '0 0 10px 0',
+                  lineHeight: 1.15,
                 }}
               >
-                Healthcare, Dental &amp; Optical in China: Real Hospital Tariffs
+                Inbound Healthcare, Dental &amp; Optical: Published Chinese Tariffs vs Western Cash
+                Prices
               </h2>
+              <p
+                style={{
+                  fontFamily: 'var(--font-quote)',
+                  fontSize: '18px',
+                  color: 'var(--text-on-ink-muted)',
+                  margin: 0,
+                  lineHeight: 1.5,
+                }}
+              >
+                Zero public hospital referral kickbacks. Audited directly against Shanghai &amp;
+                Shenzhen Tier-3 Hospital International Departments and national VBP procurement
+                caps.
+              </p>
             </div>
-            <Link href="/health" className="btn btn-primary" style={{ fontSize: '14px' }}>
-              Open Healthcare Cost Calculator →
+            <Link
+              href="/health"
+              style={{
+                fontFamily: 'var(--font-mono)',
+                fontSize: '12px',
+                fontWeight: 600,
+                textTransform: 'uppercase',
+                letterSpacing: '0.07em',
+                backgroundColor: '#f6f4ef',
+                color: '#141413',
+                padding: '13px 22px',
+                borderRadius: '2px',
+                textDecoration: 'none',
+                flexShrink: 0,
+              }}
+            >
+              Launch Cost Calculator &rarr;
             </Link>
           </div>
 
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-              gap: '20px',
-            }}
-          >
-            <Link
-              href="/health/health-check"
-              className="article-card"
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                borderTop: '3px solid var(--primary-color)',
-              }}
-            >
-              <div
-                style={{ fontSize: '12px', fontWeight: 700, color: '#07C160', marginBottom: '6px' }}
-              >
-                $280–$680 in Shanghai (vs $2,400+ in US)
-              </div>
-              <h3 style={{ fontSize: '19px', marginBottom: '8px' }}>
-                3.5-Hour Executive Checkup &amp; 3.0T MRI →
-              </h3>
-              <p
-                style={{
-                  fontSize: '14px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: 1.55,
-                  margin: 0,
-                }}
-              >
-                How to book bilingual International Medical Departments at elite Tier-3 hospitals
-                (Huashan, Ruijin) or Jiahui Health with zero waitlist.
-              </p>
-            </Link>
-
-            <Link
-              href="/health/dental-china-vs-turkey-uk"
-              className="article-card"
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                borderTop: '3px solid var(--primary-color)',
-              }}
-            >
-              <div
-                style={{ fontSize: '12px', fontWeight: 700, color: '#07C160', marginBottom: '6px' }}
-              >
-                ~$920 Post-VBP (vs £2,800 UK / $4,200 US)
-              </div>
-              <h3 style={{ fontSize: '19px', marginBottom: '8px' }}>
-                Swiss Straumann Implants &amp; Dental Care →
-              </h3>
-              <p
-                style={{
-                  fontSize: '14px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: 1.55,
-                  margin: 0,
-                }}
-              >
-                Why national Volume-Based Procurement cut imported Swiss/German dental hardware
-                costs by 60% — compared honestly against Turkey and Hungary.
-              </p>
-            </Link>
-
-            <Link
-              href="/health/glasses"
-              className="article-card"
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                borderTop: '3px solid var(--primary-color)',
-              }}
-            >
-              <div
-                style={{ fontSize: '12px', fontWeight: 700, color: '#07C160', marginBottom: '6px' }}
-              >
-                $35–$95 · 60-Minute Same-Day Pickup
-              </div>
-              <h3 style={{ fontSize: '19px', marginBottom: '8px' }}>
-                Prescription Glasses &amp; Licensed TCM →
-              </h3>
-              <p
-                style={{
-                  fontSize: '14px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: 1.55,
-                  margin: 0,
-                }}
-              >
-                Verified bargaining ranges at Shanghai International Glasses City &amp; Beijing
-                Panjiayuan, plus authentic hospital Tuina and acupuncture.
-              </p>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Featured Journeys — three audience-segmented sections */}
-      <div style={{ backgroundColor: 'var(--bg-surface)' }}>
-        <FeaturedJourneys
-          title="For First-Time Visitors"
-          subtitle="The classic routes that reveal China at its most magnificent."
-          journeys={FIRST_TIME_JOURNEYS}
-        />
-      </div>
-      <FeaturedJourneys
-        title="For Nature Lovers"
-        subtitle="From karst peaks to alpine lakes — China's landscapes will rewrite your sense of scale."
-        journeys={NATURE_JOURNEYS}
-      />
-      <div style={{ backgroundColor: 'var(--bg-surface)' }}>
-        <FeaturedJourneys
-          title="For the Adventurous"
-          subtitle="The Silk Road, the Tibetan plateau, and the road to Shangri-La."
-          journeys={ADVENTURE_JOURNEYS}
-        />
-      </div>
-
-      {/* 4. Experience Types */}
-      <ExperienceGrid />
-
-      {/* 5. Journal / Stories */}
-      <section style={{ padding: 'var(--section-gap-md) 0' }}>
-        <div className="container" style={{ maxWidth: 'var(--content-width-wide)' }}>
-          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-            <h2
-              style={{
-                fontFamily: 'var(--font-heading)',
-                fontSize: 'clamp(28px, 4vw, 40px)',
-                fontWeight: 500,
-                marginBottom: '12px',
-              }}
-            >
-              Stories from China
-            </h2>
-            <p
-              style={{
-                color: 'var(--text-secondary)',
-                fontSize: '17px',
-                maxWidth: '500px',
-                margin: '0 auto',
-                lineHeight: 1.6,
-              }}
-            >
-              Travel stories, local knowledge, and photography guides from our specialists on the
-              ground.
-            </p>
-          </div>
-          <div style={{ marginBottom: '40px' }}>
-            <JournalCard entry={JOURNAL_ENTRIES[0]} variant="featured" />
-          </div>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: '24px',
             }}
           >
-            <JournalCard entry={JOURNAL_ENTRIES[1]} variant="standard" />
-            <JournalCard entry={JOURNAL_ENTRIES[2]} variant="standard" />
+            {/* Dossier Card 01 */}
+            <Link
+              href="/health/health-check"
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                backgroundColor: 'var(--bg-ink-elevated)',
+                border: '1px solid rgba(246, 244, 239, 0.14)',
+                borderTop: '2px solid #e6c27a',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  color: '#e6c27a',
+                  marginBottom: '14px',
+                  letterSpacing: '0.05em',
+                }}
+              >
+                <span>01 / PREVENTIVE IMAGING</span>
+                <span>SHANGHAI · 3.5 HRS</span>
+              </div>
+              <div
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  color: '#88d4ab',
+                  marginBottom: '10px',
+                }}
+              >
+                $280–$680 IN CHINA · (VS $2,400+ US)
+              </div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '22px',
+                  color: 'var(--text-on-ink)',
+                  marginBottom: '10px',
+                  lineHeight: 1.25,
+                }}
+              >
+                Executive Health Checkup &amp; 3.0T MRI
+              </h3>
+              <p
+                style={{
+                  fontSize: '14px',
+                  color: 'var(--text-on-ink-muted)',
+                  lineHeight: 1.6,
+                  marginBottom: '18px',
+                  flexGrow: 1,
+                }}
+              >
+                How foreign visitors book bilingual International Medical Departments at Huashan,
+                Ruijin, or Jiahui Health with zero waitlist and English diagnostic summaries.
+              </p>
+              <span
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  color: '#f6f4ef',
+                }}
+              >
+                Read Hospital Guide &rarr;
+              </span>
+            </Link>
+
+            {/* Dossier Card 02 */}
+            <Link
+              href="/health/dental-china-vs-turkey-uk"
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                backgroundColor: 'var(--bg-ink-elevated)',
+                border: '1px solid rgba(246, 244, 239, 0.14)',
+                borderTop: '2px solid #e6c27a',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  color: '#e6c27a',
+                  marginBottom: '14px',
+                  letterSpacing: '0.05em',
+                }}
+              >
+                <span>02 / RESTORATIVE DENTAL</span>
+                <span>VBP REGULATED</span>
+              </div>
+              <div
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  color: '#88d4ab',
+                  marginBottom: '10px',
+                }}
+              >
+                ~$920 STRAUMANN · (VS £2,800 UK / $4,200 US)
+              </div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '22px',
+                  color: 'var(--text-on-ink)',
+                  marginBottom: '10px',
+                  lineHeight: 1.25,
+                }}
+              >
+                Dental Implants: China vs Turkey, Hungary &amp; UK
+              </h3>
+              <p
+                style={{
+                  fontSize: '14px',
+                  color: 'var(--text-on-ink-muted)',
+                  lineHeight: 1.6,
+                  marginBottom: '18px',
+                  flexGrow: 1,
+                }}
+              >
+                Why China&apos;s national Volume-Based Procurement slashed Swiss Straumann &amp;
+                Nobel Biocare hardware prices by 60% — and which treatments require two visits.
+              </p>
+              <span
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  color: '#f6f4ef',
+                }}
+              >
+                Compare Global Tariffs &rarr;
+              </span>
+            </Link>
+
+            {/* Dossier Card 03 */}
+            <Link
+              href="/health/glasses"
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                backgroundColor: 'var(--bg-ink-elevated)',
+                border: '1px solid rgba(246, 244, 239, 0.14)',
+                borderTop: '2px solid #e6c27a',
+                padding: '28px',
+                display: 'flex',
+                flexDirection: 'column',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  color: '#e6c27a',
+                  marginBottom: '14px',
+                  letterSpacing: '0.05em',
+                }}
+              >
+                <span>03 / OPTICAL &amp; TCM</span>
+                <span>SAME-DAY TURNAROUND</span>
+              </div>
+              <div
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  color: '#88d4ab',
+                  marginBottom: '10px',
+                }}
+              >
+                $35–$95 HIGH-INDEX · 60-MIN PICKUP
+              </div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '22px',
+                  color: 'var(--text-on-ink)',
+                  marginBottom: '10px',
+                  lineHeight: 1.25,
+                }}
+              >
+                Optical Markets &amp; Clinical TCM Therapy
+              </h3>
+              <p
+                style={{
+                  fontSize: '14px',
+                  color: 'var(--text-on-ink-muted)',
+                  lineHeight: 1.6,
+                  marginBottom: '18px',
+                  flexGrow: 1,
+                }}
+              >
+                Verified bargaining floors at Shanghai International Glasses City &amp; Beijing
+                Panjiayuan, plus licensed hospital Tuina and heritage apothecaries.
+              </p>
+              <span
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '11px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  color: '#f6f4ef',
+                }}
+              >
+                Inspect Optical &amp; TCM Brief &rarr;
+              </span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* 6. Enquiry Form CTA */}
+      {/* 4. Interactive Tabbed Route Atlas (Replaces 3 Repetitive Stacked Grids) */}
+      <FeaturedJourneys
+        firstTime={FIRST_TIME_JOURNEYS}
+        nature={NATURE_JOURNEYS}
+        adventure={ADVENTURE_JOURNEYS}
+      />
+
+      {/* 5. Horizontal Thematic Directory */}
+      <ExperienceGrid />
+
+      {/* 6. Journal / Field Dispatches — Asymmetric Two-Column Magazine Spread */}
+      <section style={{ padding: 'var(--section-gap-md) 0' }}>
+        <div className="container" style={{ maxWidth: 'var(--content-width-wide)' }}>
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'space-between',
+              alignItems: 'flex-end',
+              gap: '20px',
+              paddingBottom: '24px',
+              marginBottom: '40px',
+              borderBottom: '2px solid var(--text-primary)',
+            }}
+          >
+            <div>
+              <div className="kicker">Field Notes &amp; Dispatches</div>
+              <h2
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: 'clamp(28px, 3.8vw, 40px)',
+                  fontWeight: 400,
+                  margin: 0,
+                }}
+              >
+                Stories &amp; Practical Briefings from China
+              </h2>
+            </div>
+            <Link href="/journal" className="text-link">
+              All Field Dispatches &rarr;
+            </Link>
+          </div>
+
+          <div className="journal-editorial-spread">
+            {/* Left Column: Featured Lead Essay */}
+            <div>
+              <JournalCard entry={JOURNAL_ENTRIES[0]} variant="featured" />
+            </div>
+
+            {/* Right Column: Secondary Dispatches + Pre-Trip Toolkit Index */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <JournalCard entry={JOURNAL_ENTRIES[1]} variant="standard" />
+              <JournalCard entry={JOURNAL_ENTRIES[2]} variant="standard" />
+
+              {/* Compact Pre-Trip Toolkit Dossier Card */}
+              <div
+                style={{
+                  backgroundColor: 'var(--bg-surface)',
+                  border: '1px solid var(--border-color)',
+                  borderTop: '2px solid var(--text-primary)',
+                  padding: '24px',
+                }}
+              >
+                <div
+                  style={{
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '11px',
+                    color: 'var(--primary-color)',
+                    fontWeight: 600,
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    marginBottom: '8px',
+                  }}
+                >
+                  ESSENTIAL PRE-TRIP TOOLKIT · 2026
+                </div>
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '20px',
+                    marginBottom: '12px',
+                  }}
+                >
+                  Solve the Digital &amp; Entry Hurdles Before Departure
+                </h3>
+                <div
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    gap: '10px',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '12px',
+                  }}
+                >
+                  <Link
+                    href="/visa"
+                    style={{
+                      padding: '8px 10px',
+                      border: '1px solid var(--border-color)',
+                      backgroundColor: 'var(--bg-color)',
+                    }}
+                  >
+                    01 / Visa-Free Rules &rarr;
+                  </Link>
+                  <Link
+                    href="/payment"
+                    style={{
+                      padding: '8px 10px',
+                      border: '1px solid var(--border-color)',
+                      backgroundColor: 'var(--bg-color)',
+                    }}
+                  >
+                    02 / Alipay Setup &rarr;
+                  </Link>
+                  <Link
+                    href="/vpn"
+                    style={{
+                      padding: '8px 10px',
+                      border: '1px solid var(--border-color)',
+                      backgroundColor: 'var(--bg-color)',
+                    }}
+                  >
+                    03 / Firewall &amp; VPNs &rarr;
+                  </Link>
+                  <Link
+                    href="/esim"
+                    style={{
+                      padding: '8px 10px',
+                      border: '1px solid var(--border-color)',
+                      backgroundColor: 'var(--bg-color)',
+                    }}
+                  >
+                    04 / China eSIMs &rarr;
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Enquiry Form CTA */}
       <EnquiryForm />
     </div>
   );

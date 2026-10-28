@@ -25,70 +25,78 @@ export default function FactSheet({
 }: FactSheetProps) {
   return (
     <div
-      className="bento-card"
       style={{
         backgroundColor: 'var(--bg-surface)',
         border: '1px solid var(--border-color)',
-        borderRadius: 'var(--radius-lg)',
-        padding: '28px',
-        margin: '24px auto 40px',
-        maxWidth: '840px',
-        boxShadow: 'var(--shadow-sm)',
+        borderTop: '2px solid var(--text-primary)',
+        borderRadius: 'var(--radius-sm)',
+        padding: '28px 30px',
+        margin: '28px auto 44px',
+        maxWidth: '860px',
       }}
     >
-      {/* Header with Title and Badges */}
+      {/* Header with Dossier Tag and Monospace Timestamp */}
       <div
         style={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-between',
-          alignItems: 'center',
+          alignItems: 'baseline',
           gap: '12px',
-          marginBottom: '20px',
+          marginBottom: '22px',
           paddingBottom: '16px',
           borderBottom: '1px solid var(--border-color)',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <span
+        <div>
+          <div
             style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              padding: '3px 10px',
-              borderRadius: 'var(--radius-pill)',
-              backgroundColor: 'rgba(230, 57, 70, 0.1)',
+              fontFamily: 'var(--font-mono)',
               color: 'var(--primary-color)',
-              fontSize: '12px',
+              fontSize: '11px',
               fontWeight: 600,
-              letterSpacing: '0.04em',
+              letterSpacing: '0.1em',
               textTransform: 'uppercase',
+              marginBottom: '6px',
             }}
           >
-            {badge}
-          </span>
+            [ DOSSIER &middot; {badge} ]
+          </div>
           <h2
             style={{
-              fontSize: '20px',
-              fontWeight: 700,
+              fontSize: '22px',
+              fontWeight: 500,
               margin: 0,
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-heading)',
-              letterSpacing: '-0.02em',
+              letterSpacing: '-0.015em',
             }}
           >
             {title}
           </h2>
         </div>
-        <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Updated: {lastUpdated}</span>
+        <span
+          style={{
+            fontFamily: 'var(--font-mono)',
+            fontSize: '11px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.06em',
+            color: 'var(--text-muted)',
+          }}
+        >
+          AUDIT DATE: {lastUpdated}
+        </span>
       </div>
 
-      {/* Structured Key-Value Triplets / Fact Grid (Optimised for AI Citability) */}
+      {/* 1px Hairline Fact Grid */}
       <dl
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-          gap: '16px',
-          margin: '0 0 20px 0',
+          gap: '1px',
+          backgroundColor: 'var(--border-color)',
+          border: '1px solid var(--border-color)',
+          margin: '0 0 22px 0',
           padding: 0,
         }}
       >
@@ -96,25 +104,22 @@ export default function FactSheet({
           <div
             key={index}
             style={{
-              backgroundColor: 'var(--bg-color)',
-              borderRadius: 'var(--radius-md)',
-              padding: '14px 16px',
-              border: fact.highlight
-                ? '1px solid rgba(230, 57, 70, 0.3)'
-                : '1px solid var(--border-color)',
+              backgroundColor: fact.highlight ? 'var(--bg-color)' : 'var(--bg-surface)',
+              padding: '16px 18px',
             }}
           >
             <dt
               style={{
-                fontSize: '12px',
-                fontWeight: 600,
+                fontFamily: 'var(--font-mono)',
+                fontSize: '11px',
+                fontWeight: 500,
                 color: 'var(--text-muted)',
                 textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                marginBottom: '4px',
+                letterSpacing: '0.06em',
+                marginBottom: '6px',
               }}
             >
-              {fact.label}
+              0{index + 1} / {fact.label}
             </dt>
             <dd
               style={{
@@ -122,7 +127,7 @@ export default function FactSheet({
                 fontWeight: 600,
                 color: fact.highlight ? 'var(--primary-color)' : 'var(--text-primary)',
                 margin: 0,
-                lineHeight: 1.4,
+                lineHeight: 1.45,
               }}
             >
               {fact.value}
@@ -131,23 +136,34 @@ export default function FactSheet({
         ))}
       </dl>
 
-      {/* BLUF (Bottom Line Up Front) / Golden Takeaway */}
+      {/* BLUF (Bottom Line Up Front) */}
       {bottomLine && (
         <div
           style={{
-            backgroundColor: 'rgba(7, 193, 96, 0.08)',
-            borderLeft: '4px solid #07C160',
+            backgroundColor: 'var(--accent-bg)',
+            border: '1px solid var(--accent-border)',
             borderRadius: 'var(--radius-sm)',
-            padding: '12px 16px',
+            padding: '14px 18px',
             fontSize: '14px',
-            lineHeight: 1.5,
+            lineHeight: 1.6,
             color: 'var(--text-primary)',
             marginBottom: warning ? '12px' : 0,
           }}
         >
-          <strong style={{ color: '#07C160', display: 'block', marginBottom: '2px' }}>
-            ⚡ Bottom Line Up Front (BLUF):
-          </strong>
+          <span
+            style={{
+              fontFamily: 'var(--font-mono)',
+              fontSize: '11px',
+              fontWeight: 600,
+              textTransform: 'uppercase',
+              letterSpacing: '0.08em',
+              color: 'var(--accent-color)',
+              display: 'block',
+              marginBottom: '4px',
+            }}
+          >
+            [ KEY BRIEFING TAKEAWAY · BLUF ]
+          </span>
           {bottomLine}
         </div>
       )}
@@ -156,18 +172,29 @@ export default function FactSheet({
       {warning && (
         <div
           style={{
-            backgroundColor: 'rgba(230, 57, 70, 0.08)',
-            borderLeft: '4px solid var(--primary-color)',
+            backgroundColor: 'var(--callout-bg-primary)',
+            border: '1px solid var(--callout-border-primary)',
             borderRadius: 'var(--radius-sm)',
-            padding: '12px 16px',
+            padding: '14px 18px',
             fontSize: '14px',
-            lineHeight: 1.5,
+            lineHeight: 1.6,
             color: 'var(--text-primary)',
           }}
         >
-          <strong style={{ color: 'var(--primary-color)', display: 'block', marginBottom: '2px' }}>
-            ⚠️ Critical Limitation:
-          </strong>
+          <span
+            style={{
+              fontFamily: 'var(--font-mono)',
+              fontSize: '11px',
+              fontWeight: 600,
+              textTransform: 'uppercase',
+              letterSpacing: '0.08em',
+              color: 'var(--primary-color)',
+              display: 'block',
+              marginBottom: '4px',
+            }}
+          >
+            [ REGULATORY &amp; CLINICAL CAUTION ]
+          </span>
           {warning}
         </div>
       )}

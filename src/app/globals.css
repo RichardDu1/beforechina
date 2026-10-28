@@ -1,45 +1,53 @@
 /* Fonts loaded via <link> in layout.tsx for performance */
 
 :root {
-  /* Color Palette - Light Mode (Editorial Warm Earthy) */
-  --bg-color: #fdfaf6;
+  /* Color Palette — Monocle / FT Weekend Independent Editorial & Intelligence Report */
+  --bg-color: #f6f4ef;
   --bg-surface: #ffffff;
-  --bg-surface-glass: rgba(253, 250, 246, 0.85);
+  --bg-surface-muted: #efece6;
+  --bg-ink: #141413;
+  --bg-ink-elevated: #1e1e1c;
+  --bg-surface-glass: rgba(246, 244, 239, 0.92);
 
-  --text-primary: #2d2418;
-  --text-secondary: #5c4f3c;
-  --text-muted: #a69888;
+  --text-primary: #141413;
+  --text-secondary: #4a4843;
+  --text-muted: #78746c;
+  --text-on-ink: #f6f4ef;
+  --text-on-ink-muted: #a8a39a;
 
-  /* Brand colors — restrained brick red, used sparingly */
-  --primary-color: #a84c3a;
-  --primary-hover: #8e3d2e;
-  --text-link-color: #8b3a2b;
-  --accent-color: #4a6741;
-  --accent-warm: #d4953a;
+  /* Brand colors — Cinnabar Seal Red & Deep Song Pine */
+  --primary-color: #9e2a2b;
+  --primary-hover: #7d2021;
+  --text-link-color: #9e2a2b;
+  --accent-color: #1e4d3b;
+  --accent-bg: rgba(30, 77, 59, 0.07);
+  --accent-border: rgba(30, 77, 59, 0.25);
+  --accent-warm: #b87d2b;
 
-  --border-color: rgba(93, 76, 58, 0.12);
-  --kicker-color: #4a6741;
-  --byline-color: #8b7355;
-  --blockquote-border: #a84c3a;
-  --photo-credit-color: #a69888;
+  --border-color: #ddd8ce;
+  --border-strong: #141413;
+  --kicker-color: #9e2a2b;
+  --byline-color: #6e6a63;
+  --blockquote-border: #9e2a2b;
+  --photo-credit-color: #78746c;
 
   /* Callout / Tinted Background Tokens */
-  --callout-bg-primary: rgba(168, 76, 58, 0.05);
-  --callout-bg-warm: rgba(212, 149, 58, 0.08);
-  --callout-border-primary: rgba(168, 76, 58, 0.15);
+  --callout-bg-primary: rgba(158, 42, 43, 0.05);
+  --callout-bg-warm: rgba(184, 125, 43, 0.08);
+  --callout-border-primary: rgba(158, 42, 43, 0.22);
   --text-on-primary: #ffffff;
 
-  /* Shadow Tokens */
-  --shadow-sm: 0 1px 3px rgba(93, 76, 58, 0.04);
-  --shadow-md: 0 4px 16px rgba(93, 76, 58, 0.05);
-  --shadow-lg: 0 12px 32px rgba(93, 76, 58, 0.08);
-  --shadow-glass: 0 8px 32px rgba(93, 76, 58, 0.06);
+  /* Shadow Tokens — Restrained print-like depth */
+  --shadow-sm: 0 1px 2px rgba(20, 20, 19, 0.03);
+  --shadow-md: 0 6px 20px rgba(20, 20, 19, 0.06);
+  --shadow-lg: 0 12px 32px rgba(20, 20, 19, 0.08);
+  --shadow-glass: 0 4px 20px rgba(20, 20, 19, 0.05);
 
-  /* Radii */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --radius-pill: 9999px;
+  /* Radii — Crisp architectural corners */
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-pill: 2px;
 
   /* Typography */
   --font-heading: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
@@ -47,55 +55,21 @@
   --font-body:
     'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-quote: 'Newsreader', 'Georgia', serif;
-  --kicker-font-size: 12px;
-  --kicker-letter-spacing: 0.15em;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --kicker-font-size: 11px;
+  --kicker-letter-spacing: 0.14em;
 
   /* Spacing */
-  --section-gap-sm: 64px;
-  --section-gap-md: 96px;
-  --section-gap-lg: 128px;
+  --section-gap-sm: 56px;
+  --section-gap-md: 88px;
+  --section-gap-lg: 112px;
   --content-width-narrow: 720px;
   --content-width-standard: 900px;
   --content-width-wide: 1200px;
 
   /* Transitions */
   --transition-fast: 0.15s ease-out;
-  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Evening Reading Mode — warm parchment, not dark terminal */
-    --bg-color: #ede3d3;
-    --bg-surface: #f5efe5;
-    --bg-surface-glass: rgba(237, 227, 211, 0.85);
-
-    --text-primary: #3d3028;
-    --text-secondary: #6b5d4f;
-    --text-muted: #9b8b7b;
-
-    --primary-color: #b5442e;
-    --primary-hover: #9a3825;
-    --text-link-color: #9a3825;
-    --accent-color: #3d5a36;
-    --accent-warm: #c5852e;
-
-    --border-color: rgba(93, 76, 58, 0.12);
-    --kicker-color: #3d5a36;
-    --byline-color: #7d6548;
-    --blockquote-border: #b5442e;
-    --photo-credit-color: #9b8b7b;
-
-    --callout-bg-primary: rgba(181, 68, 46, 0.08);
-    --callout-bg-warm: rgba(197, 133, 46, 0.08);
-    --callout-border-primary: rgba(181, 68, 46, 0.15);
-    --text-on-primary: #ffffff;
-
-    --shadow-sm: 0 1px 3px rgba(93, 76, 58, 0.06);
-    --shadow-md: 0 4px 16px rgba(93, 76, 58, 0.08);
-    --shadow-lg: 0 12px 32px rgba(93, 76, 58, 0.1);
-    --shadow-glass: 0 8px 32px rgba(93, 76, 58, 0.08);
-  }
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -111,7 +85,7 @@ body {
   font-family: var(--font-body);
   background-color: var(--bg-color);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -131,11 +105,11 @@ h6 {
 
 h1 {
   font-weight: 400;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 h2 {
   font-weight: 400;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
 }
 
 a {
@@ -147,13 +121,12 @@ button {
   font-family: var(--font-body);
 }
 
-/* ---------- Glassmorphism ---------- */
+/* ---------- Glassmorphism / Masthead ---------- */
 .glass {
   background: var(--bg-surface-glass);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-glass);
 }
 
 /* ---------- Container ---------- */
@@ -164,43 +137,49 @@ button {
   padding: 0 24px;
 }
 
-/* ---------- Article Card (replaces bento-card) ---------- */
+/* ---------- Editorial Article / Dossier Card ---------- */
 .article-card {
   background-color: var(--bg-surface);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
-  padding: 32px;
-  transition: box-shadow var(--transition-normal);
+  padding: 28px 30px;
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-normal);
 }
 
 .article-card:hover {
-  box-shadow: var(--shadow-md);
+  border-color: #bfb8aa;
+  box-shadow: var(--shadow-sm);
 }
 
-/* ---------- Buttons ---------- */
+/* ---------- Buttons (Architectural Editorial Style) ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
-  border-radius: var(--radius-pill);
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 0.01em;
+  padding: 12px 22px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   cursor: pointer;
   transition: all var(--transition-fast);
-  border: none;
+  border: 1px solid transparent;
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
-  color: var(--text-on-primary);
+  background-color: var(--text-primary);
+  color: var(--bg-color);
+  border-color: var(--text-primary);
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-hover);
-  box-shadow: 0 4px 12px rgba(199, 81, 59, 0.35);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
 }
 
 .btn-outline {
@@ -210,21 +189,23 @@ button {
 }
 
 .btn-outline:hover {
-  background-color: var(--border-color);
+  background-color: var(--text-primary);
+  color: var(--bg-color);
 }
 
-/* ---------- Text Link with Arrow (luxury editorial pattern) ---------- */
+/* ---------- Text Link with Arrow ---------- */
 .text-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: var(--font-body);
-  font-size: 15px;
+  font-family: var(--font-mono);
+  font-size: 12px;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--text-link-color);
   text-decoration: none;
   transition: gap var(--transition-fast);
-  letter-spacing: 0.01em;
 }
 .text-link:hover {
   gap: 10px;
@@ -236,30 +217,28 @@ button {
   color: var(--text-secondary);
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
+  letter-spacing: 0.01em;
   padding-bottom: 2px;
 }
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: -2px;
+  left: 0;
   width: 0;
-  height: 1px;
+  height: 1.5px;
   background: var(--primary-color);
-  transition:
-    width var(--transition-normal),
-    left var(--transition-normal);
+  transition: width var(--transition-normal);
 }
 .nav-link:hover {
   color: var(--text-primary);
 }
 .nav-link:hover::after {
   width: 100%;
-  left: 0;
 }
 
-/* ---------- Editorial Card (image-dominant, no border/shadow) ---------- */
+/* ---------- Editorial Card (image-dominant, crisp framing) ---------- */
 .editorial-card {
   background: transparent;
   border: none;
@@ -268,7 +247,7 @@ button {
   transition: opacity var(--transition-normal);
 }
 .editorial-card:hover {
-  opacity: 0.85;
+  opacity: 0.88;
 }
 
 /* ---------- Journey Card (thin separator line) ---------- */
@@ -290,38 +269,28 @@ button {
 }
 
 /* ---------- Hero Carousel ---------- */
-@keyframes carouselFade {
-  0%,
-  25% {
-    opacity: 1;
-  }
-  33%,
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .carousel-slide {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.9s ease-in-out;
+  pointer-events: none;
 }
 .carousel-slide.active {
   opacity: 1;
+  pointer-events: auto;
 }
 
-/* ---------- Kicker Label ---------- */
+/* ---------- Kicker Label (Monospace Dossier Tag) ---------- */
 .kicker {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-mono);
   font-size: var(--kicker-font-size);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: var(--kicker-letter-spacing);
   text-transform: uppercase;
   color: var(--kicker-color);
   margin-bottom: 12px;
+  display: inline-block;
 }
 
 /* ---------- Signature Card ---------- */
@@ -332,14 +301,14 @@ button {
   padding: 24px;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
-  border-left: 3px solid var(--primary-color);
+  border-top: 2px solid var(--text-primary);
   border-radius: var(--radius-sm);
   margin-top: 64px;
 }
 
 .signature-card .sig-name {
   font-family: var(--font-logo);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--text-primary);
 }
@@ -352,23 +321,13 @@ button {
   line-height: 1.5;
 }
 
-/* ---------- Photo Credit ---------- */
-.photo-credit {
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  color: var(--photo-credit-color);
-  text-align: center;
-  margin-top: 8px;
-  font-style: italic;
-}
-
 /* ---------- Pull Quote ---------- */
 blockquote.pull {
   font-family: var(--font-quote);
   font-style: italic;
   font-size: 20px;
   color: var(--text-secondary);
-  border-left: 3px solid var(--blockquote-border);
+  border-left: 2px solid var(--blockquote-border);
   padding-left: 24px;
   margin: 32px 0;
   line-height: 1.5;
@@ -376,48 +335,159 @@ blockquote.pull {
 
 /* ---------- Editorial Hero ---------- */
 .hero-editorial {
-  padding: 80px 0 48px;
+  padding: 72px 0 48px;
   background-color: var(--bg-surface);
   border-bottom: 1px solid var(--border-color);
 }
 
 .hero-editorial h1 {
-  font-size: 52px;
+  font-size: clamp(34px, 4.5vw, 52px);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.025em;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .hero-editorial .hero-subtitle {
   font-family: var(--font-quote);
-  font-size: 22px;
+  font-size: 21px;
   color: var(--text-secondary);
-  line-height: 1.5;
-  max-width: 650px;
+  line-height: 1.55;
+  max-width: 680px;
   margin: 0 auto;
+}
+
+/* ---------- Hero Dispatch Bar ---------- */
+.hero-dispatch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hero-dispatch-item {
+  padding: 16px 22px;
+  border-right: 1px solid rgba(246, 244, 239, 0.14);
+  display: flex;
+  justifycontent: space-between;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #f6f4ef;
+  transition: background-color 0.15s ease;
+}
+
+.hero-dispatch-item:first-child {
+  padding-left: 0;
+}
+
+.hero-dispatch-item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.hero-dispatch-item:hover {
+  color: #e6c27a;
+}
+
+@media (max-width: 768px) {
+  .hero-dispatch-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-dispatch-item {
+    padding: 14px 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(246, 244, 239, 0.12);
+  }
+  .hero-dispatch-item:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ---------- Editorial Hairline Grid Utilities ---------- */
+.hairline-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hairline-grid-4 > div {
+  padding: 32px 24px;
+  border-right: 1px solid var(--border-color);
+}
+
+.hairline-grid-4 > div:first-child {
+  padding-left: 0;
+}
+
+.hairline-grid-4 > div:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+@media (max-width: 960px) {
+  .hairline-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hairline-grid-4 > div:nth-child(2n) {
+    border-right: none;
+    padding-right: 0;
+  }
+  .hairline-grid-4 > div:nth-child(2n + 1) {
+    padding-left: 0;
+  }
+  .hairline-grid-4 > div:nth-child(n + 3) {
+    border-top: 1px solid var(--border-color);
+  }
+}
+
+@media (max-width: 600px) {
+  .hairline-grid-4 {
+    grid-template-columns: 1fr;
+  }
+  .hairline-grid-4 > div {
+    border-right: none !important;
+    padding: 24px 0 !important;
+    border-top: 1px solid var(--border-color);
+  }
+  .hairline-grid-4 > div:first-child {
+    border-top: none;
+  }
+}
+
+/* ---------- Magazine Two-Column Journal Spread ---------- */
+.journal-editorial-spread {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .journal-editorial-spread {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
 
 /* ---------- Footer Grid ---------- */
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
+  gap: 36px;
 }
 @media (min-width: 768px) {
   .footer-grid {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1.8fr 1fr 1fr 1fr;
   }
 }
 
 /* ---------- Photo Credit ---------- */
 .photo-credit {
-  font-family: var(--font-body);
+  font-family: var(--font-mono);
   font-size: 11px;
   color: var(--photo-credit-color);
   text-align: center;
   margin-top: 8px;
-  font-style: italic;
 }
 
 /* ---------- Responsive Navigation ---------- */
@@ -427,6 +497,23 @@ blockquote.pull {
   align-items: center;
   min-height: 72px;
   gap: 16px;
+}
+
+.nav-brand-group {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.nav-edition-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  border-left: 1px solid var(--border-color);
+  padding-left: 12px;
 }
 
 .nav-links {
@@ -441,6 +528,12 @@ blockquote.pull {
 
 .nav-links::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 960px) {
+  .nav-edition-tag {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -462,9 +555,6 @@ blockquote.pull {
     display: none !important;
   }
   .hero-editorial {
-    padding: 56px 0 36px;
-  }
-  .hero-editorial h1 {
-    font-size: clamp(30px, 8vw, 44px);
+    padding: 52px 0 36px;
   }
 }
