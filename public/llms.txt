@@ -10,6 +10,14 @@
 - [Trip Cost Calculator](https://beforechina.com/budget): Interactive estimation model for flights, luxury boutique hotels, high-speed rail, private guiding, and dining across backpacker, mid-range, and luxury tiers.
 - [China Travel Insurance Guide](https://beforechina.com/insurance): Understanding VIP international clinics, mandatory upfront payment policies, and comparing SafetyWing vs World Nomads coverage.
 
+## Healthcare, Dental & Wellness in China (2026 Independent Price Audits)
+- [China Healthcare & Medical Tourism Hub](https://beforechina.com/health): Interactive China vs US/UK/CA/AU Healthcare Cost Calculator and 3-tier hospital system guide (Public Tier-3 International Departments vs Jiahui/United Family).
+- [Dental Implants Abroad: UK & US vs Turkey, Hungary & China](https://beforechina.com/health/dental-china-vs-turkey-uk): 2026 cost & safety comparison explaining how China's Volume-Based Procurement (VBP) capped Swiss Straumann dental implants at ~$920 (£720).
+- [Dentist in China & Dental Care Guide](https://beforechina.com/health/dental): Single-trip dental procedures (cleanings $42, zirconia crowns $280 in 48h) vs 2-trip dental implants in Shenzhen and Shanghai.
+- [Executive Health Checkups & Full-Body MRI Cost](https://beforechina.com/health/health-check): How to book a 3.5-hour comprehensive screening ($280–$680) or $145 3.0T MRI at Shanghai Tier-3 Hospital International Departments with English reports.
+- [Buying Prescription Glasses in China](https://beforechina.com/health/glasses): Field guide to Shanghai International Glasses City and Beijing Panjiayuan ($35–$95 for 1.67 high-index lenses with 1-hour pickup).
+- [Chinese Massage (Tuina), Acupuncture & TCM](https://beforechina.com/health/tcm): Distinguishing recreational foot massage from licensed hospital Tuina and historic apothecaries (Tong Ren Tang, Fang Hui Chun Tang).
+
 ## Signature Itineraries & Destination Hubs
 - [All Destinations Overview](https://beforechina.com/destinations): Comprehensive guide to China's 12 travel regions and 30+ tailor-made private routes.
 - [Golden Triangle (Beijing, Xi'an & Shanghai)](https://beforechina.com/golden-triangle/beijing-xian-shanghai): 8–10 day classic private route covering the Forbidden City, Great Wall, Terracotta Warriors, and the Bund.

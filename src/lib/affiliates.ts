@@ -58,6 +58,12 @@ export const affiliates = {
     name: 'World Nomads',
     url: 'https://www.worldnomads.com/?ref=beforechina',
   },
+  medicalcomplications: {
+    slug: 'medicalcomplications',
+    name: 'Global Protective Solutions (Medical Travel Shield)',
+    url: 'https://www.globalprotectivesolutions.com/?ref=beforechina',
+    promoNote: 'Specialist coverage for planned medical & dental procedures abroad',
+  },
 } as const;
 
 export type AffiliateSlug = keyof typeof affiliates;

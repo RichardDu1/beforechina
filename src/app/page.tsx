@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import HeroCarousel from '@/components/HeroCarousel';
 import WhyUs from '@/components/WhyUs';
 import FeaturedJourneys from '@/components/FeaturedJourneys';
@@ -242,6 +243,154 @@ export default function Home() {
 
       {/* 2. Why Us */}
       <WhyUs />
+
+      {/* 2.5 Independent Healthcare, Dental & Optical Benchmarks */}
+      <section
+        style={{
+          padding: '56px 0',
+          borderTop: '1px solid var(--border-color)',
+          borderBottom: '1px solid var(--border-color)',
+        }}
+      >
+        <div className="container" style={{ maxWidth: 'var(--content-width-wide)' }}>
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'space-between',
+              alignItems: 'flex-end',
+              gap: '16px',
+              marginBottom: '32px',
+            }}
+          >
+            <div>
+              <div
+                style={{
+                  fontSize: '12px',
+                  fontWeight: 700,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  color: 'var(--primary-color)',
+                  marginBottom: '6px',
+                }}
+              >
+                New · 2026 Independent Price Audits
+              </div>
+              <h2
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: 'clamp(26px, 3.5vw, 36px)',
+                  fontWeight: 500,
+                  margin: 0,
+                }}
+              >
+                Healthcare, Dental &amp; Optical in China: Real Hospital Tariffs
+              </h2>
+            </div>
+            <Link href="/health" className="btn btn-primary" style={{ fontSize: '14px' }}>
+              Open Healthcare Cost Calculator →
+            </Link>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+              gap: '20px',
+            }}
+          >
+            <Link
+              href="/health/health-check"
+              className="article-card"
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                borderTop: '3px solid var(--primary-color)',
+              }}
+            >
+              <div
+                style={{ fontSize: '12px', fontWeight: 700, color: '#07C160', marginBottom: '6px' }}
+              >
+                $280–$680 in Shanghai (vs $2,400+ in US)
+              </div>
+              <h3 style={{ fontSize: '19px', marginBottom: '8px' }}>
+                3.5-Hour Executive Checkup &amp; 3.0T MRI →
+              </h3>
+              <p
+                style={{
+                  fontSize: '14px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: 1.55,
+                  margin: 0,
+                }}
+              >
+                How to book bilingual International Medical Departments at elite Tier-3 hospitals
+                (Huashan, Ruijin) or Jiahui Health with zero waitlist.
+              </p>
+            </Link>
+
+            <Link
+              href="/health/dental-china-vs-turkey-uk"
+              className="article-card"
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                borderTop: '3px solid var(--primary-color)',
+              }}
+            >
+              <div
+                style={{ fontSize: '12px', fontWeight: 700, color: '#07C160', marginBottom: '6px' }}
+              >
+                ~$920 Post-VBP (vs £2,800 UK / $4,200 US)
+              </div>
+              <h3 style={{ fontSize: '19px', marginBottom: '8px' }}>
+                Swiss Straumann Implants &amp; Dental Care →
+              </h3>
+              <p
+                style={{
+                  fontSize: '14px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: 1.55,
+                  margin: 0,
+                }}
+              >
+                Why national Volume-Based Procurement cut imported Swiss/German dental hardware
+                costs by 60% — compared honestly against Turkey and Hungary.
+              </p>
+            </Link>
+
+            <Link
+              href="/health/glasses"
+              className="article-card"
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                borderTop: '3px solid var(--primary-color)',
+              }}
+            >
+              <div
+                style={{ fontSize: '12px', fontWeight: 700, color: '#07C160', marginBottom: '6px' }}
+              >
+                $35–$95 · 60-Minute Same-Day Pickup
+              </div>
+              <h3 style={{ fontSize: '19px', marginBottom: '8px' }}>
+                Prescription Glasses &amp; Licensed TCM →
+              </h3>
+              <p
+                style={{
+                  fontSize: '14px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: 1.55,
+                  margin: 0,
+                }}
+              >
+                Verified bargaining ranges at Shanghai International Glasses City &amp; Beijing
+                Panjiayuan, plus authentic hospital Tuina and acupuncture.
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* 3. Featured Journeys — three audience-segmented sections */}
       <div style={{ backgroundColor: 'var(--bg-surface)' }}>

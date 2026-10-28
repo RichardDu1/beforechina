@@ -217,6 +217,53 @@ export default function InsurancePage() {
       </section>
 
       <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+        {/* Medical & Dental Tourism Complication Insurance Section */}
+        <div
+          className="article-card"
+          style={{
+            marginBottom: '48px',
+            borderLeft: '4px solid var(--primary-color)',
+          }}
+        >
+          <div
+            style={{
+              fontSize: '12px',
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+              color: 'var(--primary-color)',
+              marginBottom: '6px',
+            }}
+          >
+            Crucial for Medical &amp; Dental Visitors
+          </div>
+          <h2 style={{ fontSize: '26px', marginBottom: '12px' }}>
+            Getting Dental Work or a Medical Procedure in China?
+          </h2>
+          <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '16px' }}>
+            Standard holiday and nomad insurance policies (including SafetyWing and World Nomads){' '}
+            <strong>strictly exclude elective medical or dental treatment abroad</strong> — as well
+            as any post-operative complications, extended hotel recovery, or flight changes linked
+            to a planned procedure.
+          </p>
+          <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '20px' }}>
+            If you are visiting Shanghai, Shenzhen, or Hainan for dental implants, crowns, or a
+            clinical procedure, pair your general trip policy with specialist{' '}
+            <strong>Medical Travel Complication Insurance</strong>.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
+            <a
+              {...affiliateProps('medicalcomplications', 'insurance-page-medical-complications')}
+              className="btn btn-primary"
+            >
+              Get Medical Tourism Complication Cover ↗
+            </a>
+            <a href="/health" className="btn btn-outline">
+              Explore Our China Healthcare &amp; Dental Guide →
+            </a>
+          </div>
+        </div>
+
         <TourCTA />
         <NextSteps
           steps={[

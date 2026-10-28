@@ -102,6 +102,8 @@ const FOOTER_COMPANY = [
 
 const FOOTER_TOOLS = [
   { href: '/visa', label: 'Visa-Free Checker' },
+  { href: '/health', label: 'Healthcare & Dental Guide' },
+  { href: '/health/dental-china-vs-turkey-uk', label: 'Dental Cost: China vs Turkey/UK' },
   { href: '/vpn', label: 'Best VPN for China' },
   { href: '/esim', label: 'Best eSIM for China' },
   { href: '/payment', label: 'Alipay & WeChat Pay' },
@@ -168,6 +170,9 @@ export default function RootLayout({
               </Link>
               <Link href="/experiences" className="nav-link">
                 Experiences
+              </Link>
+              <Link href="/health" className="nav-link" style={{ fontWeight: 600 }}>
+                Health &amp; Dental
               </Link>
               <Link href="/journal" className="nav-link">
                 Journal
