@@ -31,8 +31,8 @@ const articleSchema = {
     "From dan dan noodles at dawn to ma la hotpot at midnight — three days of pure Sichuan flavour in China's food capital.",
   image: 'https://beforechina.com/images/destinations/sichuan-og.webp',
   author: {
-    '@type': 'Person',
-    name: 'Richard Du',
+    '@type': 'Organization',
+    name: 'BeforeChina Editorial Team',
   },
   publisher: {
     '@type': 'Organization',

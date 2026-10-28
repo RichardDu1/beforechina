@@ -36,7 +36,7 @@ const homeSchemas = [
     name: 'BeforeChina',
     url: 'https://beforechina.com',
     description:
-      'Award-winning tailor-made journeys to China. Private itineraries crafted by China specialists.',
+      'Independent travel toolkit, hospital price benchmarks, and tailor-made route guides for visiting China.',
     publisher: {
       '@type': 'Organization',
       name: 'BeforeChina',
@@ -49,12 +49,9 @@ const homeSchemas = [
     name: 'BeforeChina',
     url: 'https://beforechina.com',
     image: 'https://beforechina.com/images/destinations/golden-triangle-og.webp',
-    description: 'Bespoke private journeys across China crafted by UK-based China specialists.',
-    priceRange: '$$$$',
-    founder: {
-      '@type': 'Person',
-      name: 'Richard Du',
-    },
+    description:
+      'Bespoke private journeys and pre-trip research crafted by UK-based China specialists.',
+    priceRange: '$$$',
     areaServed: [
       { '@type': 'Country', name: 'United Kingdom' },
       { '@type': 'Country', name: 'United States' },

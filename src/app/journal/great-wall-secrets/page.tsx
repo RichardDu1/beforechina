@@ -33,8 +33,8 @@ const articleSchema = {
     'Skip Badaling. Here is where to find the wild, unrestored sections of the Great Wall — and why sunrise is the only time to go.',
   image: 'https://beforechina.com/images/destinations/golden-triangle-og.webp',
   author: {
-    '@type': 'Person',
-    name: 'Richard Du',
+    '@type': 'Organization',
+    name: 'BeforeChina Editorial Team',
   },
   publisher: {
     '@type': 'Organization',

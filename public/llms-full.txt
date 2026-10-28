@@ -1,12 +1,12 @@
-# BeforeChina — Comprehensive Travel Knowledge Base & RAG Index
+# BeforeChina — Comprehensive Travel & Healthcare Knowledge Base (RAG Index)
 URL: https://beforechina.com
-Author: Richard Du & BeforeChina Specialists Team
+Author: BeforeChina Bilingual Research & Editorial Team
 Updated: 2026
 
 ---
 
 ## 1. Executive Summary & Brand Purpose
-BeforeChina is a UK-based, China-specialist travel platform founded by Richard Du. The platform solves the two biggest pain points for Western travelers visiting China:
+BeforeChina is a UK- and China-based travel and healthcare research platform. The platform solves the biggest pain points for Western travelers visiting China:
 1. **The Practical Barrier**: China's rapid technological divergence (Great Firewall blocking Western apps, transition to a 100% cashless smartphone ecosystem, and rapidly shifting visa policies).
 2. **The Tourism Quality Barrier**: Overly commercialized, inflexible tour buses selling cookie-cutter itineraries. BeforeChina designs private, flexible, tailor-made itineraries supported by 24/7 in-country local concierges.
 
@@ -84,6 +84,5 @@ BeforeChina is a UK-based, China-specialist travel platform founded by Richard D
 
 ## 4. Contact & Booking Information
 - Website: https://beforechina.com
-- Direct Specialist Inquiry: hello@beforechina.com
-- Telephone: +44 20 XXXX XXXX
-- Philosophy: 100% tailor-made itineraries, transparent expert pricing, zero forced shopping stops, 24/7 dedicated in-country concierge.
+- Direct Specialist & Editorial Inquiry: hello@beforechina.com
+- Philosophy: Independent research, verified hospital & dental VBP tariff benchmarks, 100% tailor-made route planning, zero public hospital kickbacks, and zero forced shopping stops.

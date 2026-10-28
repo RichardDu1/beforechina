@@ -50,35 +50,10 @@ const breadcrumbSchema = {
   ],
 };
 
-const productSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: 'SafetyWing Nomad Insurance',
-  description:
-    'Flexible travel insurance for China covering emergency medical up to $250,000. Subscription model — cancel anytime.',
-  offers: {
-    '@type': 'Offer',
-    price: '45.00',
-    priceCurrency: 'USD',
-    priceValidUntil: '2027-12-31',
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.5',
-    reviewCount: '156',
-  },
-  review: {
-    '@type': 'Review',
-    author: { '@type': 'Person', name: 'Richard Du' },
-    reviewBody:
-      'SafetyWing is the best travel insurance option for China — flexible subscription, covers emergency medical, and you can buy it after your trip has already started.',
-  },
-};
-
 export default function InsurancePage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
-      <JsonLd data={[faqSchema, breadcrumbSchema, productSchema]} id="insurance-schema" />
+      <JsonLd data={[faqSchema, breadcrumbSchema]} id="insurance-schema" />
 
       {/* Hero */}
       <section className="hero-editorial" style={{ textAlign: 'center' }}>

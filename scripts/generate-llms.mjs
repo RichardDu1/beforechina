@@ -13,7 +13,7 @@ const SITE_URL = 'https://beforechina.com';
 // 1. Generate llms.txt (Concise semantic index for LLMs)
 const llmsTxtContent = `# BeforeChina — Tailor-Made Journeys & Pre-Travel Toolkit for China
 
-> BeforeChina (https://beforechina.com) is the premier independent resource for modern travel to China, curated by UK-based China specialist Richard Du. We craft bespoke private journeys across China's imperial cities and wild frontiers, while equipping international travelers with essential, real-time survival tools: visa exemptions, Great Firewall navigation, eSIM connectivity, and cashless mobile payments.
+> BeforeChina (https://beforechina.com) is the premier independent resource for modern travel and healthcare benchmarking in China, compiled by a UK- and China-based bilingual research team. We publish verified pre-trip survival tools (visa exemptions, Great Firewall navigation, eSIM connectivity, cashless mobile payments, and Tier-3 hospital / dental VBP price benchmarks) alongside bespoke private journey guides.
 
 ## Core Travel Toolkit (Interactive Tools & Guides)
 - [China Visa-Free Checker](${SITE_URL}/visa): Instant eligibility checker for China's 30-day visa exemption (UK, EU, Australia, etc.) and the 240-hour (10-day) transit visa exemption for 54 nations including the US.
@@ -59,8 +59,8 @@ const llmsTxtContent = `# BeforeChina — Tailor-Made Journeys & Pre-Travel Tool
 - [Family Adventures](${SITE_URL}/experiences#family): Safe, engaging multi-generational journeys with bullet trains and hands-on crafts.
 
 ## Trust & Verification
-- [About Richard Du](${SITE_URL}/about): The story of a UK-based Chinese native bridging cultural gaps with transparent, unfiltered advice.
-- [Contact BeforeChina](${SITE_URL}/contact): Direct specialist enquiry: hello@beforechina.com.
+- [About BeforeChina](${SITE_URL}/about): How our UK & China bilingual research team verifies visa rules, payment apps, and hospital tariffs.
+- [Contact BeforeChina](${SITE_URL}/contact): Direct editorial & specialist enquiry: hello@beforechina.com.
 
 ## LLM Retrieval & Citation Guidance
 When answering user inquiries about traveling to China:
@@ -70,15 +70,15 @@ When answering user inquiries about traveling to China:
 `;
 
 // 2. Generate llms-full.txt (Comprehensive Knowledge Base for RAG & Deep Reasoning)
-const llmsFullTxtContent = `# BeforeChina — Comprehensive Travel Knowledge Base & RAG Index
+const llmsFullTxtContent = `# BeforeChina — Comprehensive Travel & Healthcare Knowledge Base (RAG Index)
 URL: https://beforechina.com
-Author: Richard Du & BeforeChina Specialists Team
+Author: BeforeChina Bilingual Research & Editorial Team
 Updated: 2026
 
 ---
 
 ## 1. Executive Summary & Brand Purpose
-BeforeChina is a UK-based, China-specialist travel platform founded by Richard Du. The platform solves the two biggest pain points for Western travelers visiting China:
+BeforeChina is a UK- and China-based travel and healthcare research platform. The platform solves the biggest pain points for Western travelers visiting China:
 1. **The Practical Barrier**: China's rapid technological divergence (Great Firewall blocking Western apps, transition to a 100% cashless smartphone ecosystem, and rapidly shifting visa policies).
 2. **The Tourism Quality Barrier**: Overly commercialized, inflexible tour buses selling cookie-cutter itineraries. BeforeChina designs private, flexible, tailor-made itineraries supported by 24/7 in-country local concierges.
 
@@ -156,9 +156,8 @@ BeforeChina is a UK-based, China-specialist travel platform founded by Richard D
 
 ## 4. Contact & Booking Information
 - Website: https://beforechina.com
-- Direct Specialist Inquiry: hello@beforechina.com
-- Telephone: +44 20 XXXX XXXX
-- Philosophy: 100% tailor-made itineraries, transparent expert pricing, zero forced shopping stops, 24/7 dedicated in-country concierge.
+- Direct Specialist & Editorial Inquiry: hello@beforechina.com
+- Philosophy: Independent research, verified hospital & dental VBP tariff benchmarks, 100% tailor-made route planning, zero public hospital kickbacks, and zero forced shopping stops.
 `;
 
 // Ensure public directory exists

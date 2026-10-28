@@ -43,7 +43,13 @@ export default function TourCTA() {
             marginTop: '16px',
           }}
         >
-          Or call us: +44 20 XXXX XXXX
+          Or email us directly:{' '}
+          <a
+            href="mailto:hello@beforechina.com"
+            style={{ color: 'var(--text-secondary)', textDecoration: 'underline' }}
+          >
+            hello@beforechina.com
+          </a>
         </p>
       </div>
     </section>

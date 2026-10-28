@@ -31,8 +31,8 @@ const articleSchema = {
     'The exact spots, times, and seasons to capture the Li River at its most magical — from dawn mist to cormorant fishermen at sunset.',
   image: 'https://beforechina.com/images/destinations/guangxi-og.webp',
   author: {
-    '@type': 'Person',
-    name: 'Richard Du',
+    '@type': 'Organization',
+    name: 'BeforeChina Editorial Team',
   },
   publisher: {
     '@type': 'Organization',

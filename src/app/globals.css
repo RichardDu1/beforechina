@@ -419,3 +419,52 @@ blockquote.pull {
   margin-top: 8px;
   font-style: italic;
 }
+
+/* ---------- Responsive Navigation ---------- */
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+  gap: 16px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-inner {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .nav-links {
+    width: 100%;
+    gap: 18px;
+    padding-bottom: 4px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 8px;
+  }
+  .nav-email-pill {
+    display: none !important;
+  }
+  .hero-editorial {
+    padding: 56px 0 36px;
+  }
+  .hero-editorial h1 {
+    font-size: clamp(30px, 8vw, 44px);
+  }
+}

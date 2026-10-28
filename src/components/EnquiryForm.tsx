@@ -48,10 +48,22 @@ export default function EnquiryForm() {
           </p>
         </div>
         <form
-          action="https://formspree.io/f/hello@beforechina.com"
-          method="POST"
-          onSubmit={() => {
-            trackEvent('enquiry_form_submit', {});
+          onSubmit={(e) => {
+            e.preventDefault();
+            const data = new FormData(e.currentTarget);
+            const name = String(data.get('name') || '');
+            const email = String(data.get('email') || '');
+            const phone = String(data.get('phone') || '');
+            const destination = String(data.get('destination') || '');
+            const message = String(data.get('message') || '');
+            trackEvent('enquiry_form_submit', { destination });
+            const subject = encodeURIComponent(
+              `China Trip / Healthcare Enquiry${destination ? ` — ${destination}` : ''}`,
+            );
+            const body = encodeURIComponent(
+              `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\nInterest: ${destination || 'General'}\n\nDetails:\n${message}`,
+            );
+            window.location.href = `mailto:hello@beforechina.com?subject=${subject}&body=${body}`;
             setSubmitted(true);
           }}
         >
@@ -273,7 +285,13 @@ export default function EnquiryForm() {
             color: 'var(--text-muted)',
           }}
         >
-          Or call us: +44 20 XXXX XXXX
+          Or email directly:{' '}
+          <a
+            href="mailto:hello@beforechina.com"
+            style={{ color: 'var(--text-secondary)', textDecoration: 'underline' }}
+          >
+            hello@beforechina.com
+          </a>
         </p>
       </div>
     </section>

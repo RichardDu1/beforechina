@@ -19,11 +19,8 @@ export const metadata: Metadata = {
     template: '%s | BeforeChina',
   },
   description:
-    'Award-winning tailor-made journeys to China. Private itineraries crafted by China specialists — from the Great Wall to the Silk Road.',
+    'Independent travel toolkit, healthcare price benchmarks, and tailor-made route guides for visiting China.',
   alternates: { canonical: '/' },
-  verification: {
-    google: 'TODO_google_search_console_verification',
-  },
   openGraph: {
     type: 'website',
     url: SITE_URL,
@@ -59,14 +56,10 @@ const organizationSchema = {
   '@type': 'Organization',
   name: 'BeforeChina',
   url: SITE_URL,
-  description: 'Tailor-made private journeys to China, crafted by China specialists.',
-  founder: {
-    '@type': 'Person',
-    name: 'Richard Du',
-  },
+  description:
+    'Independent travel toolkit, hospital price benchmarks, and tailor-made route planning for China.',
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+44 20 XXXX XXXX',
     email: 'hello@beforechina.com',
     contactType: 'Customer Service',
   },
@@ -142,15 +135,7 @@ export default function RootLayout({
             borderRadius: 0,
           }}
         >
-          <div
-            className="container"
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              height: '72px',
-            }}
-          >
+          <div className="container nav-inner">
             <Link
               href="/"
               style={{
@@ -160,11 +145,12 @@ export default function RootLayout({
                 letterSpacing: '-0.5px',
                 textDecoration: 'none',
                 color: 'var(--text-primary)',
+                flexShrink: 0,
               }}
             >
               Before<span style={{ color: 'var(--primary-color)' }}>China</span>
             </Link>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '28px' }}>
+            <div className="nav-links">
               <Link href="/destinations" className="nav-link">
                 Destinations
               </Link>
@@ -180,16 +166,22 @@ export default function RootLayout({
               <Link href="/about" className="nav-link">
                 About
               </Link>
-              <span
+              <a
+                href="mailto:hello@beforechina.com"
+                className="nav-email-pill"
                 style={{
-                  fontSize: '14px',
-                  color: 'var(--text-muted)',
-                  marginLeft: '8px',
-                  fontWeight: 400,
+                  fontSize: '13px',
+                  color: 'var(--text-secondary)',
+                  marginLeft: '4px',
+                  fontWeight: 500,
+                  padding: '6px 12px',
+                  border: '1px solid var(--border-color)',
+                  borderRadius: 'var(--radius-sm)',
+                  textDecoration: 'none',
                 }}
               >
-                +44 20 XXXX XXXX
-              </span>
+                hello@beforechina.com
+              </a>
             </div>
           </div>
         </nav>
@@ -233,13 +225,13 @@ export default function RootLayout({
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                   <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-                    China Experts
+                    UK &amp; China Bilingual Research Team
                   </span>
                   <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-                    100% Tailor-Made
+                    Independent Tools &amp; Price Benchmarks
                   </span>
                   <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-                    24/7 In-Country Support
+                    Direct Email: hello@beforechina.com
                   </span>
                 </div>
               </div>
@@ -402,13 +394,10 @@ export default function RootLayout({
                 fontSize: '13px',
               }}
             >
-              <p style={{ marginBottom: '8px', fontStyle: 'italic' }}>
-                As featured in — (coming soon)
-              </p>
               <p>&copy; {new Date().getFullYear()} BeforeChina.com. All rights reserved.</p>
               <p style={{ fontSize: '12px', marginTop: '4px' }}>
-                Disclaimer: This site contains affiliate links. If you make a purchase, we may earn
-                a commission.
+                Disclosure: Some outbound links are affiliate links. If you make a purchase, we may
+                earn a commission at no extra cost to you.
               </p>
             </div>
           </div>

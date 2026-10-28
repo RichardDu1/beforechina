@@ -55,31 +55,34 @@ export default function AboutPage() {
           </h2>
           <div style={{ color: 'var(--text-secondary)', fontSize: '17px', lineHeight: 1.8 }}>
             <p style={{ marginBottom: '20px' }}>
-              BeforeChina was born from a simple frustration: every China travel website for
-              Westerners was either a faceless OTA listing the same five hotels, or a government
-              tourism portal covered in propaganda about "5,000 years of civilisation."
+              BeforeChina was born from a simple frustration: every China travel and healthcare
+              website for Westerners was either a faceless OTA listing the same five hotels, a
+              commission-driven medical broker hiding real hospital tariffs, or a dated portal
+              written like a brochure from 2012.
             </p>
             <p style={{ marginBottom: '20px' }}>
-              Richard, our founder, grew up in China and has spent the last decade living in the UK.
-              He has guided friends, family, and strangers through China trips for years — and kept
-              hearing the same thing: "I wish I had known this before I went."
+              Our bilingual research team splits its time between the UK and major Chinese hubs
+              (Shanghai, Beijing, Shenzhen, and Chengdu). After years of helping British, American,
+              and Australian friends navigate China&apos;s cashless payment apps, visa exemptions,
+              high-speed rail, and Tier-3 hospital international departments, we kept hearing the
+              same thing: &ldquo;I wish I had known this before I landed.&rdquo;
             </p>
             <p style={{ marginBottom: '20px' }}>
-              So he built BeforeChina. Not as another booking engine, but as the resource he wished
-              existed when his British friends asked, "Where should I go in China?" — with real
-              local knowledge, honest advice, and journeys designed by someone who knows both sides
-              of the cultural gap.
+              So we built BeforeChina — an independent pre-trip toolkit, healthcare price audit, and
+              tailor-made route guide written by people who fluently bridge both sides of the
+              linguistic and cultural gap.
             </p>
             <p>
-              Today, BeforeChina designs private tailor-made journeys for travellers from the UK,
-              the US, Australia, and across Europe. Every itinerary is built from scratch — because
-              no two travellers are the same, and neither should their journeys be.
+              Whether you are planning a private journey along the Silk Road, checking if your
+              passport qualifies for 30-day visa-free entry, or comparing Shanghai hospital checkup
+              and dental implant tariffs against UK/US private prices, every guide is built around
+              verified primary data.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Our Specialists */}
+      {/* Our Research & Planning Pillars */}
       <section style={{ padding: 'var(--section-gap-sm) 0', backgroundColor: 'var(--bg-surface)' }}>
         <div className="container" style={{ maxWidth: 'var(--content-width-wide)' }}>
           <h2
@@ -91,150 +94,123 @@ export default function AboutPage() {
               textAlign: 'center',
             }}
           >
-            Our China Specialists
+            How Our Bilingual Team Operates
           </h2>
           <div
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-              gap: '40px',
+              gap: '32px',
             }}
           >
-            {/* Richard */}
-            <div style={{ textAlign: 'center' }}>
+            <div className="article-card">
               <div
                 style={{
-                  width: '100px',
-                  height: '100px',
-                  borderRadius: '50%',
-                  backgroundColor: 'var(--callout-bg-primary)',
-                  margin: '0 auto 20px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '36px',
+                  fontSize: '12px',
+                  color: 'var(--primary-color)',
+                  fontWeight: 700,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '8px',
                 }}
               >
-                R
+                London &amp; Shanghai Desk
               </div>
               <h3
                 style={{
                   fontFamily: 'var(--font-heading)',
                   fontSize: '22px',
                   fontWeight: 500,
-                  marginBottom: '6px',
+                  marginBottom: '10px',
                 }}
               >
-                Richard Du
+                Pre-Trip Survival &amp; Policy Audits
               </h3>
-              <div
+              <p
                 style={{
-                  fontSize: '12px',
-                  color: 'var(--accent-color)',
-                  fontWeight: 600,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.08em',
-                  marginBottom: '12px',
+                  color: 'var(--text-secondary)',
+                  fontSize: '15px',
+                  lineHeight: 1.6,
+                  margin: 0,
                 }}
               >
-                Founder & Lead Specialist
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '15px', lineHeight: 1.6 }}>
-                Chinese native, based in the UK. 50+ trips back to China. Knows the hidden dumpling
-                shop in Beijing, the best sunrise spot on the Great Wall, and which Silk Road
-                guesthouse has the softest beds.
+                Tracks National Immigration Administration (NIA) visa-free rules, tests roaming
+                eSIMs and VPN obfuscation protocols inside mainland China, and verifies foreign
+                Visa/Mastercard rules on Alipay and WeChat Pay.
               </p>
             </div>
 
-            {/* Yunnan Specialist */}
-            <div style={{ textAlign: 'center' }}>
+            <div className="article-card">
               <div
                 style={{
-                  width: '100px',
-                  height: '100px',
-                  borderRadius: '50%',
-                  backgroundColor: 'var(--callout-bg-warm)',
-                  margin: '0 auto 20px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '36px',
+                  fontSize: '12px',
+                  color: 'var(--primary-color)',
+                  fontWeight: 700,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '8px',
                 }}
               >
-                Y
+                Shanghai &amp; Shenzhen Field Research
               </div>
               <h3
                 style={{
                   fontFamily: 'var(--font-heading)',
                   fontSize: '22px',
                   fontWeight: 500,
-                  marginBottom: '6px',
+                  marginBottom: '10px',
                 }}
               >
-                Yunnan & Southwest Specialist
+                Healthcare, Dental &amp; Optical Benchmarks
               </h3>
-              <div
+              <p
                 style={{
-                  fontSize: '12px',
-                  color: 'var(--accent-color)',
-                  fontWeight: 600,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.08em',
-                  marginBottom: '12px',
+                  color: 'var(--text-secondary)',
+                  fontSize: '15px',
+                  lineHeight: 1.6,
+                  margin: 0,
                 }}
               >
-                Based in Dali, Yunnan
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '15px', lineHeight: 1.6 }}>
-                Has spent the last eight years exploring every corner of Yunnan, from the tea
-                mountains of Xishuangbanna to the Tibetan foothills of Shangri-La. Knows the best
-                guesthouses in Shaxi and which Tiger Leaping Gorge trail has the fewest crowds.
+                Audits published fee schedules at Tier-3 public hospital International Medical
+                Departments (Huashan, Ruijin), Volume-Based Procurement (VBP) dental implant caps,
+                and optical market pricing — with zero public hospital kickbacks.
               </p>
             </div>
 
-            {/* Silk Road Specialist */}
-            <div style={{ textAlign: 'center' }}>
+            <div className="article-card">
               <div
                 style={{
-                  width: '100px',
-                  height: '100px',
-                  borderRadius: '50%',
-                  backgroundColor: 'var(--callout-bg-warm)',
-                  margin: '0 auto 20px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '36px',
+                  fontSize: '12px',
+                  color: 'var(--primary-color)',
+                  fontWeight: 700,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '8px',
                 }}
               >
-                S
+                Regional Route Planners
               </div>
               <h3
                 style={{
                   fontFamily: 'var(--font-heading)',
                   fontSize: '22px',
                   fontWeight: 500,
-                  marginBottom: '6px',
+                  marginBottom: '10px',
                 }}
               >
-                Silk Road & Northwest Specialist
+                Southwest, Silk Road &amp; Imperial Routes
               </h3>
-              <div
+              <p
                 style={{
-                  fontSize: '12px',
-                  color: 'var(--accent-color)',
-                  fontWeight: 600,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.08em',
-                  marginBottom: '12px',
+                  color: 'var(--text-secondary)',
+                  fontSize: '15px',
+                  lineHeight: 1.6,
+                  margin: 0,
                 }}
               >
-                Based in Urumqi, Xinjiang
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '15px', lineHeight: 1.6 }}>
-                Grew up in Xinjiang and has driven the Karakoram Highway more times than he can
-                count. Speaks Uyghur and Mandarin, and knows every melon stall at the Kashgar Sunday
-                Bazaar.
+                Designs realistic, unhurried private routes across 18 Chinese regions — pairing
+                high-speed rail logistics with boutique courtyard stays, local historians, and
+                crowd-free dawn access.
               </p>
             </div>
           </div>

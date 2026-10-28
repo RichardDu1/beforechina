@@ -59,38 +59,13 @@ const breadcrumbSchema = {
   ],
 };
 
-const productSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: 'Airalo Chinacom eSIM',
-  description:
-    'International eSIM for China that bypasses the Great Firewall. Partners with China Unicom for fast 4G/5G data.',
-  offers: {
-    '@type': 'Offer',
-    price: '5.00',
-    priceCurrency: 'USD',
-    priceValidUntil: '2027-12-31',
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.7',
-    reviewCount: '189',
-  },
-  review: {
-    '@type': 'Review',
-    author: { '@type': 'Person', name: 'Richard Du' },
-    reviewBody:
-      'Airalo Chinacom is the most reliable eSIM for China. It routes through Singapore, bypassing the Great Firewall automatically.',
-  },
-};
-
 const techArticleSchema = {
   '@context': 'https://schema.org',
   '@type': 'TechArticle',
   headline: 'The Best eSIMs for China in 2026: Bypass the Great Firewall Instantly',
   description:
     "Don't buy a local SIM card at the airport. Discover the best eSIM for China that gives you instant data and natively bypasses the Great Firewall without a VPN.",
-  author: { '@type': 'Person', name: 'Richard Du' },
+  author: { '@type': 'Organization', name: 'BeforeChina Research Team' },
   publisher: { '@type': 'Organization', name: 'BeforeChina', url: 'https://beforechina.com' },
   datePublished: '2026-01-15',
   dateModified: '2026-10-11',
@@ -99,10 +74,7 @@ const techArticleSchema = {
 export default function EsimPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
-      <JsonLd
-        data={[faqSchema, breadcrumbSchema, productSchema, techArticleSchema]}
-        id="esim-schema"
-      />
+      <JsonLd data={[faqSchema, breadcrumbSchema, techArticleSchema]} id="esim-schema" />
 
       {/* Hero */}
       <section className="hero-editorial" style={{ textAlign: 'center' }}>

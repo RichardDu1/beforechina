@@ -59,38 +59,13 @@ const breadcrumbSchema = {
   ],
 };
 
-const productSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: 'ExpressVPN for China',
-  description:
-    'The most reliable VPN for bypassing the Great Firewall with automatic obfuscation and Lightway protocol.',
-  offers: {
-    '@type': 'Offer',
-    price: '6.67',
-    priceCurrency: 'USD',
-    priceValidUntil: '2027-12-31',
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.8',
-    reviewCount: '247',
-  },
-  review: {
-    '@type': 'Review',
-    author: { '@type': 'Person', name: 'Richard Du' },
-    reviewBody:
-      'ExpressVPN is the gold standard for China. Their proprietary Lightway protocol with automatic obfuscation consistently bypasses the Great Firewall.',
-  },
-};
-
 const techArticleSchema = {
   '@context': 'https://schema.org',
   '@type': 'TechArticle',
   headline: 'Best VPN for China in 2026: Bypass the Great Firewall',
   description:
     'The Great Firewall blocks 95% of commercial VPNs. Here are the only 2 verified VPNs that still consistently work in China in 2026.',
-  author: { '@type': 'Person', name: 'Richard Du' },
+  author: { '@type': 'Organization', name: 'BeforeChina Research Team' },
   publisher: { '@type': 'Organization', name: 'BeforeChina', url: 'https://beforechina.com' },
   datePublished: '2026-01-15',
   dateModified: '2026-10-11',
@@ -99,10 +74,7 @@ const techArticleSchema = {
 export default function VpnPage() {
   return (
     <div style={{ paddingBottom: '80px' }}>
-      <JsonLd
-        data={[faqSchema, breadcrumbSchema, productSchema, techArticleSchema]}
-        id="vpn-schema"
-      />
+      <JsonLd data={[faqSchema, breadcrumbSchema, techArticleSchema]} id="vpn-schema" />
 
       {/* Hero */}
       <section className="hero-editorial" style={{ textAlign: 'center' }}>
